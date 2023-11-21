@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="FMGTestCases">
+
+  <!--  <listeners>
+		<listener class-name="com.providio.ExtentReports.ExtentReporterNG" />
+	</listeners> -->
+	
+  <test thread-count="5" name="Automation" preserve-order="true">
+  
+    <classes>  
+
+    	 <class name="com.GuestUserWith_Checkout_Paypal.tc__BySearchingProduct_GuestUser_InCheckoutPaypal" />   
+		<class name="com.GuestUserWith_Checkout_Paypal.tc__GuestUserRandomProductFromPDP_InCheckoutPaypal" />     
+	    <class name="com.GuestUserWith_Checkout_Paypal.tc__GuestUserRandomProductFromPLP_InCheckoutPaypal" />	         
+    	<class name="com.GuestUserWith_Checkout_Paypal.tc__HomePageBannerPLPInCheckoutPaypal"/>
+    	<class name="com.GuestUserWith_Checkout_Paypal.tc__HomePageCLPInCheckoutPaypal"/>
+    	
+        <class name="com.GuestUserWith_CreditCard.tc__BySearchingProduct_GuestUser_InCC"/>
+    	<class name="com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPDP_InCc"/>
+    	<class name="com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc"/>
+    	<class name="com.GuestUserWith_CreditCard.tc__HomePageBannerPLPInCC"/>
+    	<class name="com.GuestUserWith_CreditCard.tc__HomePageCLPInCC"/>
+    	<class name="com.GuestUserWith_CreditCard.tc__OnlyGiftCards_GuestUser_InCc"/>
+    	
+        <class name="com.GuestUserWith_GiftCard.tc__BySearchingProduct_GuestUser_InGc"/>
+    	<class name="com.GuestUserWith_GiftCard.tc__GuestUserRandomProductFromPDP_InGc"/>
+    	<class name="com.GuestUserWith_GiftCard.tc__GuestUserRandomProductFromPLP_InGc"/>
+    	<class name="com.GuestUserWith_GiftCard.tc__HomePageBannerPLPInGC"/>
+    	<class name="com.GuestUserWith_GiftCard.tc__HomePageCLPInGc"/>
+    	
+        <class name="com.GuestUserWith_GcAndCC.tc__BySearchingProduct_GuestUser_InGcAndCc"/>
+    	<class name="com.GuestUserWith_GcAndCC.tc__GuestUserRandomProductFromPDP_InGcAndCc"/>
+    	<class name="com.GuestUserWith_GcAndCC.tc__GuestUserRandomProductFromPLP_InGcAndCc"/>
+    	<class name="com.GuestUserWith_GcAndCC.tc__HomePageBannerPLPInGcAndCc"/>
+    	<class name="com.GuestUserWith_GcAndCC.tc__HomePageCLPInGcAndCc"/>
+    	
+    	<class name="com.GuestUserWith_GcAndPaypal.tc__BySearchingProduct_GuestUser_InGcAndPaypal"/>
+    	<class name="com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPDP_InGcAndPaypal"/>
+    	<class name="com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPLP_InGcAndPaypal"/>
+    	<class name="com.GuestUserWith_GcAndPaypal.tc__HomePageBannerPLPInGcAndPaypal"/>
+    	<class name="com.GuestUserWith_GcAndPaypal.tc__HomePageCLPInGcAndPaypal"/>
+    	
+    	<class name="com.Login.tc__Login"/>
+    	
+    	<class name="com.testcases.tc__ProfilePage"/>
+    	<class name="com.Logout.tc__LogOut"/>
+    	
+    	
+    	
+    	
+
+	    	
+    </classes>
+   
+   </test> 
+</suite> <!-- ProvidioTestcases -->
+

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ProvidioTestcases (0)]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Automation(failed)">
+    <classes>
+      <class name="com.RegUserWith_GcAndPaypal.tc__OnlyGiftCards_Reg_InGcAndPaypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="OnlyGiftCards"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_GcAndPaypal.tc__OnlyGiftCards_Reg_InGcAndPaypal -->
+      <class name="com.RegUserWith_ViewCart_Paypal.tc__PdpPage_Reg_InVC_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="PDPpage"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_ViewCart_Paypal.tc__PdpPage_Reg_InVC_Paypal -->
+      <class name="com.RegUserWith_MiniCart_Paypal.tc__ProductSetForReg_InMC_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="productSet"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_MiniCart_Paypal.tc__ProductSetForReg_InMC_Paypal -->
+      <class name="com.RegUserWith_GcAndCC.tc__PdpPage_RegUser_GcAndCc">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="PDPpage"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_GcAndCC.tc__PdpPage_RegUser_GcAndCc -->
+      <class name="com.RegUserWith_ViewCart_Paypal.tc__Bundle_GcAndAllPromotions_Reg_InVC_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="bundle_GcAndAllPromotions"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_ViewCart_Paypal.tc__Bundle_GcAndAllPromotions_Reg_InVC_Paypal -->
+      <class name="com.RegUserWith_ViewCart_Paypal.tc__SimpleProductsAndBundle_Gc_Reg_InVC_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="simpleProducts_Bundle_Gc"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_ViewCart_Paypal.tc__SimpleProductsAndBundle_Gc_Reg_InVC_Paypal -->
+      <class name="com.RegUserWith_MiniCart_Paypal.tc__BundleProductForReg_InMC_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="bundleProduct"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_MiniCart_Paypal.tc__BundleProductForReg_InMC_Paypal -->
+      <class name="com.providio.login.tc__Login">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.providio.login.tc__Login -->
+      <class name="com.RegUserWith_MiniCart_Paypal.tc__PaypalReg_InMC_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="paypalFromCheckoutPage"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_MiniCart_Paypal.tc__PaypalReg_InMC_Paypal -->
+      <class name="com.RegUserWith_Checkout_Paypal.tc__VariationProductForGuestUser_InCheckoutPaypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="variationProduct"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_Checkout_Paypal.tc__VariationProductForGuestUser_InCheckoutPaypal -->
+      <class name="com.RegUserWith_Checkout_Paypal.tc__SimpleProductsAndBundle_Gc_InCheckout_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="simpleProducts_Bundle_Gc"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_Checkout_Paypal.tc__SimpleProductsAndBundle_Gc_InCheckout_Paypal -->
+      <class name="com.RegUserWith_ViewCart_Paypal.tc__OnlyGiftCards_Reg_InVC_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="OnlyGiftCards"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_ViewCart_Paypal.tc__OnlyGiftCards_Reg_InVC_Paypal -->
+      <class name="com.RegUserWith_ViewCart_Paypal.tc__SimpleProductReg_InVC_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="simpleProduct"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_ViewCart_Paypal.tc__SimpleProductReg_InVC_Paypal -->
+      <class name="com.RegUserWith_ViewCart_Paypal.tc__simpleProductAndGc_Reg_InVC_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="simpleProduct_Gc"/>
+        </methods>
+      </class> <!-- com.RegUserWith_ViewCart_Paypal.tc__simpleProductAndGc_Reg_InVC_Paypal -->
+      <class name="com.RegUserWith_MiniCart_Paypal.tc__OnlyGiftCards_Reg_InMC_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="OnlyGiftCards"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_MiniCart_Paypal.tc__OnlyGiftCards_Reg_InMC_Paypal -->
+      <class name="com.RegUserWith_Checkout_Paypal.tc__SimpleProductForRegUser_InPaypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="simpleProduct"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_Checkout_Paypal.tc__SimpleProductForRegUser_InPaypal -->
+      <class name="com.RegUserWith_ViewCart_Paypal.tc__BySearchingProduct_Reg_InVC_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="bySearchingProduct"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_ViewCart_Paypal.tc__BySearchingProduct_Reg_InVC_Paypal -->
+      <class name="com.RegUserWith_Checkout_Paypal.tc__SimpleProductAndGc_InCheckout_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="simpleProduct_Gc"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_Checkout_Paypal.tc__SimpleProductAndGc_InCheckout_Paypal -->
+      <class name="com.RegUserWith_ViewCart_Paypal.tc__VariationProductReg_InVC_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="variationProduct"/>
+        </methods>
+      </class> <!-- com.RegUserWith_ViewCart_Paypal.tc__VariationProductReg_InVC_Paypal -->
+      <class name="com.RegUserWith_GcAndCC.tc__simpleProductAndGc_Reg_InGcAndCC">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="simpleProduct_Gc"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_GcAndCC.tc__simpleProductAndGc_Reg_InGcAndCC -->
+      <class name="com.RegUserWith_ViewCart_Paypal.tc__BundleProductReg_InVC_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="bundleProduct"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_ViewCart_Paypal.tc__BundleProductReg_InVC_Paypal -->
+      <class name="com.RegUserWith_MiniCart_Paypal.tc__Bundle_GcAndAllPromotions_Reg_InMC_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="bundle_GcAndAllPromotions"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_MiniCart_Paypal.tc__Bundle_GcAndAllPromotions_Reg_InMC_Paypal -->
+      <class name="com.RegUserWith_CreditCard.tc__PdpPage_Reg_InCC">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="PDPpage"/>
+        </methods>
+      </class> <!-- com.RegUserWith_CreditCard.tc__PdpPage_Reg_InCC -->
+      <class name="com.RegUserWith_GcAndPaypal.tc__SimpleProductAndGc_Reg_InGcAndPaypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="simpleProduct_Gc"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_GcAndPaypal.tc__SimpleProductAndGc_Reg_InGcAndPaypal -->
+      <class name="com.RegUserWith_Checkout_Paypal.tc__Bundle_GcAndAllPromotions_Reg_InCheckoutPaypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="bundle_GcAndAllPromotions"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_Checkout_Paypal.tc__Bundle_GcAndAllPromotions_Reg_InCheckoutPaypal -->
+      <class name="com.RegUserWith_MiniCart_Paypal.tc__VariationProductForReg_InMC_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="variationProduct"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_MiniCart_Paypal.tc__VariationProductForReg_InMC_Paypal -->
+      <class name="com.RegUserWith_MiniCart_Paypal.tc__SimpleProductsAndBundle_Gc_Reg_InMC_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="simpleProducts_Bundle_Gc"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_MiniCart_Paypal.tc__SimpleProductsAndBundle_Gc_Reg_InMC_Paypal -->
+      <class name="com.RegUserWith_GcAndCC.tc__SimpleProductsAndBundle_Gc_Reg_InGcAndCC">
+        <methods>
+          <include name="simpleProducts_Bundle_Gc"/>
+          <include name="setUpforReport"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_GcAndCC.tc__SimpleProductsAndBundle_Gc_Reg_InGcAndCC -->
+      <class name="com.RegUserWith_MiniCart_Paypal.tc__SimpleProductAndGc_Reg_InMC_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="simpleProduct_Gc"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_MiniCart_Paypal.tc__SimpleProductAndGc_Reg_InMC_Paypal -->
+      <class name="com.RegUserWith_Checkout_Paypal.tc__PaypalFromCheckoutPage_RegUser">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="paypalFromCheckoutPage"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_Checkout_Paypal.tc__PaypalFromCheckoutPage_RegUser -->
+      <class name="com.RegUserWith_ViewCart_Paypal.tc__ProductSetForReg_InVC_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="productSet"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_ViewCart_Paypal.tc__ProductSetForReg_InVC_Paypal -->
+      <class name="com.RegUserWith_MiniCart_Paypal.tc__BySearchingProduct_Reg_InMC_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="bySearchingProduct"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_MiniCart_Paypal.tc__BySearchingProduct_Reg_InMC_Paypal -->
+      <class name="com.providio.logout.tc__LogOut">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="Logout"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.providio.logout.tc__LogOut -->
+      <class name="com.RegUserWith_Checkout_Paypal.tc__ProductSetForRegUser_InCheckoutPaypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+          <include name="productSet"/>
+        </methods>
+      </class> <!-- com.RegUserWith_Checkout_Paypal.tc__ProductSetForRegUser_InCheckoutPaypal -->
+      <class name="com.RegUserWith_GcAndCC.tc__ProductSetRegUser_InGcAndCC">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+          <include name="productSet"/>
+        </methods>
+      </class> <!-- com.RegUserWith_GcAndCC.tc__ProductSetRegUser_InGcAndCC -->
+      <class name="com.RegUserWith_GcAndCC.tc__Bundle_GcAndAllPromotions_Reg_InGcAndCC">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="bundle_GcAndAllPromotions"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_GcAndCC.tc__Bundle_GcAndAllPromotions_Reg_InGcAndCC -->
+      <class name="com.RegUserWith_MiniCart_Paypal.tc__SimpleProductForReg_InMC_Paypal">
+        <methods>
+          <include name="setUpforReport"/>
+          <include name="simpleProduct"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.RegUserWith_MiniCart_Paypal.tc__SimpleProductForReg_InMC_Paypal -->
+    </classes>
+  </test> <!-- Automation(failed) -->
+</suite> <!-- Failed suite [ProvidioTestcases (0)] -->

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ProvidioTestcases]">
+  <test thread-count="5" name="Automation(failed)">
+    <classes>
+      <class name="com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="GuestUserRandomProductFromPLP_InCc"/>
+          <include name="setUpforReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc -->
+      <class name="com.GuestUserWith_GiftCard.tc__HomePageBannerPLPInGC">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="setUpforReport"/>
+          <include name="tearDown"/>
+          <include name="homePageBannerPLPInGC"/>
+        </methods>
+      </class> <!-- com.GuestUserWith_GiftCard.tc__HomePageBannerPLPInGC -->
+      <class name="com.GuestUserWith_Checkout_Paypal.tc__GuestUserRandomProductFromPDP_InCheckoutPaypal">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="GuestUserRandomProductFromPDP_InCheckoutPaypal"/>
+          <include name="setUpforReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.GuestUserWith_Checkout_Paypal.tc__GuestUserRandomProductFromPDP_InCheckoutPaypal -->
+      <class name="com.GuestUserWith_Checkout_Paypal.tc__HomePageCLPInCheckoutPaypal">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="setUpforReport"/>
+          <include name="tearDown"/>
+          <include name="HomePageCLPInCheckoutPaypal"/>
+        </methods>
+      </class> <!-- com.GuestUserWith_Checkout_Paypal.tc__HomePageCLPInCheckoutPaypal -->
+    </classes>
+  </test> <!-- Automation(failed) -->
+</suite> <!-- Failed suite [ProvidioTestcases] -->

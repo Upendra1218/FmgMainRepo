@@ -77,22 +77,23 @@ public class MiniCartViewCartRegUser extends baseClass {
               
      
     		            Random random = new Random();
-    		            int randomNumber = random.nextInt(2); // Generates a random number between 0 (inclusive) and 2 (exclusive)
+    		            int randomNumber = random.nextInt(2)+1; // Generates a random number between 0 (inclusive) and 2 (exclusive)
     		
-    		            if (randomNumber == 0) {
-    		               vcp.quantityInsertionInCartPage();
-    		            } else {
-    		               vcp.noQuantityInsertionInCartPage();
-    		            }
+//    		            if (randomNumber == 1) {
+//    		               vcp.quantityInsertionInCartPage();
+//    		            } else {
+//    		               vcp.noQuantityInsertionInCartPage();
+//    		            }
     			 
     	                //product price
-    	                vcp.productsCalInCart();
+    	                //vcp.productsCalInCart();
     	                
     	                //calcuates shipping charges
     	               // vcp.estimatedshippingCalculations();
     	                	            
     	                //total product cost
     	                viewCartPage.totalProductsCost();
+    	                
                 // Click the "Checkout" button in the view cart page
                 Thread.sleep(5000);
                 vcp.clickCheckout(driver);

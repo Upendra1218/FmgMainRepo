@@ -289,6 +289,7 @@ WebDriver lDriver;
             	js.executeScript("window.scrollTo(0, 600);");
             	//actions.contextClick(paypalCheckout).perform();
            	   js.executeScript("arguments[0].click();", paypalCheckout);    
+           	   Thread.sleep(4000);
             	paypalCheckout.click();
             	 //js.executeScript("arguments[0].click();", paypalCheckout); 
             	logger.info("A click to Enter into paypal");	

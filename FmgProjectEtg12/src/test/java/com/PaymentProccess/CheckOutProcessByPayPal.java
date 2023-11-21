@@ -157,9 +157,12 @@ public class CheckOutProcessByPayPal extends baseClass{
 				    		paymentpPage pp =new paymentpPage(driver);	   				    		
 				    		pp.braintreePaypal(driver);
 				    		js.executeScript("window.scrollBy(0,500)", "");
+				    		
 
 			    		if (driver.findElement(By.xpath("//button[contains(@class,'submit-payment')]")).isDisplayed()) {
 			    			
+			    			
+			    			    logger.info("After the click of paypal");
 				    			reviewOrderPage rop = new reviewOrderPage(driver);
 				    			Thread.sleep(2000);
 				    		
@@ -168,7 +171,16 @@ public class CheckOutProcessByPayPal extends baseClass{
 					    		Thread.sleep(4000);
 					    		
 					    	//place order 
-					    		 rop.clickonplaceorderwithJsExuter(driver);
+					    		rop.clickonplaceorderwithJsExuter(driver);
+					    		
+					    		Thread.sleep(5000);
+								
+								 Checkout_Validation checkout= new Checkout_Validation();
+								 //validate the final place the order page
+								 checkout.validatePlacetheOrderPage();							
+								 //ordernumberandOrderdate
+								 checkout.ordernumberandOrderdate();
+								 Thread.sleep(3000);
 	
 						}else  {
 							pp.brainTreeAfterClick(driver);
@@ -182,7 +194,6 @@ public class CheckOutProcessByPayPal extends baseClass{
 				    		Thread.sleep(4000);
 				    		
 				    		
-				    		 
 				    		 //total prodcut
 //				    		taxCalculation shippingMtd = new taxCalculation();
 //				    		shippingMtd.totalProductValidation();

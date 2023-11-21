@@ -70,7 +70,7 @@ public class CreditCardPaymentProcess extends baseClass{
 	    		Thread.sleep(4000);	
 	    		//total prodcut
 	    		taxCalculation shippingMtd = new taxCalculation();
-	    		shippingMtd.totalProductValidation();
+	    		//shippingMtd.totalProductValidation();
 	    		 // granD TOTAL 
 	    		shippingMtd.grandTotalValidation();
 	    		

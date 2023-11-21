@@ -83,7 +83,7 @@ WebDriver lDriver;
 		}
 
 		// Finding elements representing tier prices for the selected quantity
-		List<WebElement> tierDivPesent = driver.findElements(By.xpath("//div[@class='pricebooks'][" + randomquantityInput + "]"));
+		List<WebElement> tierDivPesent = driver.findElements(By.xpath("(//div[@class='pricebooks'])[" + randomquantityInput + "]"));
 
 		int displayedtierDivPesent = 0;
 		for (WebElement item : tierDivPesent) {
@@ -130,6 +130,7 @@ WebDriver lDriver;
 		            logger.info("The Discount is on the Rose one");
 		        }
 		    } else {
+		    	Thread.sleep(2000);
 		        // Finding elements representing tier 4 prices and extracting the discount information
 		        WebElement priceDiscount = driver.findElement(By.xpath("//div[@class='pricebook usd-fmg-tier4-prices active']//div[@class='price']"));
 		        String price = priceDiscount.getText();

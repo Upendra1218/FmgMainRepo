@@ -31,13 +31,14 @@ public class allPaymentMethods extends baseClass {
 
         }else {
         	//if user is registered and have saved cards then  this if will execute
-        	if(savedCardsBrainTree.size()>0) {
-        		
-        		pm.savedCardsBrainTree();
-        	}else {
+//        	if(savedCardsBrainTree.size()>0) {
+//        		
+//        		pm.savedCardsBrainTree();
+//        	}else {
         		//new user without saved cards in account 
+        	logger.info("three");
         		pm.brainTreeReguser();
-        	}
+        	//}
         	
         	
         }

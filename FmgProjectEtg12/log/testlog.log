@@ -34152,3 +34152,1595 @@ XXXX-XXXX-XXXX-1111
 2023-11-21 21:23:18,520 - Providio -INFO - $34.65
 2023-11-21 21:23:18,648 - Providio -INFO - Selected Shipping Method Name is UPS Next Day Air (1 - 3 business days)
 2023-11-21 21:23:25,767 - Providio -INFO - Clicked on the continue billing button
+2023-11-21 21:27:53,695 - Providio -INFO - Entered into url
+2023-11-21 21:27:53,703 - Providio -INFO - Placing the order as guest user
+2023-11-21 21:27:53,725 - Providio -INFO - Browser launched succesfully
+2023-11-21 21:27:55,895 - Providio -INFO - 5
+2023-11-21 21:27:55,895 - Providio -INFO - 1
+2023-11-21 21:27:55,926 - Providio -INFO - coming here
+2023-11-21 21:28:02,136 - Providio -INFO - PLP page is already loaded
+2023-11-21 21:28:19,509 - Providio -INFO - 5
+2023-11-21 21:28:19,510 - Providio -INFO - Product input quantity60
+2023-11-21 21:32:57,352 - Providio -INFO - Entered into url
+2023-11-21 21:32:57,355 - Providio -INFO - Placing the order as guest user
+2023-11-21 21:32:57,365 - Providio -INFO - Browser launched succesfully
+2023-11-21 21:32:59,580 - Providio -INFO - Total menus count is 8
+2023-11-21 21:32:59,581 - Providio -INFO - Randomly selected menu number 1
+2023-11-21 21:32:59,598 - Providio -INFO - Total number of sub menus associated with the hovered menu 37
+2023-11-21 21:32:59,598 - Providio -INFO - Randomly selected sub menu number 25
+2023-11-21 21:33:19,166 - Providio -INFO - Total menus count is 8
+2023-11-21 21:33:19,166 - Providio -INFO - Randomly selected menu number 2
+2023-11-21 21:33:19,213 - Providio -INFO - Total number of sub menus associated with the hovered menu 43
+2023-11-21 21:33:19,213 - Providio -INFO - Randomly selected sub menu number 18
+2023-11-21 21:33:35,021 - Providio -INFO - Entered into url
+2023-11-21 21:33:35,024 - Providio -INFO - Placing the order as guest user
+2023-11-21 21:33:35,045 - Providio -INFO - Browser launched succesfully
+2023-11-21 21:33:36,180 - Providio -INFO - PLP page is already loaded
+2023-11-21 21:33:37,332 - Providio -INFO - Total menus count is 8
+2023-11-21 21:33:37,335 - Providio -INFO - Randomly selected menu number 6
+2023-11-21 21:33:37,366 - Providio -INFO - Total number of sub menus associated with the hovered menu 14
+2023-11-21 21:33:37,366 - Providio -INFO - Randomly selected sub menu number 12
+2023-11-21 21:33:40,065 - Providio -INFO - Product Name is displayed on the page and prodcut name is Wire, 12Kt gold-filled, dead-soft, twisted round, 19 gauge. Sold per pkg of 5 feet.
+2023-11-21 21:33:40,081 - Providio -INFO - add to cart  button enabled
+2023-11-21 21:33:55,080 - Providio -INFO - PLP page is already loaded
+2023-11-21 21:33:59,443 - Providio -INFO - Product input quantity 97
+2023-11-21 21:34:03,920 - Providio -INFO - Product Name is displayed on the page and prodcut name is Bracelet, One of a Kind Jewelry. Only one available.
+2023-11-21 21:34:03,920 - Providio -INFO - add to cart  button enabled
+2023-11-21 21:34:07,959 - Providio -INFO - The total number of products in cart are 97
+2023-11-21 21:34:16,382 - Providio -INFO - 
+2023-11-21 21:34:23,405 - Providio -INFO - Product input quantity 86
+2023-11-21 21:34:31,937 - Providio -INFO - The total number of products in cart are 1
+2023-11-21 21:34:40,287 - Providio -INFO - blue
+2023-11-21 21:34:40,346 - Providio -INFO - No Discount is available for blue so price is $0.00
+2023-11-21 21:34:40,387 - Providio -INFO - Sub total cost displayed when hovered on cart icon is 62.36
+2023-11-21 21:34:40,455 - Providio -INFO - The unit price of each prodcut is 62.36
+2023-11-21 21:34:40,493 - Providio -INFO - The quantity  is 1.0
+2023-11-21 21:34:40,540 - Providio -INFO - Extended value is 62.36
+2023-11-21 21:34:40,541 - Providio -INFO - 62.36
+2023-11-21 21:34:40,564 - Providio -INFO - 0.0
+2023-11-21 21:34:40,564 - Providio -INFO - 0.0
+2023-11-21 21:34:40,565 - Providio -INFO - Total price of all prodcuts in cart 0.0
+2023-11-21 21:34:40,607 - Providio -INFO - Total product price is 62.36
+2023-11-21 21:34:55,212 - Providio -INFO - 1
+2023-11-21 21:34:57,428 - Providio -INFO - true
+2023-11-21 21:34:57,428 - Providio -INFO - The user did not enter the email and clicked the guest checkout, and the error is displayed
+2023-11-21 21:34:57,428 - Providio -INFO - Guest checkout
+2023-11-21 21:35:00,585 - Providio -INFO - Guest mail again
+2023-11-21 21:35:02,671 - Providio -INFO - Guest continue as guest
+2023-11-21 21:35:07,693 - Providio -INFO - 4
+2023-11-21 21:35:07,736 - Providio -INFO - 1
+2023-11-21 21:35:07,736 - Providio -INFO - 1
+2023-11-21 21:35:07,783 - Providio -INFO - This is the shipping page
+2023-11-21 21:35:07,815 - Providio -INFO - Testing12@Etggs.com
+2023-11-21 21:35:16,142 - Providio -INFO - Entered into url
+2023-11-21 21:35:16,147 - Providio -INFO - Placing the order as guest user
+2023-11-21 21:35:16,159 - Providio -INFO - Browser launched succesfully
+2023-11-21 21:35:18,381 - Providio -INFO - Total menus count is 8
+2023-11-21 21:35:18,381 - Providio -INFO - Randomly selected menu number 3
+2023-11-21 21:35:18,396 - Providio -INFO - Total number of sub menus associated with the hovered menu 12
+2023-11-21 21:35:18,396 - Providio -INFO - Randomly selected sub menu number 3
+2023-11-21 21:35:19,160 - Providio -INFO - Successfully edited the email
+2023-11-21 21:35:21,303 - Providio -INFO - Successfully clicked on the continue guest
+2023-11-21 21:35:21,363 - Providio -INFO - Testing12@Etggs.com
+2023-11-21 21:35:21,363 - Providio -INFO - TestingEdited100@Etggs.com
+2023-11-21 21:35:21,363 - Providio -INFO - TestingEdited100@Etggs.com
+2023-11-21 21:35:21,363 - Providio -INFO - Testing12@Etggs.com we have this mail previously, but edited is TestingEdited100@Etggs.com
+2023-11-21 21:35:22,617 - Providio -INFO - Entered shipping fname
+2023-11-21 21:35:23,722 - Providio -INFO - Entered shipping lname
+2023-11-21 21:35:26,067 - Providio -INFO - Entered shipping address
+2023-11-21 21:35:29,250 - Providio -INFO - Entered phone number
+2023-11-21 21:35:34,320 - Providio -INFO - PLP page is already loaded
+2023-11-21 21:35:36,301 - Providio -INFO - Total Shipping count is 18
+2023-11-21 21:35:36,301 - Providio -INFO - Randomly selected menu number 6
+2023-11-21 21:35:36,337 - Providio -INFO - $32.65
+2023-11-21 21:35:36,506 - Providio -INFO - Selected Shipping Method Name is UPS Next Day Air (1 - 5 days)
+2023-11-21 21:35:39,710 - Providio -INFO - Product Name is displayed on the page and prodcut name is Wire, 14Kt gold-filled, dead-soft, round, 20 gauge. Sold per pkg of 5 feet.
+2023-11-21 21:35:39,710 - Providio -INFO - add to cart  button enabled
+2023-11-21 21:35:43,743 - Providio -INFO - Clicked on the continue billing button
+2023-11-21 21:35:58,865 - Providio -INFO - The unit price of each prodcut is 36.14
+2023-11-21 21:35:58,908 - Providio -INFO - The quantity  is 1.0
+2023-11-21 21:35:58,931 - Providio -INFO - Extended value is 36.14
+2023-11-21 21:35:58,931 - Providio -INFO - 36.14
+2023-11-21 21:35:58,944 - Providio -INFO - 0.0
+2023-11-21 21:35:58,944 - Providio -INFO - 0.0
+2023-11-21 21:35:58,946 - Providio -INFO - Total price of all prodcuts in cart 0.0
+2023-11-21 21:35:58,983 - Providio -INFO - Total product price is 36.14
+2023-11-21 21:36:13,190 - Providio -INFO - 1
+2023-11-21 21:36:15,320 - Providio -INFO - true
+2023-11-21 21:36:15,321 - Providio -INFO - The user did not enter the email and clicked the guest checkout, and the error is displayed
+2023-11-21 21:36:15,323 - Providio -INFO - Guest checkout
+2023-11-21 21:36:18,543 - Providio -INFO - Guest mail again
+2023-11-21 21:36:20,677 - Providio -INFO - Guest continue as guest
+2023-11-21 21:36:25,708 - Providio -INFO - 4
+2023-11-21 21:36:25,791 - Providio -INFO - 1
+2023-11-21 21:36:25,792 - Providio -INFO - 1
+2023-11-21 21:36:25,862 - Providio -INFO - This is the shipping page
+2023-11-21 21:36:25,898 - Providio -INFO - Testing13@Etggs.com
+2023-11-21 21:36:37,134 - Providio -INFO - Successfully edited the email
+2023-11-21 21:36:39,271 - Providio -INFO - Successfully clicked on the continue guest
+2023-11-21 21:36:39,318 - Providio -INFO - Testing13@Etggs.com
+2023-11-21 21:36:39,318 - Providio -INFO - TestingEdited12@Etggs.com
+2023-11-21 21:36:39,318 - Providio -INFO - TestingEdited12@Etggs.com
+2023-11-21 21:36:39,319 - Providio -INFO - Testing13@Etggs.com we have this mail previously, but edited is TestingEdited12@Etggs.com
+2023-11-21 21:36:40,726 - Providio -INFO - Entered shipping fname
+2023-11-21 21:36:41,957 - Providio -INFO - Entered shipping lname
+2023-11-21 21:36:44,348 - Providio -INFO - Entered shipping address
+2023-11-21 21:36:47,457 - Providio -INFO - Entered phone number
+2023-11-21 21:36:54,519 - Providio -INFO - Total Shipping count is 18
+2023-11-21 21:36:54,520 - Providio -INFO - Randomly selected menu number 3
+2023-11-21 21:36:54,565 - Providio -INFO - $34.65
+2023-11-21 21:36:54,754 - Providio -INFO - Selected Shipping Method Name is UPS Second Day Air (1 - 4 business days)
+2023-11-21 21:37:02,020 - Providio -INFO - Clicked on the continue billing button
+2023-11-21 21:37:02,989 - Providio -INFO - A click to Enter into paypal
+2023-11-21 21:37:46,037 - Providio -INFO - Clicked on paypal button
+2023-11-21 21:38:06,132 - Providio -INFO - Your order was received. Thank you! Confirmation will be sent to your email shortly.
+2023-11-21 21:38:06,132 - Providio -INFO - Successfully Order is Placed
+2023-11-21 21:38:11,242 - Providio -INFO - Successfully Order is Placed and the Order number is 20008096
+2023-11-21 21:38:11,378 - Providio -INFO - Successfully Order is Placed and the Order number is PayPal
+rahulnaik@etisbew.com
+2023-11-21 22:31:33,521 - Providio -INFO - Entered into url
+2023-11-21 22:31:33,559 - Providio -INFO - Placing the order as guest user
+2023-11-21 22:31:33,578 - Providio -INFO - Browser launched succesfully
+2023-11-21 22:31:35,737 - Providio -INFO - Total menus count is 8
+2023-11-21 22:31:35,737 - Providio -INFO - Randomly selected menu number 2
+2023-11-21 22:31:35,750 - Providio -INFO - Total number of sub menus associated with the hovered menu 43
+2023-11-21 22:31:35,750 - Providio -INFO - Randomly selected sub menu number 4
+2023-11-21 22:31:55,401 - Providio -INFO - 1
+2023-11-21 22:32:26,034 - Providio -INFO - 16
+2023-11-21 22:32:26,034 - Providio -INFO - Product input quantity68
+2023-11-21 22:32:33,362 - Providio -INFO - 68
+2023-11-21 22:32:33,362 - Providio -INFO - 68
+2023-11-21 22:32:33,378 - Providio -INFO - Tier price quantity 0
+2023-11-21 22:32:52,237 - Providio -INFO - Product input quantity 42
+2023-11-21 22:33:00,512 - Providio -INFO - The total number of products in cart are 42
+2023-11-21 22:33:08,851 - Providio -INFO - green
+2023-11-21 22:33:08,882 - Providio -INFO - The Discount is available for green is $17.64
+2023-11-21 22:33:08,898 - Providio -INFO - Sub total cost displayed when hovered on cart icon is 124.32
+2023-11-21 22:33:08,929 - Providio -INFO - The unit price of each prodcut is 2.96
+2023-11-21 22:33:08,945 - Providio -INFO - The quantity  is 42.0
+2023-11-21 22:33:08,961 - Providio -INFO - Extended value is 124.32
+2023-11-21 22:33:08,961 - Providio -INFO - 124.32
+2023-11-21 22:33:08,977 - Providio -INFO - 0.0
+2023-11-21 22:33:08,977 - Providio -INFO - 0.0
+2023-11-21 22:33:08,977 - Providio -INFO - Total price of all prodcuts in cart 0.0
+2023-11-21 22:33:09,008 - Providio -INFO - Total product price is 124.32
+2023-11-21 22:33:25,226 - Providio -INFO - 1
+2023-11-21 22:33:27,344 - Providio -INFO - true
+2023-11-21 22:33:27,344 - Providio -INFO - The user did not enter the email and clicked the guest checkout, and the error is displayed
+2023-11-21 22:33:27,344 - Providio -INFO - Guest checkout
+2023-11-21 22:33:30,458 - Providio -INFO - Guest mail again
+2023-11-21 22:33:32,517 - Providio -INFO - Guest continue as guest
+2023-11-21 22:33:37,548 - Providio -INFO - 4
+2023-11-21 22:33:37,595 - Providio -INFO - 1
+2023-11-21 22:33:37,595 - Providio -INFO - 1
+2023-11-21 22:33:37,630 - Providio -INFO - This is the shipping page
+2023-11-21 22:33:37,654 - Providio -INFO - Testing75@Etggs.com
+2023-11-21 22:33:48,804 - Providio -INFO - Successfully edited the email
+2023-11-21 22:33:50,882 - Providio -INFO - Successfully clicked on the continue guest
+2023-11-21 22:33:50,965 - Providio -INFO - Testing75@Etggs.com
+2023-11-21 22:33:50,965 - Providio -INFO - TestingEdited14@Etggs.com
+2023-11-21 22:33:50,965 - Providio -INFO - TestingEdited14@Etggs.com
+2023-11-21 22:33:50,965 - Providio -INFO - Testing75@Etggs.com we have this mail previously, but edited is TestingEdited14@Etggs.com
+2023-11-21 22:33:52,218 - Providio -INFO - Entered shipping fname
+2023-11-21 22:33:53,388 - Providio -INFO - Entered shipping lname
+2023-11-21 22:33:55,596 - Providio -INFO - Entered shipping address
+2023-11-21 22:33:58,724 - Providio -INFO - Entered phone number
+2023-11-21 22:34:05,761 - Providio -INFO - Total Shipping count is 18
+2023-11-21 22:34:05,761 - Providio -INFO - Randomly selected menu number 18
+2023-11-21 22:34:05,782 - Providio -INFO - $61.19
+2023-11-21 22:34:05,919 - Providio -INFO - Selected Shipping Method Name is FedEx Priority Overnight (2 business days)
+2023-11-21 22:34:13,087 - Providio -INFO - Clicked on the continue billing button
+2023-11-21 22:34:13,721 - Providio -INFO - A click to Enter into paypal
+2023-11-21 22:34:56,317 - Providio -INFO - Clicked on paypal button
+2023-11-21 22:35:15,652 - Providio -INFO - Your order was received. Thank you! Confirmation will be sent to your email shortly.
+2023-11-21 22:35:15,652 - Providio -INFO - Successfully Order is Placed
+2023-11-21 22:35:20,718 - Providio -INFO - Successfully Order is Placed and the Order number is 20008097
+2023-11-21 22:35:20,787 - Providio -INFO - Successfully Order is Placed and the Order number is PayPal
+rahulnaik@etisbew.com
+2023-11-21 22:40:08,566 - Providio -INFO - Entered into url
+2023-11-21 22:40:08,569 - Providio -INFO - Placing the order as guest user
+2023-11-21 22:40:08,652 - Providio -INFO - Browser launched succesfully
+2023-11-21 22:40:12,912 - Providio -INFO - Hover on create and login account
+2023-11-21 22:40:12,957 - Providio -INFO - Clicked on Sign In
+2023-11-21 22:40:54,620 - Providio -INFO - Entered into url
+2023-11-21 22:40:54,620 - Providio -INFO - Placing the order as guest user
+2023-11-21 22:40:54,631 - Providio -INFO - Browser launched succesfully
+2023-11-21 22:40:58,909 - Providio -INFO - Hover on create and login account
+2023-11-21 22:40:58,965 - Providio -INFO - Clicked on Sign In
+2023-11-21 22:41:01,102 - Providio -INFO - Entered email
+2023-11-21 22:41:03,198 - Providio -INFO - Entered password
+2023-11-21 22:41:15,277 - Providio -INFO - Clicked on the Submit button
+2023-11-21 22:41:20,418 - Providio -INFO - Hover on create and login account
+2023-11-21 22:41:20,437 - Providio -INFO - User logged in successfully
+2023-11-21 22:41:20,464 - Providio -INFO - Name of User name is Magnolia
+2023-11-21 22:41:22,501 - Providio -INFO - 5
+2023-11-21 22:41:22,501 - Providio -INFO - 1
+2023-11-21 22:41:22,516 - Providio -INFO - coming here
+2023-11-21 22:41:29,578 - Providio -INFO - PLP page is already loaded
+2023-11-21 22:41:46,798 - Providio -INFO - 16
+2023-11-21 22:41:46,798 - Providio -INFO - Product input quantity36
+2023-11-21 22:41:54,436 - Providio -INFO - 36
+2023-11-21 22:41:54,436 - Providio -INFO - 36
+2023-11-21 22:41:54,468 - Providio -INFO - Tier price quantity 0
+2023-11-21 22:42:14,593 - Providio -INFO - The unit price of each prodcut is 1.0
+2023-11-21 22:42:14,624 - Providio -INFO - The quantity  is 36.0
+2023-11-21 22:42:14,656 - Providio -INFO - Extended value is 36.0
+2023-11-21 22:42:14,656 - Providio -INFO - 36.0
+2023-11-21 22:42:14,672 - Providio -INFO - 0.0
+2023-11-21 22:42:14,672 - Providio -INFO - 0.0
+2023-11-21 22:42:14,672 - Providio -INFO - Total price of all prodcuts in cart 0.0
+2023-11-21 22:42:14,718 - Providio -INFO - Total product price is 36.0
+2023-11-21 22:42:30,366 - Providio -INFO - 0
+2023-11-21 22:42:32,800 - Providio -INFO - Entered shipping fname
+2023-11-21 22:42:33,918 - Providio -INFO - Entered shipping lname
+2023-11-21 22:42:36,071 - Providio -INFO - Entered shipping address
+2023-11-21 22:42:39,170 - Providio -INFO - Entered phone number
+2023-11-21 22:42:46,230 - Providio -INFO - Total Shipping count is 18
+2023-11-21 22:42:46,230 - Providio -INFO - Randomly selected menu number 15
+2023-11-21 22:42:46,262 - Providio -INFO - $32.68
+2023-11-21 22:42:46,344 - Providio -INFO - Selected Shipping Method Name is FedEx 2 Day Air (3 business days)
+2023-11-21 22:42:53,466 - Providio -INFO - Clicked on the continue billing button
+2023-11-21 22:51:55,060 - Providio -INFO - Entered into url
+2023-11-21 22:51:55,065 - Providio -INFO - Placing the order as guest user
+2023-11-21 22:51:55,116 - Providio -INFO - Browser launched succesfully
+2023-11-21 22:51:59,393 - Providio -INFO - Hover on create and login account
+2023-11-21 22:51:59,453 - Providio -INFO - Clicked on Sign In
+2023-11-21 22:52:01,588 - Providio -INFO - Entered email
+2023-11-21 22:52:03,705 - Providio -INFO - Entered password
+2023-11-21 22:52:15,764 - Providio -INFO - Clicked on the Submit button
+2023-11-21 22:52:20,903 - Providio -INFO - Hover on create and login account
+2023-11-21 22:52:20,918 - Providio -INFO - User logged in successfully
+2023-11-21 22:52:20,949 - Providio -INFO - Name of User name is Magnolia
+2023-11-21 22:52:23,001 - Providio -INFO - 5
+2023-11-21 22:52:23,001 - Providio -INFO - 3
+2023-11-21 22:52:23,016 - Providio -INFO - coming here
+2023-11-21 22:52:31,982 - Providio -INFO - PLP page is already loaded
+2023-11-21 22:52:49,186 - Providio -INFO - 9
+2023-11-21 22:52:49,187 - Providio -INFO - Product input quantity11
+2023-11-21 22:52:56,916 - Providio -INFO - 11
+2023-11-21 22:52:56,916 - Providio -INFO - 11
+2023-11-21 22:52:56,953 - Providio -INFO - Tier price quantity 0
+2023-11-21 22:53:15,132 - Providio -INFO - The unit price of each prodcut is 0.5
+2023-11-21 22:53:15,158 - Providio -INFO - The quantity  is 11.0
+2023-11-21 22:53:15,176 - Providio -INFO - Extended value is 5.5
+2023-11-21 22:53:15,176 - Providio -INFO - 5.5
+2023-11-21 22:53:15,191 - Providio -INFO - 0.0
+2023-11-21 22:53:15,191 - Providio -INFO - 0.0
+2023-11-21 22:53:15,191 - Providio -INFO - Total price of all prodcuts in cart 0.0
+2023-11-21 22:53:15,222 - Providio -INFO - Total product price is 5.5
+2023-11-21 22:53:31,233 - Providio -INFO - 0
+2023-11-21 22:53:33,640 - Providio -INFO - Entered shipping fname
+2023-11-21 22:53:34,734 - Providio -INFO - Entered shipping lname
+2023-11-21 22:53:36,868 - Providio -INFO - Entered shipping address
+2023-11-21 22:53:39,932 - Providio -INFO - Entered phone number
+2023-11-21 22:53:47,045 - Providio -INFO - Total Shipping count is 18
+2023-11-21 22:53:47,045 - Providio -INFO - Randomly selected menu number 13
+2023-11-21 22:53:47,066 - Providio -INFO - $29.14
+2023-11-21 22:53:47,148 - Providio -INFO - Selected Shipping Method Name is FedEx Express Saver (4 business days)
+2023-11-21 22:53:54,262 - Providio -INFO - Clicked on the continue billing button
+2023-11-21 22:59:54,599 - Providio -INFO - Entered into url
+2023-11-21 22:59:54,602 - Providio -INFO - Placing the order as guest user
+2023-11-21 22:59:54,684 - Providio -INFO - Browser launched succesfully
+2023-11-21 22:59:58,942 - Providio -INFO - Hover on create and login account
+2023-11-21 22:59:59,000 - Providio -INFO - Clicked on Sign In
+2023-11-21 23:00:01,131 - Providio -INFO - Entered email
+2023-11-21 23:00:03,223 - Providio -INFO - Entered password
+2023-11-21 23:00:15,306 - Providio -INFO - Clicked on the Submit button
+2023-11-21 23:00:20,468 - Providio -INFO - Hover on create and login account
+2023-11-21 23:00:20,483 - Providio -INFO - User logged in successfully
+2023-11-21 23:00:20,515 - Providio -INFO - Name of User name is Magnolia
+2023-11-21 23:00:27,566 - Providio -INFO - 1
+2023-11-21 23:00:38,052 - Providio -INFO - 1
+2023-11-21 23:00:38,052 - Providio -INFO - 1
+2023-11-21 23:00:38,052 - Providio -INFO - 1
+2023-11-21 23:00:38,065 - Providio -INFO - 1
+2023-11-21 23:00:38,068 - Providio -INFO - coming here
+2023-11-21 23:00:44,762 - Providio -INFO - The cart value is empty
+2023-11-21 23:01:09,971 - Providio -INFO - Entered into url
+2023-11-21 23:01:09,975 - Providio -INFO - Placing the order as guest user
+2023-11-21 23:01:09,982 - Providio -INFO - Browser launched succesfully
+2023-11-21 23:01:14,253 - Providio -INFO - Hover on create and login account
+2023-11-21 23:01:14,310 - Providio -INFO - Clicked on Sign In
+2023-11-21 23:01:16,433 - Providio -INFO - Entered email
+2023-11-21 23:01:18,534 - Providio -INFO - Entered password
+2023-11-21 23:01:30,617 - Providio -INFO - Clicked on the Submit button
+2023-11-21 23:01:35,828 - Providio -INFO - Hover on create and login account
+2023-11-21 23:01:35,844 - Providio -INFO - User logged in successfully
+2023-11-21 23:01:35,875 - Providio -INFO - Name of User name is Magnolia
+2023-11-21 23:01:42,932 - Providio -INFO - 15
+2023-11-21 23:01:52,848 - Providio -INFO - 1
+2023-11-21 23:01:52,848 - Providio -INFO - 0
+2023-11-21 23:01:57,873 - Providio -INFO - 12
+2023-11-21 23:02:10,895 - Providio -INFO - PLP page is already loaded
+2023-11-21 23:02:28,158 - Providio -INFO - 5
+2023-11-21 23:02:28,158 - Providio -INFO - Product input quantity93
+2023-11-21 23:03:32,983 - Providio -INFO - Entered into url
+2023-11-21 23:03:32,986 - Providio -INFO - Placing the order as guest user
+2023-11-21 23:03:33,064 - Providio -INFO - Browser launched succesfully
+2023-11-21 23:03:37,325 - Providio -INFO - Hover on create and login account
+2023-11-21 23:03:37,380 - Providio -INFO - Clicked on Sign In
+2023-11-21 23:03:39,514 - Providio -INFO - Entered email
+2023-11-21 23:03:41,613 - Providio -INFO - Entered password
+2023-11-21 23:03:53,676 - Providio -INFO - Clicked on the Submit button
+2023-11-21 23:03:58,815 - Providio -INFO - Hover on create and login account
+2023-11-21 23:03:58,831 - Providio -INFO - User logged in successfully
+2023-11-21 23:03:58,863 - Providio -INFO - Name of User name is Magnolia
+2023-11-21 23:04:05,930 - Providio -INFO - 20
+2023-11-21 23:04:16,132 - Providio -INFO - 1
+2023-11-21 23:04:16,132 - Providio -INFO - 0
+2023-11-21 23:04:21,163 - Providio -INFO - 13
+2023-11-21 23:04:30,834 - Providio -INFO - PDP page is already loaded
+2023-11-21 23:04:33,878 - Providio -INFO - The cart value is empty
+2023-11-21 23:09:09,091 - Providio -INFO - Entered into url
+2023-11-21 23:09:09,094 - Providio -INFO - Placing the order as guest user
+2023-11-21 23:09:09,176 - Providio -INFO - Browser launched succesfully
+2023-11-21 23:09:13,451 - Providio -INFO - Hover on create and login account
+2023-11-21 23:09:13,534 - Providio -INFO - Clicked on Sign In
+2023-11-21 23:09:15,659 - Providio -INFO - Entered email
+2023-11-21 23:09:17,761 - Providio -INFO - Entered password
+2023-11-21 23:09:29,840 - Providio -INFO - Clicked on the Submit button
+2023-11-21 23:09:35,009 - Providio -INFO - Hover on create and login account
+2023-11-21 23:09:35,025 - Providio -INFO - User logged in successfully
+2023-11-21 23:09:35,056 - Providio -INFO - Name of User name is Magnolia
+2023-11-21 23:09:42,131 - Providio -INFO - 6
+2023-11-21 23:09:52,262 - Providio -INFO - 1
+2023-11-21 23:09:52,262 - Providio -INFO - 0
+2023-11-21 23:09:57,295 - Providio -INFO - 8
+2023-11-21 23:10:09,703 - Providio -INFO - PLP page is already loaded
+2023-11-21 23:10:26,918 - Providio -INFO - 4
+2023-11-21 23:10:26,918 - Providio -INFO - Product input quantity27
+2023-11-21 23:10:34,230 - Providio -INFO - 27
+2023-11-21 23:10:34,239 - Providio -INFO - 27
+2023-11-21 23:10:34,802 - Providio -INFO - Tier price quantity 0
+2023-11-21 23:10:54,746 - Providio -INFO - The unit price of each prodcut is 3.14
+2023-11-21 23:10:54,777 - Providio -INFO - The quantity  is 27.0
+2023-11-21 23:10:54,809 - Providio -INFO - Extended value is 84.78
+2023-11-21 23:10:54,809 - Providio -INFO - 84.78001
+2023-11-21 23:10:54,824 - Providio -INFO - 0.0
+2023-11-21 23:10:54,824 - Providio -INFO - 0.0
+2023-11-21 23:10:54,824 - Providio -INFO - Total price of all prodcuts in cart 0.0
+2023-11-21 23:10:54,871 - Providio -INFO - Total product price is 84.78
+2023-11-21 23:11:10,566 - Providio -INFO - 0
+2023-11-21 23:11:10,582 - Providio -INFO - 3
+2023-11-21 23:11:10,629 - Providio -INFO - 0
+2023-11-22 00:04:19,336 - Providio -INFO - Entered into url
+2023-11-22 00:04:19,339 - Providio -INFO - Placing the order as guest user
+2023-11-22 00:04:19,368 - Providio -INFO - Browser launched succesfully
+2023-11-22 00:04:23,657 - Providio -INFO - Hover on create and login account
+2023-11-22 00:04:23,711 - Providio -INFO - Clicked on Sign In
+2023-11-22 00:04:25,845 - Providio -INFO - Entered email
+2023-11-22 00:04:27,945 - Providio -INFO - Entered password
+2023-11-22 00:04:40,027 - Providio -INFO - Clicked on the Submit button
+2023-11-22 00:04:45,165 - Providio -INFO - Hover on create and login account
+2023-11-22 00:04:45,180 - Providio -INFO - User logged in successfully
+2023-11-22 00:04:45,212 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 00:04:52,263 - Providio -INFO - 11
+2023-11-22 00:05:03,941 - Providio -INFO - 1
+2023-11-22 00:05:03,941 - Providio -INFO - 0
+2023-11-22 00:05:08,953 - Providio -INFO - 12
+2023-11-22 00:05:21,746 - Providio -INFO - PLP page is already loaded
+2023-11-22 00:05:38,932 - Providio -INFO - 5
+2023-11-22 00:05:38,932 - Providio -INFO - Product input quantity7
+2023-11-22 00:05:46,183 - Providio -INFO - 7
+2023-11-22 00:05:46,183 - Providio -INFO - 7
+2023-11-22 00:05:46,183 - Providio -INFO - Tier price quantity 0
+2023-11-22 00:06:05,871 - Providio -INFO - The unit price of each prodcut is 3.14
+2023-11-22 00:06:05,885 - Providio -INFO - The quantity  is 27.0
+2023-11-22 00:06:05,901 - Providio -INFO - Extended value is 84.78
+2023-11-22 00:06:05,901 - Providio -INFO - 84.78001
+2023-11-22 00:06:05,932 - Providio -INFO - The unit price of each prodcut is 4.57
+2023-11-22 00:06:05,947 - Providio -INFO - The quantity  is 7.0
+2023-11-22 00:06:05,963 - Providio -INFO - Extended value is 31.99
+2023-11-22 00:06:05,963 - Providio -INFO - 116.770004
+2023-11-22 00:06:05,979 - Providio -INFO - 0.0
+2023-11-22 00:06:05,979 - Providio -INFO - 0.0
+2023-11-22 00:06:05,979 - Providio -INFO - Total price of all prodcuts in cart 0.0
+2023-11-22 00:06:06,010 - Providio -INFO - Total product price is 116.77
+2023-11-22 00:06:22,002 - Providio -INFO - 0
+2023-11-22 00:06:24,394 - Providio -INFO - Entered shipping fname
+2023-11-22 00:06:25,481 - Providio -INFO - Entered shipping lname
+2023-11-22 00:06:27,612 - Providio -INFO - Entered shipping address
+2023-11-22 00:06:30,715 - Providio -INFO - Entered phone number
+2023-11-22 00:06:37,803 - Providio -INFO - Total Shipping count is 18
+2023-11-22 00:06:37,803 - Providio -INFO - Randomly selected menu number 3
+2023-11-22 00:06:37,819 - Providio -INFO - $34.65
+2023-11-22 00:06:37,903 - Providio -INFO - Selected Shipping Method Name is UPS Second Day Air (1 - 4 business days)
+2023-11-22 00:06:45,016 - Providio -INFO - Clicked on the continue billing button
+2023-11-22 00:10:48,704 - Providio -INFO - Entered into url
+2023-11-22 00:10:48,707 - Providio -INFO - Placing the order as guest user
+2023-11-22 00:10:48,787 - Providio -INFO - Browser launched succesfully
+2023-11-22 00:10:50,957 - Providio -INFO - Total menus count is 8
+2023-11-22 00:10:50,957 - Providio -INFO - Randomly selected menu number 3
+2023-11-22 00:10:50,972 - Providio -INFO - Total number of sub menus associated with the hovered menu 12
+2023-11-22 00:10:50,972 - Providio -INFO - Randomly selected sub menu number 7
+2023-11-22 00:11:11,293 - Providio -INFO - 24
+2023-11-22 00:11:41,048 - Providio -INFO - 3
+2023-11-22 00:11:41,048 - Providio -INFO - Product input quantity22
+2023-11-22 00:11:48,388 - Providio -INFO - 3
+2023-11-22 00:11:48,388 - Providio -INFO - 3
+2023-11-22 00:11:48,401 - Providio -INFO - Tier price quantity 0
+2023-11-22 00:12:06,221 - Providio -INFO - Product input quantity 111
+2023-11-22 00:12:14,586 - Providio -INFO - The total number of products in cart are 3
+2023-11-22 00:12:22,871 - Providio -INFO - blue
+2023-11-22 00:12:22,887 - Providio -INFO - No Discount is available for blue so price is $0.00
+2023-11-22 00:12:22,918 - Providio -INFO - Sub total cost displayed when hovered on cart icon is 49.65
+2023-11-22 00:12:22,950 - Providio -INFO - The unit price of each prodcut is 16.55
+2023-11-22 00:12:22,997 - Providio -INFO - The quantity  is 3.0
+2023-11-22 00:12:23,028 - Providio -INFO - Extended value is 49.65
+2023-11-22 00:12:23,028 - Providio -INFO - 49.649998
+2023-11-22 00:12:23,039 - Providio -INFO - 0.0
+2023-11-22 00:12:23,039 - Providio -INFO - 0.0
+2023-11-22 00:12:23,039 - Providio -INFO - Total price of all prodcuts in cart 0.0
+2023-11-22 00:12:23,060 - Providio -INFO - Total product price is 49.65
+2023-11-22 00:12:38,392 - Providio -INFO - 1
+2023-11-22 00:12:40,480 - Providio -INFO - true
+2023-11-22 00:12:40,480 - Providio -INFO - The user did not enter the email and clicked the guest checkout, and the error is displayed
+2023-11-22 00:12:40,495 - Providio -INFO - Guest checkout
+2023-11-22 00:12:43,587 - Providio -INFO - Guest mail again
+2023-11-22 00:12:45,669 - Providio -INFO - Guest continue as guest
+2023-11-22 00:12:50,695 - Providio -INFO - 4
+2023-11-22 00:12:50,734 - Providio -INFO - 1
+2023-11-22 00:12:50,734 - Providio -INFO - 1
+2023-11-22 00:12:50,774 - Providio -INFO - This is the shipping page
+2023-11-22 00:12:50,796 - Providio -INFO - Testing97@Etggs.com
+2023-11-22 00:13:01,946 - Providio -INFO - Successfully edited the email
+2023-11-22 00:13:03,995 - Providio -INFO - Successfully clicked on the continue guest
+2023-11-22 00:13:04,011 - Providio -INFO - Testing97@Etggs.com
+2023-11-22 00:13:04,011 - Providio -INFO - TestingEdited98@Etggs.com
+2023-11-22 00:13:04,011 - Providio -INFO - TestingEdited98@Etggs.com
+2023-11-22 00:13:04,011 - Providio -INFO - Testing97@Etggs.com we have this mail previously, but edited is TestingEdited98@Etggs.com
+2023-11-22 00:13:05,178 - Providio -INFO - Entered shipping fname
+2023-11-22 00:13:06,276 - Providio -INFO - Entered shipping lname
+2023-11-22 00:13:08,433 - Providio -INFO - Entered shipping address
+2023-11-22 00:13:11,512 - Providio -INFO - Entered phone number
+2023-11-22 00:13:18,573 - Providio -INFO - Total Shipping count is 18
+2023-11-22 00:13:18,573 - Providio -INFO - Randomly selected menu number 6
+2023-11-22 00:13:18,589 - Providio -INFO - $32.65
+2023-11-22 00:13:18,687 - Providio -INFO - Selected Shipping Method Name is UPS Next Day Air (1 - 5 days)
+2023-11-22 00:13:25,802 - Providio -INFO - Clicked on the continue billing button
+2023-11-22 00:14:54,511 - Providio -INFO - Entered into url
+2023-11-22 00:14:54,516 - Providio -INFO - Placing the order as guest user
+2023-11-22 00:14:54,530 - Providio -INFO - Browser launched succesfully
+2023-11-22 00:14:56,706 - Providio -INFO - Total menus count is 8
+2023-11-22 00:14:56,706 - Providio -INFO - Randomly selected menu number 3
+2023-11-22 00:14:56,720 - Providio -INFO - Total number of sub menus associated with the hovered menu 12
+2023-11-22 00:14:56,720 - Providio -INFO - Randomly selected sub menu number 9
+2023-11-22 00:15:19,229 - Providio -INFO - PLP page is already loaded
+2023-11-22 00:15:36,468 - Providio -INFO - 9
+2023-11-22 00:15:36,468 - Providio -INFO - Product input quantity16
+2023-11-22 00:15:43,763 - Providio -INFO - 16
+2023-11-22 00:15:43,764 - Providio -INFO - 16
+2023-11-22 00:15:43,784 - Providio -INFO - Tier price quantity 0
+2023-11-22 00:16:47,834 - Providio -INFO - Entered into url
+2023-11-22 00:16:47,838 - Providio -INFO - Placing the order as guest user
+2023-11-22 00:16:47,860 - Providio -INFO - Browser launched succesfully
+2023-11-22 00:16:49,981 - Providio -INFO - Total menus count is 8
+2023-11-22 00:16:49,981 - Providio -INFO - Randomly selected menu number 1
+2023-11-22 00:16:49,996 - Providio -INFO - Total number of sub menus associated with the hovered menu 37
+2023-11-22 00:16:49,996 - Providio -INFO - Randomly selected sub menu number 34
+2023-11-22 00:17:09,165 - Providio -INFO - 2
+2023-11-22 00:17:39,497 - Providio -INFO - 19
+2023-11-22 00:17:39,497 - Providio -INFO - Product input quantity38
+2023-11-22 00:17:47,122 - Providio -INFO - 13
+2023-11-22 00:17:47,122 - Providio -INFO - 13
+2023-11-22 00:17:47,140 - Providio -INFO - Tier price quantity 0
+2023-11-22 00:18:06,112 - Providio -INFO - Product input quantity 109
+2023-11-22 00:18:14,406 - Providio -INFO - The total number of products in cart are 13
+2023-11-22 00:18:22,669 - Providio -INFO - blue
+2023-11-22 00:18:22,698 - Providio -INFO - No Discount is available for blue so price is $0.00
+2023-11-22 00:18:22,719 - Providio -INFO - Sub total cost displayed when hovered on cart icon is 218.01
+2023-11-22 00:18:22,748 - Providio -INFO - The unit price of each prodcut is 16.77
+2023-11-22 00:18:22,767 - Providio -INFO - The quantity  is 13.0
+2023-11-22 00:18:22,787 - Providio -INFO - Extended value is 218.01
+2023-11-22 00:18:22,787 - Providio -INFO - 218.01001
+2023-11-22 00:18:22,798 - Providio -INFO - 0.0
+2023-11-22 00:18:22,798 - Providio -INFO - 0.0
+2023-11-22 00:18:22,798 - Providio -INFO - Total price of all prodcuts in cart 0.0
+2023-11-22 00:18:22,829 - Providio -INFO - Total product price is 218.01
+2023-11-22 00:18:37,026 - Providio -INFO - 1
+2023-11-22 00:18:39,126 - Providio -INFO - true
+2023-11-22 00:18:39,127 - Providio -INFO - The user did not enter the email and clicked the guest checkout, and the error is displayed
+2023-11-22 00:18:39,128 - Providio -INFO - Guest checkout
+2023-11-22 00:18:42,213 - Providio -INFO - Guest mail again
+2023-11-22 00:18:44,279 - Providio -INFO - Guest continue as guest
+2023-11-22 00:18:49,308 - Providio -INFO - 4
+2023-11-22 00:18:49,347 - Providio -INFO - 1
+2023-11-22 00:18:49,347 - Providio -INFO - 1
+2023-11-22 00:18:49,382 - Providio -INFO - This is the shipping page
+2023-11-22 00:18:49,408 - Providio -INFO - Testing32@Etggs.com
+2023-11-22 00:19:00,592 - Providio -INFO - Successfully edited the email
+2023-11-22 00:19:02,688 - Providio -INFO - Successfully clicked on the continue guest
+2023-11-22 00:19:02,713 - Providio -INFO - Testing32@Etggs.com
+2023-11-22 00:19:02,713 - Providio -INFO - TestingEdited72@Etggs.com
+2023-11-22 00:19:02,713 - Providio -INFO - TestingEdited72@Etggs.com
+2023-11-22 00:19:02,714 - Providio -INFO - Testing32@Etggs.com we have this mail previously, but edited is TestingEdited72@Etggs.com
+2023-11-22 00:19:03,891 - Providio -INFO - Entered shipping fname
+2023-11-22 00:19:04,987 - Providio -INFO - Entered shipping lname
+2023-11-22 00:19:07,171 - Providio -INFO - Entered shipping address
+2023-11-22 00:19:10,265 - Providio -INFO - Entered phone number
+2023-11-22 00:19:17,304 - Providio -INFO - Total Shipping count is 18
+2023-11-22 00:19:17,304 - Providio -INFO - Randomly selected menu number 9
+2023-11-22 00:19:17,324 - Providio -INFO - $12.41
+2023-11-22 00:19:17,398 - Providio -INFO - Selected Shipping Method Name is USPS Priority Mail (3 - 5 business days)
+2023-11-22 00:19:24,546 - Providio -INFO - Clicked on the continue billing button
+2023-11-22 00:19:29,264 - Providio -INFO - A click to Enter into paypal
+2023-11-22 00:20:11,690 - Providio -INFO - Clicked on paypal button
+2023-11-22 00:20:30,360 - Providio -INFO - Your order was received. Thank you! Confirmation will be sent to your email shortly.
+2023-11-22 00:20:30,360 - Providio -INFO - Successfully Order is Placed
+2023-11-22 00:20:35,429 - Providio -INFO - Successfully Order is Placed and the Order number is 20008101
+2023-11-22 00:20:35,496 - Providio -INFO - Successfully Order is Placed and the Order number is PayPal
+rahulnaik@etisbew.com
+2023-11-22 00:24:27,469 - Providio -INFO - Entered into url
+2023-11-22 00:24:27,472 - Providio -INFO - Placing the order as guest user
+2023-11-22 00:24:27,541 - Providio -INFO - Browser launched succesfully
+2023-11-22 00:24:29,663 - Providio -INFO - Total menus count is 8
+2023-11-22 00:24:29,664 - Providio -INFO - Randomly selected menu number 4
+2023-11-22 00:24:29,677 - Providio -INFO - Total number of sub menus associated with the hovered menu 33
+2023-11-22 00:24:29,677 - Providio -INFO - Randomly selected sub menu number 2
+2023-11-22 00:24:46,116 - Providio -INFO - PLP page is already loaded
+2023-11-22 00:25:03,317 - Providio -INFO - 24
+2023-11-22 00:25:03,317 - Providio -INFO - Product input quantity102
+2023-11-22 00:25:10,751 - Providio -INFO - 102
+2023-11-22 00:25:10,751 - Providio -INFO - 102
+2023-11-22 00:25:10,794 - Providio -INFO - Tier price quantity 1
+2023-11-22 00:25:10,815 - Providio -INFO - $
+16.29
+2023-11-22 00:25:10,815 - Providio -INFO - The Discount is on the Black one
+2023-11-22 00:25:27,090 - Providio -INFO - Product input quantity 61
+2023-11-22 00:25:35,335 - Providio -INFO - The total number of products in cart are 61
+2023-11-22 00:25:43,604 - Providio -INFO - pink
+2023-11-22 00:25:43,635 - Providio -INFO - The Discount is available for pink is $22.57
+2023-11-22 00:25:43,650 - Providio -INFO - Sub total cost displayed when hovered on cart icon is 395.89
+2023-11-22 00:25:43,682 - Providio -INFO - The unit price of each prodcut is 6.49
+2023-11-22 00:25:43,698 - Providio -INFO - The quantity  is 61.0
+2023-11-22 00:25:43,713 - Providio -INFO - Extended value is 395.89
+2023-11-22 00:25:43,713 - Providio -INFO - 395.88998
+2023-11-22 00:25:43,729 - Providio -INFO - 0.0
+2023-11-22 00:25:43,729 - Providio -INFO - 0.0
+2023-11-22 00:25:43,729 - Providio -INFO - Total price of all prodcuts in cart 0.0
+2023-11-22 00:25:43,760 - Providio -INFO - Total product price is 395.89
+2023-11-22 00:25:57,971 - Providio -INFO - 1
+2023-11-22 00:26:00,053 - Providio -INFO - true
+2023-11-22 00:26:00,053 - Providio -INFO - The user did not enter the email and clicked the guest checkout, and the error is displayed
+2023-11-22 00:26:00,053 - Providio -INFO - Guest checkout
+2023-11-22 00:26:03,170 - Providio -INFO - Guest mail again
+2023-11-22 00:26:05,281 - Providio -INFO - Guest continue as guest
+2023-11-22 00:26:10,309 - Providio -INFO - 4
+2023-11-22 00:26:10,357 - Providio -INFO - 1
+2023-11-22 00:26:10,357 - Providio -INFO - 1
+2023-11-22 00:26:10,395 - Providio -INFO - This is the shipping page
+2023-11-22 00:26:10,417 - Providio -INFO - Testing80@Etggs.com
+2023-11-22 00:26:21,567 - Providio -INFO - Successfully edited the email
+2023-11-22 00:26:23,629 - Providio -INFO - Successfully clicked on the continue guest
+2023-11-22 00:26:23,645 - Providio -INFO - Testing80@Etggs.com
+2023-11-22 00:26:23,645 - Providio -INFO - TestingEdited5@Etggs.com
+2023-11-22 00:26:23,645 - Providio -INFO - TestingEdited5@Etggs.com
+2023-11-22 00:26:23,645 - Providio -INFO - Testing80@Etggs.com we have this mail previously, but edited is TestingEdited5@Etggs.com
+2023-11-22 00:26:24,847 - Providio -INFO - Entered shipping fname
+2023-11-22 00:26:25,938 - Providio -INFO - Entered shipping lname
+2023-11-22 00:26:28,101 - Providio -INFO - Entered shipping address
+2023-11-22 00:26:31,197 - Providio -INFO - Entered phone number
+2023-11-22 00:26:38,228 - Providio -INFO - Total Shipping count is 18
+2023-11-22 00:26:38,228 - Providio -INFO - Randomly selected menu number 16
+2023-11-22 00:26:38,243 - Providio -INFO - $29.30
+2023-11-22 00:26:38,318 - Providio -INFO - Selected Shipping Method Name is UPS Next Day Air Saver (2 - 4 business days)
+2023-11-22 00:26:45,451 - Providio -INFO - Clicked on the continue billing button
+2023-11-22 00:26:50,411 - Providio -INFO - A click to Enter into paypal
+2023-11-22 00:27:33,363 - Providio -INFO - Clicked on paypal button
+2023-11-22 00:27:52,513 - Providio -INFO - Your order was received. Thank you! Confirmation will be sent to your email shortly.
+2023-11-22 00:27:52,514 - Providio -INFO - Successfully Order is Placed
+2023-11-22 00:27:57,660 - Providio -INFO - Successfully Order is Placed and the Order number is 20008102
+2023-11-22 00:27:57,807 - Providio -INFO - Successfully Order is Placed and the Order number is PayPal
+rahulnaik@etisbew.com
+2023-11-22 00:31:10,203 - Providio -INFO - Entered into url
+2023-11-22 00:31:10,207 - Providio -INFO - Placing the order as guest user
+2023-11-22 00:31:10,246 - Providio -INFO - Browser launched succesfully
+2023-11-22 00:31:14,666 - Providio -INFO - Hover on create and login account
+2023-11-22 00:31:14,830 - Providio -INFO - Clicked on Sign In
+2023-11-22 00:31:17,082 - Providio -INFO - Entered email
+2023-11-22 00:31:19,310 - Providio -INFO - Entered password
+2023-11-22 00:31:31,462 - Providio -INFO - Clicked on the Submit button
+2023-11-22 00:31:36,637 - Providio -INFO - Hover on create and login account
+2023-11-22 00:31:36,708 - Providio -INFO - User logged in successfully
+2023-11-22 00:31:36,769 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 00:31:38,863 - Providio -INFO - Total menus count is 8
+2023-11-22 00:31:38,864 - Providio -INFO - Randomly selected menu number 1
+2023-11-22 00:31:38,891 - Providio -INFO - Total number of sub menus associated with the hovered menu 37
+2023-11-22 00:31:38,891 - Providio -INFO - Randomly selected sub menu number 11
+2023-11-22 00:31:56,280 - Providio -INFO - PLP page is already loaded
+2023-11-22 00:32:13,642 - Providio -INFO - 14
+2023-11-22 00:32:13,642 - Providio -INFO - Product input quantity34
+2023-11-22 00:32:21,254 - Providio -INFO - 34
+2023-11-22 00:32:21,254 - Providio -INFO - 34
+2023-11-22 00:32:21,279 - Providio -INFO - Tier price quantity 0
+2023-11-22 00:32:40,985 - Providio -INFO - The unit price of each prodcut is 1.95
+2023-11-22 00:32:41,046 - Providio -INFO - The quantity  is 34.0
+2023-11-22 00:32:41,085 - Providio -INFO - Extended value is 66.3
+2023-11-22 00:32:41,086 - Providio -INFO - 66.3
+2023-11-22 00:32:41,111 - Providio -INFO - 0.0
+2023-11-22 00:32:41,111 - Providio -INFO - 0.0
+2023-11-22 00:32:41,112 - Providio -INFO - Total price of all prodcuts in cart 0.0
+2023-11-22 00:32:41,175 - Providio -INFO - Total product price is 66.3
+2023-11-22 00:32:56,611 - Providio -INFO - 0
+2023-11-22 00:32:59,435 - Providio -INFO - Entered shipping fname
+2023-11-22 00:33:00,678 - Providio -INFO - Entered shipping lname
+2023-11-22 00:33:03,026 - Providio -INFO - Entered shipping address
+2023-11-22 00:33:06,196 - Providio -INFO - Entered phone number
+2023-11-22 00:33:13,399 - Providio -INFO - Total Shipping count is 18
+2023-11-22 00:33:13,400 - Providio -INFO - Randomly selected menu number 4
+2023-11-22 00:33:13,441 - Providio -INFO - $54.65
+2023-11-22 00:33:13,582 - Providio -INFO - Selected Shipping Method Name is UPS Next Day Air (1 - 3 business days)
+2023-11-22 00:33:20,838 - Providio -INFO - Clicked on the continue billing button
+2023-11-22 00:42:41,618 - Providio -INFO - Entered into url
+2023-11-22 00:42:41,623 - Providio -INFO - Placing the order as guest user
+2023-11-22 00:42:41,639 - Providio -INFO - Browser launched succesfully
+2023-11-22 00:42:46,049 - Providio -INFO - Hover on create and login account
+2023-11-22 00:42:46,120 - Providio -INFO - Clicked on Sign In
+2023-11-22 00:42:48,413 - Providio -INFO - Entered email
+2023-11-22 00:42:50,630 - Providio -INFO - Entered password
+2023-11-22 00:43:02,766 - Providio -INFO - Clicked on the Submit button
+2023-11-22 00:43:07,938 - Providio -INFO - Hover on create and login account
+2023-11-22 00:43:08,000 - Providio -INFO - User logged in successfully
+2023-11-22 00:43:08,064 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 00:43:15,164 - Providio -INFO - 15
+2023-11-22 00:43:25,395 - Providio -INFO - 1
+2023-11-22 00:43:25,395 - Providio -INFO - 0
+2023-11-22 00:43:30,430 - Providio -INFO - 15
+2023-11-22 00:43:44,095 - Providio -INFO - PLP page is already loaded
+2023-11-22 00:44:01,488 - Providio -INFO - 1
+2023-11-22 00:44:01,488 - Providio -INFO - Product input quantity137
+2023-11-22 00:44:09,454 - Providio -INFO - 137
+2023-11-22 00:44:09,454 - Providio -INFO - 137
+2023-11-22 00:44:09,502 - Providio -INFO - Tier price quantity 1
+2023-11-22 00:44:09,543 - Providio -INFO - $
+3.46
+2023-11-22 00:44:09,543 - Providio -INFO - The Discount is on the Black one
+2023-11-22 00:44:29,580 - Providio -INFO - The unit price of each prodcut is 2.25
+2023-11-22 00:44:29,624 - Providio -INFO - The quantity  is 137.0
+2023-11-22 00:44:29,669 - Providio -INFO - Extended value is 308.25
+2023-11-22 00:44:29,669 - Providio -INFO - 308.25
+2023-11-22 00:44:29,685 - Providio -INFO - 0.0
+2023-11-22 00:44:29,685 - Providio -INFO - 0.0
+2023-11-22 00:44:29,685 - Providio -INFO - Total price of all prodcuts in cart 0.0
+2023-11-22 00:44:29,757 - Providio -INFO - Total product price is 308.25
+2023-11-22 00:44:47,612 - Providio -INFO - 0
+2023-11-22 00:44:50,354 - Providio -INFO - Entered shipping fname
+2023-11-22 00:44:51,562 - Providio -INFO - Entered shipping lname
+2023-11-22 00:44:53,936 - Providio -INFO - Entered shipping address
+2023-11-22 00:44:57,120 - Providio -INFO - Entered phone number
+2023-11-22 00:45:04,262 - Providio -INFO - Total Shipping count is 18
+2023-11-22 00:45:04,262 - Providio -INFO - Randomly selected menu number 13
+2023-11-22 00:45:04,309 - Providio -INFO - $29.14
+2023-11-22 00:45:04,424 - Providio -INFO - Selected Shipping Method Name is FedEx Express Saver (4 business days)
+2023-11-22 00:45:11,668 - Providio -INFO - Clicked on the continue billing button
+2023-11-22 00:45:12,089 - Providio -INFO - After the click of paypal
+2023-11-22 00:46:58,689 - Providio -INFO - Entered into url
+2023-11-22 00:46:58,694 - Providio -INFO - Placing the order as guest user
+2023-11-22 00:46:58,705 - Providio -INFO - Browser launched succesfully
+2023-11-22 00:47:03,045 - Providio -INFO - Hover on create and login account
+2023-11-22 00:47:03,195 - Providio -INFO - Clicked on Sign In
+2023-11-22 00:47:05,491 - Providio -INFO - Entered email
+2023-11-22 00:47:07,674 - Providio -INFO - Entered password
+2023-11-22 00:47:19,756 - Providio -INFO - Clicked on the Submit button
+2023-11-22 00:47:24,952 - Providio -INFO - Hover on create and login account
+2023-11-22 00:47:25,032 - Providio -INFO - User logged in successfully
+2023-11-22 00:47:25,091 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 00:47:32,199 - Providio -INFO - 5
+2023-11-22 00:47:42,652 - Providio -INFO - 1
+2023-11-22 00:47:42,652 - Providio -INFO - 0
+2023-11-22 00:47:47,688 - Providio -INFO - 9
+2023-11-22 00:48:02,173 - Providio -INFO - PLP page is already loaded
+2023-11-22 00:48:19,524 - Providio -INFO - 5
+2023-11-22 00:48:19,524 - Providio -INFO - Product input quantity97
+2023-11-22 00:48:27,142 - Providio -INFO - 43
+2023-11-22 00:48:27,142 - Providio -INFO - 43
+2023-11-22 00:48:27,190 - Providio -INFO - Tier price quantity 1
+2023-11-22 00:48:27,258 - Providio -INFO - $
+28.77
+2023-11-22 00:48:27,258 - Providio -INFO - The Discount is on the Green one
+2023-11-22 00:48:45,965 - Providio -INFO - Product input quantity 116
+2023-11-22 00:48:54,519 - Providio -INFO - The total number of products in cart are 43
+2023-11-22 00:50:59,211 - Providio -INFO - Entered into url
+2023-11-22 00:50:59,211 - Providio -INFO - Placing the order as guest user
+2023-11-22 00:50:59,260 - Providio -INFO - Browser launched succesfully
+2023-11-22 00:51:03,657 - Providio -INFO - Hover on create and login account
+2023-11-22 00:51:03,835 - Providio -INFO - Clicked on Sign In
+2023-11-22 00:51:06,012 - Providio -INFO - Entered email
+2023-11-22 00:51:08,223 - Providio -INFO - Entered password
+2023-11-22 00:51:20,376 - Providio -INFO - Clicked on the Submit button
+2023-11-22 00:51:25,569 - Providio -INFO - Hover on create and login account
+2023-11-22 00:51:25,632 - Providio -INFO - User logged in successfully
+2023-11-22 00:51:25,695 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 00:51:32,795 - Providio -INFO - 20
+2023-11-22 00:51:42,921 - Providio -INFO - 1
+2023-11-22 00:51:42,922 - Providio -INFO - 0
+2023-11-22 00:51:47,960 - Providio -INFO - 19
+2023-11-22 00:52:00,302 - Providio -INFO - PDP page is already loaded
+2023-11-22 00:52:18,348 - Providio -INFO - Product input quantity 87
+2023-11-22 00:52:26,734 - Providio -INFO - The total number of products in cart are 43
+2023-11-22 00:52:35,097 - Providio -INFO - green
+2023-11-22 00:52:35,160 - Providio -INFO - The Discount is available for green is $94.60
+2023-11-22 00:52:35,207 - Providio -INFO - Sub total cost displayed when hovered on cart icon is 999.32
+2023-11-22 00:52:35,270 - Providio -INFO - The unit price of each prodcut is 23.24
+2023-11-22 00:52:35,317 - Providio -INFO - The quantity  is 43.0
+2023-11-22 00:52:35,364 - Providio -INFO - Extended value is 999.32
+2023-11-22 00:52:35,364 - Providio -INFO - 999.32
+2023-11-22 00:52:35,380 - Providio -INFO - 0.0
+2023-11-22 00:52:35,380 - Providio -INFO - 0.0
+2023-11-22 00:52:35,380 - Providio -INFO - Total price of all prodcuts in cart 0.0
+2023-11-22 00:52:35,459 - Providio -INFO - Total product price is 999.32
+2023-11-22 00:52:52,013 - Providio -INFO - 0
+2023-11-22 00:52:54,649 - Providio -INFO - Entered shipping fname
+2023-11-22 00:52:55,889 - Providio -INFO - Entered shipping lname
+2023-11-22 00:52:58,253 - Providio -INFO - Entered shipping address
+2023-11-22 00:53:01,442 - Providio -INFO - Entered phone number
+2023-11-22 00:53:08,622 - Providio -INFO - Total Shipping count is 18
+2023-11-22 00:53:08,622 - Providio -INFO - Randomly selected menu number 15
+2023-11-22 00:53:08,660 - Providio -INFO - $32.68
+2023-11-22 00:53:08,800 - Providio -INFO - Selected Shipping Method Name is FedEx 2 Day Air (3 business days)
+2023-11-22 00:53:16,023 - Providio -INFO - Clicked on the continue billing button
+2023-11-22 00:53:16,448 - Providio -INFO - After the click of paypal
+2023-11-22 00:53:47,964 - Providio -INFO - Your order was received. Thank you! Confirmation will be sent to your email shortly.
+2023-11-22 00:53:47,965 - Providio -INFO - Successfully Order is Placed
+2023-11-22 00:53:53,048 - Providio -INFO - Successfully Order is Placed and the Order number is 20008105
+2023-11-22 00:53:53,226 - Providio -INFO - Successfully Order is Placed and the Order number is PayPal
+rahulnaik@etisbew.com
+2023-11-22 00:55:06,931 - Providio -INFO - Entered into url
+2023-11-22 00:55:06,931 - Providio -INFO - Placing the order as guest user
+2023-11-22 00:55:06,965 - Providio -INFO - Browser launched succesfully
+2023-11-22 00:55:11,400 - Providio -INFO - Hover on create and login account
+2023-11-22 00:55:51,008 - Providio -INFO - Entered into url
+2023-11-22 00:55:51,014 - Providio -INFO - Placing the order as guest user
+2023-11-22 00:55:51,024 - Providio -INFO - Browser launched succesfully
+2023-11-22 00:55:55,403 - Providio -INFO - Hover on create and login account
+2023-11-22 00:55:55,565 - Providio -INFO - Clicked on Sign In
+2023-11-22 00:55:57,869 - Providio -INFO - Entered email
+2023-11-22 00:56:00,024 - Providio -INFO - Entered password
+2023-11-22 00:56:12,174 - Providio -INFO - Clicked on the Submit button
+2023-11-22 00:56:17,331 - Providio -INFO - Hover on create and login account
+2023-11-22 00:56:17,407 - Providio -INFO - User logged in successfully
+2023-11-22 00:56:17,454 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 00:56:19,530 - Providio -INFO - Total menus count is 8
+2023-11-22 00:56:19,530 - Providio -INFO - Randomly selected menu number 5
+2023-11-22 00:56:19,559 - Providio -INFO - Total number of sub menus associated with the hovered menu 1
+2023-11-22 00:56:19,561 - Providio -INFO - Randomly selected sub menu number 1
+2023-11-22 00:56:38,598 - Providio -INFO - 38
+2023-11-22 01:01:09,610 - Providio -INFO - Entered into url
+2023-11-22 01:01:09,615 - Providio -INFO - Placing the order as guest user
+2023-11-22 01:01:09,629 - Providio -INFO - Browser launched succesfully
+2023-11-22 01:01:13,980 - Providio -INFO - Hover on create and login account
+2023-11-22 01:01:14,113 - Providio -INFO - Clicked on Sign In
+2023-11-22 01:01:16,246 - Providio -INFO - Entered email
+2023-11-22 01:01:18,531 - Providio -INFO - Entered password
+2023-11-22 01:01:30,704 - Providio -INFO - Clicked on the Submit button
+2023-11-22 01:01:35,860 - Providio -INFO - Hover on create and login account
+2023-11-22 01:01:35,952 - Providio -INFO - User logged in successfully
+2023-11-22 01:01:36,028 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 01:01:38,100 - Providio -INFO - Total menus count is 8
+2023-11-22 01:01:38,100 - Providio -INFO - Randomly selected menu number 4
+2023-11-22 01:01:38,133 - Providio -INFO - Total number of sub menus associated with the hovered menu 33
+2023-11-22 01:01:38,133 - Providio -INFO - Randomly selected sub menu number 7
+2023-11-22 01:01:55,603 - Providio -INFO - PLP page is already loaded
+2023-11-22 01:02:12,998 - Providio -INFO - 3
+2023-11-22 01:02:12,998 - Providio -INFO - Product input quantity131
+2023-11-22 01:02:20,978 - Providio -INFO - 119
+2023-11-22 01:02:20,978 - Providio -INFO - 119
+2023-11-22 01:02:21,029 - Providio -INFO - Tier price quantity 1
+2023-11-22 01:02:21,073 - Providio -INFO - $
+3.26
+2023-11-22 01:02:21,073 - Providio -INFO - The Discount is on the Black one
+2023-11-22 01:02:39,532 - Providio -INFO - Product input quantity 23
+2023-11-22 01:02:48,053 - Providio -INFO - The total number of products in cart are 119
+2023-11-22 01:04:08,394 - Providio -INFO - Entered into url
+2023-11-22 01:04:08,400 - Providio -INFO - Placing the order as guest user
+2023-11-22 01:04:08,413 - Providio -INFO - Browser launched succesfully
+2023-11-22 01:04:12,770 - Providio -INFO - Hover on create and login account
+2023-11-22 01:04:12,907 - Providio -INFO - Clicked on Sign In
+2023-11-22 01:04:15,160 - Providio -INFO - Entered email
+2023-11-22 01:04:17,406 - Providio -INFO - Entered password
+2023-11-22 01:04:29,566 - Providio -INFO - Clicked on the Submit button
+2023-11-22 01:04:34,742 - Providio -INFO - Hover on create and login account
+2023-11-22 01:04:34,802 - Providio -INFO - User logged in successfully
+2023-11-22 01:04:34,839 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 01:04:36,890 - Providio -INFO - Total menus count is 8
+2023-11-22 01:04:36,890 - Providio -INFO - Randomly selected menu number 5
+2023-11-22 01:04:36,911 - Providio -INFO - Total number of sub menus associated with the hovered menu 1
+2023-11-22 01:04:36,911 - Providio -INFO - Randomly selected sub menu number 1
+2023-11-22 01:04:55,862 - Providio -INFO - 38
+2023-11-22 01:06:19,004 - Providio -INFO - Entered into url
+2023-11-22 01:06:19,004 - Providio -INFO - Placing the order as guest user
+2023-11-22 01:06:19,091 - Providio -INFO - Browser launched succesfully
+2023-11-22 01:06:23,548 - Providio -INFO - Hover on create and login account
+2023-11-22 01:06:23,699 - Providio -INFO - Clicked on Sign In
+2023-11-22 01:06:25,986 - Providio -INFO - Entered email
+2023-11-22 01:06:28,241 - Providio -INFO - Entered password
+2023-11-22 01:06:40,391 - Providio -INFO - Clicked on the Submit button
+2023-11-22 01:06:45,573 - Providio -INFO - Hover on create and login account
+2023-11-22 01:06:45,650 - Providio -INFO - User logged in successfully
+2023-11-22 01:06:45,715 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 01:06:47,810 - Providio -INFO - Total menus count is 8
+2023-11-22 01:06:47,810 - Providio -INFO - Randomly selected menu number 4
+2023-11-22 01:06:47,851 - Providio -INFO - Total number of sub menus associated with the hovered menu 33
+2023-11-22 01:06:47,851 - Providio -INFO - Randomly selected sub menu number 25
+2023-11-22 01:07:04,754 - Providio -INFO - PLP page is already loaded
+2023-11-22 01:07:22,091 - Providio -INFO - 24
+2023-11-22 01:07:22,091 - Providio -INFO - Product input quantity44
+2023-11-22 01:07:29,596 - Providio -INFO - 44
+2023-11-22 01:07:29,596 - Providio -INFO - 44
+2023-11-22 01:07:29,646 - Providio -INFO - Tier price quantity 0
+2023-11-22 01:07:49,190 - Providio -INFO - The unit price of each prodcut is 7.3
+2023-11-22 01:07:49,254 - Providio -INFO - The quantity  is 119.0
+2023-11-22 01:07:49,285 - Providio -INFO - Extended value is 868.7
+2023-11-22 01:07:49,285 - Providio -INFO - 868.7
+2023-11-22 01:07:49,338 - Providio -INFO - The unit price of each prodcut is 2.34
+2023-11-22 01:07:49,383 - Providio -INFO - The quantity  is 44.0
+2023-11-22 01:07:49,425 - Providio -INFO - Extended value is 102.96
+2023-11-22 01:07:49,425 - Providio -INFO - 971.66003
+2023-11-22 01:07:49,445 - Providio -INFO - 0.0
+2023-11-22 01:07:49,445 - Providio -INFO - 0.0
+2023-11-22 01:07:49,445 - Providio -INFO - Total price of all prodcuts in cart 0.0
+2023-11-22 01:07:49,514 - Providio -INFO - Total product price is 971.66
+2023-11-22 01:08:04,986 - Providio -INFO - 0
+2023-11-22 01:08:07,773 - Providio -INFO - Entered shipping fname
+2023-11-22 01:08:08,919 - Providio -INFO - Entered shipping lname
+2023-11-22 01:08:11,214 - Providio -INFO - Entered shipping address
+2023-11-22 01:08:14,327 - Providio -INFO - Entered phone number
+2023-11-22 01:08:21,509 - Providio -INFO - Total Shipping count is 18
+2023-11-22 01:08:21,509 - Providio -INFO - Randomly selected menu number 7
+2023-11-22 01:08:21,565 - Providio -INFO - N/A
+2023-11-22 01:08:21,565 - Providio -INFO - This Shipping method is not applicable
+2023-11-22 01:08:26,583 - Providio -INFO - Total Shipping count is 18
+2023-11-22 01:08:26,583 - Providio -INFO - Randomly selected menu number 9
+2023-11-22 01:08:26,630 - Providio -INFO - $12.41
+2023-11-22 01:08:26,773 - Providio -INFO - Selected Shipping Method Name is USPS Priority Mail (3 - 5 business days)
+2023-11-22 01:08:34,002 - Providio -INFO - Clicked on the continue billing button
+2023-11-22 01:08:34,461 - Providio -INFO - After the click of paypal
+2023-11-22 01:09:06,017 - Providio -INFO - Your order was received. Thank you! Confirmation will be sent to your email shortly.
+2023-11-22 01:09:06,017 - Providio -INFO - Successfully Order is Placed
+2023-11-22 01:09:11,134 - Providio -INFO - Successfully Order is Placed and the Order number is 20008106
+2023-11-22 01:09:11,294 - Providio -INFO - Successfully Order is Placed and the Order number is PayPal
+rahulnaik@etisbew.com
+2023-11-22 01:10:12,134 - Providio -INFO - Entered into url
+2023-11-22 01:10:12,136 - Providio -INFO - Placing the order as guest user
+2023-11-22 01:10:12,179 - Providio -INFO - Browser launched succesfully
+2023-11-22 01:10:16,633 - Providio -INFO - Hover on create and login account
+2023-11-22 01:10:16,794 - Providio -INFO - Clicked on Sign In
+2023-11-22 01:10:19,055 - Providio -INFO - Entered email
+2023-11-22 01:10:21,308 - Providio -INFO - Entered password
+2023-11-22 01:10:33,431 - Providio -INFO - Clicked on the Submit button
+2023-11-22 01:10:38,614 - Providio -INFO - Hover on create and login account
+2023-11-22 01:10:38,688 - Providio -INFO - User logged in successfully
+2023-11-22 01:10:38,741 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 01:10:45,871 - Providio -INFO - 10
+2023-11-22 01:10:56,684 - Providio -INFO - 1
+2023-11-22 01:10:56,686 - Providio -INFO - 0
+2023-11-22 01:11:01,727 - Providio -INFO - 9
+2023-11-22 01:11:14,638 - Providio -INFO - PLP page is already loaded
+2023-11-22 01:11:32,021 - Providio -INFO - 1
+2023-11-22 01:11:32,021 - Providio -INFO - Product input quantity115
+2023-11-22 01:11:39,638 - Providio -INFO - 55
+2023-11-22 01:11:39,638 - Providio -INFO - 55
+2023-11-22 01:11:39,697 - Providio -INFO - Tier price quantity 1
+2023-11-22 01:11:39,776 - Providio -INFO - $
+2.38
+2023-11-22 01:11:39,776 - Providio -INFO - The Discount is on the Rose one
+2023-11-22 01:11:58,559 - Providio -INFO - The unit price of each prodcut is 2.38
+2023-11-22 01:11:58,608 - Providio -INFO - The quantity  is 55.0
+2023-11-22 01:11:58,637 - Providio -INFO - Extended value is 130.9
+2023-11-22 01:11:58,637 - Providio -INFO - 130.90001
+2023-11-22 01:11:58,669 - Providio -INFO - 0.0
+2023-11-22 01:11:58,669 - Providio -INFO - 0.0
+2023-11-22 01:11:58,669 - Providio -INFO - Total price of all prodcuts in cart 0.0
+2023-11-22 01:11:58,732 - Providio -INFO - Total product price is 130.9
+2023-11-22 01:12:13,566 - Providio -INFO - 0
+2023-11-22 01:12:16,332 - Providio -INFO - Entered shipping fname
+2023-11-22 01:12:17,556 - Providio -INFO - Entered shipping lname
+2023-11-22 01:12:19,911 - Providio -INFO - Entered shipping address
+2023-11-22 01:12:23,096 - Providio -INFO - Entered phone number
+2023-11-22 01:12:30,277 - Providio -INFO - Total Shipping count is 18
+2023-11-22 01:12:30,277 - Providio -INFO - Randomly selected menu number 5
+2023-11-22 01:12:30,303 - Providio -INFO - $14.51
+2023-11-22 01:12:30,415 - Providio -INFO - Selected Shipping Method Name is FedEx Ground (1 - 7 business days)
+2023-11-22 01:12:37,628 - Providio -INFO - Clicked on the continue billing button
+2023-11-22 01:12:38,041 - Providio -INFO - After the click of paypal
+2023-11-22 01:13:09,486 - Providio -INFO - Your order was received. Thank you! Confirmation will be sent to your email shortly.
+2023-11-22 01:13:09,486 - Providio -INFO - Successfully Order is Placed
+2023-11-22 01:13:14,618 - Providio -INFO - Successfully Order is Placed and the Order number is 20008107
+2023-11-22 01:13:14,737 - Providio -INFO - Successfully Order is Placed and the Order number is PayPal
+rahulnaik@etisbew.com
+2023-11-22 01:15:13,020 - Providio -INFO - Entered into url
+2023-11-22 01:15:13,022 - Providio -INFO - Placing the order as guest user
+2023-11-22 01:15:13,110 - Providio -INFO - Browser launched succesfully
+2023-11-22 01:15:17,528 - Providio -INFO - Hover on create and login account
+2023-11-22 01:15:17,679 - Providio -INFO - Clicked on Sign In
+2023-11-22 01:15:19,875 - Providio -INFO - Entered email
+2023-11-22 01:15:22,119 - Providio -INFO - Entered password
+2023-11-22 01:15:34,272 - Providio -INFO - Clicked on the Submit button
+2023-11-22 01:15:39,439 - Providio -INFO - Hover on create and login account
+2023-11-22 01:15:39,516 - Providio -INFO - User logged in successfully
+2023-11-22 01:15:39,588 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 01:15:41,676 - Providio -INFO - Total menus count is 8
+2023-11-22 01:15:41,676 - Providio -INFO - Randomly selected menu number 4
+2023-11-22 01:15:41,720 - Providio -INFO - Total number of sub menus associated with the hovered menu 33
+2023-11-22 01:15:41,720 - Providio -INFO - Randomly selected sub menu number 11
+2023-11-22 01:15:56,942 - Providio -INFO - PLP page is already loaded
+2023-11-22 01:16:14,219 - Providio -INFO - 1
+2023-11-22 01:16:14,219 - Providio -INFO - Product input quantity21
+2023-11-22 01:16:21,626 - Providio -INFO - 21
+2023-11-22 01:16:21,626 - Providio -INFO - 21
+2023-11-22 01:16:21,697 - Providio -INFO - Tier price quantity 1
+2023-11-22 01:16:41,923 - Providio -INFO - The unit price of each prodcut is 41.4
+2023-11-22 01:16:41,962 - Providio -INFO - The quantity  is 21.0
+2023-11-22 01:16:42,020 - Providio -INFO - Extended value is 869.4
+2023-11-22 01:16:42,020 - Providio -INFO - 869.4
+2023-11-22 01:16:42,047 - Providio -INFO - 0.0
+2023-11-22 01:16:42,048 - Providio -INFO - 0.0
+2023-11-22 01:16:42,049 - Providio -INFO - Total price of all prodcuts in cart 0.0
+2023-11-22 01:16:42,104 - Providio -INFO - Total product price is 869.4
+2023-11-22 01:16:58,481 - Providio -INFO - 0
+2023-11-22 01:17:01,306 - Providio -INFO - Entered shipping fname
+2023-11-22 01:17:02,554 - Providio -INFO - Entered shipping lname
+2023-11-22 01:17:04,832 - Providio -INFO - Entered shipping address
+2023-11-22 01:17:08,026 - Providio -INFO - Entered phone number
+2023-11-22 01:17:15,185 - Providio -INFO - Total Shipping count is 17
+2023-11-22 01:17:15,185 - Providio -INFO - Randomly selected menu number 16
+2023-11-22 01:17:15,217 - Providio -INFO - $29.30
+2023-11-22 01:17:15,382 - Providio -INFO - Selected Shipping Method Name is UPS Next Day Air (2 - 4 business days)
+2023-11-22 01:17:22,629 - Providio -INFO - Clicked on the continue billing button
+2023-11-22 01:17:22,947 - Providio -INFO - Payment Method
+2023-11-22 01:17:22,947 - Providio -INFO - Successfully clicked on the Payment button
+2023-11-22 01:17:34,241 - Providio -INFO - true
+2023-11-22 01:17:34,243 - Providio -INFO - The user did not enter the Credit card details, clicked the guest Next review button, and the error is displayed
+2023-11-22 01:17:34,314 - Providio -INFO - 3
+2023-11-22 01:17:34,383 - Providio -INFO - 2
+2023-11-22 01:17:34,383 - Providio -INFO - 2
+2023-11-22 01:17:34,463 - Providio -INFO - This is the Review order page
+2023-11-22 01:17:34,504 - Providio -INFO - 123 William Streetㅤ
+2023-11-22 01:17:41,998 - Providio -INFO - 1221 Avenida Costanera Rafael Obligado
+2023-11-22 01:17:47,139 - Providio -INFO - Successfully clicked on the continue Billing
+2023-11-22 01:17:50,200 - Providio -INFO - 123 William Streetㅤ
+2023-11-22 01:17:50,200 - Providio -INFO - 1221 Avenida Costanera Rafael Obligado
+2023-11-22 01:17:50,200 - Providio -INFO - 1221 Avenida Costanera Rafael Obligadoㅤ
+2023-11-22 01:17:50,200 - Providio -INFO - 123 William Streetㅤ Edited successfully shipping Address 1221 Avenida Costanera Rafael Obligadoㅤ
+2023-11-22 01:19:38,195 - Providio -INFO - Entered into url
+2023-11-22 01:19:38,198 - Providio -INFO - Placing the order as guest user
+2023-11-22 01:19:38,238 - Providio -INFO - Browser launched succesfully
+2023-11-22 01:19:42,660 - Providio -INFO - Hover on create and login account
+2023-11-22 01:19:42,864 - Providio -INFO - Clicked on Sign In
+2023-11-22 01:19:45,075 - Providio -INFO - Entered email
+2023-11-22 01:19:47,232 - Providio -INFO - Entered password
+2023-11-22 01:19:59,375 - Providio -INFO - Clicked on the Submit button
+2023-11-22 01:20:04,567 - Providio -INFO - Hover on create and login account
+2023-11-22 01:20:04,627 - Providio -INFO - User logged in successfully
+2023-11-22 01:20:04,692 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 01:20:11,787 - Providio -INFO - 9
+2023-11-22 01:20:23,145 - Providio -INFO - 1
+2023-11-22 01:20:23,153 - Providio -INFO - 0
+2023-11-22 01:20:28,182 - Providio -INFO - 5
+2023-11-22 01:20:43,606 - Providio -INFO - PLP page is already loaded
+2023-11-22 01:21:00,994 - Providio -INFO - 18
+2023-11-22 01:21:00,994 - Providio -INFO - Product input quantity130
+2023-11-22 01:21:08,342 - Providio -INFO - 130
+2023-11-22 01:21:08,343 - Providio -INFO - 130
+2023-11-22 01:21:08,405 - Providio -INFO - Tier price quantity 1
+2023-11-22 01:26:52,310 - Providio -INFO - Entered into url
+2023-11-22 01:26:52,321 - Providio -INFO - Placing the order as guest user
+2023-11-22 01:26:52,416 - Providio -INFO - Browser launched succesfully
+2023-11-22 01:26:56,837 - Providio -INFO - Hover on create and login account
+2023-11-22 01:26:56,926 - Providio -INFO - Clicked on Sign In
+2023-11-22 01:26:59,095 - Providio -INFO - Entered email
+2023-11-22 01:27:01,263 - Providio -INFO - Entered password
+2023-11-22 01:27:13,390 - Providio -INFO - Clicked on the Submit button
+2023-11-22 01:27:18,575 - Providio -INFO - Hover on create and login account
+2023-11-22 01:27:18,652 - Providio -INFO - User logged in successfully
+2023-11-22 01:27:18,712 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 01:27:20,816 - Providio -INFO - Total menus count is 8
+2023-11-22 01:27:20,816 - Providio -INFO - Randomly selected menu number 8
+2023-11-22 01:27:20,816 - Providio -INFO - random genrate is 8
+2023-11-22 01:27:25,140 - Providio -INFO - 7
+2023-11-22 01:27:25,140 - Providio -INFO - 5
+2023-11-22 01:27:25,167 - Providio -INFO - coming here
+2023-11-22 01:27:33,801 - Providio -INFO - PLP page is already loaded
+2023-11-22 01:27:51,203 - Providio -INFO - 1
+2023-11-22 01:27:51,203 - Providio -INFO - Product input quantity54
+2023-11-22 01:27:58,631 - Providio -INFO - 54
+2023-11-22 01:27:58,632 - Providio -INFO - 54
+2023-11-22 01:27:58,665 - Providio -INFO - Tier price quantity 0
+2023-11-22 01:28:05,448 - Providio -INFO - Product Name is displayed on the page and prodcut name is Bracelet, stretch, grey and cream marble (natural) and acrylic, yellow, 5mm round and 25x15mm-26x18mm flat rectangle, 6-1/2 inches. Sold individually.
+2023-11-22 01:28:05,448 - Providio -INFO - add to cart  button enabled
+2023-11-22 01:28:26,986 - Providio -INFO - 2
+2023-11-22 01:28:32,129 - Providio -INFO - 1
+2023-11-22 01:28:39,319 - Providio -INFO - Product is added to saveForLater
+2023-11-22 01:28:39,439 - Providio -INFO - The total number of products in cart are 56
+2023-11-22 01:28:47,736 - Providio -INFO - pink
+2023-11-22 01:28:47,767 - Providio -INFO - The Discount is available for pink is $0.00
+2023-11-22 01:28:47,788 - Providio -INFO - Sub total cost displayed when hovered on cart icon is 55.0
+2023-11-22 01:28:47,830 - Providio -INFO - The unit price of each prodcut is 1.0
+2023-11-22 01:28:47,856 - Providio -INFO - The quantity  is 54.0
+2023-11-22 01:28:47,878 - Providio -INFO - Extended value is 54.0
+2023-11-22 01:28:47,878 - Providio -INFO - 54.0
+2023-11-22 01:28:47,924 - Providio -INFO - The unit price of each prodcut is 0.5
+2023-11-22 01:28:47,957 - Providio -INFO - The quantity  is 2.0
+2023-11-22 01:28:48,007 - Providio -INFO - Extended value is 1.0
+2023-11-22 01:28:48,007 - Providio -INFO - 55.0
+2023-11-22 01:28:48,027 - Providio -INFO - 0.0
+2023-11-22 01:28:48,027 - Providio -INFO - 0.0
+2023-11-22 01:28:48,028 - Providio -INFO - Total price of all prodcuts in cart 0.0
+2023-11-22 01:28:48,087 - Providio -INFO - Total product price is 55.0
+2023-11-22 01:29:03,687 - Providio -INFO - 0
+2023-11-22 01:29:03,701 - Providio -INFO - 3
+2023-11-22 01:29:03,740 - Providio -INFO - 0
+2023-11-22 01:30:32,950 - Providio -INFO - Entered into url
+2023-11-22 01:30:32,956 - Providio -INFO - Placing the order as guest user
+2023-11-22 01:30:33,047 - Providio -INFO - Browser launched succesfully
+2023-11-22 01:30:37,492 - Providio -INFO - Hover on create and login account
+2023-11-22 01:30:37,627 - Providio -INFO - Clicked on Sign In
+2023-11-22 01:30:39,780 - Providio -INFO - Entered email
+2023-11-22 01:30:42,036 - Providio -INFO - Entered password
+2023-11-22 01:30:54,172 - Providio -INFO - Clicked on the Submit button
+2023-11-22 01:30:59,373 - Providio -INFO - Hover on create and login account
+2023-11-22 01:30:59,440 - Providio -INFO - Click failed
+2023-11-22 01:31:44,041 - Providio -INFO - Entered into url
+2023-11-22 01:31:44,054 - Providio -INFO - Placing the order as guest user
+2023-11-22 01:31:44,073 - Providio -INFO - Browser launched succesfully
+2023-11-22 01:31:48,487 - Providio -INFO - Hover on create and login account
+2023-11-22 01:31:48,617 - Providio -INFO - Clicked on Sign In
+2023-11-22 01:31:50,803 - Providio -INFO - Entered email
+2023-11-22 01:31:53,027 - Providio -INFO - Entered password
+2023-11-22 01:32:05,168 - Providio -INFO - Clicked on the Submit button
+2023-11-22 01:32:10,336 - Providio -INFO - Hover on create and login account
+2023-11-22 01:32:10,408 - Providio -INFO - User logged in successfully
+2023-11-22 01:32:10,470 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 01:32:20,353 - Providio -INFO - PDP page is already loaded
+2023-11-22 01:32:20,373 - Providio -INFO - next time me
+2023-11-22 01:32:20,444 - Providio -INFO - 0
+2023-11-22 01:32:20,444 - Providio -INFO - notify me
+2023-11-22 01:32:20,473 - Providio -INFO - Total menus count is 8
+2023-11-22 01:32:20,477 - Providio -INFO - Randomly selected menu number 5
+2023-11-22 01:32:20,498 - Providio -INFO - Total number of sub menus associated with the hovered menu 1
+2023-11-22 01:32:20,498 - Providio -INFO - Randomly selected sub menu number 1
+2023-11-22 01:32:39,339 - Providio -INFO - 1
+2023-11-22 01:32:49,316 - Providio -INFO - Total menus count is 8
+2023-11-22 01:32:49,316 - Providio -INFO - Randomly selected menu number 8
+2023-11-22 01:32:49,316 - Providio -INFO - random genrate is 8
+2023-11-22 01:32:52,940 - Providio -INFO - 7
+2023-11-22 01:32:52,940 - Providio -INFO - 2
+2023-11-22 01:32:52,964 - Providio -INFO - coming here
+2023-11-22 01:33:01,068 - Providio -INFO - PLP page is already loaded
+2023-11-22 01:33:11,260 - Providio -INFO - Total filters count is 11
+2023-11-22 01:33:11,260 - Providio -INFO - Randomly selected filters number 3
+2023-11-22 01:33:11,320 - Providio -INFO - Material
+2023-11-22 01:33:11,360 - Providio -INFO - Total filters countofeachFilterbtns is 108
+2023-11-22 01:33:11,360 - Providio -INFO - Randomly selected subfilter number 45
+2023-11-22 01:33:13,434 - Providio -INFO - Original Text: 14Kt Gold-Filled (1)
+2023-11-22 01:33:13,434 - Providio -INFO - Extracted Content: 1
+2023-11-22 01:33:13,434 - Providio -INFO - Text without Parentheses: 14Kt Gold-Filled 
+2023-11-22 01:33:17,567 - Providio -INFO - 14Kt Gold-Filled
+2023-11-22 01:33:17,630 - Providio -INFO - 1
+2023-11-22 01:33:17,661 - Providio -INFO - Material Selected The Filter 1 And The Loaded Products are 1
+2023-11-22 01:33:28,854 - Providio -INFO - 1
+2023-11-22 01:33:28,854 - Providio -INFO - Product input quantity110
+2023-11-22 01:33:36,252 - Providio -INFO - 110
+2023-11-22 01:33:36,253 - Providio -INFO - 110
+2023-11-22 01:33:36,300 - Providio -INFO - Tier price quantity 0
+2023-11-22 01:33:40,591 - Providio -INFO - Product Name is displayed on the page and prodcut name is Necklace, Simple and Sleek Jewelry™, glass rhinestone bead and 14Kt gold-filled chain, 18 inches. Sold individually.
+2023-11-22 01:33:40,592 - Providio -INFO - add to cart  button enabled
+2023-11-22 01:34:00,400 - Providio -INFO - 2
+2023-11-22 01:34:05,541 - Providio -INFO - 2
+2023-11-22 01:34:12,690 - Providio -INFO - Product Removed from the cart
+2023-11-22 01:35:10,083 - Providio -INFO - Entered into url
+2023-11-22 01:35:10,083 - Providio -INFO - Placing the order as guest user
+2023-11-22 01:35:10,177 - Providio -INFO - Browser launched succesfully
+2023-11-22 01:35:14,514 - Providio -INFO - Hover on create and login account
+2023-11-22 01:35:14,661 - Providio -INFO - Clicked on Sign In
+2023-11-22 01:35:16,818 - Providio -INFO - Entered email
+2023-11-22 01:35:19,018 - Providio -INFO - Entered password
+2023-11-22 01:35:31,150 - Providio -INFO - Clicked on the Submit button
+2023-11-22 01:35:36,333 - Providio -INFO - Hover on create and login account
+2023-11-22 01:35:36,411 - Providio -INFO - User logged in successfully
+2023-11-22 01:35:36,474 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 01:35:47,071 - Providio -INFO - PDP page is already loaded
+2023-11-22 01:35:47,093 - Providio -INFO - next time me
+2023-11-22 01:35:47,176 - Providio -INFO - 0
+2023-11-22 01:35:47,176 - Providio -INFO - notify me
+2023-11-22 01:35:47,208 - Providio -INFO - Total menus count is 8
+2023-11-22 01:35:47,208 - Providio -INFO - Randomly selected menu number 1
+2023-11-22 01:35:47,242 - Providio -INFO - Total number of sub menus associated with the hovered menu 37
+2023-11-22 01:35:47,242 - Providio -INFO - Randomly selected sub menu number 17
+2023-11-22 01:36:09,305 - Providio -INFO - 5
+2023-11-22 01:36:26,343 - Providio -INFO - Product is out of stock so searching for new product So it is displaying is Notify me 
+2023-11-22 01:36:26,661 - Providio -INFO - Error message is displayed for no email is entered or for invalid email id
+2023-11-22 01:36:26,874 - Providio -INFO - Total menus count is 8
+2023-11-22 01:36:26,874 - Providio -INFO - Randomly selected menu number 6
+2023-11-22 01:36:26,890 - Providio -INFO - Total number of sub menus associated with the hovered menu 14
+2023-11-22 01:36:26,890 - Providio -INFO - Randomly selected sub menu number 4
+2023-11-22 01:36:43,636 - Providio -INFO - PLP page is already loaded
+2023-11-22 01:36:52,308 - Providio -INFO - Product Name is displayed on the page and prodcut name is Drop, antique silver- and gold-finished "pewter" (zinc-based alloy), 18mm round prayer box with swirl design and magnetic closure. Sold individually.
+2023-11-22 01:36:52,308 - Providio -INFO - add to cart  button enabled
+2023-11-22 01:37:13,945 - Providio -INFO - Total product price is 58.68
+2023-11-22 01:37:29,611 - Providio -INFO - 0
+2023-11-22 01:37:32,508 - Providio -INFO - Entered shipping fname
+2023-11-22 01:37:33,806 - Providio -INFO - Entered shipping lname
+2023-11-22 01:37:36,135 - Providio -INFO - Entered shipping address
+2023-11-22 01:37:39,330 - Providio -INFO - Entered phone number
+2023-11-22 01:37:46,482 - Providio -INFO - Total Shipping count is 18
+2023-11-22 01:37:46,482 - Providio -INFO - Randomly selected menu number 8
+2023-11-22 01:37:46,517 - Providio -INFO - $54.65
+2023-11-22 01:37:46,713 - Providio -INFO - Selected Shipping Method Name is UPS Next Day Air Early (1 - 3 business days)
+2023-11-22 01:37:53,908 - Providio -INFO - Clicked on the continue billing button
+2023-11-22 01:37:54,182 - Providio -INFO - Payment Method
+2023-11-22 01:37:54,182 - Providio -INFO - Successfully clicked on the Payment button
+2023-11-22 01:38:05,493 - Providio -INFO - true
+2023-11-22 01:38:05,493 - Providio -INFO - The user did not enter the Credit card details, clicked the guest Next review button, and the error is displayed
+2023-11-22 01:38:05,526 - Providio -INFO - 3
+2023-11-22 01:38:05,590 - Providio -INFO - 2
+2023-11-22 01:38:05,590 - Providio -INFO - 1
+2023-11-22 01:38:05,659 - Providio -INFO - This is the Review order page
+2023-11-22 01:53:58,758 - Providio -INFO - Entered into url
+2023-11-22 01:53:58,766 - Providio -INFO - Placing the order as guest user
+2023-11-22 01:53:58,855 - Providio -INFO - Browser launched succesfully
+2023-11-22 01:54:03,257 - Providio -INFO - Hover on create and login account
+2023-11-22 01:54:03,424 - Providio -INFO - Clicked on Sign In
+2023-11-22 01:54:05,598 - Providio -INFO - Entered email
+2023-11-22 01:54:07,797 - Providio -INFO - Entered password
+2023-11-22 01:54:19,942 - Providio -INFO - Clicked on the Submit button
+2023-11-22 01:54:25,133 - Providio -INFO - Hover on create and login account
+2023-11-22 01:54:25,204 - Providio -INFO - User logged in successfully
+2023-11-22 01:54:25,270 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 01:54:34,954 - Providio -INFO - PDP page is already loaded
+2023-11-22 01:54:34,978 - Providio -INFO - next time me
+2023-11-22 01:54:35,058 - Providio -INFO - 0
+2023-11-22 01:54:35,066 - Providio -INFO - notify me
+2023-11-22 01:54:35,107 - Providio -INFO - Total menus count is 8
+2023-11-22 01:54:35,110 - Providio -INFO - Randomly selected menu number 2
+2023-11-22 01:54:35,135 - Providio -INFO - Total number of sub menus associated with the hovered menu 43
+2023-11-22 01:54:35,135 - Providio -INFO - Randomly selected sub menu number 23
+2023-11-22 01:54:50,382 - Providio -INFO - PLP page is already loaded
+2023-11-22 01:54:54,625 - Providio -INFO - Product Name is displayed on the page and prodcut name is Wire, 12Kt gold-filled, half-hard, round, 18 gauge. Sold per 25-foot spool.
+2023-11-22 01:54:54,625 - Providio -INFO - add to cart  button enabled
+2023-11-22 01:55:14,517 - Providio -INFO - 1
+2023-11-22 01:55:19,659 - Providio -INFO - 1
+2023-11-22 01:55:26,833 - Providio -INFO - Product Removed from the cart
+2023-11-22 01:55:26,911 - Providio -INFO - Total product price is 190.24
+2023-11-22 01:55:42,992 - Providio -INFO - 0
+2023-11-22 01:55:45,852 - Providio -INFO - Entered shipping fname
+2023-11-22 01:55:47,088 - Providio -INFO - Entered shipping lname
+2023-11-22 01:55:49,412 - Providio -INFO - Entered shipping address
+2023-11-22 01:55:52,575 - Providio -INFO - Entered phone number
+2023-11-22 01:55:59,723 - Providio -INFO - Total Shipping count is 18
+2023-11-22 01:55:59,723 - Providio -INFO - Randomly selected menu number 18
+2023-11-22 01:55:59,757 - Providio -INFO - $61.19
+2023-11-22 01:55:59,922 - Providio -INFO - Selected Shipping Method Name is FedEx Priority Overnight (2 business days)
+2023-11-22 01:56:07,145 - Providio -INFO - Clicked on the continue billing button
+2023-11-22 01:56:07,398 - Providio -INFO - Payment Method
+2023-11-22 01:56:07,399 - Providio -INFO - Successfully clicked on the Payment button
+2023-11-22 01:56:18,705 - Providio -INFO - true
+2023-11-22 01:56:18,705 - Providio -INFO - The user did not enter the Credit card details, clicked the guest Next review button, and the error is displayed
+2023-11-22 01:57:49,872 - Providio -INFO - Entered into url
+2023-11-22 01:57:49,875 - Providio -INFO - Placing the order as guest user
+2023-11-22 01:57:49,964 - Providio -INFO - Browser launched succesfully
+2023-11-22 01:57:54,393 - Providio -INFO - Hover on create and login account
+2023-11-22 01:57:54,550 - Providio -INFO - Clicked on Sign In
+2023-11-22 01:57:56,762 - Providio -INFO - Entered email
+2023-11-22 01:57:58,983 - Providio -INFO - Entered password
+2023-11-22 01:58:11,125 - Providio -INFO - Clicked on the Submit button
+2023-11-22 01:58:16,303 - Providio -INFO - Hover on create and login account
+2023-11-22 01:58:16,377 - Providio -INFO - User logged in successfully
+2023-11-22 01:58:16,456 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 01:58:26,573 - Providio -INFO - PDP page is already loaded
+2023-11-22 01:58:26,590 - Providio -INFO - next time me
+2023-11-22 01:58:26,662 - Providio -INFO - 0
+2023-11-22 01:58:26,662 - Providio -INFO - notify me
+2023-11-22 01:58:26,695 - Providio -INFO - Total menus count is 8
+2023-11-22 01:58:26,695 - Providio -INFO - Randomly selected menu number 4
+2023-11-22 01:58:26,740 - Providio -INFO - Total number of sub menus associated with the hovered menu 33
+2023-11-22 01:58:26,750 - Providio -INFO - Randomly selected sub menu number 19
+2023-11-22 01:58:43,453 - Providio -INFO - PLP page is already loaded
+2023-11-22 01:58:51,999 - Providio -INFO - Product Name is displayed on the page and prodcut name is Display, necklace, velveteen, black, 4 x 3 x 1-1/2 inches with VELCRO®-style tab on back with adjustable angle. Sold individually.
+2023-11-22 01:58:51,999 - Providio -INFO - add to cart  button enabled
+2023-11-22 01:59:12,567 - Providio -INFO - Total product price is 196.81
+2023-11-22 01:59:27,826 - Providio -INFO - 0
+2023-11-22 01:59:30,656 - Providio -INFO - Entered shipping fname
+2023-11-22 01:59:31,805 - Providio -INFO - Entered shipping lname
+2023-11-22 02:01:21,304 - Providio -INFO - Entered into url
+2023-11-22 02:01:21,313 - Providio -INFO - Placing the order as guest user
+2023-11-22 02:01:21,324 - Providio -INFO - Browser launched succesfully
+2023-11-22 02:01:25,809 - Providio -INFO - Hover on create and login account
+2023-11-22 02:01:25,965 - Providio -INFO - Clicked on Sign In
+2023-11-22 02:01:28,133 - Providio -INFO - Entered email
+2023-11-22 02:01:30,327 - Providio -INFO - Entered password
+2023-11-22 02:01:42,428 - Providio -INFO - Clicked on the Submit button
+2023-11-22 02:01:47,621 - Providio -INFO - Hover on create and login account
+2023-11-22 02:01:47,684 - Providio -INFO - User logged in successfully
+2023-11-22 02:01:47,762 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 02:01:57,986 - Providio -INFO - PDP page is already loaded
+2023-11-22 02:01:57,999 - Providio -INFO - next time me
+2023-11-22 02:01:58,069 - Providio -INFO - 0
+2023-11-22 02:01:58,071 - Providio -INFO - notify me
+2023-11-22 02:01:58,105 - Providio -INFO - Total menus count is 8
+2023-11-22 02:01:58,111 - Providio -INFO - Randomly selected menu number 8
+2023-11-22 02:01:58,111 - Providio -INFO - random genrate is 8
+2023-11-22 02:02:01,645 - Providio -INFO - 7
+2023-11-22 02:02:01,645 - Providio -INFO - 5
+2023-11-22 02:02:01,674 - Providio -INFO - coming here
+2023-11-22 02:02:07,621 - Providio -INFO - PLP page is already loaded
+2023-11-22 02:02:17,825 - Providio -INFO - Total filters count is 11
+2023-11-22 02:02:17,825 - Providio -INFO - Randomly selected filters number 7
+2023-11-22 02:02:17,882 - Providio -INFO - Brand
+2023-11-22 02:02:17,917 - Providio -INFO - Total filters countofeachFilterbtns is 63
+2023-11-22 02:02:17,917 - Providio -INFO - Randomly selected subfilter number 15
+2023-11-22 02:02:19,990 - Providio -INFO - Original Text: Accu-Flex (1)
+2023-11-22 02:02:19,990 - Providio -INFO - Extracted Content: 1
+2023-11-22 02:02:19,990 - Providio -INFO - Text without Parentheses: Accu-Flex 
+2023-11-22 02:02:24,089 - Providio -INFO - Accu-Flex
+2023-11-22 02:02:24,116 - Providio -INFO - 1
+2023-11-22 02:02:24,117 - Providio -INFO - Brand Selected The Filter 1 And The Loaded Products are 1
+2023-11-22 02:02:35,309 - Providio -INFO - 1
+2023-11-22 02:02:35,310 - Providio -INFO - Product input quantity49
+2023-11-22 02:02:43,143 - Providio -INFO - 49
+2023-11-22 02:02:43,143 - Providio -INFO - 49
+2023-11-22 02:02:43,181 - Providio -INFO - Tier price quantity 0
+2023-11-22 02:02:46,948 - Providio -INFO - Product is out of stock so searching for new product So it is displaying is Notify me 
+2023-11-22 02:02:47,155 - Providio -INFO - Error message is displayed for no email is entered or for invalid email id
+2023-11-22 02:02:47,358 - Providio -INFO - Total menus count is 8
+2023-11-22 02:02:47,358 - Providio -INFO - Randomly selected menu number 1
+2023-11-22 02:02:47,376 - Providio -INFO - Total number of sub menus associated with the hovered menu 37
+2023-11-22 02:02:47,376 - Providio -INFO - Randomly selected sub menu number 25
+2023-11-22 02:03:07,210 - Providio -INFO - Total menus count is 8
+2023-11-22 02:03:07,211 - Providio -INFO - Randomly selected menu number 5
+2023-11-22 02:03:07,237 - Providio -INFO - Total number of sub menus associated with the hovered menu 1
+2023-11-22 02:03:07,237 - Providio -INFO - Randomly selected sub menu number 1
+2023-11-22 02:03:26,583 - Providio -INFO - 44
+2023-11-22 02:03:58,896 - Providio -INFO - Entered into url
+2023-11-22 02:03:58,902 - Providio -INFO - Placing the order as guest user
+2023-11-22 02:03:58,917 - Providio -INFO - Browser launched succesfully
+2023-11-22 02:04:03,292 - Providio -INFO - Hover on create and login account
+2023-11-22 02:04:03,451 - Providio -INFO - Clicked on Sign In
+2023-11-22 02:04:05,688 - Providio -INFO - Entered email
+2023-11-22 02:04:07,847 - Providio -INFO - Entered password
+2023-11-22 02:04:19,942 - Providio -INFO - Clicked on the Submit button
+2023-11-22 02:04:25,133 - Providio -INFO - Hover on create and login account
+2023-11-22 02:04:25,209 - Providio -INFO - User logged in successfully
+2023-11-22 02:04:25,277 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 02:04:34,957 - Providio -INFO - PDP page is already loaded
+2023-11-22 02:04:34,979 - Providio -INFO - next time me
+2023-11-22 02:04:35,054 - Providio -INFO - 0
+2023-11-22 02:04:35,054 - Providio -INFO - notify me
+2023-11-22 02:04:35,082 - Providio -INFO - Total menus count is 8
+2023-11-22 02:04:35,084 - Providio -INFO - Randomly selected menu number 1
+2023-11-22 02:04:35,106 - Providio -INFO - Total number of sub menus associated with the hovered menu 37
+2023-11-22 02:04:35,106 - Providio -INFO - Randomly selected sub menu number 8
+2023-11-22 02:04:55,253 - Providio -INFO - 2
+2023-11-22 02:05:13,426 - Providio -INFO - Product Name is displayed on the page and prodcut name is Pearl, cultured saltwater (bleached), white, 7.5-8mm round, B grade, Mohs hardness 2-1/2 to 4. Sold per 16" strand.
+2023-11-22 02:05:13,426 - Providio -INFO - add to cart  button enabled
+2023-11-22 02:05:34,929 - Providio -INFO - 1
+2023-11-22 02:05:40,042 - Providio -INFO - 3
+2023-11-22 02:05:47,204 - Providio -INFO - Product is added to saveForLater
+2023-11-22 02:05:47,268 - Providio -INFO - Total product price is 578.84
+2023-11-22 02:06:02,322 - Providio -INFO - 0
+2023-11-22 02:06:03,794 - Providio -INFO - Entered shipping fname
+2023-11-22 02:06:04,985 - Providio -INFO - Entered shipping lname
+2023-11-22 02:06:07,363 - Providio -INFO - Entered shipping address
+2023-11-22 02:06:10,560 - Providio -INFO - Entered phone number
+2023-11-22 02:06:17,739 - Providio -INFO - Total Shipping count is 18
+2023-11-22 02:06:17,739 - Providio -INFO - Randomly selected menu number 8
+2023-11-22 02:06:17,776 - Providio -INFO - $54.65
+2023-11-22 02:06:17,907 - Providio -INFO - Selected Shipping Method Name is UPS Next Day Air Early (1 - 3 business days)
+2023-11-22 02:06:25,136 - Providio -INFO - Clicked on the continue billing button
+2023-11-22 02:06:25,387 - Providio -INFO - Payment Method
+2023-11-22 02:06:25,387 - Providio -INFO - Successfully clicked on the Payment button
+2023-11-22 02:06:36,678 - Providio -INFO - true
+2023-11-22 02:06:36,678 - Providio -INFO - The user did not enter the Credit card details, clicked the guest Next review button, and the error is displayed
+2023-11-22 02:06:52,109 - Providio -INFO - 1
+2023-11-22 02:06:52,217 - Providio -INFO - Clicked on review order button
+2023-11-22 02:11:36,882 - Providio -INFO - Entered into url
+2023-11-22 02:11:36,882 - Providio -INFO - Placing the order as guest user
+2023-11-22 02:11:36,976 - Providio -INFO - Browser launched succesfully
+2023-11-22 02:11:41,429 - Providio -INFO - Hover on create and login account
+2023-11-22 02:11:41,593 - Providio -INFO - Clicked on Sign In
+2023-11-22 02:11:43,796 - Providio -INFO - Entered email
+2023-11-22 02:11:46,070 - Providio -INFO - Entered password
+2023-11-22 02:11:58,169 - Providio -INFO - Clicked on the Submit button
+2023-11-22 02:12:03,339 - Providio -INFO - Hover on create and login account
+2023-11-22 02:12:03,412 - Providio -INFO - User logged in successfully
+2023-11-22 02:12:03,473 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 02:12:13,737 - Providio -INFO - PDP page is already loaded
+2023-11-22 02:12:13,758 - Providio -INFO - next time me
+2023-11-22 02:12:13,831 - Providio -INFO - 0
+2023-11-22 02:12:13,831 - Providio -INFO - notify me
+2023-11-22 02:12:13,859 - Providio -INFO - Total menus count is 8
+2023-11-22 02:12:13,863 - Providio -INFO - Randomly selected menu number 7
+2023-11-22 02:12:13,863 - Providio -INFO - random genrate is 7
+2023-11-22 02:12:13,885 - Providio -INFO - Total menus count is 8
+2023-11-22 02:12:13,885 - Providio -INFO - Randomly selected menu number 6
+2023-11-22 02:12:13,914 - Providio -INFO - Total number of sub menus associated with the hovered menu 14
+2023-11-22 02:12:13,914 - Providio -INFO - Randomly selected sub menu number 6
+2023-11-22 02:12:31,131 - Providio -INFO - PLP page is already loaded
+2023-11-22 02:12:37,962 - Providio -INFO - Product Name is displayed on the page and prodcut name is Wind chime, glass/rayon/paper, clear, 3x2-1/2-inch dome with acrylic beads. Sold individually.
+2023-11-22 02:12:37,962 - Providio -INFO - add to cart  button enabled
+2023-11-22 02:12:58,717 - Providio -INFO - 1
+2023-11-22 02:13:03,854 - Providio -INFO - 1
+2023-11-22 02:13:12,225 - Providio -INFO - Product is added to cart
+2023-11-22 02:13:12,276 - Providio -INFO - Total product price is 578.03
+2023-11-22 02:13:27,992 - Providio -INFO - 0
+2023-11-22 02:13:29,467 - Providio -INFO - Entered shipping fname
+2023-11-22 02:13:30,706 - Providio -INFO - Entered shipping lname
+2023-11-22 02:13:33,003 - Providio -INFO - Entered shipping address
+2023-11-22 02:13:36,159 - Providio -INFO - Entered phone number
+2023-11-22 02:13:43,312 - Providio -INFO - Total Shipping count is 18
+2023-11-22 02:13:43,312 - Providio -INFO - Randomly selected menu number 18
+2023-11-22 02:13:43,372 - Providio -INFO - $61.19
+2023-11-22 02:13:43,519 - Providio -INFO - Selected Shipping Method Name is FedEx Priority Overnight (2 business days)
+2023-11-22 02:13:50,739 - Providio -INFO - Clicked on the continue billing button
+2023-11-22 02:13:50,975 - Providio -INFO - Payment Method
+2023-11-22 02:13:50,991 - Providio -INFO - Successfully clicked on the Payment button
+2023-11-22 02:14:06,459 - Providio -INFO - 1
+2023-11-22 02:14:06,589 - Providio -INFO - Clicked on review order button
+2023-11-22 02:16:36,845 - Providio -INFO - Entered into url
+2023-11-22 02:16:36,849 - Providio -INFO - Placing the order as guest user
+2023-11-22 02:16:36,895 - Providio -INFO - Browser launched succesfully
+2023-11-22 02:16:41,308 - Providio -INFO - Hover on create and login account
+2023-11-22 02:16:41,498 - Providio -INFO - Clicked on Sign In
+2023-11-22 02:16:43,697 - Providio -INFO - Entered email
+2023-11-22 02:16:45,944 - Providio -INFO - Entered password
+2023-11-22 02:16:58,122 - Providio -INFO - Clicked on the Submit button
+2023-11-22 02:17:03,303 - Providio -INFO - Hover on create and login account
+2023-11-22 02:17:03,368 - Providio -INFO - User logged in successfully
+2023-11-22 02:17:03,427 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 02:17:14,012 - Providio -INFO - PDP page is already loaded
+2023-11-22 02:17:14,022 - Providio -INFO - next time me
+2023-11-22 02:17:14,095 - Providio -INFO - 0
+2023-11-22 02:17:14,116 - Providio -INFO - notify me
+2023-11-22 02:17:14,149 - Providio -INFO - Total menus count is 8
+2023-11-22 02:17:14,151 - Providio -INFO - Randomly selected menu number 5
+2023-11-22 02:17:14,176 - Providio -INFO - Total number of sub menus associated with the hovered menu 1
+2023-11-22 02:17:14,176 - Providio -INFO - Randomly selected sub menu number 1
+2023-11-22 02:17:32,979 - Providio -INFO - 51
+2023-11-22 02:17:52,595 - Providio -INFO - Product Name is displayed on the page and prodcut name is Bead, yellow boxwood and resin (assembled), light green / green / dark green, 23x18mm oval. Sold per 6-inch strand, approximately 6 beads.
+2023-11-22 02:17:52,596 - Providio -INFO - add to cart  button enabled
+2023-11-22 02:18:14,332 - Providio -INFO - 3
+2023-11-22 02:18:19,434 - Providio -INFO - 1
+2023-11-22 02:18:26,601 - Providio -INFO - Product Removed from the cart
+2023-11-22 02:18:26,644 - Providio -INFO - Total product price is 573.79
+2023-11-22 02:18:42,712 - Providio -INFO - 0
+2023-11-22 02:18:44,227 - Providio -INFO - Entered shipping fname
+2023-11-22 02:18:45,465 - Providio -INFO - Entered shipping lname
+2023-11-22 02:18:47,859 - Providio -INFO - Entered shipping address
+2023-11-22 02:18:51,042 - Providio -INFO - Entered phone number
+2023-11-22 02:18:58,240 - Providio -INFO - Total Shipping count is 18
+2023-11-22 02:18:58,240 - Providio -INFO - Randomly selected menu number 4
+2023-11-22 02:18:58,279 - Providio -INFO - $54.65
+2023-11-22 02:18:58,428 - Providio -INFO - Selected Shipping Method Name is UPS Next Day Air (1 - 3 business days)
+2023-11-22 02:19:05,621 - Providio -INFO - Clicked on the continue billing button
+2023-11-22 02:19:05,793 - Providio -INFO - Payment Method
+2023-11-22 02:19:05,793 - Providio -INFO - Successfully clicked on the Payment button
+2023-11-22 02:21:19,619 - Providio -INFO - Entered into url
+2023-11-22 02:21:19,619 - Providio -INFO - Placing the order as guest user
+2023-11-22 02:21:19,634 - Providio -INFO - Browser launched succesfully
+2023-11-22 02:21:23,959 - Providio -INFO - Hover on create and login account
+2023-11-22 02:21:24,102 - Providio -INFO - Clicked on Sign In
+2023-11-22 02:21:26,412 - Providio -INFO - Entered email
+2023-11-22 02:21:28,650 - Providio -INFO - Entered password
+2023-11-22 02:21:40,744 - Providio -INFO - Clicked on the Submit button
+2023-11-22 02:21:45,925 - Providio -INFO - Hover on create and login account
+2023-11-22 02:21:45,989 - Providio -INFO - User logged in successfully
+2023-11-22 02:21:46,057 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 02:21:56,347 - Providio -INFO - PDP page is already loaded
+2023-11-22 02:21:56,374 - Providio -INFO - next time me
+2023-11-22 02:21:56,449 - Providio -INFO - 0
+2023-11-22 02:21:56,449 - Providio -INFO - notify me
+2023-11-22 02:21:56,474 - Providio -INFO - Total menus count is 8
+2023-11-22 02:21:56,474 - Providio -INFO - Randomly selected menu number 3
+2023-11-22 02:21:56,499 - Providio -INFO - Total number of sub menus associated with the hovered menu 12
+2023-11-22 02:21:56,499 - Providio -INFO - Randomly selected sub menu number 2
+2023-11-22 02:22:13,441 - Providio -INFO - PLP page is already loaded
+2023-11-22 02:22:18,763 - Providio -INFO - Product Name is displayed on the page and prodcut name is Wire, sterling silver-filled, dead-soft, round, 22 gauge. Sold per 10-foot spool.
+2023-11-22 02:22:18,763 - Providio -INFO - add to cart  button enabled
+2023-11-22 02:22:39,337 - Providio -INFO - Total product price is 580.56
+2023-11-22 02:22:54,295 - Providio -INFO - 0
+2023-11-22 02:22:55,778 - Providio -INFO - Entered shipping fname
+2023-11-22 02:22:57,000 - Providio -INFO - Entered shipping lname
+2023-11-22 02:22:59,321 - Providio -INFO - Entered shipping address
+2023-11-22 02:23:02,456 - Providio -INFO - Entered phone number
+2023-11-22 02:23:09,612 - Providio -INFO - Total Shipping count is 18
+2023-11-22 02:23:09,627 - Providio -INFO - Randomly selected menu number 8
+2023-11-22 02:23:09,659 - Providio -INFO - $54.65
+2023-11-22 02:23:09,848 - Providio -INFO - Selected Shipping Method Name is UPS Next Day Air Early (1 - 3 business days)
+2023-11-22 02:23:16,991 - Providio -INFO - Clicked on the continue billing button
+2023-11-22 02:23:17,228 - Providio -INFO - Payment Method
+2023-11-22 02:23:17,228 - Providio -INFO - Successfully clicked on the Payment button
+2023-11-22 02:23:17,243 - Providio -INFO - 1
+2023-11-22 02:23:17,322 - Providio -INFO - coming
+2023-11-22 02:23:32,728 - Providio -INFO - 1
+2023-11-22 02:23:32,850 - Providio -INFO - Clicked on review order button
+2023-11-22 02:27:39,367 - Providio -INFO - Entered into url
+2023-11-22 02:27:39,371 - Providio -INFO - Placing the order as guest user
+2023-11-22 02:27:39,413 - Providio -INFO - Browser launched succesfully
+2023-11-22 02:27:43,792 - Providio -INFO - Hover on create and login account
+2023-11-22 02:27:43,955 - Providio -INFO - Clicked on Sign In
+2023-11-22 02:27:46,179 - Providio -INFO - Entered email
+2023-11-22 02:27:48,447 - Providio -INFO - Entered password
+2023-11-22 02:28:00,579 - Providio -INFO - Clicked on the Submit button
+2023-11-22 02:28:05,753 - Providio -INFO - Hover on create and login account
+2023-11-22 02:28:05,824 - Providio -INFO - User logged in successfully
+2023-11-22 02:28:05,894 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 02:28:07,992 - Providio -INFO - Total menus count is 8
+2023-11-22 02:28:07,992 - Providio -INFO - Randomly selected menu number 8
+2023-11-22 02:28:07,992 - Providio -INFO - random genrate is 8
+2023-11-22 02:28:12,003 - Providio -INFO - 7
+2023-11-22 02:28:12,003 - Providio -INFO - 6
+2023-11-22 02:28:12,022 - Providio -INFO - coming here
+2023-11-22 02:28:18,842 - Providio -INFO - PDP page is already loaded
+2023-11-22 02:28:18,859 - Providio -INFO - next time me
+2023-11-22 02:28:18,898 - Providio -INFO - 1
+2023-11-22 02:28:48,678 - Providio -INFO - Entered into url
+2023-11-22 02:28:48,683 - Providio -INFO - Placing the order as guest user
+2023-11-22 02:28:48,691 - Providio -INFO - Browser launched succesfully
+2023-11-22 02:28:53,085 - Providio -INFO - Hover on create and login account
+2023-11-22 02:28:53,254 - Providio -INFO - Clicked on Sign In
+2023-11-22 02:28:55,532 - Providio -INFO - Entered email
+2023-11-22 02:28:57,710 - Providio -INFO - Entered password
+2023-11-22 02:29:09,846 - Providio -INFO - Clicked on the Submit button
+2023-11-22 02:29:15,043 - Providio -INFO - Hover on create and login account
+2023-11-22 02:29:15,119 - Providio -INFO - User logged in successfully
+2023-11-22 02:29:15,180 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 02:29:17,267 - Providio -INFO - Total menus count is 8
+2023-11-22 02:29:17,267 - Providio -INFO - Randomly selected menu number 3
+2023-11-22 02:29:17,297 - Providio -INFO - Total number of sub menus associated with the hovered menu 12
+2023-11-22 02:29:17,297 - Providio -INFO - Randomly selected sub menu number 7
+2023-11-22 02:29:37,657 - Providio -INFO - 10
+2023-11-22 02:30:00,030 - Providio -INFO - Total filters count is 9
+2023-11-22 02:30:00,030 - Providio -INFO - Randomly selected filters number 4
+2023-11-22 02:30:00,083 - Providio -INFO - Material Detail
+2023-11-22 02:30:00,115 - Providio -INFO - Total filters countofeachFilterbtns is 1
+2023-11-22 02:30:00,115 - Providio -INFO - Randomly selected subfilter number 1
+2023-11-22 02:30:02,176 - Providio -INFO - Original Text: Nickel Titanium (3)
+2023-11-22 02:30:02,176 - Providio -INFO - Extracted Content: 3
+2023-11-22 02:30:02,176 - Providio -INFO - Text without Parentheses: Nickel Titanium 
+2023-11-22 02:30:06,295 - Providio -INFO - Nickel Titanium
+2023-11-22 02:30:06,326 - Providio -INFO - 3
+2023-11-22 02:30:06,326 - Providio -INFO - Material Detail Selected The Filter 3 And The Loaded Products are 3
+2023-11-22 02:30:17,520 - Providio -INFO - 2
+2023-11-22 02:30:17,520 - Providio -INFO - Product input quantity123
+2023-11-22 02:30:24,937 - Providio -INFO - 123
+2023-11-22 02:30:24,939 - Providio -INFO - 123
+2023-11-22 02:30:24,991 - Providio -INFO - Tier price quantity 1
+2023-11-22 02:30:27,058 - Providio -INFO - $
+32.47
+2023-11-22 02:30:27,058 - Providio -INFO - The Discount is on the Black one
+2023-11-22 02:30:47,174 - Providio -INFO - 3
+2023-11-22 02:30:52,303 - Providio -INFO - 1
+2023-11-22 02:30:59,455 - Providio -INFO - Product Removed from the cart
+2023-11-22 02:30:59,505 - Providio -INFO - Total product price is 8.5
+2023-11-22 02:31:17,323 - Providio -INFO - 0
+2023-11-22 02:31:18,875 - Providio -INFO - Entered shipping fname
+2023-11-22 02:31:20,139 - Providio -INFO - Entered shipping lname
+2023-11-22 02:31:22,504 - Providio -INFO - Entered shipping address
+2023-11-22 02:31:25,685 - Providio -INFO - Entered phone number
+2023-11-22 02:31:32,800 - Providio -INFO - Total Shipping count is 18
+2023-11-22 02:31:32,800 - Providio -INFO - Randomly selected menu number 9
+2023-11-22 02:31:32,847 - Providio -INFO - $12.41
+2023-11-22 02:31:33,002 - Providio -INFO - Selected Shipping Method Name is USPS Priority Mail (3 - 5 business days)
+2023-11-22 02:31:40,307 - Providio -INFO - Clicked on the continue billing button
+2023-11-22 02:31:40,561 - Providio -INFO - Payment Method
+2023-11-22 02:31:40,561 - Providio -INFO - Successfully clicked on the Payment button
+2023-11-22 02:31:51,913 - Providio -INFO - true
+2023-11-22 02:31:51,913 - Providio -INFO - The user did not enter the Credit card details, clicked the guest Next review button, and the error is displayed
+2023-11-22 02:31:51,935 - Providio -INFO - 3
+2023-11-22 02:31:51,994 - Providio -INFO - 2
+2023-11-22 02:31:51,995 - Providio -INFO - 2
+2023-11-22 02:31:52,083 - Providio -INFO - This is the Review order page
+2023-11-22 02:31:52,137 - Providio -INFO - 123 William Streetㅤ
+2023-11-22 02:31:59,664 - Providio -INFO - 1211 6th Avenue
+2023-11-22 02:32:04,825 - Providio -INFO - Successfully clicked on the continue Billing
+2023-11-22 02:32:07,889 - Providio -INFO - 123 William Streetㅤ
+2023-11-22 02:32:07,889 - Providio -INFO - 1211 6th Avenue
+2023-11-22 02:32:07,890 - Providio -INFO - 1211 6th Avenueㅤ
+2023-11-22 02:32:07,891 - Providio -INFO - 123 William Streetㅤ Edited successfully shipping Address 1211 6th Avenueㅤ
+2023-11-22 02:32:19,181 - Providio -INFO - three
+2023-11-22 02:32:22,363 - Providio -INFO - Selectd the new card
+2023-11-22 02:32:23,641 - Providio -INFO - entered card name
+2023-11-22 02:32:23,852 - Providio -INFO - entered card number
+2023-11-22 02:32:24,059 - Providio -INFO - entered cvv
+2023-11-22 02:32:24,280 - Providio -INFO - entered exp
+2023-11-22 02:32:39,562 - Providio -INFO - sales price is 1.86
+2023-11-22 02:32:39,599 - Providio -INFO - shipping cost in rop price is 12.41
+2023-11-22 02:32:39,642 - Providio -INFO - The grand total price is 22.0
+2023-11-22 02:32:39,643 - Providio -INFO - Expected Grand total is 14.0 not same as i.e, 22.0
+2023-11-22 02:32:39,669 - Providio -INFO - 0
+2023-11-22 02:32:39,669 - Providio -INFO - Next review order already clicked
+2023-11-22 02:32:39,670 - Providio -INFO - Clicked on review order button
+2023-11-22 02:32:43,698 - Providio -INFO - 3
+2023-11-22 02:32:43,741 - Providio -INFO - 3
+2023-11-22 02:32:43,741 - Providio -INFO - 3
+2023-11-22 02:32:43,786 - Providio -INFO - This is the Payment page
+2023-11-22 02:32:48,829 - Providio -INFO - Total Shipping count is 18
+2023-11-22 02:32:48,830 - Providio -INFO - Randomly selected menu number 14
+2023-11-22 02:32:48,887 - Providio -INFO - 
+2023-11-22 02:32:49,012 - Providio -INFO - Selected Shipping Method Name is  
+2023-11-22 02:32:52,075 - Providio -INFO - Successfully clicked on the continue Billing
+2023-11-22 02:32:52,124 - Providio -INFO - 
+2023-11-22 02:32:52,124 - Providio -INFO - UPS 2nd Day Air
+2023-11-22 02:32:52,124 - Providio -INFO - Not Edited successfully
+2023-11-22 02:34:03,239 - Providio -INFO - Entered into url
+2023-11-22 02:34:03,250 - Providio -INFO - Placing the order as guest user
+2023-11-22 02:34:03,307 - Providio -INFO - Browser launched succesfully
+2023-11-22 02:34:07,737 - Providio -INFO - Hover on create and login account
+2023-11-22 02:34:07,921 - Providio -INFO - Clicked on Sign In
+2023-11-22 02:34:10,090 - Providio -INFO - Entered email
+2023-11-22 02:34:12,313 - Providio -INFO - Entered password
+2023-11-22 02:34:24,419 - Providio -INFO - Clicked on the Submit button
+2023-11-22 02:34:29,582 - Providio -INFO - Hover on create and login account
+2023-11-22 02:34:29,655 - Providio -INFO - User logged in successfully
+2023-11-22 02:34:29,725 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 02:34:31,827 - Providio -INFO - Total menus count is 8
+2023-11-22 02:34:31,827 - Providio -INFO - Randomly selected menu number 5
+2023-11-22 02:34:31,844 - Providio -INFO - Total number of sub menus associated with the hovered menu 1
+2023-11-22 02:34:31,844 - Providio -INFO - Randomly selected sub menu number 1
+2023-11-22 02:34:50,871 - Providio -INFO - 41
+2023-11-22 02:35:24,937 - Providio -INFO - Entered into url
+2023-11-22 02:35:24,944 - Providio -INFO - Placing the order as guest user
+2023-11-22 02:35:24,953 - Providio -INFO - Browser launched succesfully
+2023-11-22 02:35:29,445 - Providio -INFO - Hover on create and login account
+2023-11-22 02:35:29,605 - Providio -INFO - Clicked on Sign In
+2023-11-22 02:35:31,906 - Providio -INFO - Entered email
+2023-11-22 02:35:34,157 - Providio -INFO - Entered password
+2023-11-22 02:35:46,288 - Providio -INFO - Clicked on the Submit button
+2023-11-22 02:35:51,468 - Providio -INFO - Hover on create and login account
+2023-11-22 02:35:51,530 - Providio -INFO - User logged in successfully
+2023-11-22 02:35:51,593 - Providio -INFO - Name of User name is Magnolia
+2023-11-22 02:35:53,683 - Providio -INFO - Total menus count is 8
+2023-11-22 02:35:53,683 - Providio -INFO - Randomly selected menu number 4
+2023-11-22 02:35:53,740 - Providio -INFO - Total number of sub menus associated with the hovered menu 33
+2023-11-22 02:35:53,740 - Providio -INFO - Randomly selected sub menu number 11
+2023-11-22 02:36:08,779 - Providio -INFO - PLP page is already loaded
+2023-11-22 02:36:18,972 - Providio -INFO - Total filters count is 5
+2023-11-22 02:36:18,972 - Providio -INFO - Randomly selected filters number 4
+2023-11-22 02:36:19,022 - Providio -INFO - By Medium
+2023-11-22 02:36:19,051 - Providio -INFO - Total filters countofeachFilterbtns is 1
+2023-11-22 02:36:19,051 - Providio -INFO - Randomly selected subfilter number 1
+2023-11-22 02:36:21,129 - Providio -INFO - Original Text: Metalsmithing (5)
+2023-11-22 02:36:21,129 - Providio -INFO - Extracted Content: 5
+2023-11-22 02:36:21,129 - Providio -INFO - Text without Parentheses: Metalsmithing 
+2023-11-22 02:36:25,237 - Providio -INFO - Metalsmithing
+2023-11-22 02:36:25,259 - Providio -INFO - 5
+2023-11-22 02:36:25,259 - Providio -INFO - By Medium Selected The Filter 5 And The Loaded Products are 5
+2023-11-22 02:36:36,469 - Providio -INFO - 2
+2023-11-22 02:36:36,469 - Providio -INFO - Product input quantity142
+2023-11-22 02:36:44,408 - Providio -INFO - 10
+2023-11-22 02:36:44,408 - Providio -INFO - 10
+2023-11-22 02:36:44,452 - Providio -INFO - Tier price quantity 1
+2023-11-22 02:36:44,548 - Providio -INFO - $
+124.98
+2023-11-22 02:36:44,548 - Providio -INFO - The Discount is on the Blue one
+2023-11-22 02:37:02,660 - Providio -INFO - Total product price is 512.4
+2023-11-22 02:37:18,453 - Providio -INFO - 0
+2023-11-22 02:37:19,960 - Providio -INFO - Entered shipping fname
+2023-11-22 02:37:21,217 - Providio -INFO - Entered shipping lname
+2023-11-22 02:37:23,643 - Providio -INFO - Entered shipping address
+2023-11-22 02:37:26,801 - Providio -INFO - Entered phone number
+2023-11-22 02:37:33,941 - Providio -INFO - Total Shipping count is 17
+2023-11-22 02:37:33,941 - Providio -INFO - Randomly selected menu number 5
+2023-11-22 02:37:33,981 - Providio -INFO - $32.65
+2023-11-22 02:37:34,119 - Providio -INFO - Selected Shipping Method Name is UPS Next Day Air (1 - 5 days)
+2023-11-22 02:37:41,344 - Providio -INFO - Clicked on the continue billing button
+2023-11-22 02:37:41,517 - Providio -INFO - Payment Method
+2023-11-22 02:37:41,517 - Providio -INFO - Successfully clicked on the Payment button
+2023-11-22 02:37:41,533 - Providio -INFO - 1
+2023-11-22 02:37:41,612 - Providio -INFO - coming
+2023-11-22 02:37:41,612 - Providio -INFO - three
+2023-11-22 02:37:44,892 - Providio -INFO - Selectd the new card
+2023-11-22 02:37:46,195 - Providio -INFO - entered card name
+2023-11-22 02:37:46,670 - Providio -INFO - entered card number
+2023-11-22 02:37:46,922 - Providio -INFO - entered cvv
+2023-11-22 02:37:47,166 - Providio -INFO - entered exp
+2023-11-22 02:38:02,498 - Providio -INFO - 0
+2023-11-22 02:38:02,498 - Providio -INFO - Next review order already clicked
+2023-11-22 02:38:02,498 - Providio -INFO - Clicked on review order button
+2023-11-22 02:38:08,579 - Providio -INFO - successfully click on the place order button by normal click
+2023-11-22 02:38:10,600 - Providio -INFO - Fire Mountain Gems and Beads
+2023-11-22 02:38:20,750 - Providio -INFO - Your order was received. Thank you! Confirmation will be sent to your email shortly.
+2023-11-22 02:38:20,752 - Providio -INFO - Successfully Order is Placed
+2023-11-22 02:38:25,864 - Providio -INFO - Successfully Order is Placed and the Order number is 20008108
+2023-11-22 02:38:26,002 - Providio -INFO - Successfully Order is Placed and the Order number is MASTERCARD
+XXXX-XXXX-XXXX-4444

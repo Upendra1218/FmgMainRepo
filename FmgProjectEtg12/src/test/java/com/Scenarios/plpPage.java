@@ -26,7 +26,7 @@ public class plpPage extends baseClass {
 	        Thread.sleep(7000);  // Introducing a delay (in milliseconds) for demonstration purposes
 
 	        // Step 2: Select a filter from the Product Listing Page
-	        //plp.selectaFilterFormPLP();
+	        plp.selectaFilterFormPLP();
 
 	        // Step 3: Add a product to the wishlist from the Product Listing Page
 	        plp.selecttheWishlist();

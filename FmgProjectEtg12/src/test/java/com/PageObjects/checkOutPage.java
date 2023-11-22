@@ -104,6 +104,8 @@ public class checkOutPage extends baseClass {
     WebElement Phone;
     public void setPhone(String phonenumber ) throws InterruptedException{        
         Thread.sleep(1000);
+        Phone.clear();
+        Thread.sleep(2000);
         Phone.sendKeys("9876543212");
     }
 

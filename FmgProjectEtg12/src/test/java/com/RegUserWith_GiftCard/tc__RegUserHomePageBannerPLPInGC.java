@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import com.Launchingbrowser.launchBrowsering;
 import com.PaymentProccess.CheckOutProcessByPayPal;
+import com.PaymentProccess.MiniCartViewCartRegUser;
 import com.PaymentProccess.MinicartViewCartProcess;
 import com.Scenarios.homePagePlp;
 import com.commonfunctionality.Gc__CC_Paypal;
@@ -20,7 +21,7 @@ public class tc__RegUserHomePageBannerPLPInGC extends baseClass{
         homePagePlp.homePagePLP();
 
         // Initialize MinicartViewCartProcess to perform the checkout process
-        MinicartViewCartProcess cartProcess = new MinicartViewCartProcess();
+        MiniCartViewCartRegUser cartProcess = new MiniCartViewCartRegUser();
         // Perform the checkout process
         cartProcess.checkoutprocess();
 

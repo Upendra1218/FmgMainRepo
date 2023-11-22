@@ -57,8 +57,8 @@ public class MinicartViewCartProcess extends baseClass {
 		        
 
                 //assortable price  dissount  and its color                
-//                TierPrice tp= new  TierPrice();
-//                tp.onlyTier();
+                TierPrice tp= new  TierPrice();
+                tp.onlyTier();
                 
                 mc.clickviewCartButton(driver);
 
@@ -77,25 +77,27 @@ public class MinicartViewCartProcess extends baseClass {
                 	vcp.removeBtn();
                 }
               
-     
-    		            Random random = new Random();
-    		            int randomNumber = random.nextInt(2); // Generates a random number between 0 (inclusive) and 2 (exclusive)
-    		
-    		            if (randomNumber == 0) {
-    		               vcp.quantityInsertionInCartPage();
-    		            } else {
-    		               vcp.noQuantityInsertionInCartPage();
-    		            }
-    			 
-    	                //product price
-    	                vcp.productsCalInCart();
-    	                
-    	                //calcuates shipping charges
-    	               // vcp.estimatedshippingCalculations();
-    	                	            
-    	                //total product cost
-    	                viewCartPage.totalProductsCost();
-                // Click the "Checkout" button in the view cart page
+//     
+//    		            Random random = new Random();
+//    		            int randomNumber = random.nextInt(2); // Generates a random number between 0 (inclusive) and 2 (exclusive)
+//    		
+//    		            if (randomNumber == 0) {
+//    		               vcp.quantityInsertionInCartPage();
+//    		            } else {
+//    		               vcp.noQuantityInsertionInCartPage();
+//    		            }
+//    			 
+//    	                //product price
+//    	                vcp.productsCalInCart();
+//    	                
+//    	                //calcuates shipping charges
+//    	               // vcp.estimatedshippingCalculations();
+//    	                	            
+//    	                //total product cost
+//    	                viewCartPage.totalProductsCost();
+//                // Click the "Checkout" button in the view cart page
+                
+                
                 Thread.sleep(5000);
                 vcp.clickCheckout(driver);
                 Thread.sleep(1000);

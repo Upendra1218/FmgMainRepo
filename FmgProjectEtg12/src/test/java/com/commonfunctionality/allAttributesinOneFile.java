@@ -45,7 +45,7 @@ public class allAttributesinOneFile extends baseClass{
      	    	if(addtoCartButton.size()>0) {
      	    		test.info("Verify that the add to cart button");
      	    		logger.info("add to cart  button enabled");
-     	    		WebElement addtoCartButtonClick = driver.findElement(By.xpath("//span[contains(text(),'Add to Cart')]"));     	    		
+     	    		WebElement addtoCartButtonClick = driver.findElement(By.xpath("//span[contains(text(),'Add to Cart')]"));     
      	            js.executeScript("arguments[0].click();", addtoCartButtonClick);
      	            test.pass("Successfully clicked on the add to cart button");
      	    		Thread.sleep(2000);

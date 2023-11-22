@@ -1,6 +1,9 @@
 // Import necessary packages and classes
 package com.Login;
 
+
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -53,41 +56,61 @@ public class tc__Login extends baseClass {
         // Click on the "Submit" button
         lp.clickSubmit();
         logger.info("Clicked on the Submit button");
-        Thread.sleep(5000L);
+        Thread.sleep(5000);
         
-        // hover on my account to know the user is logged or not 
-        lp.hoverOnCreateloginAcc(driver);
-        logger.info("Hover on create and login account");
+        List<WebElement> userName = driver.findElements(By.xpath("//span[text()='Create / Login']"));
         
-       
-        WebElement welcomeLabel = driver.findElement(By.xpath("//b[contains(text(),'Welcome Back!')]"));
-        
-        // Get the actual title from the "Dashboard" element
-        String expectedTitle = "Welcome Back!";
-        String actualTitle = welcomeLabel.getText();
-        
-        // Check if the actual title matches the expected title
-        if (actualTitle.equals(expectedTitle)) {
+        if(userName.size()>0) {
+        	// Log a fail message if the page title does not match the expected title
+        	test.fail("Click failed");
+            logger.info("Click failed");
+        	
+        }else {
+        	
         	// Log a pass message if the user is logged in successfully
         	test.pass("User logged in successfully");
             logger.info("User logged in successfully");
             isLoggedIn = true;
             
             //registered user name 
-            WebElement userName = driver.findElement(By.className("registered-user-message"));
-            test.pass("Name of User name is " + userName.getText());
-            logger.info("Name of User name is " + userName.getText());
-           /* 
-            //registered email id 
-            WebElement regMail = driver.findElement(By.xpath("(//dd)[2]"));
-            test.info("Email is " + regMail.getText());
-            logger.info("Email  is " + regMail.getText());
-            */
-        } else {
-        	// Log a fail message if the page title does not match the expected title
-        	test.fail("The page Title does not match expected " + expectedTitle + " but found " + actualTitle);
-            logger.info("Click failed");
+            WebElement userName1 = driver.findElement(By.className("registered-user-message"));
+            test.pass("Name of User name is " + userName1.getText());
+            logger.info("Name of User name is " + userName1.getText());
         }
+        
+//        // hover on my account to know the user is logged or not 
+//        lp.hoverOnCreateloginAcc(driver);
+//        logger.info("Hover on create and login account");
+//        
+//       
+//        WebElement welcomeLabel = driver.findElement(By.xpath("//b[contains(text(),'Welcome Back!')]"));
+//        
+//        // Get the actual title from the "Dashboard" element
+//        String expectedTitle = "Welcome Back!";
+//        String actualTitle = welcomeLabel.getText();
+//        
+//        // Check if the actual title matches the expected title
+//        if (actualTitle.equals(expectedTitle)) {
+//        	// Log a pass message if the user is logged in successfully
+//        	test.pass("User logged in successfully");
+//            logger.info("User logged in successfully");
+//            isLoggedIn = true;
+//            
+//            //registered user name 
+//            WebElement userName = driver.findElement(By.className("registered-user-message"));
+//            test.pass("Name of User name is " + userName.getText());
+//            logger.info("Name of User name is " + userName.getText());
+//           /* 
+//            //registered email id 
+//            WebElement regMail = driver.findElement(By.xpath("(//dd)[2]"));
+//            test.info("Email is " + regMail.getText());
+//            logger.info("Email  is " + regMail.getText());
+//            */
+//        } else {
+//        	// Log a fail message if the page title does not match the expected title
+//        	test.fail("The page Title does not match expected " + expectedTitle + " but found " + actualTitle);
+//            logger.info("Click failed");
+//        }
    
     }
 }

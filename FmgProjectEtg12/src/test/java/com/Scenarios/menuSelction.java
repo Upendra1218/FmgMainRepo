@@ -46,6 +46,7 @@ public class menuSelction extends baseClass {
         
         // Generate a random index to select a top-level menu item.
         int randomNumbermenu = random.nextInt(count) + 1;
+        menu5 =randomNumbermenu;
         logger.info("Randomly selected menu number " + randomNumbermenu);
         
         if(count==randomNumbermenu) {
@@ -78,6 +79,8 @@ public class menuSelction extends baseClass {
         	    clp.selectaClpRandomly();
         	}
 
+        }else if(randomNumbermenu==5){
+        	
         }else if(randomNumbermenu==7) {
         	logger.info("random genrate is 7");
         	randommenu();

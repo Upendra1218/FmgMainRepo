@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.RegUserWith_CreditCard.tc__RegUserRandomProductFromPLP_InCc">
+      <class name="com.RegUserWith_CreditCard.tc__RegUserHomePageCLPInCC">
         <methods>
           <include name="setUp"/>
           <include name="afterMethod"/>
           <include name="setUpforReport"/>
           <include name="tearDown"/>
-          <include name="GuestUserRandomProductFromPLP_InCc"/>
+          <include name="HomePageCLPInCC"/>
         </methods>
-      </class> <!-- com.RegUserWith_CreditCard.tc__RegUserRandomProductFromPLP_InCc -->
+      </class> <!-- com.RegUserWith_CreditCard.tc__RegUserHomePageCLPInCC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

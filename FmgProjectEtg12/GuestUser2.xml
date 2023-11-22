@@ -41,15 +41,6 @@
     	<class name="com.GuestUserWith_GcAndPaypal.tc__HomePageBannerPLPInGcAndPaypal"/>
     	<class name="com.GuestUserWith_GcAndPaypal.tc__HomePageCLPInGcAndPaypal"/>
     	
-    	<class name="com.Login.tc__Login"/>
-    	
-    	<class name="com.testcases.tc__ProfilePage"/>
-    	<class name="com.Logout.tc__LogOut"/>
-    	
-    	
-    	
-    	
-
 	    	
     </classes>
    

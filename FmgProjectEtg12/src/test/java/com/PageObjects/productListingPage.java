@@ -24,81 +24,95 @@ WebDriver lDriver;
 		lDriver=rDriver;
 		PageFactory.initElements(rDriver, this);
 	}
+	//filters
+	@FindBy(xpath ="//h1[@class='category-name']")
+	WebElement Name;
+	public void nameofPlp() {
+		String name = Name.getText();
+		logger.info(name);
+		test.pass("The Name of the Plp is "+ name);
+		
+	}
 	
 	//price book details
 	public void tierPrice() throws InterruptedException {
 		// Logging information about the test step
 		test.info("Verify that price changes and discount applies");
 
-		// Finding all input fields with name 'quantity' on the page
-		List<WebElement> quantityInput = driver.findElements(By.xpath("//input[@name='quantity']"));
-		int intValueCount=0;
-		int productQuantityCount = quantityInput.size();
+		// Find all color buttons that are enabled
+	    List<WebElement> addtoCartBtns = driver.findElements(By.xpath("//div[contains(@class,'product-grid')]//a[contains(@class, 'add-to-cart')]"));
+	    int displayedAddToCartCount = 0;
+	    for (WebElement item : addtoCartBtns) {
+	        if (item.isDisplayed()) {
+	        	displayedAddToCartCount++;
+	        }
+	    }
+
+	    // Get the count of matched elements and log it.
+	    int count = displayedAddToCartCount;
+	    logger.info("Total add to cart buttons: " + count);
+	    int intValueCount=0;
 		int productCount = 150;
+	    
+	    Random random = new Random();
+	    
+	    int randomAddtocartButton = random.nextInt(count) + 1;
+	    int inputQuantiy = random.nextInt(productCount)+1;
+	    logger.info(randomAddtocartButton);
+	    logger.info("Product input quantity"+inputQuantiy);
+	    
+	    
+    if(count>0) {
+	    	
+	    	// Find the quantity input field associated with the clicked button and set the quantity.
+	        WebElement inctheQuantity = driver.findElement(By.xpath("(//input[@name='quantity'])[" + randomAddtocartButton + "]"));
+	        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", inctheQuantity);
+	        Thread.sleep(2000);
+	        inctheQuantity.clear(); // Clear the existing value
+	        Thread.sleep(2000);
+	        inctheQuantity.sendKeys(String.valueOf(inputQuantiy));
+	        Thread.sleep(1000);
+	        
+	        //prodcut is add to cart
+	        WebElement clickAddtoCartBtn = driver.findElement(By.xpath("(//div[contains(@class,'product-grid')]//a[contains(@class, 'add-to-cart')])[" + randomAddtocartButton + "]"));
+	        // Scroll to the "Add to Cart" button and click it.
+	        JavascriptExecutor js = (JavascriptExecutor) driver;
+	        // Use JavaScript to scroll the element into the middle of the page view
+	        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", clickAddtoCartBtn);
+	        Thread.sleep(1000);
+	        js.executeScript("arguments[0].click();", clickAddtoCartBtn);
+	        Thread.sleep(1000);
+        
+	 	   String valuecount = inctheQuantity.getAttribute("value");
+	       logger.info(valuecount);
+	        
+	       // Convert the string to an integer
+	       intValueCount = Integer.parseInt(valuecount);
+	       logger.info(intValueCount);
 
-		// Creating a random number generator
-		Random random = new Random();
+	    }else {
+			 NavigationProcess navProcess = new NavigationProcess(driver);
+	           // Select a random menu item
+	           navProcess.selectRandomMenu(driver);
+	           //addToCartFromPlp();
+	    
+		 }
+	    
+	   
+	 List<WebElement> tierDivPesent = driver.findElements(By.xpath("//div[@class='pricebooks'][" + randomAddtocartButton + "]"));
+	 
+	 int displayedtierDivPesent = 0;
+	    for (WebElement item : tierDivPesent) {
+	        if (item.isDisplayed()) {
+	        	displayedtierDivPesent++;
+	        }
+	    }
 
-		// Generating a random index to select an "Add to Cart" button
-		int randomquantityInput = random.nextInt(productQuantityCount) + 1;
-		int inputQuantiy = random.nextInt(productCount) + 1;
-		logger.info(randomquantityInput);
-		logger.info("Product input quantity" + inputQuantiy);
-
-		// Checking if there are quantity input fields present on the page
-		if (quantityInput.size() > 0) {
-
-		    // Finding the quantity input field associated with the clicked button and setting the quantity
-		    WebElement inctheQuantity = driver.findElement(By.xpath("(//input[@name='quantity'])[" + randomquantityInput + "]"));
-		    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", inctheQuantity);
-		    Thread.sleep(2000);
-		    inctheQuantity.clear(); // Clearing the existing value
-		    Thread.sleep(2000);
-		    inctheQuantity.sendKeys(String.valueOf(inputQuantiy));
-		    Thread.sleep(1000);
-
-		    // Finding the "Add to Cart" button associated with the selected quantity input
-		    WebElement clickAddtoCartBtn = driver.findElement(By.xpath("(//div[contains(@class,'product-grid')]//a[contains(@class, 'add-to-cart')])[" + randomquantityInput + "]"));
-
-		    // Scrolling to the "Add to Cart" button and clicking it using JavaScript
-		    JavascriptExecutor js = (JavascriptExecutor) driver;
-		    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", clickAddtoCartBtn);
-		    Thread.sleep(1000);
-		    js.executeScript("arguments[0].click();", clickAddtoCartBtn);
-		    Thread.sleep(1000);
-
-		    // Getting the value of the quantity input after setting it
-		    String valuecount = inctheQuantity.getAttribute("value");
-		    logger.info(valuecount);
-
-		    // Converting the string to an integer
-		    intValueCount = Integer.parseInt(valuecount);
-		    logger.info(intValueCount);
-
-		} else {
-		    // If no quantity input fields found, perform navigation and selection of a random menu item
-		    NavigationProcess navProcess = new NavigationProcess(driver);
-
-		    navProcess.selectRandomMenu(driver);
-		}
-
-		// Finding elements representing tier prices for the selected quantity
-		List<WebElement> tierDivPesent = driver.findElements(By.xpath("(//div[@class='pricebooks'])[" + randomquantityInput + "]"));
-
-		int displayedtierDivPesent = 0;
-		for (WebElement item : tierDivPesent) {
-		    // Counting the displayed tier price elements
-		    if (item.isDisplayed()) {
-		        displayedtierDivPesent++;
-		    }
-		}
-
-		// Getting the count of displayed tier price elements
-		int count = displayedtierDivPesent;
-		logger.info("Tier price quantity " + count);
-
-		// Checking if there are displayed tier prices and applying discounts based on the quantity
-		if (count > 0) {
+	    // Get the count of matched elements and log it.
+	    int count1 = displayedtierDivPesent;
+	 
+	 logger.info("Tier price quantity "+count1);
+	 if(count1>0) {
 		    if (intValueCount < 14) {
 		        // Finding elements representing tier 1 prices and extracting the discount information
 		        List<WebElement> priceChangeBartier1 = driver.findElements(By.xpath("//div[@class='pricebook usd-fmg-tier1-prices active']"));

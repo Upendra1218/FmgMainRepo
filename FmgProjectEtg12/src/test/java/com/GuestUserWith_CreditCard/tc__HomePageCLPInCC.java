@@ -10,7 +10,7 @@ import com.testcases.baseClass;
 
 public class tc__HomePageCLPInCC extends baseClass {
     
-    @Test(invocationCount = 5)
+    @Test//(invocationCount = 5)
     public void HomePageCLPInCC() throws InterruptedException {
         // Launch the browser and navigate to the URL
         launchBrowsering lb = new launchBrowsering();

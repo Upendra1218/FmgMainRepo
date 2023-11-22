@@ -58,7 +58,7 @@ public class pdpPage extends baseClass{
 		         
 	    		   NavigationProcess navProcess = new NavigationProcess(driver);
 		           // Select a random menu item
-	        	 navProcess.selectRandomMenu(driver);
+	        	   navProcess.selectRandomMenu(driver);
 		           
 		           productListingPage.selectRandomProduct();
 		   		   //adding produuct to cart
@@ -68,10 +68,11 @@ public class pdpPage extends baseClass{
 //	   	       if (pdpPagecheckNotfy.size() > 0) {
 //	      	   
 //	   	       }
-	       }else {         
+	       }else {   
+	    	   
 	    	   NavigationProcess navProcess = new NavigationProcess(driver);
 	           // Select a random menu item
-        	 navProcess.selectRandomMenu(driver);
+        	   navProcess.selectRandomMenu(driver);
 	           
 	           productListingPage.selectRandomProduct();
 	   		   //adding produuct to cart

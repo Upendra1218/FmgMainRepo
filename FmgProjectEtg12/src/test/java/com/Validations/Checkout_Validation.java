@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
+import com.PageObjects.homePage;
 import com.PageObjects.miniCartPage;
 import com.testcases.baseClass;
 
@@ -171,6 +172,14 @@ public class Checkout_Validation extends baseClass {
 			        test.pass("Successfully Order is Placed and payment is "+ paymentDetails);
 			        logger.info("Successfully Order is Placed and the Order number is "+  paymentDetails);
 			        Thread.sleep(5000);
+			        
+			        if(isLoggedIn) {
+                        logger.info("Returning to Home page");
+		    			 homePage hp = new homePage(driver);
+		    			 hp.clickOnLogo();
+		    			 
+		    			 Thread.sleep(5000);
+			        }
 			        
 			       
 				 }

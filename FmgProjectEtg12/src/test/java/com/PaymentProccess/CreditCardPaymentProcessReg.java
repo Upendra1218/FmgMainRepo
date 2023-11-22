@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import com.CreditCardPaymentMethods.allPaymentMethods;
 import com.PageObjects.ShippingMethodInPaymentPage;
 import com.PageObjects.checkOutPage;
+import com.PageObjects.homePage;
 import com.PageObjects.paymentpPage;
 import com.PageObjects.reviewOrderPage;
 import com.PageObjects.taxCalculation;
@@ -39,7 +40,7 @@ public class CreditCardPaymentProcessReg extends baseClass{
 					//Credit card negative validations
 					//negativeValidation.creditCardDetails();
 					
-					//editInAllCheckOutProcess.clickEditBtnRandomly();
+					editInAllCheckOutProcess.clickEditBtnRandomly();
 					
 			       
 					// Detect payment methods
@@ -87,23 +88,24 @@ public class CreditCardPaymentProcessReg extends baseClass{
 	    		logger.info("Clicked on review order button");
 	    		Thread.sleep(4000);		  
 	    		
-	    		//editInAllCheckOutProcess.clickEditBtnRandomly();
+	    		editInAllCheckOutProcess.clickEditBtnRandomly();
 
-	    		//total prodcut
-//	    		taxCalculation tax= new taxCalculation();
-//	    		tax.totalProductValidation();
+
+	  	    		//total prodcut
+	    		taxCalculation tax= new taxCalculation();
+	    		tax.totalProductValidation();
 	    		 // granD TOTAL 
-	    		//shippingMtd.grandTotalValidation();	
+	    		tax.grandTotalValidation();
 	    		
-	    		rop.clickonplaceorderwithJsExuter(driver);
+	    		  		rop.clickonplaceorderwithJsExuter(driver);
 	    		
 	    		 logger.info("successfully click on the place order button by normal click");
                 Thread.sleep(2000);
                 logger.info(driver.getTitle());
 				    
-				    Thread.sleep(7000);
+				    Thread.sleep(5000);
 					 // Checkout validation
-		    		if(driver.getTitle().endsWith("Fire Mountain Gems and Beads")) {
+		    		if(driver.getTitle().equals("Fire Mountain Gems and Beads")) {
 		    			
 		    			 Checkout_Validation checkout= new Checkout_Validation();
 		    			 
@@ -112,7 +114,10 @@ public class CreditCardPaymentProcessReg extends baseClass{
 		    		
 		    	     // Order number and order date
 		    			 checkout.ordernumberandOrderdate();
-		    			 //Thread.sleep(5000);
+		    			 
+		    			 Thread.sleep(3000);
+		    			 
+
 		    		}else if(driver.findElements(By.xpath("//p[contains(text(),'There was a problem processing your payment. Please verify your payment information and try again.')]")).size()>0) {
 		    			
 		    			test.info("Returned back to payment page , as the Expected behaviour in brain tree is, the order will be failed for 2000-2999.99 $ ,3000.00-3000.99 $ 5000.00 $ ");

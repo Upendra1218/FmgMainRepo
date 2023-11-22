@@ -173,14 +173,7 @@ public class CheckOutProcessByPayPal extends baseClass{
 					    	//place order 
 					    		rop.clickonplaceorderwithJsExuter(driver);
 					    		
-					    		Thread.sleep(5000);
-								
-								 Checkout_Validation checkout= new Checkout_Validation();
-								 //validate the final place the order page
-								 checkout.validatePlacetheOrderPage();							
-								 //ordernumberandOrderdate
-								 checkout.ordernumberandOrderdate();
-								 Thread.sleep(3000);
+			
 	
 						}else  {
 							pp.brainTreeAfterClick(driver);
@@ -195,11 +188,11 @@ public class CheckOutProcessByPayPal extends baseClass{
 				    		
 				    		
 				    		 //total prodcut
-//				    		taxCalculation shippingMtd = new taxCalculation();
-//				    		shippingMtd.totalProductValidation();
+				    		taxCalculation shippingMtd = new taxCalculation();
+				    		shippingMtd.totalProductValidation();
 				    		 
 				    		 // granD TOTAL 
-//				    		shippingMtd.grandTotalValidation();
+				    		shippingMtd.grandTotalValidation();
 					    	//place order				    		
 				    		 rop.clickonplaceorderwithJsExuter(driver);
 				    		
@@ -216,6 +209,8 @@ public class CheckOutProcessByPayPal extends baseClass{
 		    	     //ordernumberandOrderdate
 		    			 checkout.ordernumberandOrderdate();
 		    			 Thread.sleep(5000);
+		    			 
+		    			 
 		    	  }	
 	    }
 	    

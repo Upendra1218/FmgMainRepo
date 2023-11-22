@@ -85,7 +85,8 @@ public class Gc__CC_Paypal extends baseClass{
 				    		
 				    	     // Order number and order date
 				    			 checkout.ordernumberandOrderdate();
-				    			 Thread.sleep(2000);			    							
+				    			 Thread.sleep(2000);
+				    			 
 						 }else if(driver.findElements(By.xpath("//div[@class='success giftcert-pi']//span[@class='message']")).size()>0) {		 					 
 							 test.info("Gc code redeemed placing order with combination of GC and Credit card");						
 							//fetching credit card class by creating   tc__CreditCardPaymentProcess instance								     

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="FMGTestCases">
+
+  <!--  <listeners>
+		<listener class-name="com.providio.ExtentReports.ExtentReporterNG" />
+	</listeners> -->
+  <test thread-count="5" name="Automation">
+  
+   <classes>  
+	   
+	   <class name="com.Login.tc__Login"/>
+	   
+	   <class name="com.RegUserWith_Checkout_Paypal.tc__BySearchingProduct_RegUser_InCheckoutPaypal" />
+	   <class name="com.RegUserWith_Checkout_Paypal.tc__RegUserHomePageBannerPLPInCheckoutPaypal" />
+	   <class name="com.RegUserWith_Checkout_Paypal.tc__RegUserHomePageCLPInCheckoutPaypal" />
+	   <class name="com.RegUserWith_Checkout_Paypal.tc__RegUserRandomProductFromPDP_InCheckoutPaypal" />
+	   <class name="com.RegUserWith_Checkout_Paypal.tc__RegUserRandomProductFromPLP_InCheckoutPaypal" />
+	      
+	   
+	   <class name="com.RegUserWith_CreditCard.tc__BySearchingProduct_RegUser_InCC" />
+	   <class name="com.RegUserWith_CreditCard.tc__RegUserHomePageBannerPLPInCC" />
+	   <class name="com.RegUserWith_CreditCard.tc__RegUserHomePageCLPInCC" />
+	   <class name="com.RegUserWith_CreditCard.tc__RegUserRandomProductFromPDP_InCc" />
+	   <class name="com.RegUserWith_CreditCard.tc__RegUserRandomProductFromPLP_InCc" />
+	   
+	   <class name="com.RegUserWith_GiftCard.tc__BySearchingProduct_RegUser_InGc" />
+       <class name="com.RegUserWith_GiftCard.tc__RegUserHomePageBannerPLPInGC" />
+       <class name="com.RegUserWith_GiftCard.tc__RegUserHomePageCLPInGc" />
+       <class name="com.RegUserWith_GiftCard.tc__RegUserRandomProductFromPDP_InGc" />
+	   <class name="com.RegUserWith_GiftCard.tc__RegUserRandomProductFromPLP_InGc" />
+	   
+	   <class name="com.RegUserWith_GcAndPaypal.tc__BySearchingProduct_RegUser_InGcAndPaypal" />
+	   <class name="com.RegUserWith_GcAndPaypal.tc__RegUserHomePageBannerPLPInGcAndPaypal" />
+	   <class name="com.RegUserWith_GcAndPaypal.tc__RegUserHomePageCLPInGcAndPaypal" />
+	   <class name="com.RegUserWith_GcAndPaypal.tc__RegUserRandomProductFromPDP_InGcAndPaypal" />
+	   <class name="com.RegUserWith_GcAndPaypal.tc__RegUserRandomProductFromPLP_InGcAndPaypal" />
+	   
+	   <class name="com.RegUserWith_GcAndCC.tc__BySearchingProduct_RegUser_InGcAndCc" />
+	   <class name="com.RegUserWith_GcAndCC.tc__RegUserHomePageBannerPLPInGcAndCc" />
+	   <class name="com.RegUserWith_GcAndCC.tc__RegUserHomePageCLPInGcAndCc" />
+	   <class name="com.RegUserWith_GcAndCC.tc__RegUserRandomProductFromPDP_InGcAndCc" />
+	   <class name="com.RegUserWith_GcAndCC.tc__RegUserRandomProductFromPLP_InGcAndCc" />
+	   
+	   
+	   <class name="com.Logout.tc__LogOut"/>
+	   
+	   
+	        
+
+    </classes>
+   
+  
+  </test>
+  
+ 
+</suite> <!-- ProvidioTestcases -->
+

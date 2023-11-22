@@ -20,6 +20,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.PageObjects.reviewOrderPage;
+import com.PageObjects.taxCalculation;
 import com.Validations.Checkout_Validation;
 import com.testcases.baseClass;
 
@@ -329,6 +330,15 @@ public class PaymentProccessByGC extends baseClass{
 				rop.clickonReviewOrder(driver);
 				logger.info("clicked on the review oreder");
 		
+				 
+	    		 //total prodcut
+	    		 taxCalculation shippingMtd = new taxCalculation();
+	    		shippingMtd.totalProductValidation();
+	    		 
+	    		 // granD TOTAL 
+	    		shippingMtd.grandTotalValidation();
+
+				
 		       //place order 
 				rop.clickonplaceorderwithJsExuter(driver);
 				logger.info("successfully click on the place order button");

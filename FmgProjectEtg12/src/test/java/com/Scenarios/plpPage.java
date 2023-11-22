@@ -21,6 +21,8 @@ public class plpPage extends baseClass {
 		List<WebElement> plpPagecheck = driver.findElements(By.xpath("//div[contains(@class, 'product-items-container')]"));
 		if(plpPagecheck.size()>0) {
 			
+			plp.nameofPlp();
+			
 	        // Step 1: Sort the filters on the Product Listing Page
 	        plp.selecttheFilters(2, driver);
 	        Thread.sleep(7000);  // Introducing a delay (in milliseconds) for demonstration purposes

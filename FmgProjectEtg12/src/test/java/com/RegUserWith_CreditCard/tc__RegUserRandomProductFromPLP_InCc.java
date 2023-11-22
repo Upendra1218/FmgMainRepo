@@ -14,7 +14,7 @@ public class tc__RegUserRandomProductFromPLP_InCc extends baseClass {
 
 	// Test method, dependent on the loginTest method and always runs
     @Test(dependsOnMethods = { "com.Login.tc__Login.loginTest" }, alwaysRun = true)
-    public void GuestUserRandomProductFromPLP_InCc() throws InterruptedException {
+    public void RegUserRandomProductFromPLP_InCc() throws InterruptedException {
     	 // Validate login
         if (isLoggedIn) {
         

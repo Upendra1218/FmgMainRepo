@@ -43,8 +43,13 @@ public class CLPpage extends baseClass{
 			        JavascriptExecutor js = (JavascriptExecutor) driver;
 			        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", clickClp);
 			        Thread.sleep(2000);
-			        //js.executeScript("arguments[0].click();", clickClp);
-			      clickClp.click();
+			        if(menu5==5) {
+			        	js.executeScript("arguments[0].click();", clickClp);
+			        }else {
+			        	clickClp.click();
+			        }
+			        
+			      
 			      Thread.sleep(4000);
 			      List<WebElement> noPlpPage = driver.findElements(By.xpath("//div[contains(@class,'zero-search-results')]"));
 			      if(noPlpPage.size()>0) {

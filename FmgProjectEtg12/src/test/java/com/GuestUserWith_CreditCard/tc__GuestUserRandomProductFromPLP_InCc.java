@@ -24,14 +24,14 @@ public class tc__GuestUserRandomProductFromPLP_InCc extends baseClass {
         // Initialize and execute the PLP page scenario to add a product to the cart
         plpPage.addtocartplp();
 
-//        // Initialize MinicartViewCartProcess to perform the checkout process
-//        MinicartViewCartProcess cartProcess = new MinicartViewCartProcess();
-//        // Perform the checkout process
-//        cartProcess.checkoutprocess();
-//
-//        // Initialize CreditCardPaymentProcess to perform the payment using a credit card
-//        CreditCardPaymentProcess ccPaymentProcess = new CreditCardPaymentProcess();
-//        // Perform the payment using a credit card
-//        ccPaymentProcess.paymentByCreditCard();
+        // Initialize MinicartViewCartProcess to perform the checkout process
+        MinicartViewCartProcess cartProcess = new MinicartViewCartProcess();
+        // Perform the checkout process
+        cartProcess.checkoutprocess();
+
+        // Initialize CreditCardPaymentProcess to perform the payment using a credit card
+        CreditCardPaymentProcess ccPaymentProcess = new CreditCardPaymentProcess();
+        // Perform the payment using a credit card
+        ccPaymentProcess.paymentByCreditCard();
     }
 }

@@ -100,6 +100,8 @@ public class baseClass {
 	protected static boolean isLoggedIn=false;
 	protected static boolean openBrowser = false;
 	
+	protected static int menu5 =  0 ;
+	
 	//total cost at cart page
 		protected static Float totalCost = (float) 0 ;
 		//sub total cost at hovered cart

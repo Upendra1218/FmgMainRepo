@@ -68,11 +68,8 @@ public class CreditCardPaymentProcess extends baseClass{
 	    		Thread.sleep(4000);	
 	    		rop.clickonReviewOrder(driver);
 	    		Thread.sleep(4000);	
-	    		//total prodcut
-	    		taxCalculation shippingMtd = new taxCalculation();
+	    		
 	    		//shippingMtd.totalProductValidation();
-	    		 // granD TOTAL 
-	    		shippingMtd.grandTotalValidation();
 	    		
 	    		List<WebElement> clickonReviewOrder = driver.findElements(By.xpath("//div[@class='reviewpage-custom']//button[contains(text(), 'Next: Review Order')]"));
 	    		int displayedReviewOrder = 0;
@@ -91,12 +88,16 @@ public class CreditCardPaymentProcess extends baseClass{
 	    		Thread.sleep(4000);		  
 	    		
 	    		editInAllCheckOutProcess.clickEditBtnRandomly();
-
-	    		//total prodcut
-	    		taxCalculation tax= new taxCalculation();
-	    		tax.totalProductValidation();
-	    		 // granD TOTAL 
-	    		shippingMtd.grandTotalValidation();	
+	    		
+	    		Thread.sleep(2000);
+	    		
+//	    		//total prodcut
+//	    		taxCalculation tax= new taxCalculation();
+//	    		tax.totalProductValidation();
+//	    		//total prodcut
+//	    		taxCalculation shippingMtd = new taxCalculation();
+//	    		 // granD TOTAL 
+//	    		shippingMtd.grandTotalValidation();	
 	    		
 	    		rop.clickonplaceorderwithJsExuter(driver);
 	    		

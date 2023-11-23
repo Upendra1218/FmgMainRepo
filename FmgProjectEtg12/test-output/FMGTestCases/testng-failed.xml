@@ -3,111 +3,34 @@
 <suite name="Failed suite [FMGTestCases]">
   <test thread-count="5" name="Automation(failed)">
     <classes>
-      <class name="com.Login.tc__Login">
-        <methods>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.Login.tc__Login -->
-      <class name="com.RegUserWith_GcAndCC.tc__BySearchingProduct_RegUser_InGcAndCc">
+      <class name="com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPLP_InGcAndPaypal">
         <methods>
           <include name="setUp"/>
           <include name="afterMethod"/>
-          <include name="bySearchingProduct_RegUser_InGcAndCc"/>
           <include name="setUpforReport"/>
           <include name="tearDown"/>
+          <include name="guestUserRandomProductFromPLP_InGcAndPaypal"/>
         </methods>
-      </class> <!-- com.RegUserWith_GcAndCC.tc__BySearchingProduct_RegUser_InGcAndCc -->
-      <class name="com.RegUserWith_GiftCard.tc__BySearchingProduct_RegUser_InGc">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setUp"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-          <include name="bySearchingProduct_RegUser_InGc"/>
-        </methods>
-      </class> <!-- com.RegUserWith_GiftCard.tc__BySearchingProduct_RegUser_InGc -->
-      <class name="com.RegUserWith_Checkout_Paypal.tc__RegUserRandomProductFromPLP_InCheckoutPaypal">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setUp"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-          <include name="RegUserRandomProductFromPLP_InCheckoutPaypal"/>
-        </methods>
-      </class> <!-- com.RegUserWith_Checkout_Paypal.tc__RegUserRandomProductFromPLP_InCheckoutPaypal -->
-      <class name="com.RegUserWith_Checkout_Paypal.tc__RegUserHomePageCLPInCheckoutPaypal">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setUp"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-          <include name="HomePageCLPInCheckoutPaypal"/>
-        </methods>
-      </class> <!-- com.RegUserWith_Checkout_Paypal.tc__RegUserHomePageCLPInCheckoutPaypal -->
-      <class name="com.RegUserWith_GiftCard.tc__RegUserHomePageCLPInGc">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setUp"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-          <include name="homePageCLPInGc"/>
-        </methods>
-      </class> <!-- com.RegUserWith_GiftCard.tc__RegUserHomePageCLPInGc -->
-      <class name="com.RegUserWith_GcAndCC.tc__RegUserHomePageCLPInGcAndCc">
+      </class> <!-- com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPLP_InGcAndPaypal -->
+      <class name="com.GuestUserWith_GcAndPaypal.tc__BySearchingProduct_GuestUser_InGcAndPaypal">
         <methods>
           <include name="setUp"/>
           <include name="afterMethod"/>
-          <include name="homePageCLPInGcAndCc"/>
+          <include name="bySearchingProduct_GuestUser_InGcAndPaypal"/>
           <include name="setUpforReport"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.RegUserWith_GcAndCC.tc__RegUserHomePageCLPInGcAndCc -->
-      <class name="com.RegUserWith_GcAndPaypal.tc__RegUserHomePageBannerPLPInGcAndPaypal">
+      </class> <!-- com.GuestUserWith_GcAndPaypal.tc__BySearchingProduct_GuestUser_InGcAndPaypal -->
+      <class name="com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPDP_InGcAndPaypal">
         <methods>
           <include name="setUp"/>
           <include name="afterMethod"/>
-          <include name="homePageBannerPLPInGcAndPaypal"/>
           <include name="setUpforReport"/>
           <include name="tearDown"/>
+          <include name="guestUserRandomProductFromPDP_InGcAndPaypal"/>
         </methods>
-      </class> <!-- com.RegUserWith_GcAndPaypal.tc__RegUserHomePageBannerPLPInGcAndPaypal -->
-      <class name="com.RegUserWith_CreditCard.tc__RegUserRandomProductFromPLP_InCc">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setUp"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-          <include name="RegUserRandomProductFromPLP_InCc"/>
-        </methods>
-      </class> <!-- com.RegUserWith_CreditCard.tc__RegUserRandomProductFromPLP_InCc -->
-      <class name="com.RegUserWith_GiftCard.tc__RegUserRandomProductFromPDP_InGc">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setUp"/>
-          <include name="regUserRandomProductFromPDP_InGc"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.RegUserWith_GiftCard.tc__RegUserRandomProductFromPDP_InGc -->
-      <class name="com.RegUserWith_GiftCard.tc__RegUserHomePageBannerPLPInGC">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setUp"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-          <include name="homePageBannerPLPInGC"/>
-        </methods>
-      </class> <!-- com.RegUserWith_GiftCard.tc__RegUserHomePageBannerPLPInGC -->
-      <class name="com.Logout.tc__LogOut">
-        <methods>
-          <include name="setUp"/>
-          <include name="afterMethod"/>
-          <include name="Logout"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.Logout.tc__LogOut -->
-      <class name="com.RegUserWith_GcAndPaypal.tc__RegUserHomePageCLPInGcAndPaypal">
+      </class> <!-- com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPDP_InGcAndPaypal -->
+      <class name="com.GuestUserWith_GcAndPaypal.tc__HomePageCLPInGcAndPaypal">
         <methods>
           <include name="setUp"/>
           <include name="afterMethod"/>
@@ -115,115 +38,16 @@
           <include name="tearDown"/>
           <include name="homePageCLPInGcAndPaypal"/>
         </methods>
-      </class> <!-- com.RegUserWith_GcAndPaypal.tc__RegUserHomePageCLPInGcAndPaypal -->
-      <class name="com.RegUserWith_GcAndCC.tc__RegUserRandomProductFromPLP_InGcAndCc">
-        <methods>
-          <include name="setUp"/>
-          <include name="afterMethod"/>
-          <include name="RegUserRandomProductFromPLP_InGcAndCc"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.RegUserWith_GcAndCC.tc__RegUserRandomProductFromPLP_InGcAndCc -->
-      <class name="com.RegUserWith_CreditCard.tc__BySearchingProduct_RegUser_InCC">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setUp"/>
-          <include name="bySearchingProduct_GuestUser_InCC"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.RegUserWith_CreditCard.tc__BySearchingProduct_RegUser_InCC -->
-      <class name="com.RegUserWith_GcAndPaypal.tc__RegUserRandomProductFromPLP_InGcAndPaypal">
-        <methods>
-          <include name="regUserRandomProductFromPLP_InGcAndPaypal"/>
-          <include name="afterMethod"/>
-          <include name="setUp"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.RegUserWith_GcAndPaypal.tc__RegUserRandomProductFromPLP_InGcAndPaypal -->
-      <class name="com.RegUserWith_GcAndPaypal.tc__BySearchingProduct_RegUser_InGcAndPaypal">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setUp"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-          <include name="bySearchingProduct_GuestUser_InGcAndPaypal"/>
-        </methods>
-      </class> <!-- com.RegUserWith_GcAndPaypal.tc__BySearchingProduct_RegUser_InGcAndPaypal -->
-      <class name="com.RegUserWith_CreditCard.tc__RegUserRandomProductFromPDP_InCc">
-        <methods>
-          <include name="ProductFromPDP"/>
-          <include name="afterMethod"/>
-          <include name="setUp"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.RegUserWith_CreditCard.tc__RegUserRandomProductFromPDP_InCc -->
-      <class name="com.RegUserWith_GcAndPaypal.tc__RegUserRandomProductFromPDP_InGcAndPaypal">
+      </class> <!-- com.GuestUserWith_GcAndPaypal.tc__HomePageCLPInGcAndPaypal -->
+      <class name="com.GuestUserWith_GcAndPaypal.tc__HomePageBannerPLPInGcAndPaypal">
         <methods>
           <include name="setUp"/>
           <include name="afterMethod"/>
           <include name="setUpforReport"/>
           <include name="tearDown"/>
-          <include name="regUserRandomProductFromPDP_InGcAndPaypal"/>
+          <include name="homePageBannerPLPInGcAndPaypal"/>
         </methods>
-      </class> <!-- com.RegUserWith_GcAndPaypal.tc__RegUserRandomProductFromPDP_InGcAndPaypal -->
-      <class name="com.RegUserWith_CreditCard.tc__RegUserHomePageBannerPLPInCC">
-        <methods>
-          <include name="HomePageBannerPLP"/>
-          <include name="afterMethod"/>
-          <include name="setUp"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.RegUserWith_CreditCard.tc__RegUserHomePageBannerPLPInCC -->
-      <class name="com.RegUserWith_GiftCard.tc__RegUserRandomProductFromPLP_InGc">
-        <methods>
-          <include name="setUp"/>
-          <include name="afterMethod"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-          <include name="regUserRandomProductFromPLP_InGc"/>
-        </methods>
-      </class> <!-- com.RegUserWith_GiftCard.tc__RegUserRandomProductFromPLP_InGc -->
-      <class name="com.RegUserWith_Checkout_Paypal.tc__RegUserRandomProductFromPDP_InCheckoutPaypal">
-        <methods>
-          <include name="setUp"/>
-          <include name="afterMethod"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-          <include name="RegUserRandomProductFromPDP_InCheckoutPaypal"/>
-        </methods>
-      </class> <!-- com.RegUserWith_Checkout_Paypal.tc__RegUserRandomProductFromPDP_InCheckoutPaypal -->
-      <class name="com.RegUserWith_GcAndCC.tc__RegUserHomePageBannerPLPInGcAndCc">
-        <methods>
-          <include name="setUp"/>
-          <include name="afterMethod"/>
-          <include name="homePageBannerPLPInGcAndCc"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.RegUserWith_GcAndCC.tc__RegUserHomePageBannerPLPInGcAndCc -->
-      <class name="com.RegUserWith_CreditCard.tc__RegUserHomePageCLPInCC">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setUp"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-          <include name="HomePageCLPInCC"/>
-        </methods>
-      </class> <!-- com.RegUserWith_CreditCard.tc__RegUserHomePageCLPInCC -->
-      <class name="com.RegUserWith_GcAndCC.tc__RegUserRandomProductFromPDP_InGcAndCc">
-        <methods>
-          <include name="setUp"/>
-          <include name="afterMethod"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-          <include name="RegUserRandomProductFromPDP_InGcAndCc"/>
-        </methods>
-      </class> <!-- com.RegUserWith_GcAndCC.tc__RegUserRandomProductFromPDP_InGcAndCc -->
+      </class> <!-- com.GuestUserWith_GcAndPaypal.tc__HomePageBannerPLPInGcAndPaypal -->
     </classes>
   </test> <!-- Automation(failed) -->
 </suite> <!-- Failed suite [FMGTestCases] -->

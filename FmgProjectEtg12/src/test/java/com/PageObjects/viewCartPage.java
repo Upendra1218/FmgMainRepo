@@ -36,10 +36,10 @@ WebDriver lDriver;
 	    Float actualPreTotalTax = (float) 0 ;
 	    Float expectedPreTotalTaxGc=(float) 0 ;
 	    Float assortablePrice = (float) 0 ;
+	    
+	    Float viewCartTotal = (float) 0 ;
 	 
-	   
-	   //total cost at cart page
-	 	protected static Float totalCost = (float) 0 ;
+
 	
 	//Checkout :- 
 		@FindBy(xpath="//a[contains(text(),'Checkout')]")
@@ -160,7 +160,7 @@ WebDriver lDriver;
 						
 				test.info("Verify quantity increase and assortable price discount  with  color");
 				//qunatity insertion in cart page
-				List<WebElement> quantityInput = driver.findElements(By.xpath("//input[@name='quantity']"));
+				List<WebElement> quantityInput = driver.findElements(By.xpath("//div[@class='total-cart-content']//input[@name='quantity']"));
 		
 				if(quantityInput.size()>0) {	
 					
@@ -266,107 +266,148 @@ WebDriver lDriver;
 		        }
 			}	
 			
-			public  void onlyProductCal() throws NumberFormatException {
-				// looping all the products to calcualte the total product by  unit price and quantity 
-				// total products in cart 
-				 List<WebElement> totalProducts = driver.findElements(By.xpath("//div[contains(@class, 'card product-info product-detail  uuid-')]"));
-				 for(int i= 1;i<=totalProducts.size();i++) {
-					
-					 // unit price 
-					WebElement unitPriceText = driver.findElement(By.xpath("(//span[@class='sales']//span[@class='value'])[" + i + "]"));
-				    String unitPriceString = unitPriceText.getText();
-				    System.out.println(unitPriceString);
-				    String unitPriceValue = unitPriceString.replaceAll("[^\\d.]+", "");
-				    unitPrice = Float.parseFloat(unitPriceValue);
-				    logger.info("The unit price of each prodcut is "+unitPrice);
-	
-				//qunatity
-				    WebElement quantityListText = driver.findElement(By.xpath("(//input[@name='quantity'])[" + i + "]"));
-				    String quantityValue = quantityListText.getAttribute("value");
-				  
-				    quantity = Float.parseFloat(quantityValue);
-				    logger.info("The quantity  is "+quantity);
-			
-			 
-			// total product cost = quantity * unit price
-				    WebElement eachProductValue = driver.findElement(By.xpath("(//div[contains(@class, 'pricing line-item-total-price-amount item-total')])[" + i + "]"));
-				    String eachProductValueText= eachProductValue.getText();
-				    String productValue1 = eachProductValueText.replaceAll("[^\\d.]+", "");
-				    productValue = Float.parseFloat(productValue1);
-				    logger.info("Extended value is " +productValue);
- 
-				    float totalProduct = unitPrice * quantity;
-				  		    
-				    System.out.println("The total price of each product is " + totalProduct +"[" + i + "]" );
-				    totalEachProduct += totalProduct;	
-				    
-				    logger.info(totalEachProduct);
-				 }
-			}
-			
-			public  void onlyGc() {
-				// only gc in cart 
-				 List<WebElement> giftCerificateList = driver.findElements(By.xpath("//div[contains(@class, 'card product-info gift-certificate uuid-')]"));
-				 if((giftCerificateList.size()>0)){
-					 
-					 	test.info("Gc is cart ");
-							 int countOfGc= giftCerificateList.size();
-							 for(int j=1;j<=countOfGc;j++) {
-								 
-								 // getting the price of gc's
-								 WebElement eachProductValue1 = driver.findElement(By.xpath("(//div[contains(@class, 'card product-info gift-certificate uuid-')]//div[contains(@class, 'pricing line-item-total-price-amount item-total')])[" + j + "]"));
-								 
-							     String eachProductValueText1= eachProductValue1.getText();
-							     logger.info(eachProductValueText1);
-							     String productValue2 = eachProductValueText1.replaceAll("[^\\d.]+", "");
-							     Float giftCardValue1 = Float.parseFloat(productValue2);
-							     logger.info("Extended value is " + giftCardValue1 );
-							     System.out.println(giftCardValue);
-							     giftCardValue=giftCardValue+giftCardValue1;
-							     logger.info(giftCardValue);	
-				}
-			}
-	}
-			
-			
 			//all product calcualtion in cart with Gc and products combination 
-			public  void productsCalInCart() {
-				
-				//only products in cart 
-				viewCartPage vcp = new  viewCartPage(driver) ;
-				vcp.onlyProductCal();
-	
-				 //only gc in cart 
-				 onlyGc();
-				
-				 logger.info(totalProduct);
-				 logger.info(giftCardValue);
-				
-				 totalEachProduct += totalProduct+giftCardValue;
-				 logger.info("Total price of all prodcuts in cart "+totalEachProduct);
+
+				public  void productsCalInCart() throws InterruptedException {
+
+					List<WebElement> cartPage = driver.findElements(By.xpath("//h1[contains(text(),'Your Shopping Cart')]"));
+
+					if(cartPage.size()>0) {
+
+						Thread.sleep(2000);;
+	 
+						 totalEachProduct =onlyProductCal()+ onlyGc();
+
+						 logger.info("Total price of all prodcuts in cart "+totalEachProduct);
+
+					}
+
+			}	
+
+	public  float onlyProductCal() throws NumberFormatException {
+
+					// looping all the products to calcualte the total product by  unit price and quantity 
+
+					// total products in cart 
+
+					 List<WebElement> totalProducts = driver.findElements(By.xpath("//div[contains(@class, 'card product-info product-detail  uuid-')]"));
+
+					 for(int i= 1;i<=totalProducts.size();i++) {
+
+						 // unit price 
+
+						WebElement unitPriceText = driver.findElement(By.xpath("(//span[@class='sales']//span[@class='value'])[" + i + "]"));
+
+					    String unitPriceString = unitPriceText.getText();				   
+
+					    String unitPriceValue = unitPriceString.replaceAll("[^\\d.]+", "");
+
+					    unitPrice = Float.parseFloat(unitPriceValue);
+
+					    logger.info("The unit price of each prodcut is "+unitPrice);
+
+					//qunatity
+
+					    WebElement quantityListText = driver.findElement(By.xpath("(//input[@name='quantity'])[" + i + "]"));
+
+					    String quantityValue = quantityListText.getAttribute("value");
+
+					    quantity = Float.parseFloat(quantityValue);
+
+					    logger.info("The quantity  is "+quantity);
+
+
+				// total product cost = quantity * unit price
+
+					    WebElement eachProductValue = driver.findElement(By.xpath("(//div[contains(@class, 'pricing line-item-total-price-amount item-total')])[" + i + "]"));
+
+					    String eachProductValueText= eachProductValue.getText();
+
+					    String productValue1 = eachProductValueText.replaceAll("[^\\d.]+", "");
+
+					    productValue = Float.parseFloat(productValue1);
+
+					    logger.info("Extended value is " +productValue);
+
+					    float totalProduct = unitPrice * quantity;
+
+					    System.out.println("The total price of each product is " + totalProduct +"[" + i + "]" );
+
+					    totalEachProduct += totalProduct;	
+
+					    logger.info(totalEachProduct);
+
+					 }
+
+					return totalEachProduct;
+
+				}
+
+				public  float onlyGc() {
+
+					// only gc in cart 
+
+					 List<WebElement> giftCerificateList = driver.findElements(By.xpath("//div[contains(@class, 'card product-info gift-certificate uuid-')]"));
+
+					 if((giftCerificateList.size()>0)){
+
+						 	test.info("Gc is cart ");
+
+								 int countOfGc= giftCerificateList.size();
+
+								 for(int j=1;j<=countOfGc;j++) {
+
+									 // getting the price of gc's
+
+									 WebElement eachProductValue1 = driver.findElement(By.xpath("(//div[contains(@class, 'card product-info gift-certificate uuid-')]//div[contains(@class, 'pricing line-item-total-price-amount item-total')])[" + j + "]"));
+
+								     String eachProductValueText1= eachProductValue1.getText();
+
+								     logger.info(eachProductValueText1);
+
+								     String productValue2 = eachProductValueText1.replaceAll("[^\\d.]+", "");
+
+								     Float giftCardValue1 = Float.parseFloat(productValue2);
+
+								     logger.info("Extended value is " + giftCardValue1 );
+
+								     System.out.println(giftCardValue);
+
+								     giftCardValue=giftCardValue+giftCardValue1;
+
+								     logger.info(giftCardValue);	
+
+					}
+
+				}
+
+					return giftCardValue;
+
 		}
 			
-			
-			
-			 public static Float  totalProductsCost() {
+			public  void  totalProductsCost() {
 				List<WebElement> totalCostElementList = driver.findElements(By.xpath("//p[contains(@class,'subtotal-price')]"));
 				if(totalCostElementList.size()>0) {
 					WebElement totalCostElement = driver.findElement(By.xpath("//p[contains(@class,'subtotal-price')]"));
 					
 					String totalCostText= totalCostElement.getText();
 					String totalCost1 = totalCostText.replaceAll("[^\\d.]+", "");
-					totalCost= Float.parseFloat(totalCost1 );
+					viewCartTotal= Float.parseFloat(totalCost1 );
+					totalCost = viewCartTotal;
 					logger.info("Total product price is " +totalCost);
+					
+					
 					
 				}else {
 					WebElement totalCostElement = driver.findElement(By.xpath("//p[contains(@class,'subtotal-price')]//span"));
 					
 					String totalCostText= totalCostElement.getText();
 					String totalCost1 = totalCostText.replaceAll("[^\\d.]+", "");
-					totalCost= Float.parseFloat(totalCost1 );
+					viewCartTotal= Float.parseFloat(totalCost1 );
+					totalCost = viewCartTotal;
 					logger.info("Total product price is " +totalCost);
 				}
-				return totalCost;
+				
 			}
 			 
 			//shipping calculation			

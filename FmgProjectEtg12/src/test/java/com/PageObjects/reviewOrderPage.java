@@ -1,5 +1,6 @@
 package com.PageObjects;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -8,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.testcases.baseClass;
 
@@ -36,7 +39,7 @@ WebDriver lDriver;
     	Thread.sleep(2000);
     }
     
-    @FindBy(xpath ="//div[@class='reviewpage-custom']//button[contains(text(), 'Next: Review Order')]")
+    @FindBy(xpath ="//button[contains(text(), 'Next: Review Order')]")
 	WebElement reviewOrderPagepaypal;
     public void clickonReviewOrderPaypal() throws InterruptedException {	 
     	test.info("Validate the Review order button click");
@@ -53,6 +56,9 @@ WebDriver lDriver;
     public void clickonplaceorderwithJsExuter(WebDriver driver) throws InterruptedException {
     	Thread.sleep(2000);
     	test.info("validate the place order click");
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+//		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(placetheorderBtn));
+//		element.click();
     	placetheorderBtn.click();
     	test.pass("Successfully place order btn Clicked");
     } 

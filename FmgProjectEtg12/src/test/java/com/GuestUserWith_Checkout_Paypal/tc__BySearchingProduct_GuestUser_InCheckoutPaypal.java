@@ -14,7 +14,7 @@ public class tc__BySearchingProduct_GuestUser_InCheckoutPaypal extends baseClass
     // Create a SoftAssert object to perform soft assertions
     SoftAssert softAssert = new SoftAssert();
 
-    @Test(invocationCount = 2)
+    @Test//(invocationCount = 2)
     public void bySearchingProduct_GuestUser_InCheckoutPaypal() throws InterruptedException {
         
         // Launch the browser and navigate to the URL

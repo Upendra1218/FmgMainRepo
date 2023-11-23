@@ -67,7 +67,7 @@ public class MiniCartViewCartRegUser extends baseClass {
                 
                 // If more than 2 products in minicart, save one for later
                 if(saveForLaterLink.size() > 2) {
-                    vcp.saveForLater();                
+                    //vcp.saveForLater();                
                 }
                 
                 List<WebElement> removeBtns = driver.findElements(By.xpath("//div[contains(@class,'cart-delete')]"));
@@ -75,24 +75,24 @@ public class MiniCartViewCartRegUser extends baseClass {
                 	vcp.removeBtn();
                 }
               
-//     
-//	            Random random = new Random();
-//	            int randomNumber = random.nextInt(2)+1; // Generates a random number between 0 (inclusive) and 2 (exclusive)
-//	
-//	            if (randomNumber == 1) {
-//	               vcp.quantityInsertionInCartPage();
-//	            } else {
-//	               vcp.noQuantityInsertionInCartPage();
-//	            }
-//		 
-//                //product price
-//                vcp.productsCalInCart();
+     
+	            Random random = new Random();
+	            int randomNumber = random.nextInt(2)+1; // Generates a random number between 0 (inclusive) and 2 (exclusive)
+	
+	            if (randomNumber == 1) {
+	               vcp.quantityInsertionInCartPage();
+	            } else {
+	               vcp.noQuantityInsertionInCartPage();
+	            }
+		 
+                //product price
+                vcp.productsCalInCart();
     	                
                 //calcuates shipping charges
                // vcp.estimatedshippingCalculations();
                 	            
                 //total product cost
-                viewCartPage.totalProductsCost();
+                vcp.totalProductsCost();
     	                
                 // Click the "Checkout" button in the view cart page
                 Thread.sleep(5000);

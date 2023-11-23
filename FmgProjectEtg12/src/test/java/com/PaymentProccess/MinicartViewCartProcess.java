@@ -66,36 +66,36 @@ public class MinicartViewCartProcess extends baseClass {
                 viewCartPage vcp = new viewCartPage(driver);
                 
                 List<WebElement> saveForLaterLink = driver.findElements(By.xpath("//div[@class='total-cart-content']//div[contains(@class,'save-for-later')]"));
-                
-                // If more than 2 products in minicart, save one for later
+//                
+//                // If more than 2 products in minicart, save one for later
                 if(saveForLaterLink.size() > 2) {
                     vcp.saveForLater();                
                 }
-                
+//                
                 List<WebElement> removeBtns = driver.findElements(By.xpath("//div[contains(@class,'cart-delete')]"));
                 if(removeBtns.size()>2) {
                 	vcp.removeBtn();
                 }
-              
+//              
 //     
-//    		            Random random = new Random();
-//    		            int randomNumber = random.nextInt(2); // Generates a random number between 0 (inclusive) and 2 (exclusive)
-//    		
-//    		            if (randomNumber == 0) {
-//    		               vcp.quantityInsertionInCartPage();
-//    		            } else {
-//    		               vcp.noQuantityInsertionInCartPage();
-//    		            }
-//    			 
-//    	                //product price
-//    	                vcp.productsCalInCart();
-//    	                
-//    	                //calcuates shipping charges
-//    	               // vcp.estimatedshippingCalculations();
-//    	                	            
-//    	                //total product cost
-//    	                viewCartPage.totalProductsCost();
-//                // Click the "Checkout" button in the view cart page
+	            Random random = new Random();
+	            int randomNumber = random.nextInt(2); // Generates a random number between 0 (inclusive) and 2 (exclusive)
+	
+	            if (randomNumber == 0) {
+	               vcp.quantityInsertionInCartPage();
+	            } else {
+	               vcp.noQuantityInsertionInCartPage();
+	            }
+		 
+                //product price
+                vcp.productsCalInCart();
+                
+                //calcuates shipping charges
+                vcp.estimatedshippingCalculations();
+                	            
+                //total product cost
+               vcp.totalProductsCost();
+                // Click the "Checkout" button in the view cart page
                 
                 
                 Thread.sleep(5000);
@@ -120,6 +120,8 @@ public class MinicartViewCartProcess extends baseClass {
                 // Handle the shipping address
                 FullAddressDetails address = new FullAddressDetails();
                 address.address();
+                
+                logger.info(totalCost);
 
                 // Initialize checkOutPage and click continue to billing
                 

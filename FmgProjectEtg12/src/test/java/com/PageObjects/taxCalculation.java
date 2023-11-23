@@ -21,13 +21,6 @@ public class taxCalculation extends baseClass {
   
     // in payment page
     public  void getShippingCost() {
-    	
-//        // shipping cost at payment page
-//        WebElement shippingmethod = driver.findElement(By.xpath("//p[contains(@class,'shipping-method-price')]"));
-//        String shippingmethodText = shippingmethod.getText();
-//        String assortablePriceText1 = shippingmethodText.replaceAll("[^\\d.]+", "");
-//        shippingCostInPaymentPage = Float.parseFloat(assortablePriceText1);
-//        logger.info("shipping cost price in pp is " + shippingCostInPaymentPage);
 
         // get shipping at review order page
         WebElement shippingCostInRop = driver.findElement(By.xpath("//span[contains(@class,'shipping-total-cost')]"));
@@ -63,14 +56,18 @@ public class taxCalculation extends baseClass {
        return giftCerificatePriceInROP;
     }
     // total product cost in cart page
-      viewCartPage vcp = new viewCartPage(driver);
-       Float totalCostAtCartPage =vcp.totalCost;
+    
+     
+    
      
    
     
     // total product cost in review order page
     public void totalProductValidation() {
     	test.info("Verifying the total product");
+    	logger.info(totalCost);
+    	   Float totalCostAtCartPage = totalCost;
+    	
        
        List<WebElement> productCostInRopList = driver.findElements(By.xpath("//span[@class='sub-total']"));
        if(productCostInRopList.size()>0) {
@@ -81,10 +78,10 @@ public class taxCalculation extends baseClass {
 	        logger.info(" Total product price in ROP  is " + totalProductCostInROP);
 	        logger.info(totalCostAtCartPage);
 	        if (totalCostAtCartPage.equals(totalProductCostInROP)) {
-	            //test.pass("Total product cost at cart page is " + totalCostAtCartPage + " same as at review order page i.e, " + totalProductCostInROP);
+	            test.pass("Total product cost at cart page is " + totalCostAtCartPage + " same as at review order page i.e, " + totalProductCostInROP);
 	            logger.info("Total product cost at cart page is  " + totalCostAtCartPage + " same as at review order page i.e, " + totalProductCostInROP);
 	        } else {
-	            //test.fail("Total product cost at cart page is " + totalCostAtCartPage + " not same as at review order page i.e, " + totalProductCostInROP);
+	            test.fail("Total product cost at cart page is " + totalCostAtCartPage + " not same as at review order page i.e, " + totalProductCostInROP);
 	            logger.info("Total product cost at cart page is  " + totalCostAtCartPage + " not same as at review order page i.e, " + totalProductCostInROP);
 	        }      
        }else {
@@ -140,10 +137,10 @@ public class taxCalculation extends baseClass {
 	    expectedgrandTotalInROP =  Float.parseFloat(integerPart);
 
         if (expectedgrandTotalInROP.equals(actualgrandTotalInROP)) {
-            //test.pass("Expected Grand total is " + expectedgrandTotalInROP + " same as i.e, " + actualgrandTotalInROP);
+            test.pass("Expected Grand total is " + expectedgrandTotalInROP + " same as i.e, " + actualgrandTotalInROP);
             logger.info("Expected Grand total is " + expectedgrandTotalInROP + " same as i.e, " + actualgrandTotalInROP);
         } else {
-            //test.fail("Expected Grand total is " + expectedgrandTotalInROP + " not same as i.e, " + actualgrandTotalInROP);
+            test.fail("Expected Grand total is " + expectedgrandTotalInROP + " not same as i.e, " + actualgrandTotalInROP);
             logger.info("Expected Grand total is " + expectedgrandTotalInROP + " not same as i.e, " + actualgrandTotalInROP);
         }
     }

@@ -2,23 +2,17 @@
 package com.PaymentProccess;
 
 import java.util.List;
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.CreditCardPaymentMethods.allPaymentMethods;
-import com.PageObjects.ShippingMethodInPaymentPage;
-import com.PageObjects.checkOutPage;
-import com.PageObjects.homePage;
-import com.PageObjects.paymentpPage;
+import com.PageObjects.TotalCalculation;
 import com.PageObjects.reviewOrderPage;
 import com.PageObjects.taxCalculation;
 import com.Validations.Checkout_Validation;
-import com.Validations.negativeValidation;
 import com.Validations.preValidationCheck;
 import com.commonfunctionality.editInAllCheckOutProcess;
-import com.commonfunctionality.paymentMethods;
 import com.testcases.baseClass;
 
 // Define a test class named "tc__CreditCardPaymentProcess"
@@ -55,22 +49,14 @@ public class CreditCardPaymentProcessReg extends baseClass{
 				    	logger.info("coming");
 				    	bpm.BrainTreeMethod();
 				    	
-				    } else {
-				    	
-				    	
-				    }		
-		
+				    } 
 				    
 				 // Review order page
 	    		reviewOrderPage rop = new reviewOrderPage(driver);
 	    		Thread.sleep(4000);	
 	    		rop.clickonReviewOrder(driver);
 	    		Thread.sleep(4000);	
-	    		//total prodcut
-	    		//taxCalculation shippingMtd = new taxCalculation();
-	    		//shippingMtd.totalProductValidation();
-	    		 // granD TOTAL 
-	    		//shippingMtd.grandTotalValidation();
+	    		
 	    		
 	    		List<WebElement> clickonReviewOrder = driver.findElements(By.xpath("//div[@class='reviewpage-custom']//button[contains(text(), 'Next: Review Order')]"));
 	    		int displayedReviewOrder = 0;
@@ -91,15 +77,13 @@ public class CreditCardPaymentProcessReg extends baseClass{
 	    		editInAllCheckOutProcess.clickEditBtnRandomly();
 
 
-	  	    		//total prodcut
-	    		taxCalculation tax= new taxCalculation();
-	    		tax.totalProductValidation();
-	    		 // granD TOTAL 
-	    		tax.grandTotalValidation();
+				//total calculation
+				TotalCalculation totalCal= new TotalCalculation();
+				totalCal.totalCalculation(driver);
 	    		
-	    		  		rop.clickonplaceorderwithJsExuter(driver);
+	    		 rop.clickonplaceorderwithJsExuter(driver);
 	    		
-	    		 logger.info("successfully click on the place order button by normal click");
+	    		logger.info("successfully click on the place order button by normal click");
                 Thread.sleep(2000);
                 logger.info(driver.getTitle());
 				    

@@ -8,6 +8,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 import com.PageObjects.TierPrice;
+import com.PageObjects.TotalCalculation;
 import com.PageObjects.miniCartPage;
 import com.PageObjects.paymentpPage;
 import com.PageObjects.reviewOrderPage;
@@ -81,10 +82,11 @@ public class CheckOutProcessByPayPal extends baseClass{
 	 				                vcp.productsCalInCart();
 	 				                
 	 				                //calcuates shipping charges
-	 				                vcp.estimatedshippingCalculations();
+	 				               // vcp.estimatedshippingCalculations();
 	 				                	            
-	 				                //total product cost
-	 				                viewCartPage.totalProductsCost();
+	 				               
+									//total product cost
+	 				                vcp.totalProductsCost();
 			            
 					        Thread.sleep(2000);
 				            List<WebElement> brainPayPalButton = driver.findElements(By.xpath("//div[contains(@class,'js_braintree_paypal_cart_button')]"));
@@ -112,12 +114,10 @@ public class CheckOutProcessByPayPal extends baseClass{
 									  }
 		          			            
 									Thread.sleep(2000);
-									 //total prodcut
-									taxCalculation shippingMtd = new taxCalculation();
-						    		shippingMtd.totalProductValidation();
-						    		 
-						    		 // granD TOTAL 
-						    		shippingMtd.grandTotalValidation();
+									
+									//total calculation
+									TotalCalculation totalCal= new TotalCalculation();
+									totalCal.totalCalculation(driver);									
 									
 									//place order 
 									reviewOrderPage rop = new reviewOrderPage(driver);

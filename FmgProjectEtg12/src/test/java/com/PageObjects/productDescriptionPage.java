@@ -22,14 +22,33 @@ public class productDescriptionPage extends baseClass{
         PageFactory.initElements(rdriver, this);
     }
 
-    
-	    // WebElement for adding to wishlist from PDP
-	    @FindBy(xpath="//button[@type='submit' and span[text()='Wishlist']]")
-	    WebElement wishlist;
-	    // Method to click on adding to wishlist
-	    public void clickOnWishlist() {
-	        wishlist.click();
-	    }
+  //WishList
+  		public void selecttheWishlist() throws InterruptedException{
+  			//for(int i =2;i<= 2;i++) {
+  			// Get all the available options within the dropdown
+  			test.info("Validate the wishList click");
+  			List<WebElement> wishListBtn = driver.findElements(By.xpath("//i[@class= 'fa fa-stack-1x fa-heart-o']"));
+  			
+  			if(wishListBtn.size()>0){
+  				WebElement wishlistPlp = driver.findElement(By.xpath("//a[@title= 'Favorites']"));
+  				Thread.sleep(4000);
+  				JavascriptExecutor executor = (JavascriptExecutor) driver;
+  				((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", wishlistPlp);
+  				executor.executeScript("arguments[0].click();", wishlistPlp);
+  				test.pass("Successfully the product is Favorates");
+  				
+  			}else {
+  				WebElement wishlistPlp = driver.findElement(By.xpath("//a[@title= 'Favorites']"));
+  				Thread.sleep(4000);
+  				JavascriptExecutor executor = (JavascriptExecutor) driver;
+  				((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", wishlistPlp);
+  				executor.executeScript("arguments[0].click();", wishlistPlp);
+  				test.pass("Successfully the product is Removed from Favorates");
+  			}
+  			
+  		}
+	    
+	    
     public static void haveAQuestion() throws InterruptedException {
 		//have a question in pdp
 	    	Faker faker = new Faker();

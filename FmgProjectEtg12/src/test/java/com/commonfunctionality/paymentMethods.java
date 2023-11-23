@@ -16,28 +16,46 @@ public class paymentMethods extends baseClass{
 	
 	paymentpPage pp = new paymentpPage(driver);
 	JavascriptExecutor js = (JavascriptExecutor) driver;
+	
+	public  void braintreeGuest12() throws InterruptedException {
+
+		test.info("Entering credit card details");
+		pp.setcardholdername(driver);
+		logger.info("entered card name");
+		test.pass("entered card name");
+		pp.setcardnumber(driver);
+		logger.info("entered card number");
+		test.pass("entered card number");
+		pp.setcardcvv(driver);
+		logger.info("entered cvv");
+		test.pass("entered cvv");
+		pp.setcardexp(driver);
+		logger.info("entered exp");
+		test.pass("entered exp");
+}
 	   //brain tree payment method of guest user
-		public  void braintreeGuest() throws InterruptedException {
-			
-			test.info("Entering credit card details");
-			pp.setcardholdername(driver);
-			logger.info("entered card name");
-			test.pass("entered card name");
-			
-			pp.setcardnumber(driver);
-			logger.info("entered card number");
-			test.pass("entered card number");
-			
-			pp.setcardcvv(driver);
-			logger.info("entered cvv");
-			test.pass("entered cvv");
-			
-			pp.setcardexp(driver);
-			logger.info("entered exp");
-			test.pass("entered exp");
-			
-		}
-		
+	public  void braintreeGuest() throws InterruptedException {
+
+		List<WebElement> creditCardFormList= driver.findElements(By.xpath("//input[@id = 'cardholder-name']"));
+		if(creditCardFormList.size()>0) {
+			WebElement creditCardForm= driver.findElement(By.xpath("//input[@id = 'cardholder-name']"));
+			if(creditCardForm.isDisplayed()) {
+				test.info("Entering credit card details");
+				pp.setcardholdername(driver);
+				logger.info("entered card name");
+				test.pass("entered card name");
+				pp.setcardnumber(driver);
+				logger.info("entered card number");
+				test.pass("entered card number");
+				pp.setcardcvv(driver);
+				logger.info("entered cvv");
+				test.pass("entered cvv");
+				pp.setcardexp(driver);
+				logger.info("entered exp");
+				test.pass("entered exp");
+			}
+		}		
+	}		
 		//register user and select the new card and save the card
 		public void brainTreeReguser() throws InterruptedException {
 

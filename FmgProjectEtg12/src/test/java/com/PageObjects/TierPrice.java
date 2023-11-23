@@ -20,14 +20,14 @@ public class TierPrice extends baseClass {
 		Thread.sleep(4000);
 	   //Click on the cart button in the minicart
         mc.hoverOnCartButton(driver);
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         
         // tier price and color
         onlyTier();
 	
 	}
 	
-	public void onlyTier() {
+	public void onlyTier() throws InterruptedException {
 		// locate the element of qunaity in mincart
 		 WebElement miniCartQuantity = driver.findElement(By.xpath("//span[contains(@class,'minicart-quantity')]"));	
 		 String countOfProducts= miniCartQuantity.getText();
@@ -40,6 +40,7 @@ public class TierPrice extends baseClass {
 				    if(colorParentDivList.size()>0) {
 					    WebElement colorParentDiv = driver.findElement(By.xpath("//div[@class='current-tier']"));					   					    
 						if(quantityInCart<14) {
+							Thread.sleep(1000);
 							//located the color 
 				   	    	WebElement ColorElement = colorParentDiv.findElement(By.xpath("//span[@class='tier-blue']"));
 				   	    	
@@ -51,11 +52,13 @@ public class TierPrice extends baseClass {
 				   	    	//expected color
 				   	    	String expectedColor= "blue";	
 				   	    	//comapring the colors
+				   	    	Thread.sleep(2000);
 				   	    	if(actualColor.equals(expectedColor)) {
 						    	    test.pass("No Discount is available for blue so price is " +priceElement.getText() );
 						    	    logger.info("No Discount is available for blue so price is " +priceElement.getText());
 				   	    	}
 				       }else if(quantityInCart<49) {
+				    	   		Thread.sleep(1000);
 					        	WebElement ColorElement = colorParentDiv.findElement(By.xpath("//span[@class='tier-green']"));
 						    	String actualColor = ColorElement.getText();
 						    	logger.info(actualColor);
@@ -68,18 +71,21 @@ public class TierPrice extends baseClass {
 						    	    logger.info("The Discount is available for green is " +priceElement.getText());
 						    	}
 				       }else if(quantityInCart<99) {
+				    	   		Thread.sleep(1000);
 					        	WebElement ColorElement = colorParentDiv.findElement(By.xpath("//span[@class='tier-pink']"));
 						    	String actualColor = ColorElement.getText();
 						    	logger.info(actualColor);
 						    	
 						    	String expectedColor= "pink";	
 						    	// locating the price 
+						    	Thread.sleep(2000);
 						    	WebElement priceElement =driver.findElement(By.xpath("//div[@class='assorted-price']//span[@class='tier-pink']"));
 						    	if(actualColor.equals(expectedColor)) {
 						    	    test.pass("The Discount is available for pink is " +priceElement.getText());
 						    	    logger.info("The Discount is available for pink is " +priceElement.getText());
 						    	}
 				       }else {
+				    	   		Thread.sleep(1000);
 					        	WebElement ColorElement = colorParentDiv.findElement(By.xpath("//span[@class='tier-black']"));
 						    	String actualColor = ColorElement.getText();
 						    	logger.info(actualColor);

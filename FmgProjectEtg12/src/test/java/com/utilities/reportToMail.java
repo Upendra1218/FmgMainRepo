@@ -48,8 +48,8 @@ public class reportToMail extends baseClass{
 	    //String subject2 = "";
 	    //String body2 = "Please find the attached screenshot Automation Test Report of Provido Project";
 
-	   String[] recipients = { "krishnarjun.c@etg.digital","shankar.challa@etg.digital", "akhila.v@etg.digital","pushpa.s@etg.digital","bhavya.a@etg.digital","bhaskarrao.s@etg.digital","niveditha.d@etg.digital","salma.s@etg.digital","f8eecde2.etggs.com@apac.teams.ms","akhila.m@etg.digital"};
-	   //String[] recipients = { "akhila.m@etg.digital"};
+	   //String[] recipients = { "krishnarjun.c@etg.digital","shankar.challa@etg.digital", "akhila.v@etg.digital","pushpa.s@etg.digital","bhavya.a@etg.digital","bhaskarrao.s@etg.digital","niveditha.d@etg.digital","salma.s@etg.digital","f8eecde2.etggs.com@apac.teams.ms","akhila.m@etg.digital"};
+	   String[] recipients = { "akhila.m@etg.digital"};
 	    //
 
 	    sendEmail(username, password, smtpHost, smtpPort, recipients,subject1, body1, reportFilePath, reportScreenshot);

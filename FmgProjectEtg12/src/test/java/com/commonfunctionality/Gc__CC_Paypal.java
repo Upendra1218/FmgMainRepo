@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.PageObjects.TotalCalculation;
 import com.PageObjects.reviewOrderPage;
 import com.PageObjects.taxCalculation;
 import com.Validations.Checkout_Validation;
@@ -20,10 +21,10 @@ public class Gc__CC_Paypal extends baseClass{
 
 	public void paymentProccessByGCandCC(WebDriver driver) throws InterruptedException {
 		List<WebElement> paymentPage= driver.findElements(By.xpath("//h2[contains(text(),'Payment Method')]"));	
-		
+		Thread.sleep(2000);
 		if(paymentPage.size()>0 ) {
 		 JavascriptExecutor js = (JavascriptExecutor) driver;
-		 js.executeScript("window.scrollBy(0, 200);");        
+		 js.executeScript("window.scrollBy(0, 400);");        
 		
 		//click the radio button
 			 WebElement clickRadioButton= driver.findElement(By.id("gift-promo"));
@@ -65,14 +66,11 @@ public class Gc__CC_Paypal extends baseClass{
 					    		 reviewOrderPage rop = new reviewOrderPage(driver);			    				    		
 					    		 rop.clickonReviewOrder(driver);			   	    		
 					    		 Thread.sleep(4000);		    		
-	 		 
-					    		 //total prodcut
-					    		 taxCalculation shippingMtd = new taxCalculation();
-					    		shippingMtd.totalProductValidation();
-					    		 
-					    		 // granD TOTAL 
-					    		shippingMtd.grandTotalValidation();
-					    		
+
+							//total calculation
+								TotalCalculation totalCal= new TotalCalculation();
+								totalCal.totalCalculation(driver);
+								
 					    	 //placeorder   		
 					    		 rop.clickonplaceorderwithJsExuter(driver);			    		  
 					    		 Thread.sleep(9000);
@@ -150,15 +148,11 @@ public class Gc__CC_Paypal extends baseClass{
 							 //Review order page
 					    		 reviewOrderPage rop = new reviewOrderPage(driver);			    				    		
 					    		 rop.clickonReviewOrder(driver);			   	    		
-					    		 Thread.sleep(4000);
- 
-					    		 
-					    		 //total prodcut
-					    		 taxCalculation shippingMtd = new taxCalculation();
-					    		shippingMtd.totalProductValidation();
-					    		 
-					    		 // granD TOTAL 
-					    		shippingMtd.grandTotalValidation();
+					    		 Thread.sleep(4000); 
+
+							//total calculation
+								TotalCalculation totalCal= new TotalCalculation();
+								totalCal.totalCalculation(driver);
 			
 					    	 //placeorder   		
 					    		 rop.clickonplaceorderwithJsExuter(driver);			    		  

@@ -11,6 +11,7 @@ import com.testcases.baseClass;
 public class allPaymentMethods extends baseClass {
 	
 	List<WebElement> continueasAGuest = driver.findElements(By.xpath("//button[contains(text(),'Guest Checkout')]"));
+
 	
 	paymentMethods pm = new paymentMethods();
 
@@ -26,7 +27,7 @@ public class allPaymentMethods extends baseClass {
 		if(continueasAGuest.size()>0) {
 			
  		   //guest user payment
-			pm.braintreeGuest();
+			pm.braintreeGuest12();
 			
 
         }else {

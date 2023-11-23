@@ -30,7 +30,7 @@ public class pdpPage extends baseClass{
 	    	   if(displayedAddToCartCount>0) {
 	    		   
 	    		   productDescriptionPage pdp = new productDescriptionPage(driver);
-	    		   pdp.clickOnWishlist();
+	    		   pdp.selecttheWishlist();
 	    		   
 	    		   allAttributesinOneFile.selectTheAttributesInPdp(driver);
 	    		   

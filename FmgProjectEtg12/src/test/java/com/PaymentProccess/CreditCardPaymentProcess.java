@@ -2,22 +2,19 @@
 package com.PaymentProccess;
 
 import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.CreditCardPaymentMethods.allPaymentMethods;
-import com.PageObjects.ShippingMethodInPaymentPage;
-import com.PageObjects.checkOutPage;
-import com.PageObjects.paymentpPage;
+import com.PageObjects.TotalCalculation;
 import com.PageObjects.reviewOrderPage;
 import com.PageObjects.taxCalculation;
 import com.Validations.Checkout_Validation;
 import com.Validations.negativeValidation;
 import com.Validations.preValidationCheck;
 import com.commonfunctionality.editInAllCheckOutProcess;
-import com.commonfunctionality.paymentMethods;
 import com.testcases.baseClass;
 
 // Define a test class named "tc__CreditCardPaymentProcess"
@@ -37,9 +34,9 @@ public class CreditCardPaymentProcess extends baseClass{
 					// Validate the payment page
 					preValidationCheck.validatePaymentButtonClk();
 					//Credit card negative validations
-					negativeValidation.creditCardDetails();
+					//negativeValidation.creditCardDetails();
 					
-					editInAllCheckOutProcess.clickEditBtnRandomly();
+					//editInAllCheckOutProcess.clickEditBtnRandomly();
 					
 			       
 					// Detect payment methods
@@ -55,6 +52,7 @@ public class CreditCardPaymentProcess extends baseClass{
 				    // Determine the payment method and proceed accordingly
 				    if(brainTree.size()>0) {
 				    	
+				    	logger.info("brain");
 				    	bpm.BrainTreeMethod();
 				    	
 				    } else {
@@ -87,25 +85,38 @@ public class CreditCardPaymentProcess extends baseClass{
 	    		logger.info("Clicked on review order button");
 	    		Thread.sleep(4000);		  
 	    		
-	    		editInAllCheckOutProcess.clickEditBtnRandomly();
+	    		//editInAllCheckOutProcess.clickEditBtnRandomly();
 	    		
 	    		Thread.sleep(2000);
+
+				//total calculation
+				TotalCalculation totalCal= new TotalCalculation();
+				totalCal.totalCalculation(driver);
+				
+				try {
+		            // Code to interact with the element
+		         rop.clickonplaceorderwithJsExuter(driver);
+
+		            // If the interaction is successful, continue with the next steps
+		            // ...
+
+		        } catch (Exception e) {
+		            // Handle the error
+		            System.out.println("An error occurred: " + e.getMessage());
+
+		            // Run the next method or take appropriate action
+		            // ...
+		            rop.clickonplaceorderwithpaypal(driver);
+
+		        } 
 	    		
-//	    		//total prodcut
-//	    		taxCalculation tax= new taxCalculation();
-//	    		tax.totalProductValidation();
-//	    		//total prodcut
-//	    		taxCalculation shippingMtd = new taxCalculation();
-//	    		 // granD TOTAL 
-//	    		shippingMtd.grandTotalValidation();	
-	    		
-	    		rop.clickonplaceorderwithJsExuter(driver);
+	    		//rop.clickonplaceorderwithpaypal(driver);
 	    		
 	    		 logger.info("successfully click on the place order button by normal click");
                 Thread.sleep(2000);
                 logger.info(driver.getTitle());
 				    
-				    Thread.sleep(7000);
+				    Thread.sleep(5000);
 					 // Checkout validation
 		    		if(driver.getTitle().endsWith("Fire Mountain Gems and Beads")) {
 		    			

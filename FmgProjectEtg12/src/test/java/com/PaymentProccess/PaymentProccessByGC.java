@@ -19,6 +19,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.PageObjects.TotalCalculation;
 import com.PageObjects.reviewOrderPage;
 import com.PageObjects.taxCalculation;
 import com.Validations.Checkout_Validation;
@@ -219,16 +220,7 @@ public class PaymentProccessByGC extends baseClass{
 	    try {
 	        List<String> dataList = readDataFromExcel(filePath, sheetName);
 	        int totalProducts = dataList.size();
-	        
-//	     // Remove spaces and non-alphanumeric characters from the dataList
-//	        for (int i = 0; i < dataList.size(); i++) {
-//	            String element = dataList.get(i);
-//	            element = element.replaceAll("[^a-zA-Z0-9]", ""); // This regular expression removes non-alphanumeric characters
-//	            dataList.set(i, element);
-//	        }
-
-		    // Print the updated dataList
-		 
+	       	 
 			logger.info(dataList);
 	        int operations = 0;
 	      	 Iterator<String> iterator = dataList.iterator();
@@ -330,20 +322,15 @@ public class PaymentProccessByGC extends baseClass{
 				rop.clickonReviewOrder(driver);
 				logger.info("clicked on the review oreder");
 		
-				 
-	    		 //total prodcut
-	    		 taxCalculation shippingMtd = new taxCalculation();
-	    		shippingMtd.totalProductValidation();
-	    		 
-	    		 // granD TOTAL 
-	    		shippingMtd.grandTotalValidation();
-
+				//total calculation
+				TotalCalculation totalCal= new TotalCalculation();
+				totalCal.totalCalculation(driver);
 				
 		       //place order 
 				rop.clickonplaceorderwithJsExuter(driver);
 				logger.info("successfully click on the place order button");
 	
-			  Thread.sleep(5000);
+				Thread.sleep(5000);
 		
 				 // Checkout validation
   			

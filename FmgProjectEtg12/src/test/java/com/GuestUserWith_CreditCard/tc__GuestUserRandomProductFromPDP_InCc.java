@@ -22,7 +22,6 @@ public class tc__GuestUserRandomProductFromPDP_InCc extends baseClass {
 
         // Initialize MinicartViewCartProcess to perform the checkout process
         MinicartViewCartProcess cartProcess = new MinicartViewCartProcess();
-        
         // Perform the checkout process
         cartProcess.checkoutprocess();
 

@@ -27,6 +27,7 @@ public class homePagePlp extends baseClass{
         } else {
             // If the PDP (Product Detail Page) is loaded, log that it's already loaded.
             logger.info("PDP page is already loaded");
+            pdpPage.addtoCartPDP();
         }
     }
 }

@@ -1,5 +1,6 @@
 package com.Login;
 
+import com.Launchingbrowser.launchBrowsering;
 import com.PageObjects.loginPage;
 import com.testcases.baseClass;
 
@@ -15,24 +16,27 @@ public class tc__LoginSc extends baseClass {
 	
     @Test
     public void openBrowserandClickSignInButton() throws InterruptedException {
-        test.info("Open browser");
-        // Test Case 0: Open browser
-        driver.get(baseURL); 
-        logger.info("Opened browser");
-        Thread.sleep(2000L);
-        loginPage lp = new loginPage(driver);
+    	// Launch the browser and navigate to the URL
+        launchBrowsering lb = new launchBrowsering();
+        lb.chromeBrowser();
+
+        // Create an instance of the "loginPage" class
+        loginPage lp = new loginPage(driver);        
+        
         lp.hoverOnCreateloginAcc(driver);
         logger.info("Hover on create and login account");
+        Thread.sleep(2000);
+        
         // Click on the "Sign In" button
         lp.clickOnLogin();
         logger.info("Clicked on Sign In");
-        Thread.sleep(2000L);
-        logger.info("clicked on sign in");
+        Thread.sleep(1000);
+       
         
         openBrowserandClickSignInButtonset = true;
     }
 
-    @Test(dependsOnMethods = {"com.providio.testcases.testlogin.openBrowserandClickSignInButton"})
+    @Test(dependsOnMethods = {"com.Login.testlogin.openBrowserandClickSignInButton"})
 	public void verifySuccessfulLogin() throws InterruptedException {
 		test.info("Verify successful login");
 		// Test Case 1: Verify successful login

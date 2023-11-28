@@ -63,7 +63,7 @@ public class paymentMethods extends baseClass{
 			logger.info("Selectd the new card");
 			test.pass("Selectd the new card");
 			
-			braintreeGuest();
+			braintreeGuest12();
 			
 		}
 		

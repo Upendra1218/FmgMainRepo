@@ -127,10 +127,11 @@ public class shippingAndBillingAddress extends baseClass {
 	    	//if payment button is available then  then it clicks on payment button	    	
 	        List<WebElement> ContinueBillingList = driver.findElements(By.cssSelector(".submit-shipping"));
 	        if(ContinueBillingList.size()>0 ) {
-	        	 Thread.sleep(2000);	        	
+	        	 Thread.sleep(2000);
+	        	 JavascriptExecutor js = (JavascriptExecutor) driver;
 	        	 WebElement ContinueBilling = driver.findElement(By.cssSelector(".submit-shipping"));
 	        	 if(ContinueBilling.isEnabled()&& ContinueBilling.isDisplayed()) {
-			        cp.clickcontinueToBillingButton(driver);
+	        		 cp.clickcontinueToBillingButton(driver);
 			        logger.info("Clicked on the continue billing button");
 	        	 }
 		       

@@ -98,7 +98,7 @@ public class baseClass {
 	public static WebDriver driver;
 	public static   Logger logger ;
 	protected static boolean isLoggedIn=false;
-	protected static boolean openBrowser = false;
+	protected static boolean CheckoutProcessClick = false;
 	
 	protected static int menu5 =  0 ;
 	
@@ -106,6 +106,11 @@ public class baseClass {
 		protected static Float totalCost = (float) 0 ;
 		//sub total cost at hovered cart
 		protected static Float subTotalCost = (float) 0 ;
+		//guset user and after that register user in guest user
+		protected static boolean guestuser = false;
+		
+		//this one is gift card
+		protected static boolean giftCard = false;
 	
 	
 	//edited details store

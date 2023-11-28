@@ -21,8 +21,8 @@ public class FullAddressDetails extends baseClass {
         
         List<WebElement> shippingAddressList = driver.findElements(By.xpath("(//h2[contains(text(),'Shipping Address')])[1]"));
         
-      
-        
+      logger.info(shippingAddressList.size());
+      Thread.sleep(5000);        
         if(shippingAddressList.size()>0)  {
         	
         	 WebElement shippingAddressLabel = driver.findElement(By.xpath("(//h2[contains(text(),'Shipping Address')])[1]"));
@@ -59,6 +59,7 @@ public class FullAddressDetails extends baseClass {
 	            		 	
 	            		//clicked on continue billing	
 	            		 commonProccess.clickOnContinueBilling(cp);
+	            		 giftCard = true;
             		}
         	 }		          
     } 

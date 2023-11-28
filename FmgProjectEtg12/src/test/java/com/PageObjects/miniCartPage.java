@@ -26,7 +26,7 @@ public class miniCartPage extends baseClass{
     public void hoverOnCartButton(WebDriver driver) throws InterruptedException {
         // Create an Actions object to perform hover action
     	test.info("vaidate the minicart Hovered");
-    	Thread.sleep(1000);
+    	//Thread.sleep(1000);
         Actions actions = new Actions(driver);
         actions.moveToElement(CartButton).perform();
         Thread.sleep(1000);
@@ -64,7 +64,7 @@ public class miniCartPage extends baseClass{
     }
 
     // Element for Checkout Button
-    @FindBy(xpath = "//a[contains(@class,'btn btn-primary btn')]")
+    @FindBy(xpath = "//a[contains(@class,'checkout-btn')]")
     WebElement Checkout;
 
     // Method to click on the Checkout Button

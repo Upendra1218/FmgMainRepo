@@ -41,6 +41,7 @@ public class homePage extends baseClass{
 		if(ct.size()>0) {
 			Thread.sleep(2000);
 			consentTracking.click();
+			Thread.sleep(5000);
 		}
 
 	}
@@ -61,6 +62,7 @@ public class homePage extends baseClass{
 
 		//getting a banner and slecect one
 		public void selectHeroBanner() throws InterruptedException {
+			Thread.sleep(5000);
 			List<WebElement> herobanners = driver.findElements(By.xpath("//div[@class='hero-banner']"));
 			int count = herobanners.size();
 		    logger.info(count);
@@ -71,13 +73,20 @@ public class homePage extends baseClass{
 			    logger.info(herobannerRandNumber);
 			    if(herobannerRandNumber>0){
 			    	WebElement clickHeroBanner = driver.findElement(By.xpath("(//div[@class='hero-banner'])[" + herobannerRandNumber + "]"));
-			        //clickClp.click();
+			    	 ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", clickHeroBanner);
+			    	 Thread.sleep(3000);
 			        JavascriptExecutor js = (JavascriptExecutor) driver;
-			        logger.info("coming here");
-			        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", clickHeroBanner);
-			        Thread.sleep(2000);
-			        clickHeroBanner.click();
-			        //js.executeScript("arguments[0].click();", clickHeroBanner);
+			        logger.info("coming here"); 
+			        
+			        try {
+			        	clickHeroBanner.click();
+			        	 Thread.sleep(2000);
+			        } catch (Exception e) {
+			            // Handle the exception (e.g., log the error, take a screenshot, etc.)
+			            System.err.println("Exception caught: " + e.getMessage());
+			            js.executeScript("arguments[0].click();", clickHeroBanner);
+			            Thread.sleep(2000);
+			        }
 			    }
 		}
 		

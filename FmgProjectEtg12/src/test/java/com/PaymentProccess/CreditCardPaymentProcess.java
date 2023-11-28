@@ -8,6 +8,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 import com.CreditCardPaymentMethods.allPaymentMethods;
+import com.Logout.tc__LogOut;
 import com.PageObjects.TotalCalculation;
 import com.PageObjects.reviewOrderPage;
 import com.PageObjects.taxCalculation;
@@ -34,7 +35,7 @@ public class CreditCardPaymentProcess extends baseClass{
 					// Validate the payment page
 					preValidationCheck.validatePaymentButtonClk();
 					//Credit card negative validations
-					//negativeValidation.creditCardDetails();
+					 //negativeValidation.creditCardDetails();
 					
 					//editInAllCheckOutProcess.clickEditBtnRandomly();
 					
@@ -85,32 +86,21 @@ public class CreditCardPaymentProcess extends baseClass{
 	    		logger.info("Clicked on review order button");
 	    		Thread.sleep(4000);		  
 	    		
-	    		//editInAllCheckOutProcess.clickEditBtnRandomly();
+	    		editInAllCheckOutProcess.clickEditBtnRandomly();
 	    		
 	    		Thread.sleep(2000);
-
-				//total calculation
-				TotalCalculation totalCal= new TotalCalculation();
-				totalCal.totalCalculation(driver);
-				
-				try {
-		            // Code to interact with the element
-		         rop.clickonplaceorderwithJsExuter(driver);
-
-		            // If the interaction is successful, continue with the next steps
-		            // ...
-
-		        } catch (Exception e) {
-		            // Handle the error
-		            System.out.println("An error occurred: " + e.getMessage());
-
-		            // Run the next method or take appropriate action
-		            // ...
-		            rop.clickonplaceorderwithpaypal(driver);
-
-		        } 
 	    		
-	    		//rop.clickonplaceorderwithpaypal(driver);
+	    		if(CheckoutProcessClick) {
+	    			logger.info("This is check btn clicked, we are not calculated the total cost");
+	    			
+	    		}else {
+	    			//total calculation
+					TotalCalculation totalCal= new TotalCalculation();
+					totalCal.totalCalculation(driver);
+	    		}
+
+	    		rop.clickonplaceorderwithJsExuter(driver);
+	    	
 	    		
 	    		 logger.info("successfully click on the place order button by normal click");
                 Thread.sleep(2000);
@@ -127,6 +117,16 @@ public class CreditCardPaymentProcess extends baseClass{
 		    		
 		    	     // Order number and order date
 		    			 checkout.ordernumberandOrderdate();
+		    			 
+		    			 
+	                  //click on the continue shopping btn
+		    		   rop.clickoncontinueShoppingBtn(driver);
+		    		   
+	    				 if(isLoggedIn) {
+	    					 tc__LogOut logout = new tc__LogOut();
+	    					 logout.Logout();
+	    				 }	 
+	
 		    			 //Thread.sleep(5000);
 		    		}else if(driver.findElements(By.xpath("//p[contains(text(),'There was a problem processing your payment. Please verify your payment information and try again.')]")).size()>0) {
 		    			

@@ -54,30 +54,39 @@ public class MinicartViewCartProcess extends baseClass {
                 // Click on the cart button in the minicart
                 mc.hoverOnCartButton(driver);
 		        Thread.sleep(1000);
-		        
-
-                //assortable price  dissount  and its color                
-                TierPrice tp= new  TierPrice();
-                tp.onlyTier();
+	
                 
                 mc.clickviewCartButton(driver);
+                
+                //////////////////////////////////////////////////////////////////          
 
                 // Initialize the view cart page
                 viewCartPage vcp = new viewCartPage(driver);
                 
+                vcp.clickProductLink();
+                logger.info("Successfully navigate to the product detail page");
+                
+                Thread.sleep(2000);
+                
+                // Click on the cart button in the minicart
+                mc.hoverOnCartButton(driver);
+		        Thread.sleep(1000);
+	
+                
+                mc.clickviewCartButton(driver);
+                
+                ////////////////////////////////////////////
+                
                 List<WebElement> saveForLaterLink = driver.findElements(By.xpath("//div[@class='total-cart-content']//div[contains(@class,'save-for-later')]"));
-//                
-//                // If more than 2 products in minicart, save one for later
+                // If more than 2 products in minicart, save one for later
                 if(saveForLaterLink.size() > 2) {
                     vcp.saveForLater();                
-                }
-//                
+                }            
                 List<WebElement> removeBtns = driver.findElements(By.xpath("//div[contains(@class,'cart-delete')]"));
                 if(removeBtns.size()>2) {
                 	vcp.removeBtn();
                 }
-//              
-//     
+   
 	            Random random = new Random();
 	            int randomNumber = random.nextInt(2); // Generates a random number between 0 (inclusive) and 2 (exclusive)
 	
@@ -86,15 +95,18 @@ public class MinicartViewCartProcess extends baseClass {
 	            } else {
 	               vcp.noQuantityInsertionInCartPage();
 	            }
-		 
-                //product price
+	            
+	          //product price
                 vcp.productsCalInCart();
                 
+	             // apply promo code
+                vcp.applyCouponInCartPage();
+	            
                 //calcuates shipping charges
                 vcp.estimatedshippingCalculations();
                 	            
                 //total product cost
-               vcp.totalProductsCost();
+                vcp.totalProductsCost();
                 // Click the "Checkout" button in the view cart page
                 
                 
@@ -121,7 +133,7 @@ public class MinicartViewCartProcess extends baseClass {
                 FullAddressDetails address = new FullAddressDetails();
                 address.address();
                 
-                logger.info(totalCost);
+              
 
                 // Initialize checkOutPage and click continue to billing
                 

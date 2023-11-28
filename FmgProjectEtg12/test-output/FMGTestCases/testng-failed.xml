@@ -3,51 +3,60 @@
 <suite name="Failed suite [FMGTestCases]">
   <test thread-count="5" name="Automation(failed)">
     <classes>
-      <class name="com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPLP_InGcAndPaypal">
+      <class name="com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="GuestUserRandomProductFromPLP_InCc"/>
+          <include name="setUpforReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc -->
+      <class name="com.GuestUserWith_CreditCard.tc__BySearchingProduct_GuestUser_InCC">
         <methods>
           <include name="setUp"/>
           <include name="afterMethod"/>
           <include name="setUpforReport"/>
           <include name="tearDown"/>
-          <include name="guestUserRandomProductFromPLP_InGcAndPaypal"/>
+          <include name="bySearchingProduct_GuestUser_InCC"/>
         </methods>
-      </class> <!-- com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPLP_InGcAndPaypal -->
-      <class name="com.GuestUserWith_GcAndPaypal.tc__BySearchingProduct_GuestUser_InGcAndPaypal">
-        <methods>
-          <include name="setUp"/>
-          <include name="afterMethod"/>
-          <include name="bySearchingProduct_GuestUser_InGcAndPaypal"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.GuestUserWith_GcAndPaypal.tc__BySearchingProduct_GuestUser_InGcAndPaypal -->
-      <class name="com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPDP_InGcAndPaypal">
+      </class> <!-- com.GuestUserWith_CreditCard.tc__BySearchingProduct_GuestUser_InCC -->
+      <class name="com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPDP_InCc">
         <methods>
           <include name="setUp"/>
           <include name="afterMethod"/>
           <include name="setUpforReport"/>
           <include name="tearDown"/>
-          <include name="guestUserRandomProductFromPDP_InGcAndPaypal"/>
+          <include name="ProductFromPDP"/>
         </methods>
-      </class> <!-- com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPDP_InGcAndPaypal -->
-      <class name="com.GuestUserWith_GcAndPaypal.tc__HomePageCLPInGcAndPaypal">
+      </class> <!-- com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPDP_InCc -->
+      <class name="com.GuestUserWith_CreditCard.tc__HomePageCLPInCC">
+        <methods>
+          <include name="HomePageCLPInCC"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="setUpforReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.GuestUserWith_CreditCard.tc__HomePageCLPInCC -->
+      <class name="com.GuestUserWith_CreditCard.tc__OnlyGiftCards_GuestUser_InCc">
         <methods>
           <include name="setUp"/>
           <include name="afterMethod"/>
           <include name="setUpforReport"/>
           <include name="tearDown"/>
-          <include name="homePageCLPInGcAndPaypal"/>
+          <include name="OnlyGiftCards"/>
         </methods>
-      </class> <!-- com.GuestUserWith_GcAndPaypal.tc__HomePageCLPInGcAndPaypal -->
-      <class name="com.GuestUserWith_GcAndPaypal.tc__HomePageBannerPLPInGcAndPaypal">
+      </class> <!-- com.GuestUserWith_CreditCard.tc__OnlyGiftCards_GuestUser_InCc -->
+      <class name="com.GuestUserWith_CreditCard.tc__HomePageBannerPLPInCC">
         <methods>
           <include name="setUp"/>
           <include name="afterMethod"/>
           <include name="setUpforReport"/>
           <include name="tearDown"/>
-          <include name="homePageBannerPLPInGcAndPaypal"/>
+          <include name="HomePageBannerPLP"/>
         </methods>
-      </class> <!-- com.GuestUserWith_GcAndPaypal.tc__HomePageBannerPLPInGcAndPaypal -->
+      </class> <!-- com.GuestUserWith_CreditCard.tc__HomePageBannerPLPInCC -->
     </classes>
   </test> <!-- Automation(failed) -->
 </suite> <!-- Failed suite [FMGTestCases] -->

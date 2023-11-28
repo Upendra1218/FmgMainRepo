@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 import com.Launchingbrowser.launchBrowsering;
 import com.PageObjects.NavigationProcess;
 import com.PaymentProccess.CreditCardPaymentProcess;
+import com.PaymentProccess.MiniCartChekoutButton;
 import com.PaymentProccess.MinicartViewCartProcess;
 import com.Scenarios.plpPage;
 import com.testcases.baseClass;
@@ -25,7 +26,7 @@ public class tc__GuestUserRandomProductFromPLP_InCc extends baseClass {
         plpPage.addtocartplp();
 
         // Initialize MinicartViewCartProcess to perform the checkout process
-        MinicartViewCartProcess cartProcess = new MinicartViewCartProcess();
+        MiniCartChekoutButton cartProcess = new MiniCartChekoutButton();
         // Perform the checkout process
         cartProcess.checkoutprocess();
 

@@ -1,5 +1,6 @@
 package com.PageObjects;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.Random;
 
@@ -10,7 +11,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.github.javafaker.Faker;
 import com.testcases.baseClass;
@@ -148,8 +151,23 @@ public class checkOutPage extends baseClass {
         test.info("Validate the ContinueBilling Btn click");
         if(continueToBillingButton.isDisplayed()) {
             JavascriptExecutor js = (JavascriptExecutor) driver;
-            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", continueToBillingButton);
-            js.executeScript("arguments[0].click();", continueToBillingButton);
+            
+            try {
+            	continueToBillingButton.click();
+   	        } catch (Exception e) {
+   	            // Handle the exception (e.g., log the error, take a screenshot, etc.)
+   	            System.err.println("Exception caught: " + e.getMessage());
+   	            js.executeScript("arguments[0].click();", continueToBillingButton);
+   	        }
+            
+//    		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//    		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", continueToBillingButton);
+//    		Thread.sleep(2000);
+//    		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(continueToBillingButton));
+//    		element.click();
+
+            
+            //js.executeScript("arguments[0].click();", continueToBillingButton);
             test.pass("Successfully ContinueBilling Btn is Clicked");
             Thread.sleep(5000);
         }

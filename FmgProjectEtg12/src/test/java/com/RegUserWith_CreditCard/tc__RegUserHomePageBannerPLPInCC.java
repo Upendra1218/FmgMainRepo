@@ -27,7 +27,7 @@ public class tc__RegUserHomePageBannerPLPInCC extends baseClass {
         cartProcess.checkoutprocess();
 
         // Initialize CreditCardPaymentProcess to perform the payment using a credit card
-        CreditCardPaymentProcessReg ccPaymentProcess = new CreditCardPaymentProcessReg();
+        CreditCardPaymentProcess ccPaymentProcess = new CreditCardPaymentProcess();
         // Perform the payment using a credit card
         ccPaymentProcess.paymentByCreditCard();
         }

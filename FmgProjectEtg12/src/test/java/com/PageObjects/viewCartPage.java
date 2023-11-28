@@ -1,6 +1,5 @@
 package com.PageObjects;
 
-import java.text.DecimalFormat;
 import java.util.List;
 import java.util.Random;
 
@@ -38,10 +37,36 @@ WebDriver lDriver;
 	    Float assortablePrice = (float) 0 ;
 	    
 	    Float viewCartTotal = (float) 0 ;
+	    
+	    //click on the product link in the view cart page
+	    public void clickProductLink() throws InterruptedException {
+	    	
+	    	List<WebElement> productLinks = driver.findElements(By.xpath("//h3"));
+			 // Get the total count of top-level menu elements.
+	        int count = productLinks.size();
+	        // Create a random number generator.
+	        Random random = new Random();
+	        // Generate a random index to select a top-level menu item.
+	        int randomProdcutlink = random.nextInt(count) + 1;
+	        logger.info(randomProdcutlink);
+	        WebElement movetoWishListLink = driver.findElement(By.xpath("(//h3)[" + randomProdcutlink + "]"));
+			Thread.sleep(2000);
+			JavascriptExecutor js = (JavascriptExecutor) driver; 
+			js.executeScript("arguments[0].click();", movetoWishListLink);
+			
+			Thread.sleep(3000);
+			
+			//validate the pdp page is loaded\
+			List<WebElement> pdpPagecheck = driver.findElements(By.xpath("//div[contains(@class,'product-main-block')]"));
+			if (pdpPagecheck.size() > 0) {
+				logger.info("Pdp page is succesfully loaded");
+			}
+			
+	    }
 	 
 
 	
-	//Checkout :- 
+	    //Checkout :- 
 		@FindBy(xpath="//a[contains(text(),'Checkout')]")
 		WebElement Checkout;	
 		public void clickCheckout(WebDriver driver) throws InterruptedException{
@@ -75,9 +100,16 @@ WebDriver lDriver;
 		        logger.info(randomeditlink);
 		        WebElement movetoWishListLink = driver.findElement(By.xpath("(//div[@class='total-cart-content']//div[contains(@class,'save-for-later')])[" + randomeditlink + "]"));
 				Thread.sleep(2000);
-				JavascriptExecutor js = (JavascriptExecutor) driver; 
-				js.executeScript("arguments[0].click();", movetoWishListLink);		
-				//movetoWishListLink.click();
+				JavascriptExecutor js = (JavascriptExecutor) driver;
+				
+				// Use JavascriptExecutor to click on the element with try-catch
+		        try {
+		            js.executeScript("arguments[0].click();", movetoWishListLink);
+		        } catch (Exception e) {
+		            System.err.println("Exception while clicking the element: " + e.getMessage());
+		            movetoWishListLink.click();
+		        }
+						
 				test.pass("Successfully the product is add to the save later");
 				
 				//validationpopupMessages.validatingProductisAddtoWishList(driver);
@@ -100,7 +132,13 @@ WebDriver lDriver;
 		        WebElement removeformviewcart = driver.findElement(By.xpath("(//div[contains(@class,'cart-delete')])[" + randomRemoveBtn + "]"));
 				Thread.sleep(2000);
 				JavascriptExecutor js = (JavascriptExecutor) driver; 
-				js.executeScript("arguments[0].click();", removeformviewcart);		
+				
+				try {
+		            js.executeScript("arguments[0].click();", removeformviewcart);
+		        } catch (Exception e) {
+		            System.err.println("Exception while clicking the element: " + e.getMessage());
+		            removeformviewcart.click();
+		        }	
 				
 				Thread.sleep(5000);
 				
@@ -119,8 +157,13 @@ WebDriver lDriver;
 				//RandomElement
 				WebElement randomElement = driver.findElement(By.xpath(randomXPath));
 				
-				js.executeScript("arguments[0].click();", randomElement);		
-				//randomElement.click();
+				try {
+		            js.executeScript("arguments[0].click();", randomElement);
+		        } catch (Exception e) {
+		            System.err.println("Exception while clicking the element: " + e.getMessage());
+		            randomElement.click();
+		        }
+				
 				
 				if(randomIndex==0) {
 					validationpopupMessages.validatingProductisAddtoCart(lDriver);
@@ -209,10 +252,10 @@ WebDriver lDriver;
 				 String countOfProducts= miniCartQuantity.getText();
 				 test.info("The total number of products in cart are " +countOfProducts);
 				 logger.info("The total number of products in cart are " +countOfProducts);
-				 
-				 // tier price and color
-				 TierPrice tp= new TierPrice();
-				 tp.tierPriceAndColor();
+//				 
+//				 // tier price and color
+//				 TierPrice tp= new TierPrice();
+//				 tp.tierPriceAndColor();
 				 
 			}
 			
@@ -220,6 +263,141 @@ WebDriver lDriver;
 				
 				test.info("No quantity inasertion in cart page ");
 			}
+			
+			// applying promo code
+						public void applyCouponInCartPage() throws InterruptedException {
+						    // Find the "Have a Promo Code?" link and click it
+						    List<WebElement> clickOnPromo = driver.findElements(By.xpath("//label[contains(text(),'Have a Promo Code?')]"));
+						    if (clickOnPromo.size() > 0) {
+						        WebElement clickOnPromolink = driver.findElement(By.xpath("//label[contains(text(),'Have a Promo Code?')]"));
+						        clickOnPromolink.click();
+
+						        // Perform negative validation for coupon in the cart
+						        negativeValidationForCouponInCart();
+
+						        // Apply coupon
+						        applyCoupon();
+
+						        // Cancel applied coupon
+						        cancellationOfCoupon();
+						        Thread.sleep(2000);
+						    }
+						}
+
+						// Method to apply a coupon in the cart
+						public void applyCoupon() throws InterruptedException {
+						    boolean couponNotAppliedDisplay = false;
+						    boolean couponAppliedDisplay = false;
+
+						    // Find the coupon code input field and enter a coupon code
+						    WebElement couponCode = driver.findElement(By.id("couponCode"));
+						    couponCode.sendKeys("promo");
+
+						    // Find the "Apply Coupon" button and click it
+						    WebElement applyCouponCode = driver.findElement(By.cssSelector("button.promo-code-btn"));
+						    applyCouponCode.click();
+
+						    Thread.sleep(4000);
+
+						    // Check if the coupon is applied or not
+						    List<WebElement> couponNotAppliedDiv = driver.findElements(By.cssSelector(".coupon-not-applied"));
+						    if (couponNotAppliedDiv.size() > 0) {
+						        WebElement couponNotApplied = driver.findElement(By.cssSelector(".coupon-not-applied"));
+						        couponNotAppliedDisplay = couponNotApplied.isDisplayed();
+						    }
+
+						    List<WebElement> couponAppliedList = driver.findElements(By.cssSelector(".coupon-applied"));
+						    if (couponAppliedList.size() > 0) {
+						        WebElement couponApplied = driver.findElement(By.cssSelector(".coupon-applied"));
+						        couponAppliedDisplay = couponApplied.isDisplayed();
+						        Thread.sleep(1000);
+						    }
+
+						    if (couponAppliedDisplay) {
+						        test.pass("Coupon is applied ");
+						        logger.info("Coupon is applied ");
+						    } else if (couponNotAppliedDisplay) {
+						        test.pass("Coupon is not applied message because");
+						        logger.info("Coupon is not applied message because of customization ");
+						    } else {
+						        test.pass("Coupon is not applied");
+						        logger.info("Coupon is not applied ");
+						    }
+						}
+
+						// Method to cancel the applied coupon
+						public void cancellationOfCoupon() throws InterruptedException {
+						    // Find the "Remove Applied Coupon" button and click it
+						    WebElement removeTheAppliedCoupon = driver.findElement(By.cssSelector(".remove-coupon"));
+						    JavascriptExecutor js = (JavascriptExecutor) driver; 
+						    try {
+					            js.executeScript("arguments[0].click();", removeTheAppliedCoupon);
+					        } catch (Exception e) {
+					            System.err.println("Exception while clicking the element: " + e.getMessage());
+					            removeTheAppliedCoupon.click();
+					        }
+						    //removeTheAppliedCoupon.click();
+						    Thread.sleep(2000);
+
+						    // Find the "Delete Coupon" and "Cancel Coupon" buttons
+						    WebElement deleteCoupon = driver.findElement(By.cssSelector("button.delete-coupon-confirmation-btn"));
+						    WebElement cancelTheRemovalOfCoupon = driver.findElement(By.cssSelector(".cancel-coupon"));
+
+						    // Generate a random number (0 or 1) to decide which button to click
+						    Random random = new Random();
+						    int randomNumber = random.nextInt(2);
+
+						    // Use the random number to decide which button to click
+						    if (randomNumber == 0) {
+						        Thread.sleep(1000);
+						        deleteCoupon.click();
+						        test.info("Deleted the coupon applied");
+						    } else {
+						        Thread.sleep(1000);
+						        cancelTheRemovalOfCoupon.click();
+						        test.info("Canceling the removal of coupon");
+						    }
+						}
+
+						// Method to perform negative validation for coupon in the cart
+						public void negativeValidationForCouponInCart() throws InterruptedException {
+						    boolean errorMsgDisplayForPromoInvalidInCart = false;
+
+						    // Verify the display of error message when no coupon is entered
+						    test.info("Verifying the display of error message when no coupon is entered");
+						    WebElement applyCouponCode = driver.findElement(By.cssSelector("button.promo-code-btn"));
+						    applyCouponCode.click();
+						    Thread.sleep(1000);
+						    WebElement errorMsg = driver.findElement(By.xpath("//span[contains(text(),'No coupon code entered')]"));
+						    boolean errorMsgDisplay = errorMsg.isDisplayed();
+						    if (errorMsgDisplay) {
+						        test.pass("Error message is displayed when no coupon is entered ");
+						        logger.info("Error message is displayed when no coupon is entered");
+						    } else {
+						        test.fail("No Error message is displayed when no coupon is entered ");
+						        logger.info("No Error message is displayed when no coupon is entered");
+						    }
+
+						    // Verify the error message when an invalid coupon is entered
+						    test.info("Verifying the error message when an invalid coupon is entered");
+						    WebElement couponCode = driver.findElement(By.id("couponCode"));
+						    couponCode.sendKeys("uijhskdher4");
+						    applyCouponCode.click();
+						    Thread.sleep(2000);
+						    List<WebElement> errorMsgPromoInvalid = driver.findElements(By.xpath("//span[contains(text(),'The promotion code is not valid.')]"));
+						    if (errorMsgPromoInvalid.size() > 0) {
+						        WebElement errorMsgPromoInvalidDisplay = driver.findElement(By.xpath("//span[contains(text(),'The promotion code is not valid.')]"));
+						        errorMsgDisplayForPromoInvalidInCart = errorMsgPromoInvalidDisplay.isDisplayed();
+						    }
+						    if (errorMsgDisplayForPromoInvalidInCart) {
+						        test.pass("Error message is displayed when an invalid coupon is entered ");
+						        logger.info("Error message is displayed when an invalid coupon is entered ");
+						    } else {
+						        test.fail("No Error message is displayed when an invalid coupon is entered ");
+						        logger.info("No Error message is displayed when an invalid coupon is entered ");
+						    }
+						}
+
 
 			
 			

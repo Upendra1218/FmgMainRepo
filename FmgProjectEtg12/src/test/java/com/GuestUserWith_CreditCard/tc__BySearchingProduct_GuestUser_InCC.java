@@ -4,6 +4,7 @@ package com.GuestUserWith_CreditCard;
 
 import com.Launchingbrowser.launchBrowsering;
 import com.PaymentProccess.CreditCardPaymentProcess;
+import com.PaymentProccess.MiniCartChekoutButton;
 import com.PaymentProccess.MiniCartViewCartRegUser;
 import com.PaymentProccess.MinicartViewCartProcess;
 import com.Scenarios.SearchingProduct;
@@ -24,10 +25,12 @@ public class tc__BySearchingProduct_GuestUser_InCC extends baseClass {
         //searching a product 		
 		SearchingProduct sp1 = new SearchingProduct();
 		sp1.searchingProduct();
-
+		
+		//this is for the guest
+		guestuser = true;
 
 		// Initialize MinicartViewCartProcess to perform the checkout process
-        MinicartViewCartProcess cartProcess = new MinicartViewCartProcess();
+		MiniCartChekoutButton cartProcess = new MiniCartChekoutButton();
         // Perform the checkout process
         cartProcess.checkoutprocess();
 

@@ -44,7 +44,7 @@ public class loginPage extends baseClass{
     // Element for email input field
     @FindBy(id = "login-form-email-modal-login")
     WebElement email;
-
+  //input[@id='email']
     // Method to set the email input field
     public void setEmail(String name) {
         email.clear();
@@ -93,4 +93,35 @@ public class loginPage extends baseClass{
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", forHomePage);
     }
+    
+    //Email in the guest check out page
+    @FindBy(xpath = "//input[@id='email']")
+    WebElement GuestRegemail;
+    // Method to set the email input field
+    public void GuestRegemailInput() {
+    	GuestRegemail.clear();
+    	GuestRegemail.sendKeys("upendra.y@etg.digital");
+    }
+    
+  //Email in the guest check out page
+    @FindBy(xpath = "//input[@id='password']")
+    WebElement GuestRegPWD;
+
+    // Method to set the email input field
+    public void GuestRegPWDInput() {
+    	GuestRegPWD.clear();
+    	GuestRegPWD.sendKeys("Fmg@121812");
+    }
+    
+  //Email in the guest check out page
+    @FindBy(xpath = "//button[contains(text(), 'Login')]")
+    WebElement GuestRegLoginBtn;
+
+    // Method to set the email input field
+    public void clickGuestGuestRegLoginBtn() {
+   
+    	GuestRegLoginBtn.click();
+    }
+    
+    
 }

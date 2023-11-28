@@ -53,10 +53,6 @@ public class MiniCartViewCartRegUser extends baseClass {
                 mc.hoverOnCartButton(driver);
 		        Thread.sleep(1000);
 		        
-
-                //assortable price  dissount  and its color                
-//                TierPrice tp= new  TierPrice();
-//                tp.onlyTier();
                 
                 mc.clickviewCartButton(driver);
 
@@ -75,21 +71,7 @@ public class MiniCartViewCartRegUser extends baseClass {
                 	vcp.removeBtn();
                 }
               
-     
-	            Random random = new Random();
-	            int randomNumber = random.nextInt(2)+1; // Generates a random number between 0 (inclusive) and 2 (exclusive)
-	
-	            if (randomNumber == 1) {
-	               vcp.quantityInsertionInCartPage();
-	            } else {
-	               vcp.noQuantityInsertionInCartPage();
-	            }
-		 
-                //product price
-                vcp.productsCalInCart();
-    	                
-                //calcuates shipping charges
-               // vcp.estimatedshippingCalculations();
+
                 	            
                 //total product cost
                 vcp.totalProductsCost();

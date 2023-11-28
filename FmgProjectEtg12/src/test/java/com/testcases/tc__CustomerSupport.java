@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import com.PageObjects.contactUsCustomerSupport;
 
 public class tc__CustomerSupport extends baseClass{
-	@Test(dependsOnMethods = {"com.providio.login.tc__Login.loginTest"}, alwaysRun = true)
+	@Test(dependsOnMethods = {"com.Login.tc__Login.loginTest"}, alwaysRun = true)
 	public void customerSuppor() throws InterruptedException {
 		test.info("Contact us button on homepage");
 		WebElement contactUsButton= driver.findElement(By.xpath("//div[@class='embeddedServiceHelpButton']//button"));
@@ -23,29 +23,40 @@ public class tc__CustomerSupport extends baseClass{
 		contactUsCustomerSupport csp = new contactUsCustomerSupport(driver);
 		csp.clickcustomerSupportButton(driver);
 		logger.info("Clicked on the customer support button");
+		logger.info("Clicked on the customer support button");
+		
 		
 		
 		Thread.sleep(15000);
 		
 		csp.sendNameoftheCustomer(driver);
 		logger.info("sucessfully Name send to the input of the name field");
+		test.pass("sucessfully Name send to the input of the name field");
 		Thread.sleep(1000);
 		
-		
-        csp.sendSubject(driver);
-        logger.info("sucessfully subject send to the input of the name field");
-        Thread.sleep(1000);
         
         csp.sendEmailofTheCustomer(driver);
         logger.info("sucessfully Email send to the input of the name field");
+        test.pass("sucessfully Email send to the input of the name field");
         Thread.sleep(1000);
+        
+        csp.sendPhoneofTheCustomer(driver);
+        logger.info("Successfully phone is send to the phone filed");
+        test.pass("Successfully phone is send to the phone filed");
+        
         
         csp.selecttheIssuesoftheCustomer(driver);
         logger.info("sucessfully select the reason for the feedback");
+        test.pass("sucessfully select the reason for the feedback");
         Thread.sleep(1000);
+        
+        csp.sendDescritofTheCustomer(driver);
+        logger.info("Succesfully description is send to the description");
+        test.pass("Succesfully description is send to the description");
         
         csp.clicksubmitButton(driver);
         logger.info("sucessfully clicked on the submit button");
+        test.pass("sucessfully clicked on the submit button");
         Thread.sleep(5000);
         
         

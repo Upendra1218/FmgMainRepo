@@ -1,301 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="13" passed="0" failed="5" skipped="0">
+<testng-results ignored="2" total="4" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-23T19:20:29 IST" name="FMGTestCases" finished-at="2023-11-23T19:30:21 IST" duration-ms="592079">
+  <suite started-at="2023-11-28T11:55:10 IST" name="FMG" finished-at="2023-11-28T11:59:14 IST" duration-ms="244208">
     <groups>
     </groups>
-    <test started-at="2023-11-23T19:20:29 IST" name="Automation" finished-at="2023-11-23T19:30:21 IST" duration-ms="592079">
-      <class name="com.GuestUserWith_GcAndPaypal.tc__BySearchingProduct_GuestUser_InGcAndPaypal">
-        <test-method is-config="true" signature="setUpforReport()[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__BySearchingProduct_GuestUser_InGcAndPaypal@5d3b58ca]" started-at="2023-11-23T19:20:24 IST" name="setUpforReport" finished-at="2023-11-23T19:20:29 IST" duration-ms="5122" status="PASS">
+    <test started-at="2023-11-28T11:55:10 IST" name="Automation" finished-at="2023-11-28T11:59:14 IST" duration-ms="244208">
+      <class name="com.GuestUserWith_GcAndCC.tc__HomePageBannerPLPInGcAndCc">
+        <test-method is-config="true" signature="setUpforReport()[pri:0, instance:com.GuestUserWith_GcAndCC.tc__HomePageBannerPLPInGcAndCc@7237f3c1]" started-at="2023-11-28T11:55:05 IST" name="setUpforReport" finished-at="2023-11-28T11:55:10 IST" duration-ms="4975" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpforReport -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__BySearchingProduct_GuestUser_InGcAndPaypal@5d3b58ca]" started-at="2023-11-23T19:20:29 IST" name="setUp" finished-at="2023-11-23T19:20:31 IST" duration-ms="2032" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.GuestUserWith_GcAndCC.tc__HomePageBannerPLPInGcAndCc@7237f3c1]" started-at="2023-11-28T11:55:10 IST" name="setUp" finished-at="2023-11-28T11:55:12 IST" duration-ms="2037" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="bySearchingProduct_GuestUser_InGcAndPaypal()[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__BySearchingProduct_GuestUser_InGcAndPaypal@5d3b58ca]" started-at="2023-11-23T19:20:31 IST" name="bySearchingProduct_GuestUser_InGcAndPaypal" finished-at="2023-11-23T19:23:46 IST" duration-ms="194763" status="FAIL">
-          <exception class="java.lang.NumberFormatException">
-            <message>
-              <![CDATA[empty String]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: empty String
-at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
-at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
-at java.base/java.lang.Float.parseFloat(Float.java:476)
-at com.PageObjects.taxCalculation.totalProductValidation(taxCalculation.java:77)
-at com.PaymentProccess.CheckOutProcessByPayPal.checkoutprocessFromCheckout(CheckOutProcessByPayPal.java:192)
-at com.commonfunctionality.Gc__CC_Paypal.paymentProccessByGCandPaypal(Gc__CC_Paypal.java:179)
-at com.GuestUserWith_GcAndPaypal.tc__BySearchingProduct_GuestUser_InGcAndPaypal.bySearchingProduct_GuestUser_InGcAndPaypal(tc__BySearchingProduct_GuestUser_InGcAndPaypal.java:32)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NumberFormatException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bySearchingProduct_GuestUser_InGcAndPaypal -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__BySearchingProduct_GuestUser_InGcAndPaypal@5d3b58ca]" started-at="2023-11-23T19:23:46 IST" name="afterMethod" finished-at="2023-11-23T19:23:46 IST" duration-ms="159" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=bySearchingProduct_GuestUser_InGcAndPaypal status=FAILURE method=tc__BySearchingProduct_GuestUser_InGcAndPaypal.bySearchingProduct_GuestUser_InGcAndPaypal()[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__BySearchingProduct_GuestUser_InGcAndPaypal@5d3b58ca] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__BySearchingProduct_GuestUser_InGcAndPaypal@5d3b58ca]" started-at="2023-11-23T19:30:21 IST" name="tearDown" finished-at="2023-11-23T19:30:29 IST" duration-ms="7402" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.GuestUserWith_GcAndPaypal.tc__BySearchingProduct_GuestUser_InGcAndPaypal -->
-      <class name="com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPDP_InGcAndPaypal">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPDP_InGcAndPaypal@52227eb2]" started-at="2023-11-23T19:23:46 IST" name="setUp" finished-at="2023-11-23T19:23:48 IST" duration-ms="2006" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="guestUserRandomProductFromPDP_InGcAndPaypal()[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPDP_InGcAndPaypal@52227eb2]" started-at="2023-11-23T19:23:48 IST" name="guestUserRandomProductFromPDP_InGcAndPaypal" finished-at="2023-11-23T19:24:19 IST" duration-ms="31292" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'refinement-device')]//span"}
-  (Session info: chrome=119.0.6045.160)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dd36b272d6436afdadc516695f8271e3, findElement {using=xpath, value=//div[contains(@class, 'refinement-device')]//span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\YERRAG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63423}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63423/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dd36b272d6436afdadc516695f8271e3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'refinement-device')]//span"}
-  (Session info: chrome=119.0.6045.160)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dd36b272d6436afdadc516695f8271e3, findElement {using=xpath, value=//div[contains(@class, 'refinement-device')]//span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\YERRAG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63423}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63423/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dd36b272d6436afdadc516695f8271e3
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at com.PageObjects.productListingPage.selectaFilterFormPLP(productListingPage.java:456)
-at com.Scenarios.plpPage.addtocartplp(plpPage.java:31)
-at com.Scenarios.menuSelction.randommenu(menuSelction.java:72)
-at com.PageObjects.NavigationProcess.selectRandomMenu(NavigationProcess.java:19)
-at com.Scenarios.pdpPage.addtoCartPDP(pdpPage.java:75)
-at com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPDP_InGcAndPaypal.guestUserRandomProductFromPDP_InGcAndPaypal(tc__GuestUserRandomProductFromPDP_InGcAndPaypal.java:21)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- guestUserRandomProductFromPDP_InGcAndPaypal -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPDP_InGcAndPaypal@52227eb2]" started-at="2023-11-23T19:24:19 IST" name="afterMethod" finished-at="2023-11-23T19:24:20 IST" duration-ms="285" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=guestUserRandomProductFromPDP_InGcAndPaypal status=FAILURE method=tc__GuestUserRandomProductFromPDP_InGcAndPaypal.guestUserRandomProductFromPDP_InGcAndPaypal()[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPDP_InGcAndPaypal@52227eb2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPDP_InGcAndPaypal -->
-      <class name="com.GuestUserWith_GcAndPaypal.tc__HomePageBannerPLPInGcAndPaypal">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__HomePageBannerPLPInGcAndPaypal@a146b11]" started-at="2023-11-23T19:26:06 IST" name="setUp" finished-at="2023-11-23T19:26:08 IST" duration-ms="2022" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="homePageBannerPLPInGcAndPaypal()[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__HomePageBannerPLPInGcAndPaypal@a146b11]" started-at="2023-11-23T19:26:08 IST" name="homePageBannerPLPInGcAndPaypal" finished-at="2023-11-23T19:27:26 IST" duration-ms="78691" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found
-  (Session info: chrome=119.0.6045.160)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dd36b272d6436afdadc516695f8271e3, clearElement {id=938C25FBB55585120A47904FFFE915DB_element_1861}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\YERRAG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63423}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63423/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (dd36b272d6436afdadc516695f8271e3)] -> xpath: (//input[@name='quantity'])[1]]
-Session ID: dd36b272d6436afdadc516695f8271e3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=119.0.6045.160)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dd36b272d6436afdadc516695f8271e3, clearElement {id=938C25FBB55585120A47904FFFE915DB_element_1861}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\YERRAG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63423}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63423/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (dd36b272d6436afdadc516695f8271e3)] -> xpath: (//input[@name='quantity'])[1]]
-Session ID: dd36b272d6436afdadc516695f8271e3
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:130)
-at com.PageObjects.viewCartPage.quantityInsertionInCartPage(viewCartPage.java:182)
-at com.PaymentProccess.MinicartViewCartProcess.checkoutprocess(MinicartViewCartProcess.java:85)
-at com.GuestUserWith_GcAndPaypal.tc__HomePageBannerPLPInGcAndPaypal.homePageBannerPLPInGcAndPaypal(tc__HomePageBannerPLPInGcAndPaypal.java:25)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homePageBannerPLPInGcAndPaypal -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__HomePageBannerPLPInGcAndPaypal@a146b11]" started-at="2023-11-23T19:27:26 IST" name="afterMethod" finished-at="2023-11-23T19:27:26 IST" duration-ms="154" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=homePageBannerPLPInGcAndPaypal status=FAILURE method=tc__HomePageBannerPLPInGcAndPaypal.homePageBannerPLPInGcAndPaypal()[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__HomePageBannerPLPInGcAndPaypal@a146b11] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.GuestUserWith_GcAndPaypal.tc__HomePageBannerPLPInGcAndPaypal -->
-      <class name="com.GuestUserWith_GcAndPaypal.tc__HomePageCLPInGcAndPaypal">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__HomePageCLPInGcAndPaypal@f438904]" started-at="2023-11-23T19:27:26 IST" name="setUp" finished-at="2023-11-23T19:27:28 IST" duration-ms="2009" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="homePageCLPInGcAndPaypal()[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__HomePageCLPInGcAndPaypal@f438904]" started-at="2023-11-23T19:27:28 IST" name="homePageCLPInGcAndPaypal" finished-at="2023-11-23T19:30:21 IST" duration-ms="172518" status="FAIL">
+        <test-method signature="homePageBannerPLPInGcAndCc()[pri:0, instance:com.GuestUserWith_GcAndCC.tc__HomePageBannerPLPInGcAndCc@7237f3c1]" started-at="2023-11-28T11:55:12 IST" name="homePageBannerPLPInGcAndCc" finished-at="2023-11-28T11:58:26 IST" duration-ms="193868" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element is not clickable at point (288, 750)
+              <![CDATA[element click intercepted: Element is not clickable at point (288, 738)
   (Session info: chrome=119.0.6045.160)
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dd36b272d6436afdadc516695f8271e3, clickElement {id=C9DC3736B4E674F6CF50BD29C3643DFC_element_2779}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\YERRAG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63423}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63423/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (dd36b272d6436afdadc516695f8271e3)] -> id: gift-promo]
-Session ID: dd36b272d6436afdadc516695f8271e3]]>
+Command: [688d207dcdda134ed118b63d58ab0732, clickElement {id=7026F03135C8FF0DAAD6EB5BD8D11F10_element_1091}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\YERRAG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54336}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54336/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (688d207dcdda134ed118b63d58ab0732)] -> id: gift-promo]
+Session ID: 688d207dcdda134ed118b63d58ab0732]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (288, 750)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (288, 738)
   (Session info: chrome=119.0.6045.160)
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dd36b272d6436afdadc516695f8271e3, clickElement {id=C9DC3736B4E674F6CF50BD29C3643DFC_element_2779}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\YERRAG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63423}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63423/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (dd36b272d6436afdadc516695f8271e3)] -> id: gift-promo]
-Session ID: dd36b272d6436afdadc516695f8271e3
+Command: [688d207dcdda134ed118b63d58ab0732, clickElement {id=7026F03135C8FF0DAAD6EB5BD8D11F10_element_1091}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\YERRAG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54336}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54336/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (688d207dcdda134ed118b63d58ab0732)] -> id: gift-promo]
+Session ID: 688d207dcdda134ed118b63d58ab0732
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -311,7 +53,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
 at com.commonfunctionality.Gc__CC_Paypal.paymentProccessByGCandCC(Gc__CC_Paypal.java:31)
-at com.GuestUserWith_GcAndPaypal.tc__HomePageCLPInGcAndPaypal.homePageCLPInGcAndPaypal(tc__HomePageCLPInGcAndPaypal.java:29)
+at com.GuestUserWith_GcAndCC.tc__HomePageBannerPLPInGcAndCc.homePageBannerPLPInGcAndCc(tc__HomePageBannerPLPInGcAndCc.java:30)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -345,45 +87,51 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homePageCLPInGcAndPaypal -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__HomePageCLPInGcAndPaypal@f438904]" started-at="2023-11-23T19:30:21 IST" name="afterMethod" finished-at="2023-11-23T19:30:21 IST" duration-ms="188" status="PASS">
+        </test-method> <!-- homePageBannerPLPInGcAndCc -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.GuestUserWith_GcAndCC.tc__HomePageBannerPLPInGcAndCc@7237f3c1]" started-at="2023-11-28T11:58:26 IST" name="afterMethod" finished-at="2023-11-28T11:58:26 IST" duration-ms="154" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=homePageCLPInGcAndPaypal status=FAILURE method=tc__HomePageCLPInGcAndPaypal.homePageCLPInGcAndPaypal()[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__HomePageCLPInGcAndPaypal@f438904] output={null}]]]>
+                <![CDATA[[TestResult name=homePageBannerPLPInGcAndCc status=FAILURE method=tc__HomePageBannerPLPInGcAndCc.homePageBannerPLPInGcAndCc()[pri:0, instance:com.GuestUserWith_GcAndCC.tc__HomePageBannerPLPInGcAndCc@7237f3c1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.GuestUserWith_GcAndPaypal.tc__HomePageCLPInGcAndPaypal -->
-      <class name="com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPLP_InGcAndPaypal">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPLP_InGcAndPaypal@5ad1904f]" started-at="2023-11-23T19:24:20 IST" name="setUp" finished-at="2023-11-23T19:24:22 IST" duration-ms="2007" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.GuestUserWith_GcAndCC.tc__HomePageBannerPLPInGcAndCc@7237f3c1]" started-at="2023-11-28T11:59:14 IST" name="tearDown" finished-at="2023-11-28T11:59:22 IST" duration-ms="7154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.GuestUserWith_GcAndCC.tc__HomePageBannerPLPInGcAndCc -->
+      <class name="com.GuestUserWith_GiftCard.tc__HomePageBannerPLPInGC">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.GuestUserWith_GiftCard.tc__HomePageBannerPLPInGC@5f5827d0]" started-at="2023-11-28T11:58:26 IST" name="setUp" finished-at="2023-11-28T11:58:28 IST" duration-ms="2005" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="guestUserRandomProductFromPLP_InGcAndPaypal()[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPLP_InGcAndPaypal@5ad1904f]" started-at="2023-11-23T19:24:22 IST" name="guestUserRandomProductFromPLP_InGcAndPaypal" finished-at="2023-11-23T19:26:05 IST" duration-ms="103700" status="FAIL">
-          <exception class="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException">
+        <test-method signature="homePageBannerPLPInGC()[pri:0, instance:com.GuestUserWith_GiftCard.tc__HomePageBannerPLPInGC@5f5827d0]" started-at="2023-11-28T11:58:28 IST" name="homePageBannerPLPInGC" finished-at="2023-11-28T11:59:14 IST" duration-ms="45898" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[move target out of bounds
+              <![CDATA[element not interactable
   (Session info: chrome=119.0.6045.160)
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dd36b272d6436afdadc516695f8271e3, actions {actions=[org.openqa.selenium.interactions.Sequence@1784fcab]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\YERRAG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63423}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63423/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dd36b272d6436afdadc516695f8271e3]]>
+Command: [688d207dcdda134ed118b63d58ab0732, clearElement {id=7B675D37F84D1E168686CC925BD04194_element_1331}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\YERRAG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54336}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54336/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (688d207dcdda134ed118b63d58ab0732)] -> xpath: (//input[@name='quantity'])[14]]
+Session ID: 688d207dcdda134ed118b63d58ab0732]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=119.0.6045.160)
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dd36b272d6436afdadc516695f8271e3, actions {actions=[org.openqa.selenium.interactions.Sequence@1784fcab]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\YERRAG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63423}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63423/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dd36b272d6436afdadc516695f8271e3
+Command: [688d207dcdda134ed118b63d58ab0732, clearElement {id=7B675D37F84D1E168686CC925BD04194_element_1331}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\YERRAG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54336}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54336/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (688d207dcdda134ed118b63d58ab0732)] -> xpath: (//input[@name='quantity'])[14]]
+Session ID: 688d207dcdda134ed118b63d58ab0732
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -396,14 +144,12 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:604)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:605)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:574)
-at com.PageObjects.miniCartPage.hoverOnCartButton(miniCartPage.java:31)
-at com.PageObjects.TierPrice.tierPriceAndColor(TierPrice.java:22)
-at com.PageObjects.viewCartPage.quantityInsertionInCartPage(viewCartPage.java:215)
-at com.PaymentProccess.MinicartViewCartProcess.checkoutprocess(MinicartViewCartProcess.java:85)
-at com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPLP_InGcAndPaypal.guestUserRandomProductFromPLP_InGcAndPaypal(tc__GuestUserRandomProductFromPLP_InGcAndPaypal.java:32)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:130)
+at com.PageObjects.productListingPage.tierPrice(productListingPage.java:69)
+at com.Scenarios.plpPage.addtocartplp(plpPage.java:42)
+at com.Scenarios.homePagePlp.homePagePLP(homePagePlp.java:26)
+at com.GuestUserWith_GiftCard.tc__HomePageBannerPLPInGC.homePageBannerPLPInGC(tc__HomePageBannerPLPInGC.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -434,22 +180,22 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.interactions.MoveTargetOutOfBoundsException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- guestUserRandomProductFromPLP_InGcAndPaypal -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPLP_InGcAndPaypal@5ad1904f]" started-at="2023-11-23T19:26:05 IST" name="afterMethod" finished-at="2023-11-23T19:26:06 IST" duration-ms="205" status="PASS">
+        </test-method> <!-- homePageBannerPLPInGC -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.GuestUserWith_GiftCard.tc__HomePageBannerPLPInGC@5f5827d0]" started-at="2023-11-28T11:59:14 IST" name="afterMethod" finished-at="2023-11-28T11:59:14 IST" duration-ms="204" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=guestUserRandomProductFromPLP_InGcAndPaypal status=FAILURE method=tc__GuestUserRandomProductFromPLP_InGcAndPaypal.guestUserRandomProductFromPLP_InGcAndPaypal()[pri:0, instance:com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPLP_InGcAndPaypal@5ad1904f] output={null}]]]>
+                <![CDATA[[TestResult name=homePageBannerPLPInGC status=FAILURE method=tc__HomePageBannerPLPInGC.homePageBannerPLPInGC()[pri:0, instance:com.GuestUserWith_GiftCard.tc__HomePageBannerPLPInGC@5f5827d0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.GuestUserWith_GcAndPaypal.tc__GuestUserRandomProductFromPLP_InGcAndPaypal -->
+      </class> <!-- com.GuestUserWith_GiftCard.tc__HomePageBannerPLPInGC -->
     </test> <!-- Automation -->
-  </suite> <!-- FMGTestCases -->
+  </suite> <!-- FMG -->
 </testng-results>

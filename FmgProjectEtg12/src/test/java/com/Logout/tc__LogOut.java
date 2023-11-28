@@ -45,6 +45,7 @@ public class tc__LogOut extends baseClass {
             	// Log a fail message if the page title does not match the expected title
             	test.pass("User logout succesfully");
                 logger.info("user logout successfully");
+                isLoggedIn = false;
             	
             }else {
             	

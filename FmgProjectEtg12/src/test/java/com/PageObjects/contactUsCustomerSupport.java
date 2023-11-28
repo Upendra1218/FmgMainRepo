@@ -50,8 +50,26 @@ public class contactUsCustomerSupport {
 		emailofTheCustomer.sendKeys(faker.internet().emailAddress());
 	}
 	
+	//phone
+	@FindBy(xpath="//input[@id='SuppliedPhone']")
+	WebElement PhoneofTheCustomer;
+	public void sendPhoneofTheCustomer(WebDriver driver) throws InterruptedException{
+		PhoneofTheCustomer.sendKeys("8858585858585858");
+	}
+	
+
+
+	
+	//descrition
+	@FindBy(xpath="//input[@id='Chat_Description__c']")
+	WebElement DescritionofTheCustomer;
+	public void sendDescritofTheCustomer(WebDriver driver) throws InterruptedException{
+		DescritionofTheCustomer.sendKeys("My order is not shipped yet");
+	}
+	
+	
 	//issue of the customer
-	@FindBy(xpath="//select[@id='Reason']")
+	@FindBy(xpath="//select[@id='Can_we_help_you_with__c']")
 	WebElement selecttheIssuesoftheCustomer;
 	public void selecttheIssuesoftheCustomer(WebDriver driver) throws InterruptedException{
 		Select select = new Select(selecttheIssuesoftheCustomer);

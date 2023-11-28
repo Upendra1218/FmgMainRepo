@@ -16,7 +16,7 @@ public class taxCalculation extends baseClass {
      Float actualgrandTotalInROP = 0.0f;
      Float expectedgrandTotalInROP = 0.0f;
      Float giftCerificatePriceInROP = 0.0f;
-
+     Float orderDiscountInROP = 0.0f;
      
   
     // in payment page
@@ -55,12 +55,73 @@ public class taxCalculation extends baseClass {
        }
        return giftCerificatePriceInROP;
     }
-    // total product cost in cart page
+    //order discount
+    public  float orderDiscount() {
+    	
+        List<WebElement> orderDiscountInRopList = driver.findElements(By.xpath("//span[contains(text(),'Order Discount')]"));
+        if(orderDiscountInRopList.size()>0) {
+	        WebElement orderDiscountInRop = driver.findElement(By.xpath("//span[contains(@class,'order-discount-total')]"));
+	        if(orderDiscountInRop.isDisplayed()) {
+	   	        String orderDiscountText = orderDiscountInRop.getText();
+	   	        String orderDiscountText1 = orderDiscountText.replaceAll("[^\\d.]+", "");
+	   	        orderDiscountInROP = Float.parseFloat(orderDiscountText1);
+	   	        logger.info("order discount is " + orderDiscountInROP);	  
+	        }
+        }
+        return orderDiscountInROP;
+    }
     
-     
-    
-     
-   
+ // apply coupon
+    public void applyCoupon() throws InterruptedException {
+        boolean couponDisplay = false;
+
+        // Click the radio button
+        WebElement clickRadioButton = driver.findElement(By.id("gift-promo"));
+        clickRadioButton.click();
+        System.out.println("Clicked on the radio button");
+
+        // Check if the coupon section is present on the page
+        List<WebElement> couponDiv = driver.findElements(By.cssSelector(".coupons-and-promos"));
+        List<WebElement> maxCoupon = driver.findElements(By.xpath("//div[contains(text(),'Unable to apply coupon. Maximum number of coupons is 1.')]"));
+
+        if (couponDiv.size() > 0) {
+            // Check if a coupon is already applied
+            List<WebElement> couponAppliedDivDisplayList = driver.findElements(By.cssSelector(".applied"));
+            if (couponAppliedDivDisplayList.size() > 0) {
+                WebElement couponAppliedDivDisplay = driver.findElement(By.cssSelector(".applied"));
+                couponDisplay = couponAppliedDivDisplay.isDisplayed();
+            }
+
+            if (couponDisplay) {
+                test.info("Coupon is already applied in the cart page");
+                logger.info("Coupon is already applied in the cart page");
+            } else {
+                test.info("Coupon is not applied in the cart page");
+                logger.info("Coupon is not applied in the cart page");
+
+                // Delay added to wait for the page to load
+                Thread.sleep(1000);
+
+                // Instantiate the viewCartPage class
+                viewCartPage vcp = new viewCartPage(driver);
+
+                // Apply the coupon
+                vcp.applyCoupon();
+
+                // Perform negative validation for the coupon in the cart
+                vcp.negativeValidationForCouponInCart();
+
+                // Attempt to apply another coupon to check the maximum limit
+                vcp.applyCoupon();
+
+                // Check if the maximum coupon limit is reached
+                if (maxCoupon.size() > 0) {
+                    test.info("Coupon is applied in the cart page, so the maximum limit of one coupon is reached");
+                    logger.info("Coupon is applied in the cart page, so the maximum limit of one coupon is reached");
+                }
+            }
+        }
+    }
     
     // total product cost in review order page
     public void totalProductValidation() {
@@ -122,7 +183,7 @@ public class taxCalculation extends baseClass {
 	   
         logger.info("The grand total price is " + actualgrandTotalInROP);
 
-        expectedgrandTotalInROP = salesTaxtRop + totalProductCostInROP + shippingCostRop -giftCerificatePriceInROP;
+        expectedgrandTotalInROP = salesTaxtRop + totalProductCostInROP + shippingCostRop -giftCerificatePriceInROP-orderDiscountInROP;
         
         //convert float to string
         String expectedgrandTotalString = String.valueOf(expectedgrandTotalInROP);

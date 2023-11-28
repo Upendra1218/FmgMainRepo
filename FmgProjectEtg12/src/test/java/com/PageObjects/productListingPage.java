@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Random;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,7 +11,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 
-import com.Validations.NavigationProcessWithValidation;
 import com.commonfunctionality.waitForTheElement;
 import com.testcases.baseClass;
 
@@ -497,78 +495,6 @@ WebDriver lDriver;
 		        return input.replaceAll(regex, "");
 		    }
 		
-
-		//select a random product
-		public void selectProductRandom(WebDriver driver) throws InterruptedException {
-		    // Create a Random object to generate random numbers
-		    Random random1 = new Random();
-		    
-		    // Find all the product elements on the current page
-		    List<WebElement> products1 = driver.findElements(By.xpath("//a[@class ='tile-img-contain']"));
-		    
-		    // Get the total count of products found on the page
-		    int totalProductcount1 = products1.size();
-		    
-		    // Check if there are any products found on the page
-		    if (totalProductcount1 > 0) {
-		        // Generate a random number within the range of the total product count
-		        int randomSelectProduct = random1.nextInt(totalProductcount1) + 1;
-
-		        // Find the randomly selected product element based on the generated random number
-		        WebElement randomSelectProductFromPLP = driver.findElement(By.xpath("(//a[@class ='tile-img-contain'])[" + randomSelectProduct + "]"));
-		        
-		        // Use JavaScript Executor to click on the randomly selected product element
-		        JavascriptExecutor js = (JavascriptExecutor)driver;
-		        js.executeScript("arguments[0].click();", randomSelectProductFromPLP);
-		    }
-		    
-		    // Pause the execution for 2 seconds (simulating a wait for the page to load)
-		    Thread.sleep(2000);
-		    
-		    // Check if there's an element indicating that the PDP (Product Detail Page) is loading
-		    List<WebElement> validatingPdpIsLoading = driver.findElements(By.xpath("//a[contains(@class, 'continue-shopping')]"));
-		    
-		    // Log the count of elements found for validation
-		    logger.info(validatingPdpIsLoading.size());
-		    
-		    // Check if the PDP validation element is found
-		    if (validatingPdpIsLoading.size() > 0) {
-		        logger.info("PDP is not validating");
-		        
-		        // Find and click the "Continue Shopping" button
-		        WebElement continueShoppingBtn = driver.findElement(By.xpath("//a[contains(@class, 'continue-shopping')]"));
-		        continueShoppingBtn.click();
-		        
-		        // Pause the execution for 3 seconds (simulating some wait time)
-		        Thread.sleep(3000);
-  
-		        // Call the selectRandomMenu method from the navigationPage object to select a random menu item
-		        NavigationProcessWithValidation  navPage =new NavigationProcessWithValidation (driver);
-		    	 navPage.selectRandomMenu(driver);
-		        
-		        // Create a new Random object
-		        Random random = new Random();
-		        
-		        // Find all the product elements on the current page (after navigating)
-		        List<WebElement> products = driver.findElements(By.xpath("//a[@class ='tile-img-contain']"));
-		        
-		        // Get the total count of products found on the page
-		        int totalProductcount = products.size();
-		        
-		        // Check if there are any products found on the page
-		        if (totalProductcount > 0) {
-		            // Generate a random number within the range of the total product count
-		            int randomSelectProduct = random.nextInt(totalProductcount) + 1;
-
-		            // Find the randomly selected product element based on the generated random number
-		            WebElement randomSelectProductFromPLP = driver.findElement(By.xpath("(//a[@class ='tile-img-contain'])[" + randomSelectProduct + "]"));
-		            
-		            // Use JavaScript Executor to click on the randomly selected product element
-		            JavascriptExecutor js = (JavascriptExecutor)driver;
-		            js.executeScript("arguments[0].click();", randomSelectProductFromPLP);
-		        }
-		    }
-		}
 
 		//validations 
 		//Name

@@ -193,8 +193,18 @@ public class productDescriptionPage extends baseClass{
  	        
  	        //prodcut is add to cart
  	        WebElement clickAddtoCartBtn = driver.findElement(By.xpath("//span[contains(text(),'Add to Cart')]"));    	       
- 	        JavascriptExecutor js = (JavascriptExecutor) driver; 	     
- 	        js.executeScript("arguments[0].click();", clickAddtoCartBtn);
+ 	        JavascriptExecutor js = (JavascriptExecutor) driver; 
+ 	        
+ 	       try {
+ 	            // Perform some action on the element
+ 	    	  clickAddtoCartBtn.click();
+ 	        } catch (Exception e) {
+ 	            // Handle the exception (e.g., log the error, take a screenshot, etc.)
+ 	            System.err.println("Exception caught: " + e.getMessage());
+ 	           js.executeScript("arguments[0].click();", clickAddtoCartBtn);
+ 	        }
+ 	        
+ 	       
  	        Thread.sleep(1000);
  	        
  	       List<WebElement> tierDiv = driver.findElements(By.xpath("//div[@class='pricebooks']"));  

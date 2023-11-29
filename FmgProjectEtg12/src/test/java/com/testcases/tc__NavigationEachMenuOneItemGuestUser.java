@@ -21,7 +21,7 @@ public class tc__NavigationEachMenuOneItemGuestUser extends baseClass{
     	
     	//launching the browser and passing the url into it
 		launchBrowsering lb = new launchBrowsering();
-		lb.chromeBrowser();
+		
 
     	// Find all the top-level menu items.
         List<WebElement> countofMenus = driver.findElements(By.xpath("//a[contains(@class,'nav-link dropdown')]"));

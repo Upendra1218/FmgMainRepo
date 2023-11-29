@@ -20,9 +20,11 @@ public class editInAllCheckOutProcess extends baseClass {
     // Define a method named "clickEditBtnRandomly" that can throw an InterruptedException
     public static void clickEditBtnRandomly() throws InterruptedException {
     	
+         //Regerssion test cases only
+    	if(RegressionTestCase) {
+    	//gift card is not there means excute
     	if(!giftCard) {
     		
-    	
         // Check edit buttons on the page
         List<WebElement> editBtns = driver.findElements(By.xpath("//button[text()='Edit']"));
         logger.info(editBtns.size()); // Log the total number of edit buttons found
@@ -121,6 +123,7 @@ public class editInAllCheckOutProcess extends baseClass {
                     Thread.sleep(4000);
                     rop.clickonReviewOrder(driver);
                     logger.info("Successfully clicked on the Review order button");
+                    Thread.sleep(3000);
                 }
             }
 
@@ -286,5 +289,8 @@ public class editInAllCheckOutProcess extends baseClass {
     }else {
     	logger.info("This is gift card");
     }
+    	}else {
+    		logger.info("This is smoke test");
+    	}
    }
 }

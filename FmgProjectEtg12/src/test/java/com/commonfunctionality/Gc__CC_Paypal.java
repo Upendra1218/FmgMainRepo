@@ -26,14 +26,10 @@ public class Gc__CC_Paypal extends baseClass{
 		 JavascriptExecutor js = (JavascriptExecutor) driver;
 		 js.executeScript("window.scrollBy(0, 400);");        
 		
-		//click the radio button
-			 WebElement clickRadioButton= driver.findElement(By.id("gift-promo"));
-			 clickRadioButton.click();	
-			 System.out.println("Clicked on radio button");
-		
-			
-			List<WebElement> gcRedeemText= driver.findElements(By.xpath("//div[@class='success giftcert-pi']//span[@class='message']")); 
-		 		 
+		 //apply coupon
+		 taxCalculation taxCal= new taxCalculation();
+		 taxCal.applyCoupon();
+	
 					 //checking whether the gift card input box available
 					 List<WebElement> giftCertificateInput= driver.findElements(By.id("giftCert"));
 					 if(giftCertificateInput.size()>0) {
@@ -90,7 +86,7 @@ public class Gc__CC_Paypal extends baseClass{
 							//fetching credit card class by creating   tc__CreditCardPaymentProcess instance								     
 						     CreditCardPaymentProcess cc = new CreditCardPaymentProcess();			     
 						     cc.paymentByCreditCard();
-						 }else if (driver.findElements(By.xpath("//div[@class='success giftcert-pi']//span[@class='message']")).size()>0 ){
+						 }else {
 							 test.info("No GC code is redemeed");
 							 test.pass("No GC code is redemeed because of insufficient balnce or Gc beloAngs to different customer So Using credit card ");													     
 						     CreditCardPaymentProcess cc = new CreditCardPaymentProcess();			     
@@ -108,14 +104,9 @@ public class Gc__CC_Paypal extends baseClass{
 		 JavascriptExecutor js = (JavascriptExecutor) driver;
 		 js.executeScript("window.scrollBy(0, 200);");        
 		
-		//click the radio button
-			 WebElement clickRadioButton= driver.findElement(By.id("gift-promo"));
-			 //clickRadioButton.click();
-			 js.executeScript("arguments[0].click();", clickRadioButton);
-			 System.out.println("Clicked on radio button");
-		
-			
-			List<WebElement> gcRedeemText= driver.findElements(By.xpath("//div[@class='success giftcert-pi']")); 
+		 //apply coupon
+		 taxCalculation taxCal= new taxCalculation();
+		 taxCal.applyCoupon();
 		    
 					 //checking whether the gift card input box available
 					 List<WebElement> giftCertificateInput= driver.findElements(By.id("giftCert"));
@@ -125,9 +116,7 @@ public class Gc__CC_Paypal extends baseClass{
 						 PaymentProccessByGC_CC_Paypal code= new  PaymentProccessByGC_CC_Paypal();				
 						 code.paymentBySemiGC();					
 						 Thread.sleep(3000);	
-						 
-						 
-						 
+	
 						
 					 } else {
 						 test.info("As gift card is in cart ,so gift certificate div is not displaying , so choosing Paypal");
@@ -170,17 +159,17 @@ public class Gc__CC_Paypal extends baseClass{
 						 }else if(driver.findElements(By.xpath("//div[@class='success giftcert-pi']//span[@class='message']")).size()>0) {		 					 
 								 test.info("Gc code redemeed");
 								 CheckOutProcessByPayPal cpp = new CheckOutProcessByPayPal();
-								 cpp.checkoutprocessFromCheckout();
+								 cpp.checkoutprocessFromCheckout();}
 						 
-						 }else  {
+						 }else{
 								 test.info("No GC code is redemeed");
 								 test.pass("No GC code is redemeed because of insufficient balnce or Gc beloAngs to different customer So Using paypal");				
 								 CheckOutProcessByPayPal cpp = new CheckOutProcessByPayPal();
 								 cpp.checkoutprocessFromCheckout();
 						 }
 					}
-		}
-	  }
+	}
+	  
 
 	
 	public void paymentByGiftCard() throws InterruptedException {
@@ -191,11 +180,10 @@ public class Gc__CC_Paypal extends baseClass{
 			// checking availability of brain tree
 			List<WebElement> creditcardsBraintree = driver.findElements(By.xpath("//a[@class ='nav-link creditcard-tab active']"));				
 			System.out.println("Braintree is "+ creditcardsBraintree.size());
-			//click the radio button
-			 WebElement clickRadioButton= driver.findElement(By.id("gift-promo"));
-			 //clickRadioButton.click();
-			 js.executeScript("arguments[0].click();", clickRadioButton);
-			 System.out.println("Clicked on radio button");
+			
+			 //apply coupon
+			 taxCalculation taxCal= new taxCalculation();
+			 taxCal.applyCoupon();
 	
 			 //checking whether the gift card input box available
 			 List<WebElement> giftCertificateInput= driver.findElements(By.id("giftCert"));

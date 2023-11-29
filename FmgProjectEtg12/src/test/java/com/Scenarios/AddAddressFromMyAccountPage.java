@@ -7,7 +7,7 @@ import com.testcases.baseClass;
 
 public class AddAddressFromMyAccountPage extends baseClass{
 
-	 @Test(dependsOnMethods = {"com.providio.login.tc__Login.loginTest"}, alwaysRun = true)
+	 @Test(dependsOnMethods = {"com.providio.login.tc__Login.loginTest"})
 	public void addAddressInMyAccount() {
 
 			if(isLoggedIn) {

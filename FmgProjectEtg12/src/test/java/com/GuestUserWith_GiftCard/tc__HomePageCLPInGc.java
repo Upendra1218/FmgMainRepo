@@ -10,12 +10,11 @@ import com.commonfunctionality.Gc__CC_Paypal;
 import com.testcases.baseClass;
 
 public class tc__HomePageCLPInGc extends baseClass{
-	 @Test
+	 @Test(dependsOnMethods = { "com.Launchingbrowser.launchBrowsering.chromeBrowser" })
 	    public void homePageCLPInGc() throws InterruptedException {
-	        // Launch the browser and navigate to the URL
-	        launchBrowsering lb = new launchBrowsering();
-	        lb.chromeBrowser();
-
+	        
+	       if(isBrowserLaunched){
+	        
 	        // Execute the scenario to navigate from the home page to the CLP (Category Listing Page)
 	        homePageClp.homePageCLP();
 	        
@@ -27,6 +26,7 @@ public class tc__HomePageCLPInGc extends baseClass{
 	      //gc payment 
 		     Gc__CC_Paypal gc = new Gc__CC_Paypal ();
 		     gc.paymentByGiftCard();
+	       }
 	    }
 
 }

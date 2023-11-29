@@ -10,9 +10,15 @@
   
     <classes>  
 		
-	
-		   	<class name="com.GuestUserWith_GcAndCC.tc__HomePageBannerPLPInGcAndCc"/>
-		   	<class name="com.GuestUserWith_GiftCard.tc__HomePageBannerPLPInGC"/>
+	    <class name="com.Launchingbrowser.launchBrowsering" />  
+        <class name="com.GuestUserWith_CreditCard.tc__BySearchingProduct_GuestUser_InCC"/>
+    	<class name="com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPDP_InCc"/>
+    	<class name="com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc"/>
+    	<class name="com.GuestUserWith_CreditCard.tc__HomePageBannerPLPInCC"/>
+    	<class name="com.GuestUserWith_CreditCard.tc__HomePageCLPInCC"/>
+    	<class name="com.GuestUserWith_CreditCard.tc__OnlyGiftCards_GuestUser_InCc"/>
+    	
+
  
 	    	
     </classes>

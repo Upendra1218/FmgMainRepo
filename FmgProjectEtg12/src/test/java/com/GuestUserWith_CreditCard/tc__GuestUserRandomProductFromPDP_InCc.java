@@ -9,13 +9,12 @@ import com.Scenarios.pdpPage;
 import com.testcases.baseClass;
 
 public class tc__GuestUserRandomProductFromPDP_InCc extends baseClass {
-    int minicartCountValue;
     
-    @Test
+    @Test(dependsOnMethods = { "com.Launchingbrowser.launchBrowsering.chromeBrowser" })
     public void ProductFromPDP() throws InterruptedException {
-        // Launch the browser and navigate to the URL
-        launchBrowsering lb = new launchBrowsering();
-        lb.chromeBrowser();
+        
+       if(isBrowserLaunched){
+        
         
         // Execute the scenario to add a product to the cart from the PDP (Product Detail Page)
         pdpPage.addtoCartPDP();
@@ -30,5 +29,6 @@ public class tc__GuestUserRandomProductFromPDP_InCc extends baseClass {
         
         // Perform the payment using a credit card
         ccPaymentProcess.paymentByCreditCard();
+       }
     }
 }

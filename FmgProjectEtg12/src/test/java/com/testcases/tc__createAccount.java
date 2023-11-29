@@ -19,9 +19,9 @@ import com.testcases.baseClass;
 			public void openBrowserandClickSignInButton() throws InterruptedException {
 			    test.info("Open browser");
 			    
-			       // Launch the browser and navigate to the URL
-		        launchBrowsering lb = new launchBrowsering();
-		        lb.chromeBrowser();
+			       
+		       if(isBrowserLaunched){
+		        
 					
 				    Thread.sleep(2000L);
 				 // Create an instance of the "loginPage" class
@@ -35,6 +35,7 @@ import com.testcases.baseClass;
 					createAcc.clickOnCreateAcc(driver);		
 					logger.info("Clicked on create Account");
 				   openBrowserandClickSignInButtonset = true;
+			}
 			}
 		
 			

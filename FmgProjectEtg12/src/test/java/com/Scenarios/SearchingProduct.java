@@ -14,7 +14,6 @@ public class SearchingProduct extends baseClass{
 
 	public  void searchingProduct() throws InterruptedException {
 
-		
    	  //searching a product
        homePage homepage = new homePage(driver);
        homepage.clickOnSearchBar(searchBar);

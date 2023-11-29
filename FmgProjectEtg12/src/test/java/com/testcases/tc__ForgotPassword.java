@@ -16,9 +16,9 @@ public class tc__ForgotPassword extends baseClass{
 	public void validatingForgotPassword() throws InterruptedException {
 		
 		
-		  // Launch the browser and navigate to the URL
-        launchBrowsering lb = new launchBrowsering();
-        lb.chromeBrowser();
+		  
+       if(isBrowserLaunched){
+        
 
 		test.info("Validating the forgot password");
 		
@@ -89,7 +89,8 @@ public class tc__ForgotPassword extends baseClass{
 						 test.fail("This message is not  displayed ,when no account is created with that mail We apologize. We were not able to locate an account using the email address you provided. Please try again or create a new account.");
 						 logger.info("This message is not  displayed ,when no account is created with that mail We apologize. We were not able to locate an account using the email address you provided. Please try again or create a new account.");				
 				 }
-			 }					 
+			 }	
+       }
 	}
 	
 	public void negativeEmailValidation() {

@@ -10,11 +10,11 @@ import com.testcases.baseClass;
 
 public class tc__HomePageCLPInCC extends baseClass {
     
-    @Test//(invocationCount = 5)
+	 @Test(dependsOnMethods = { "com.Launchingbrowser.launchBrowsering.chromeBrowser" })
     public void HomePageCLPInCC() throws InterruptedException {
-        // Launch the browser and navigate to the URL
-        launchBrowsering lb = new launchBrowsering();
-        lb.chromeBrowser();
+        
+       if(isBrowserLaunched){
+        
         
         Thread.sleep(5000);
         
@@ -31,5 +31,6 @@ public class tc__HomePageCLPInCC extends baseClass {
         CreditCardPaymentProcess ccPaymentProcess = new CreditCardPaymentProcess();
         // Perform the payment using a credit card
         ccPaymentProcess.paymentByCreditCard();
+       }
     }
 }

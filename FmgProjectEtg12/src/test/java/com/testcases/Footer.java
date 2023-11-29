@@ -15,12 +15,12 @@ import com.PageObjects.FreeCatalog;
 
 public class Footer extends baseClass{
 
-	@Test
+	 @Test(dependsOnMethods = { "com.Launchingbrowser.launchBrowsering.chromeBrowser" })
 	public void footer() throws InterruptedException {
 		  
-	       // Launch the browser and navigate to the URL
-        launchBrowsering lb = new launchBrowsering();
-        lb.chromeBrowser();
+	       
+       if(isBrowserLaunched){
+        
 			
 		//subscription
 			subscription();
@@ -51,6 +51,7 @@ public class Footer extends baseClass{
 			 
 		//special orders
 			 specialorders();
+       }
 	}
 	
 	public void subscription() {
@@ -75,8 +76,12 @@ public class Footer extends baseClass{
 	}
 	
 	public void  clickOnAboutUs() throws InterruptedException {
+		  Thread.sleep(5000);
 		  WebElement aboutUsLink= driver.findElement(By.xpath("//a[contains(text(),'About Us')]"));
-		  aboutUsLink.click();
+		  JavascriptExecutor js = (JavascriptExecutor) driver;
+	    	((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", aboutUsLink);
+	    	js.executeScript("arguments[0].click();",aboutUsLink);
+		  //aboutUsLink.click();
 		  test.info("Verifying the pagination of about us"); 
 		  Thread.sleep(2000);
 		  //page naviagtion of about us

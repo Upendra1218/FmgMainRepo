@@ -20,7 +20,7 @@ public class tc__LogOut extends baseClass {
 
     SoftAssert softAssert = new SoftAssert();
 
-    @Test(dependsOnMethods = {"com.Login.tc__Login.loginTest"}, alwaysRun = true)
+    @Test(dependsOnMethods = {"com.Login.tc__Login.loginTest"})
     public void Logout() throws InterruptedException {
         if (isLoggedIn) {
 
@@ -46,6 +46,7 @@ public class tc__LogOut extends baseClass {
             	test.pass("User logout succesfully");
                 logger.info("user logout successfully");
                 isLoggedIn = false;
+                guestuser=false;
             	
             }else {
             	
@@ -53,6 +54,7 @@ public class tc__LogOut extends baseClass {
             	test.pass("User logged in successfully");
                 logger.info("User logged in successfully");
                 isLoggedIn = true;
+                
                 
                 //registered user name 
                 WebElement userName1 = driver.findElement(By.className("registered-user-message"));

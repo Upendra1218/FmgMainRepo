@@ -150,7 +150,10 @@ public class CheckOutProcessByPayPal extends baseClass{
 				    	
 				    	JavascriptExecutor js = (JavascriptExecutor) driver;	    		  
 			    		
-		
+				    	 //apply coupon
+						 taxCalculation taxCal= new taxCalculation();
+						 taxCal.applyCoupon();
+						 
 			    	 if(brainPaypalAcc.size()>0) {	
 			    		 
 			    		test.info("Brain tree payment integration is activated");		    	
@@ -180,19 +183,14 @@ public class CheckOutProcessByPayPal extends baseClass{
 										
 					    	pp.paypalPopup(driver);
 					    	
-					    	
-					    				    	
 					    	reviewOrderPage rop = new reviewOrderPage(driver);
    			    		
 				    		Thread.sleep(4000);
 				    		
-				    		
-				    		 //total prodcut
-				    		taxCalculation shippingMtd = new taxCalculation();
-				    		shippingMtd.totalProductValidation();
-				    		 
-				    		 // granD TOTAL 
-				    		shippingMtd.grandTotalValidation();
+				    		//total calculation
+							TotalCalculation totalCal= new TotalCalculation();
+							totalCal.totalCalculation(driver);
+							
 					    	//place order				    		
 				    		 rop.clickonplaceorderwithJsExuter(driver);
 				    		

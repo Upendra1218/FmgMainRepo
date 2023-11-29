@@ -15,7 +15,7 @@ public class bulkOrdersPlacing extends baseClass{
     	
     	//launching the browser and passing the url into it
 		launchBrowsering lb = new launchBrowsering();
-		lb.chromeBrowser();
+		
 		
 		//selects a random catgory and product add to cart
 		NavigationProcess navProccess = new NavigationProcess(driver);

@@ -12,7 +12,7 @@ import com.testcases.baseClass;
 
 public class tc__BySearchingProduct_RegUser_InGcAndCc extends baseClass{
 	// Test method, dependent on the loginTest method and always runs
-    @Test(dependsOnMethods = { "com.Login.tc__Login.loginTest" }, alwaysRun = true)
+    @Test(dependsOnMethods = { "com.Login.tc__Login.loginTest" })
     public void bySearchingProduct_RegUser_InGcAndCc() throws InterruptedException {
         
     	 // Validate login

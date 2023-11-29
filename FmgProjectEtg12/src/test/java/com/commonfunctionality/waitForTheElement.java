@@ -1,5 +1,6 @@
 package com.commonfunctionality;
 
+
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;

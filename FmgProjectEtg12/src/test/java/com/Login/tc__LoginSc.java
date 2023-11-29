@@ -1,6 +1,5 @@
 package com.Login;
 
-import com.Launchingbrowser.launchBrowsering;
 import com.PageObjects.loginPage;
 import com.testcases.baseClass;
 
@@ -14,11 +13,11 @@ public class tc__LoginSc extends baseClass {
 	
 	 boolean openBrowserandClickSignInButtonset = false;
 	
-    @Test
+	 @Test(dependsOnMethods = { "com.Launchingbrowser.launchBrowsering.chromeBrowser" })
     public void openBrowserandClickSignInButton() throws InterruptedException {
-    	// Launch the browser and navigate to the URL
-        launchBrowsering lb = new launchBrowsering();
-        lb.chromeBrowser();
+    	
+       if(isBrowserLaunched){
+        
 
         // Create an instance of the "loginPage" class
         loginPage lp = new loginPage(driver);        
@@ -34,6 +33,7 @@ public class tc__LoginSc extends baseClass {
        
         
         openBrowserandClickSignInButtonset = true;
+    }
     }
 
     @Test(dependsOnMethods = {"com.Login.testlogin.openBrowserandClickSignInButton"})

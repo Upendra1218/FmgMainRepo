@@ -69,7 +69,18 @@ public class miniCartPage extends baseClass{
 
     // Method to click on the Checkout Button
     public void clickCheckout() throws InterruptedException {
-        Checkout.click();
+    	JavascriptExecutor js = (JavascriptExecutor) driver;
+    	try {
+    		Checkout.click();
+        	logger.info("normal click");
+	        } catch (Exception e) {
+	            // Handle the exception (e.g., log the error, take a screenshot, etc.)
+	            System.err.println("Exception caught: " + e.getMessage());
+	            js.executeScript("arguments[0].click();", Checkout);
+	            logger.info("JavaScript click");
+	        }
+    	
+        //Checkout.click();
         Thread.sleep(5000);
     }
 

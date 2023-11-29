@@ -17,9 +17,9 @@ public class FreeCatalog extends baseClass{
 	public void freeCatalog() throws InterruptedException {
 		
 	
-    // Launch the browser and navigate to the URL
-    launchBrowsering lb = new launchBrowsering();
-    lb.chromeBrowser();
+    
+   if(isBrowserLaunched){
+    
 			
 	//free catalog		
 			WebElement clickOnFreeCatalog= driver.findElement(By.xpath("//span[@class='font-semibold']"));
@@ -27,6 +27,7 @@ public class FreeCatalog extends baseClass{
 			
 	// free catalog
 			freeCatalogPage();
+   }
 	
 	        
 	}

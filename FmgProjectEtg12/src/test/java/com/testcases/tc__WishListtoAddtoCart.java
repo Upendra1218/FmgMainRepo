@@ -11,7 +11,7 @@ public class tc__WishListtoAddtoCart extends baseClass {
 	
 	SoftAssert softAssert = new SoftAssert();
 
-	@Test(dependsOnMethods = {"com.providio.login.tc__Login.loginTest"}, alwaysRun = true)
+	@Test(dependsOnMethods = {"com.providio.login.tc__Login.loginTest"})
     public void wishListtoCart() throws InterruptedException {
 
     	tc__WishlistProccess wsh = new tc__WishlistProccess();

@@ -10,11 +10,11 @@ import com.commonfunctionality.Gc__CC_Paypal;
 import com.testcases.baseClass;
 
 public class tc__HomePageCLPInGcAndPaypal extends baseClass{
-	 @Test
+	 @Test(dependsOnMethods = { "com.Launchingbrowser.launchBrowsering.chromeBrowser" })
 	    public void homePageCLPInGcAndPaypal() throws InterruptedException {
-	        // Launch the browser and navigate to the URL
-	        launchBrowsering lb = new launchBrowsering();
-	        lb.chromeBrowser();
+	        
+	       if(isBrowserLaunched){
+	        
 
 	        // Execute the scenario to navigate from the home page to the CLP (Category Listing Page)
 	        homePageClp.homePageCLP();
@@ -27,5 +27,6 @@ public class tc__HomePageCLPInGcAndPaypal extends baseClass{
 	      //semi gc and cc 
 			Gc__CC_Paypal gCandCC = new Gc__CC_Paypal();
 			gCandCC.paymentProccessByGCandCC(driver);
+	       }
 	    }
 }

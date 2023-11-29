@@ -34,6 +34,7 @@ public class Checkout_Validation extends baseClass {
 		    }
 		    
 		}
+		
     public void validateViewCartClick() {
     	test.info("Verify the view-cart button is clicked");
         WebElement viewcart = driver.findElement(By.xpath("//h4"));

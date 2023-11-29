@@ -10,13 +10,11 @@ import com.testcases.baseClass;
 
 public class tc__OnlyGiftCards_GuestUser_InCc extends baseClass{
 
-	 @Test(invocationCount = 1)
+	 @Test(dependsOnMethods = { "com.Launchingbrowser.launchBrowsering.chromeBrowser" })
 	public void OnlyGiftCards() throws InterruptedException {
 		
-		//launching the browser and passing the url into it
-		launchBrowsering lb = new launchBrowsering();
-		lb.chromeBrowser();
-		 
+		if(isBrowserLaunched) {
+			
 		 //adding GC into cart
 	    giftCard gc = new giftCard();
 	    gc.giftCards();
@@ -29,5 +27,6 @@ public class tc__OnlyGiftCards_GuestUser_InCc extends baseClass{
 	     cc.paymentByCreditCard();
 	     
 	     Thread.sleep(2000);
+		}
 	}
 }

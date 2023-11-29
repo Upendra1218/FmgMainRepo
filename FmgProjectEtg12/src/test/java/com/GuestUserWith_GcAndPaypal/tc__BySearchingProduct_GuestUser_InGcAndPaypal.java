@@ -11,12 +11,12 @@ import com.testcases.baseClass;
 
 public class tc__BySearchingProduct_GuestUser_InGcAndPaypal extends baseClass {
 	 
-	@Test
+	 @Test(dependsOnMethods = { "com.Launchingbrowser.launchBrowsering.chromeBrowser" })
     public void bySearchingProduct_GuestUser_InGcAndPaypal() throws InterruptedException {
         
-        // Launch the browser and navigate to the URL
-        launchBrowsering lb = new launchBrowsering();
-        lb.chromeBrowser();
+        
+       if(isBrowserLaunched){
+        
         
         // Search for a product
         SearchingProduct sp1 = new SearchingProduct();
@@ -30,5 +30,6 @@ public class tc__BySearchingProduct_GuestUser_InGcAndPaypal extends baseClass {
         //gc and paypal
 		  Gc__CC_Paypal gcAndPaypal = new Gc__CC_Paypal();
 		  gcAndPaypal.paymentProccessByGCandPaypal();	
+       }
     }
 }

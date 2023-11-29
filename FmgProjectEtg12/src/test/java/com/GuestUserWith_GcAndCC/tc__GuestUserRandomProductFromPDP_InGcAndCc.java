@@ -10,11 +10,11 @@ import com.commonfunctionality.Gc__CC_Paypal;
 import com.testcases.baseClass;
 
 public class tc__GuestUserRandomProductFromPDP_InGcAndCc extends baseClass{
-	@Test
+	 @Test(dependsOnMethods = { "com.Launchingbrowser.launchBrowsering.chromeBrowser" })
 	public void guestUserRandomProductFromPDP_InGcAndCc() throws InterruptedException {
-		// Launch the browser and navigate to the URL
-	    launchBrowsering lb = new launchBrowsering();
-	    lb.chromeBrowser();
+		
+	   if(isBrowserLaunched){
+	    
 	    
 	    // Execute the scenario to add a product to the cart from the PDP (Product Detail Page)
 	    pdpPage.addtoCartPDP();
@@ -28,7 +28,6 @@ public class tc__GuestUserRandomProductFromPDP_InGcAndCc extends baseClass{
 	  //semi gc and cc 
 	  		Gc__CC_Paypal gCandCC = new Gc__CC_Paypal();
 	  		gCandCC.paymentProccessByGCandCC(driver);
+	   }
 	}
-	
-
 }

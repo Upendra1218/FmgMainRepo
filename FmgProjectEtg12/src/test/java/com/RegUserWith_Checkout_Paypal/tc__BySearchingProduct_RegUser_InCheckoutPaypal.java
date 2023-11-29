@@ -16,7 +16,7 @@ public class tc__BySearchingProduct_RegUser_InCheckoutPaypal extends baseClass {
     SoftAssert softAssert = new SoftAssert();
 
  // Test method, dependent on the loginTest method and always runs
-    @Test(dependsOnMethods = { "com.Login.tc__Login.loginTest" }, alwaysRun = true)
+    @Test(dependsOnMethods = { "com.Login.tc__Login.loginTest" })
     public void bySearchingProduct_RegUser_InCheckoutPaypal() throws InterruptedException {
         
     	 // Validate login

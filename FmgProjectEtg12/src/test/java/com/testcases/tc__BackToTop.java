@@ -19,10 +19,10 @@ public class tc__BackToTop extends baseClass {
     public void backToTop() throws InterruptedException {
         
         // Creating an instance of the launchBrowsering class
-        launchBrowsering lb = new launchBrowsering();
+       if(isBrowserLaunched){
         
         // Launching the Chrome browser
-        lb.chromeBrowser();
+        
 
         // Locating the "Back to Top" element using XPath
         WebElement backToTop = driver.findElement(By.xpath("//span[contains(text(),'Back to top')]"));
@@ -47,5 +47,6 @@ public class tc__BackToTop extends baseClass {
             test.pass("Clicked on the Back to Top button");
             logger.info("Clicked on Back to Top");
         }
+    }
     }
 }

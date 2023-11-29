@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class tc__BySearchingProduct_RegUser_InCC extends baseClass {
 	 
 	// Test method, dependent on the loginTest method and always runs
-    @Test(dependsOnMethods = { "com.Login.tc__Login.loginTest" }, alwaysRun = true)
+    @Test(dependsOnMethods = { "com.Login.tc__Login.loginTest" })
     public void bySearchingProduct_GuestUser_InCC() throws InterruptedException {
 		
     	 // Validate login

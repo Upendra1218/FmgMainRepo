@@ -13,7 +13,7 @@ import com.testcases.baseClass;
 public class tc__BySearchingProduct_RegUser_InGcAndPaypal extends baseClass {
 	 
 	// Test method, dependent on the loginTest method and always runs
-    @Test(dependsOnMethods = { "com.Login.tc__Login.loginTest" }, alwaysRun = true)
+    @Test(dependsOnMethods = { "com.Login.tc__Login.loginTest" })
     public void bySearchingProduct_GuestUser_InGcAndPaypal() throws InterruptedException {
         
     	 // Validate login

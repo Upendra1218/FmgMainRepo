@@ -11,11 +11,11 @@ import com.testcases.baseClass;
 
 public class tc__HomePageBannerPLPInCheckoutPaypal extends baseClass{
 	
-	@Test//(invocationCount=5)
+	 @Test(dependsOnMethods = { "com.Launchingbrowser.launchBrowsering.chromeBrowser" })
     public void HomePageBannerPLPInCheckoutPaypal() throws InterruptedException {
-        // Launch the browser and navigate to the URL
-        launchBrowsering lb = new launchBrowsering();
-        lb.chromeBrowser();
+        
+       if(isBrowserLaunched){
+        
 
         // Execute the scenario to navigate to the PLP page from the home page banner
         homePagePlp.homePagePLP();
@@ -28,7 +28,7 @@ public class tc__HomePageBannerPLPInCheckoutPaypal extends baseClass{
      // Initialize CheckOutProcessByPayPal to perform the PayPal checkout process
         CheckOutProcessByPayPal cpp = new CheckOutProcessByPayPal();
         // Perform the PayPal checkout process
-        cpp.checkoutprocessFromCheckout();
+        cpp.checkoutprocessFromCheckout();}
     }
 
 }

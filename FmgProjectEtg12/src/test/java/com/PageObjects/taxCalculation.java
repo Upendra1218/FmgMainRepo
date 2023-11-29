@@ -3,6 +3,7 @@ package com.PageObjects;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 import com.testcases.baseClass;
@@ -50,12 +51,12 @@ public class taxCalculation extends baseClass {
 		        String giftCerificatePriceText = giftCerificatePriceInRop.getText();
 		        String giftCerificatePriceText1 = giftCerificatePriceText.replaceAll("[^\\d.]+", "");
 		        giftCerificatePriceInROP = Float.parseFloat(giftCerificatePriceText1);
-		        logger.info("sales price is " + giftCerificatePriceInROP);     
+		        logger.info("gift certificate  is " + giftCerificatePriceInROP);     
     	   }
        }
        return giftCerificatePriceInROP;
     }
-    //order discount
+   //order discount
     public  float orderDiscount() {
     	
         List<WebElement> orderDiscountInRopList = driver.findElements(By.xpath("//span[contains(text(),'Order Discount')]"));
@@ -73,56 +74,63 @@ public class taxCalculation extends baseClass {
     
  // apply coupon
     public void applyCoupon() throws InterruptedException {
+    	
+    	JavascriptExecutor js = (JavascriptExecutor) driver;
+    	js.executeScript("window.scrollBy(0,400)", "");
         boolean couponDisplay = false;
 
-        // Click the radio button
-        WebElement clickRadioButton = driver.findElement(By.id("gift-promo"));
-        clickRadioButton.click();
-        System.out.println("Clicked on the radio button");
-
-        // Check if the coupon section is present on the page
-        List<WebElement> couponDiv = driver.findElements(By.cssSelector(".coupons-and-promos"));
-        List<WebElement> maxCoupon = driver.findElements(By.xpath("//div[contains(text(),'Unable to apply coupon. Maximum number of coupons is 1.')]"));
-
-        if (couponDiv.size() > 0) {
-            // Check if a coupon is already applied
-            List<WebElement> couponAppliedDivDisplayList = driver.findElements(By.cssSelector(".applied"));
-            if (couponAppliedDivDisplayList.size() > 0) {
-                WebElement couponAppliedDivDisplay = driver.findElement(By.cssSelector(".applied"));
-                couponDisplay = couponAppliedDivDisplay.isDisplayed();
-            }
-
-            if (couponDisplay) {
-                test.info("Coupon is already applied in the cart page");
-                logger.info("Coupon is already applied in the cart page");
-            } else {
-                test.info("Coupon is not applied in the cart page");
-                logger.info("Coupon is not applied in the cart page");
-
-                // Delay added to wait for the page to load
-                Thread.sleep(1000);
-
-                // Instantiate the viewCartPage class
-                viewCartPage vcp = new viewCartPage(driver);
-
-                // Apply the coupon
-                vcp.applyCoupon();
-
-                // Perform negative validation for the coupon in the cart
-                vcp.negativeValidationForCouponInCart();
-
-                // Attempt to apply another coupon to check the maximum limit
-                vcp.applyCoupon();
-
-                // Check if the maximum coupon limit is reached
-                if (maxCoupon.size() > 0) {
-                    test.info("Coupon is applied in the cart page, so the maximum limit of one coupon is reached");
-                    logger.info("Coupon is applied in the cart page, so the maximum limit of one coupon is reached");
-                }
-            }
-        }
+        if((driver.findElement(By.cssSelector(".coupons-and-promos")).isDisplayed())){       
+        	test.info("Promotion functionality done already");
+        }else {
+         // Click the radio button
+	        WebElement clickRadioButton = driver.findElement(By.id("gift-promo"));	       
+	        js.executeScript("arguments[0].click();",clickRadioButton);
+	        System.out.println("Clicked on the radio button");
+	
+	        // Check if the coupon section is present on the page
+	        List<WebElement> couponDiv = driver.findElements(By.cssSelector(".coupons-and-promos"));
+	        List<WebElement> maxCoupon = driver.findElements(By.xpath("//div[contains(text(),'Unable to apply coupon. Maximum number of coupons is 1.')]"));
+	
+	        if (couponDiv.size() > 0) {
+	            // Check if a coupon is already applied
+	            List<WebElement> couponAppliedDivDisplayList = driver.findElements(By.cssSelector(".applied"));
+	            if (couponAppliedDivDisplayList.size() > 0) {
+	                WebElement couponAppliedDivDisplay = driver.findElement(By.cssSelector(".applied"));
+	                couponDisplay = couponAppliedDivDisplay.isDisplayed();
+	            }
+	
+	            if (couponDisplay) {
+	                test.info("Coupon is already applied in the cart page");
+	                logger.info("Coupon is already applied in the cart page");
+	            } else {
+	                test.info("Coupon is not applied in the cart page");
+	                logger.info("Coupon is not applied in the cart page");
+	
+	                // Delay added to wait for the page to load
+	                Thread.sleep(1000);
+	
+	                // Instantiate the viewCartPage class
+	                viewCartPage vcp = new viewCartPage(driver);
+	
+	                // Apply the coupon
+	                vcp.applyCoupon();
+	
+	                // Perform negative validation for the coupon in the cart
+	                vcp.negativeValidationForCouponInCart();
+	
+	                // Attempt to apply another coupon to check the maximum limit
+	                vcp.applyCoupon();
+	
+	                // Check if the maximum coupon limit is reached
+	                if (maxCoupon.size() > 0) {
+	                    test.info("Coupon is applied in the cart page, so the maximum limit of one coupon is reached");
+	                    logger.info("Coupon is applied in the cart page, so the maximum limit of one coupon is reached");
+	                }
+	            }
+	        }
+	     }
     }
-    
+
     // total product cost in review order page
     public void totalProductValidation() {
     	test.info("Verifying the total product");
@@ -167,6 +175,7 @@ public class taxCalculation extends baseClass {
     	salesTax();
     	getShippingCost();
     	giftCerificatePrice();
+    	orderDiscount();
         WebElement grandTotalInRop = driver.findElement(By.xpath("//span[@class='grand-total-sum']"));
         String grandTotalText = grandTotalInRop.getText();
         String grandTotalText1 = grandTotalText.replaceAll("[^\\d.]+", "");
@@ -183,10 +192,12 @@ public class taxCalculation extends baseClass {
 	   
         logger.info("The grand total price is " + actualgrandTotalInROP);
 
-        expectedgrandTotalInROP = salesTaxtRop + totalProductCostInROP + shippingCostRop -giftCerificatePriceInROP-orderDiscountInROP;
+        expectedgrandTotalInROP =salesTaxtRop + totalProductCostInROP + shippingCostRop -(giftCerificatePriceInROP+orderDiscountInROP);
         
+        logger.info( expectedgrandTotalInROP);
         //convert float to string
         String expectedgrandTotalString = String.valueOf(expectedgrandTotalInROP);
+        logger.info(expectedgrandTotalInROP);
 
         //Split the string using the dot as a delimiter
 	    String[] parts = expectedgrandTotalString .split("\\.");
@@ -196,6 +207,7 @@ public class taxCalculation extends baseClass {
 
 	    // Convert the string to an integer
 	    expectedgrandTotalInROP =  Float.parseFloat(integerPart);
+	    logger.info("Expected  grand total "+expectedgrandTotalInROP);
 
         if (expectedgrandTotalInROP.equals(actualgrandTotalInROP)) {
             test.pass("Expected Grand total is " + expectedgrandTotalInROP + " same as i.e, " + actualgrandTotalInROP);

@@ -19,7 +19,7 @@ public class tc__Login extends baseClass {
 	SoftAssert softAssert = new SoftAssert();
 
     // Define a test method named "loginTest"
-    @Test
+	 @Test(dependsOnMethods = { "com.Launchingbrowser.launchBrowsering.chromeBrowser" })
     public void loginTest() throws InterruptedException {
     	
         // Log test information
@@ -28,7 +28,7 @@ public class tc__Login extends baseClass {
      
       //launching the browser and passing the url into it
 		launchBrowsering lb = new launchBrowsering();
-		lb.chromeBrowser();
+		
 			 		
         Thread.sleep(2000L);
         

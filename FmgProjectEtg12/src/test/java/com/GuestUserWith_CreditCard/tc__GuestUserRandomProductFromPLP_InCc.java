@@ -11,11 +11,10 @@ import com.testcases.baseClass;
 
 public class tc__GuestUserRandomProductFromPLP_InCc extends baseClass {
 
-    @Test
+	 @Test(dependsOnMethods = { "com.Launchingbrowser.launchBrowsering.chromeBrowser" })
     public void GuestUserRandomProductFromPLP_InCc() throws InterruptedException {
-        // Launch the browser and navigate to the URL
-        launchBrowsering lb = new launchBrowsering();
-        lb.chromeBrowser();
+        
+       if(isBrowserLaunched){
         
 		// Initialize NavigationProcess to perform navigation tasks
         NavigationProcess navProcess = new NavigationProcess(driver);
@@ -34,5 +33,7 @@ public class tc__GuestUserRandomProductFromPLP_InCc extends baseClass {
         CreditCardPaymentProcess ccPaymentProcess = new CreditCardPaymentProcess();
         // Perform the payment using a credit card
         ccPaymentProcess.paymentByCreditCard();
+        
+       }
     }
 }

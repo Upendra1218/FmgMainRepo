@@ -11,7 +11,7 @@ import com.testcases.baseClass;
 
 public class tc__RegUserRandomProductFromPDP_InCheckoutPaypal extends baseClass{
 	// Test method, dependent on the loginTest method and always runs
-    @Test(dependsOnMethods = { "com.Login.tc__Login.loginTest" }, alwaysRun = true)
+    @Test(dependsOnMethods = { "com.Login.tc__Login.loginTest" })
 	public void RegUserRandomProductFromPDP_InCheckoutPaypal() throws InterruptedException {
     	 // Validate login
         if (isLoggedIn) {

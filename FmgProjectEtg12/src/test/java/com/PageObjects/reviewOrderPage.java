@@ -1,6 +1,6 @@
 package com.PageObjects;
 
-import java.time.Duration;
+
 import java.util.List;
 import java.util.Random;
 
@@ -10,8 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 import com.testcases.baseClass;
 
@@ -57,9 +56,22 @@ WebDriver lDriver;
     public void clickonplaceorderwithJsExuter(WebDriver driver) throws InterruptedException {
     	Thread.sleep(2000);
     	test.info("validate the place order click");
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(placetheorderBtn));
-		element.click();
+    	JavascriptExecutor js = (JavascriptExecutor) driver;
+    	if(placetheorderBtn.isDisplayed()) {
+        try {
+        	placetheorderBtn.click();
+        	logger.info("normal click");
+	        } catch (Exception e) {
+	            // Handle the exception (e.g., log the error, take a screenshot, etc.)
+	            System.err.println("Exception caught: " + e.getMessage());
+	            js.executeScript("arguments[0].click();", placetheorderBtn);
+	            logger.info("JavaScript click");
+	        }
+    	}
+
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(placetheorderBtn));
+//		element.click();
 //    	placetheorderBtn.click();
     	test.pass("Successfully place order btn Clicked");
     } 
@@ -104,14 +116,14 @@ WebDriver lDriver;
         logger.info(randomProdcutlink);
         
      // Use WebDriverWait to wait for the element to be clickable
-        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10) );
+        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10) );
         
         WebElement movetoWishListLink = driver.findElement(By.xpath("( //a[@class='line-item-text'])[" + randomProdcutlink + "]"));
 
         // Replace the sleep with WebDriverWait
-        WebElement moveToWishListLink = wait.until(ExpectedConditions.elementToBeClickable(movetoWishListLink));
+        //WebElement moveToWishListLink = wait.until(ExpectedConditions.elementToBeClickable(movetoWishListLink));
 
-        moveToWishListLink.click();
+        movetoWishListLink.click();
         
 //		Thread.sleep(2000);
 //		JavascriptExecutor js = (JavascriptExecutor) driver; 

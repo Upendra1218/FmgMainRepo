@@ -12,6 +12,7 @@ public class browserValidation extends baseClass{
 		if (isBrowserRunning()) {
 			logger.info("Browser launched succesfully"); 
 			test.pass("Browser launched succesfully");
+			isBrowserLaunched = true;
         }else {
 			logger.info("Browser launched Failed"); 
 			test.fail("Browser launched Failed");

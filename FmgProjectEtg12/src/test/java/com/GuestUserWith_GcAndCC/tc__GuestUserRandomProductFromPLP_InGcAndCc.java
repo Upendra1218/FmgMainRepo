@@ -11,11 +11,11 @@ import com.commonfunctionality.Gc__CC_Paypal;
 import com.testcases.baseClass;
 
 public class tc__GuestUserRandomProductFromPLP_InGcAndCc extends baseClass{
-	@Test
+	 @Test(dependsOnMethods = { "com.Launchingbrowser.launchBrowsering.chromeBrowser" })
     public void guestUserRandomProductFromPLP_InGcAndCc() throws InterruptedException {
-        // Launch the browser and navigate to the URL
-        launchBrowsering lb = new launchBrowsering();
-        lb.chromeBrowser();
+        
+       if(isBrowserLaunched){
+        
         
 		// Initialize NavigationProcess to perform navigation tasks
         NavigationProcess navProcess = new NavigationProcess(driver);
@@ -33,5 +33,6 @@ public class tc__GuestUserRandomProductFromPLP_InGcAndCc extends baseClass{
       //semi gc and cc 
       		Gc__CC_Paypal gCandCC = new Gc__CC_Paypal();
       		gCandCC.paymentProccessByGCandCC(driver);
+       }
     }
 }

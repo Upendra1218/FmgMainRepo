@@ -9,11 +9,11 @@ import com.Scenarios.pdpPage;
 import com.testcases.baseClass;
 
 public class tc__GuestUserRandomProductFromPDP_InCheckoutPaypal extends baseClass{
-	@Test
+	 @Test(dependsOnMethods = { "com.Launchingbrowser.launchBrowsering.chromeBrowser" })
 	public void GuestUserRandomProductFromPDP_InCheckoutPaypal() throws InterruptedException {
-		// Launch the browser and navigate to the URL
-	    launchBrowsering lb = new launchBrowsering();
-	    lb.chromeBrowser();
+		
+	   if(isBrowserLaunched){
+	    
 	    
 	    // Execute the scenario to add a product to the cart from the PDP (Product Detail Page)
 	    pdpPage.addtoCartPDP();
@@ -28,6 +28,7 @@ public class tc__GuestUserRandomProductFromPDP_InCheckoutPaypal extends baseClas
         CheckOutProcessByPayPal cpp = new CheckOutProcessByPayPal();
         // Perform the PayPal checkout process
         cpp.checkoutprocessFromCheckout();
+	   }
 	}
 	
 

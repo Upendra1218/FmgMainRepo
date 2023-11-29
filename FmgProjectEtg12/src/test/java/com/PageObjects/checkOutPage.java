@@ -1,6 +1,5 @@
 package com.PageObjects;
 
-import java.time.Duration;
 import java.util.List;
 import java.util.Random;
 
@@ -11,9 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.github.javafaker.Faker;
 import com.testcases.baseClass;
@@ -232,10 +229,10 @@ public class checkOutPage extends baseClass {
        
         Random random = new Random();
         // Generate a random number between 120 and 125 (inclusive)
-        int randomNumber = random.nextInt(6) + 120;
+        //int randomNumber = random.nextInt(6) + 120;
         
         Thread.sleep(3000);
-        //int randomNumber = 145;
+        int randomNumber = 145;
         address = String.valueOf(randomNumber);
         Address1.sendKeys(address);
         WebElement Address11 = driver.switchTo().activeElement();

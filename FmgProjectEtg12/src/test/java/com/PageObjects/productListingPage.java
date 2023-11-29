@@ -92,7 +92,7 @@ WebDriver lDriver;
 			 NavigationProcess navProcess = new NavigationProcess(driver);
 	           // Select a random menu item
 	           navProcess.selectRandomMenu(driver);
-	           //addToCartFromPlp();
+	           addToCartFromPlp();
 	    
 		 }
 	    
@@ -452,6 +452,8 @@ WebDriver lDriver;
 	        
 	        //get the filters name which is selected 
 	        WebElement selectedNameinFilters = driver.findElement(By.xpath("//div[contains(@class, 'refinement-device')]//span"));
+	        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", selectedNameinFilters);
+	        Thread.sleep(3000);
 	        // Get and print the text of the found element
 	        String SelectedTextofFiltersname = selectedNameinFilters.getText();
 	        logger.info(SelectedTextofFiltersname);

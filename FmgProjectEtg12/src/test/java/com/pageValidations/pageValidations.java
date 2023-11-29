@@ -12,7 +12,7 @@ public class pageValidations extends baseClass{
 	public void eachPageValidations() throws InterruptedException {
     	//launching the browser and passing the url into it
 		launchBrowsering lb = new launchBrowsering();
-		lb.chromeBrowser();
+		
 
 	    // Pause the execution for 5 seconds (5000 milliseconds) to ensure the page loads
 	    Thread.sleep(5000);

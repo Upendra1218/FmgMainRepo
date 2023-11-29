@@ -14,7 +14,7 @@ public class tc__RegUserRandomProductFromPDP_InCc extends baseClass {
     int minicartCountValue;
     
  // Test method, dependent on the loginTest method and always runs
-    @Test(dependsOnMethods = { "com.Login.tc__Login.loginTest" }, alwaysRun = true)
+    @Test(dependsOnMethods = { "com.Login.tc__Login.loginTest" })
     public void ProductFromPDP() throws InterruptedException {
     	 // Validate login
         if (isLoggedIn) {

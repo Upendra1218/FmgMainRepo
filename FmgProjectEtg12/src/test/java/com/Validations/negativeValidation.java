@@ -12,6 +12,8 @@ import com.testcases.baseClass;
 
 public class negativeValidation extends baseClass {
     public static void guestEmail() throws InterruptedException {
+    	if(RegressionTestCase) {
+
         guestUserLoginPage guestLoginPage = new guestUserLoginPage(driver);
         
         // Click on the 'Continue as guest' button
@@ -30,11 +32,14 @@ public class negativeValidation extends baseClass {
             test.fail("The user did not enter the email and clicked the guest checkout, and the error is not displayed");
             logger.info("The user did not enter the email and clicked the guest checkout, and the error is not displayed");
         }
+		
+	  }
     }
 
     public static void shippingDetails() throws InterruptedException {
         // Refresh the page
         //driver.navigate().refresh();
+    	if(RegressionTestCase) {
 
         checkOutPage cp = new checkOutPage(driver);
         cp.setAddress1();
@@ -57,9 +62,12 @@ public class negativeValidation extends baseClass {
         } else {
             test.fail("No error message is displayed when empty text is given");
         }
+      }
     }
 
     public static void creditCardDetails() throws InterruptedException {
+    	if(RegressionTestCase) {
+    		
         // Review order page
         reviewOrderPage rop = new reviewOrderPage(driver);
         Thread.sleep(4000);
@@ -82,4 +90,5 @@ public class negativeValidation extends baseClass {
         }
         
     }
+   }
 }

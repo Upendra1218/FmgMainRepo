@@ -20,7 +20,7 @@ public class FooterSection extends baseClass{
 		
 		//launching the browser and passing the url into it
 			launchBrowsering lb = new launchBrowsering();
-			lb.chromeBrowser();
+			
 		
 			
 		List<WebElement> shopByCategoryInFooter = driver.findElements(By.cssSelector("div#shop-category li"));

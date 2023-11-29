@@ -247,7 +247,7 @@ public class shippingAndBillingAddress extends baseClass {
 	          //shipping.sendKeys(Keys.ARROW_DOWN);
 	          shipping.sendKeys(Keys.ENTER);
 	          
-	          System.out.println("The address entered is " +shipping.getText());
+	        //  System.out.println("The address entered is " +shipping.getText());
 	          logger.info("Entered shipping address");
 	          test.info("Entered shipping address");
 		  
@@ -319,7 +319,7 @@ public class shippingAndBillingAddress extends baseClass {
 			        	logger.info("Total Shipping count is " + countofShippingMethods);
 			            Random random = new Random();
 			            int randomShippingMethod = random.nextInt(countofShippingMethods) + 1;
-			            logger.info("Randomly selected menu number " + randomShippingMethod);
+			            logger.info("Randomly selected shipping Method number " + randomShippingMethod);
 			 
 			            WebElement getNotApplicableAddress = driver.findElement(By.xpath("(//div[contains(@class,'shipping-method-list')]//span[@class='shipping-cost'])[" + randomShippingMethod + "]"));
 			            String sippingMethodAmount = getNotApplicableAddress.getText();

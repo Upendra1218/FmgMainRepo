@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-FMG" class="navigator-link">
+              <span class="suite-name border-failed">FMG</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\UpendraReddy\AppData\Local\Temp\testng-eclipse-874636968\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-FMG" class="navigator-link ">
+                    <span>C:\Users\Upendra Reddy\git\FmgMainRepo\FmgProjectEtg12\smokeTestSuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-FMG" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-FMG" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-FMG" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-FMG" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-FMG" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-FMG" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,26 +92,70 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">9 methods, 3 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-FMG" class="hide-methods failed suite-FMG"> (hide)</a> <!-- hide-methods failed suite-FMG -->
+                      <a href="#" panel-name="suite-FMG" class="show-methods failed suite-FMG"> (show)</a> <!-- show-methods failed suite-FMG -->
+                    </span>
+                    <div class="method-list-content failed suite-FMG">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FMG" title="com.Logout.tc__LogOut" class="method navigator-link" hash-for-method="Logout">Logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FMG" title="com.GuestUserWith_GiftCard.tc__GuestUserRandomProductFromPDP_InGc" class="method navigator-link" hash-for-method="guestUserRandomProductFromPDP_InGc">guestUserRandomProductFromPDP_InGc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FMG" title="com.Login.tc__Login" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-FMG -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-FMG" class="hide-methods passed suite-FMG"> (hide)</a> <!-- hide-methods passed suite-FMG -->
+                      <a href="#" panel-name="suite-FMG" class="show-methods passed suite-FMG"> (show)</a> <!-- show-methods passed suite-FMG -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-FMG">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.GuestUserWith_CreditCard.tc__HomePageBannerPLPInCC" class="method navigator-link" hash-for-method="HomePageBannerPLP">HomePageBannerPLP</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-FMG" title="com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc" class="method navigator-link" hash-for-method="GuestUserRandomProductFromPLP_InCc">GuestUserRandomProductFromPLP_InCc</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.Launchingbrowser.launchBrowsering" class="method navigator-link" hash-for-method="chromeBrowser">chromeBrowser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-FMG" title="com.GuestUserWith_Checkout_Paypal.tc__BySearchingProduct_GuestUser_InCheckoutPaypal" class="method navigator-link" hash-for-method="bySearchingProduct_GuestUser_InCheckoutPaypal">bySearchingProduct_GuestUser_InCheckoutPaypal</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FMG" title="com.Launchingbrowser.launchBrowsering" class="method navigator-link" hash-for-method="chromeBrowser">chromeBrowser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FMG" title="com.testcases.TC__CreateAccounts" class="method navigator-link" hash-for-method="createAccountWithValidCredientials">createAccountWithValidCredientials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FMG" title="com.testcases.Footer" class="method navigator-link" hash-for-method="footer">footer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FMG" title="com.testcases.tc__ProfilePage" class="method navigator-link" hash-for-method="profilePage">profilePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-FMG -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,23 +166,185 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-FMG" class="panel FMG">
+          <div class="suite-FMG-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.GuestUserWith_CreditCard.tc__HomePageBannerPLPInCC</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.GuestUserWith_GiftCard.tc__GuestUserRandomProductFromPDP_InGc</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="HomePageBannerPLP">
-                  </a> <!-- HomePageBannerPLP -->
-                  <span class="method-name">HomePageBannerPLP</span>
+                  <a name="guestUserRandomProductFromPDP_InGc">
+                  </a> <!-- guestUserRandomProductFromPDP_InGc -->
+                  <span class="method-name">guestUserRandomProductFromPDP_InGc</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (604, -771)
+  (Session info: chrome=119.0.6045.200)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [493873a2ab26fec3d05f26d575ab8688, clickElement {id=BA33EE4BBF0C9FFDCBFE11DCB4224DF7_element_1883}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\UPENDR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64276/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (493873a2ab26fec3d05f26d575ab8688)] -&gt; xpath: //button[@class = &apos;reset btn p-0&apos;]]
+Session ID: 493873a2ab26fec3d05f26d575ab8688
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.PageObjects.productListingPage.selecttheResetButton(productListingPage.java:340)
+	at com.Scenarios.plpPage.addtocartplp(plpPage.java:38)
+	at com.Scenarios.menuSelction.randommenu(menuSelction.java:72)
+	at com.PageObjects.NavigationProcess.selectRandomMenu(NavigationProcess.java:26)
+	at com.Scenarios.pdpPage.addtoCartPDP(pdpPage.java:104)
+	at com.GuestUserWith_GiftCard.tc__GuestUserRandomProductFromPDP_InGc.guestUserRandomProductFromPDP_InGc(tc__GuestUserRandomProductFromPDP_InGc.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-          <div class="suite-Default_suite-class-passed">
+          </div> <!-- suite-FMG-class-failed -->
+          <div class="suite-FMG-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.Logout.tc__LogOut</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Logout">
+                  </a> <!-- Logout -->
+                  <span class="method-name">Logout</span>
+                  <div class="stack-trace">java.lang.AssertionError: User not logged in
+	at com.Logout.tc__LogOut.Logout(tc__LogOut.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FMG-class-failed -->
+          <div class="suite-FMG-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.Login.tc__Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <div class="stack-trace">org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
+  (Session info: chrome=119.0.6045.200)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [493873a2ab26fec3d05f26d575ab8688, actions {actions=[org.openqa.selenium.interactions.Sequence@16269ff4]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\UPENDR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64276/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 493873a2ab26fec3d05f26d575ab8688
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:604)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:605)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:574)
+	at com.PageObjects.loginPage.hoverOnCreateloginAcc(loginPage.java:31)
+	at com.Login.tc__Login.loginTest(tc__Login.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FMG-class-failed -->
+          <div class="suite-FMG-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testcases.Footer</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="footer">
+                  </a> <!-- footer -->
+                  <span class="method-name">footer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FMG-class-passed -->
+          <div class="suite-FMG-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testcases.tc__ProfilePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="profilePage">
+                  </a> <!-- profilePage -->
+                  <span class="method-name">profilePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FMG-class-passed -->
+          <div class="suite-FMG-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.GuestUserWith_Checkout_Paypal.tc__BySearchingProduct_GuestUser_InCheckoutPaypal</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bySearchingProduct_GuestUser_InCheckoutPaypal">
+                  </a> <!-- bySearchingProduct_GuestUser_InCheckoutPaypal -->
+                  <span class="method-name">bySearchingProduct_GuestUser_InCheckoutPaypal</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FMG-class-passed -->
+          <div class="suite-FMG-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testcases.TC__CreateAccounts</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAccountWithValidCredientials">
+                  </a> <!-- createAccountWithValidCredientials -->
+                  <span class="method-name">createAccountWithValidCredientials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FMG-class-passed -->
+          <div class="suite-FMG-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GuestUserRandomProductFromPLP_InCc">
+                  </a> <!-- GuestUserRandomProductFromPLP_InCc -->
+                  <span class="method-name">GuestUserRandomProductFromPLP_InCc</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FMG-class-passed -->
+          <div class="suite-FMG-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.Launchingbrowser.launchBrowsering</span>
@@ -152,93 +358,191 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-FMG-class-passed -->
+        </div> <!-- panel FMG -->
+        <div panel-name="test-xml-FMG" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\UpendraReddy\AppData\Local\Temp\testng-eclipse-874636968\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Upendra Reddy\git\FmgMainRepo\FmgProjectEtg12\smokeTestSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;FMG&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Automation&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.GuestUserWith_CreditCard.tc__HomePageBannerPLPInCC&quot;/&gt;
       &lt;class name=&quot;com.Launchingbrowser.launchBrowsering&quot;/&gt;
+      &lt;class name=&quot;com.GuestUserWith_Checkout_Paypal.tc__BySearchingProduct_GuestUser_InCheckoutPaypal&quot;/&gt;
+      &lt;class name=&quot;com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc&quot;/&gt;
+      &lt;class name=&quot;com.GuestUserWith_GiftCard.tc__GuestUserRandomProductFromPDP_InGc&quot;/&gt;
+      &lt;class name=&quot;com.Login.tc__Login&quot;/&gt;
+      &lt;class name=&quot;com.testcases.tc__ProfilePage&quot;/&gt;
+      &lt;class name=&quot;com.Logout.tc__LogOut&quot;/&gt;
+      &lt;class name=&quot;com.testcases.TC__CreateAccounts&quot;/&gt;
+      &lt;class name=&quot;com.testcases.Footer&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Automation --&gt;
+&lt;/suite&gt; &lt;!-- FMG --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-FMG" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for FMG</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (2 classes)</span>
+                <span class="test-name">Automation (9 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-FMG" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for FMG</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-FMG" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for FMG</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_FMG');
+function tableData_FMG() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'HomePageBannerPLP')
-data.setCell(0, 2, 'com.GuestUserWith_CreditCard.tc__HomePageBannerPLPInCC')
-data.setCell(0, 3, 238947);
+data.setCell(0, 1, 'bySearchingProduct_GuestUser_InCheckoutPaypal')
+data.setCell(0, 2, 'com.GuestUserWith_Checkout_Paypal.tc__BySearchingProduct_GuestUser_InCheckoutPaypal')
+data.setCell(0, 3, 272949);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'chromeBrowser')
-data.setCell(1, 2, 'com.Launchingbrowser.launchBrowsering')
-data.setCell(1, 3, 15701);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(1, 1, 'GuestUserRandomProductFromPLP_InCc')
+data.setCell(1, 2, 'com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc')
+data.setCell(1, 3, 236889);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'guestUserRandomProductFromPDP_InGc')
+data.setCell(2, 2, 'com.GuestUserWith_GiftCard.tc__GuestUserRandomProductFromPDP_InGc')
+data.setCell(2, 3, 39272);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'createAccountWithValidCredientials')
+data.setCell(3, 2, 'com.testcases.TC__CreateAccounts')
+data.setCell(3, 3, 22666);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'chromeBrowser')
+data.setCell(4, 2, 'com.Launchingbrowser.launchBrowsering')
+data.setCell(4, 3, 13150);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'footer')
+data.setCell(5, 2, 'com.testcases.Footer')
+data.setCell(5, 3, 9195);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginTest')
+data.setCell(6, 2, 'com.Login.tc__Login')
+data.setCell(6, 3, 2065);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Logout')
+data.setCell(7, 2, 'com.Logout.tc__LogOut')
+data.setCell(7, 3, 7);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'profilePage')
+data.setCell(8, 2, 'com.testcases.tc__ProfilePage')
+data.setCell(8, 3, 2);
+window.suiteTableData['FMG']= { tableData: data, tableDiv: 'times-div-FMG'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 9 minutes</span>
+              <div id="times-div-FMG">
+              </div> <!-- times-div-FMG -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-FMG" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for FMG</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-FMG" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">16 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.Launchingbrowser.launchBrowsering</span>
+              <span class="ignored-class-name">com.GuestUserWith_GiftCard.tc__GuestUserRandomProductFromPDP_InGc</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpforReport</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.Logout.tc__LogOut</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpforReport</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.testcases.Footer</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setUpforReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.testcases.tc__ProfilePage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setUpforReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.testcases.TC__CreateAccounts</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpforReport</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.GuestUserWith_Checkout_Paypal.tc__BySearchingProduct_GuestUser_InCheckoutPaypal</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpforReport</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.Login.tc__Login</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setUpforReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUpforReport</span>
                 <br/>
@@ -248,50 +552,161 @@ return data;
             </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-FMG" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.GuestUserWith_CreditCard.tc__HomePageBannerPLPInCC</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.Launchingbrowser.launchBrowsering</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setUpforReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.Launchingbrowser.launchBrowsering</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">5429 ms</span>
+                <span class="method-start">6778 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">chromeBrowser</span>
-                <span class="method-start">7509 ms</span>
+                <span class="method-start">8869 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=chromeBrowser status=SUCCESS method=launchBrowsering.chromeBrowser()[pri:0, instanc...)</span>
-                <span class="method-start">23219 ms</span>
+                <span class="method-start">22025 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.GuestUserWith_CreditCard.tc__HomePageBannerPLPInCC</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.GuestUserWith_Checkout_Paypal.tc__BySearchingProduct_GuestUser_InCheckoutPaypal</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">23241 ms</span>
+                <span class="method-start">22051 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">HomePageBannerPLP</span>
-                <span class="method-start">25256 ms</span>
+                <span class="method-name">bySearchingProduct_GuestUser_InCheckoutPaypal</span>
+                <span class="method-start">24062 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=HomePageBannerPLP status=SUCCESS method=tc__HomePageBannerPLPInCC.HomePageBannerPLP...)</span>
-                <span class="method-start">264204 ms</span>
+                <span class="method-name">afterMethod([TestResult name=bySearchingProduct_GuestUser_InCheckoutPaypal status=SUCCESS method=tc__BySearching...)</span>
+                <span class="method-start">297011 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">297027 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">GuestUserRandomProductFromPLP_InCc</span>
+                <span class="method-start">299043 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=GuestUserRandomProductFromPLP_InCc status=SUCCESS method=tc__GuestUserRandomProduct...)</span>
+                <span class="method-start">535936 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.GuestUserWith_GiftCard.tc__GuestUserRandomProductFromPDP_InGc</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">535949 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">guestUserRandomProductFromPDP_InGc</span>
+                <span class="method-start">537957 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=guestUserRandomProductFromPDP_InGc status=FAILURE method=tc__GuestUserRandomProduct...)</span>
+                <span class="method-start">577235 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Login.tc__Login</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">577722 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest</span>
+                <span class="method-start">579736 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=loginTest status=FAILURE method=tc__Login.loginTest()[pri:0, instance:com.Login.tc_...)</span>
+                <span class="method-start">581804 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.tc__ProfilePage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">582536 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">profilePage</span>
+                <span class="method-start">584558 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=profilePage status=SUCCESS method=tc__ProfilePage.profilePage()[pri:0, instance:com...)</span>
+                <span class="method-start">584563 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Logout.tc__LogOut</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">584574 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Logout</span>
+                <span class="method-start">586589 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=Logout status=FAILURE method=tc__LogOut.Logout()[pri:0, instance:com.Logout.tc__Log...)</span>
+                <span class="method-start">586598 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.TC__CreateAccounts</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">587271 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">createAccountWithValidCredientials</span>
+                <span class="method-start">589285 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=createAccountWithValidCredientials status=SUCCESS method=TC__CreateAccounts.createA...)</span>
+                <span class="method-start">611952 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.Footer</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">611965 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">footer</span>
+                <span class="method-start">613977 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=footer status=SUCCESS method=Footer.footer()[pri:0, instance:com.testcases.Footer@7...)</span>
+                <span class="method-start">623173 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Launchingbrowser.launchBrowsering</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">264229 ms</span>
+                <span class="method-start">623249 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

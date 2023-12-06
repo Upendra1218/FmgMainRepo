@@ -227,4 +227,26 @@ public class validationpopupMessages extends baseClass{
            logger.info(expectedAddToCart+ "Error not diaplayeds");
        }
    }
+   
+//   // Create a FluentWait for dynamic element wait
+//  	Wait<WebDriver> wait = waitForTheElement.createFluentWait(driver);
+//      // Wait for the success alert to be visible
+//      WebElement addToCart = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[contains(text(),'Successfully added to your cart.')])[" + i + "]")));
+//      // Get the text of the alert
+//      String actualAddToCart = addToCart.getText();
+//      // Expected alert text
+//      String expectedAddToCart = "Successfully added to your cart.";
+//      
+//      // Check if the actual alert text matches the expected text
+//      if (actualAddToCart.equals(expectedAddToCart)) {
+//          // Success message is displayed
+//      	test.pass("Product added to cart");
+//          logger.info("Product is added to cart");
+//          // Perform actions or assertions here for the success case
+//      } else {
+//          // Success message is not as expected
+//      	test.fail("Product is not added to cart");
+//          logger.info("Product is not added to cart");
+//          // Perform actions or assertions here for the failure case
+//      }
 }

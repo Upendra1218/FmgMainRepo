@@ -2,9 +2,7 @@ package com.GuestUserWith_GiftCard;
 
 import org.testng.annotations.Test;
 
-import com.Launchingbrowser.launchBrowsering;
-import com.PaymentProccess.CheckOutProcessByPayPal;
-import com.PaymentProccess.MinicartViewCartProcess;
+import com.PaymentProccess.MiniCartChekoutButton;
 import com.Scenarios.pdpPage;
 import com.commonfunctionality.Gc__CC_Paypal;
 import com.testcases.baseClass;
@@ -21,7 +19,7 @@ public class tc__GuestUserRandomProductFromPDP_InGc extends baseClass{
 	    pdpPage.addtoCartPDP();
 
 	    // Initialize MinicartViewCartProcess to perform the checkout process
-	    MinicartViewCartProcess cartProcess = new MinicartViewCartProcess();
+	    MiniCartChekoutButton cartProcess = new MiniCartChekoutButton();
 	    
 	    // Perform the checkout process
 	    cartProcess.checkoutprocess();

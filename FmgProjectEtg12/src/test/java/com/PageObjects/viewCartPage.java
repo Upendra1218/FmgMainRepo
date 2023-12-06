@@ -38,34 +38,47 @@ WebDriver lDriver;
 	    
 	    Float viewCartTotal = (float) 0 ;
 	    
-	    //click on the product link in the view cart page
+	 // Click on the product link in the view cart page
 	    public void clickProductLink() throws InterruptedException {
-	    	
-	    	List<WebElement> productLinks = driver.findElements(By.xpath("//h3"));
-			 // Get the total count of top-level menu elements.
+
+	        // Find all the product links on the page using the XPath "//h3"
+	        List<WebElement> productLinks = driver.findElements(By.xpath("//h3"));
+
+	        // Get the total count of top-level menu elements.
 	        int count = productLinks.size();
+
 	        // Create a random number generator.
 	        Random random = new Random();
+
 	        // Generate a random index to select a top-level menu item.
 	        int randomProdcutlink = random.nextInt(count) + 1;
-	        logger.info(randomProdcutlink);
-	        WebElement movetoWishListLink = driver.findElement(By.xpath("(//h3)[" + randomProdcutlink + "]"));
-			Thread.sleep(2000);
-			JavascriptExecutor js = (JavascriptExecutor) driver; 
-			js.executeScript("arguments[0].click();", movetoWishListLink);
-			
-			Thread.sleep(3000);
-			
-			//validate the pdp page is loaded\
-			List<WebElement> pdpPagecheck = driver.findElements(By.xpath("//div[contains(@class,'product-main-block')]"));
-			if (pdpPagecheck.size() > 0) {
-				logger.info("Pdp page is succesfully loaded");
-			}
-			
-	    }
-	 
 
-	
+	        // Log the randomly generated index.
+	        logger.info(randomProdcutlink);
+
+	        // Find the randomly selected product link using the generated index.
+	        WebElement movetoWishListLink = driver.findElement(By.xpath("(//h3)[" + randomProdcutlink + "]"));
+
+	        // Introduce a delay for 2 seconds (simulating a pause before the click).
+	        Thread.sleep(2000);
+
+	        // Create a JavascriptExecutor to perform a click on the product link.
+	        JavascriptExecutor js = (JavascriptExecutor) driver;
+	        js.executeScript("arguments[0].click();", movetoWishListLink);
+
+	        // Introduce a delay for 3 seconds (allowing time for the page to load).
+	        Thread.sleep(3000);
+
+	        // Validate if the PDP (Product Detail Page) is loaded
+	        List<WebElement> pdpPagecheck = driver.findElements(By.xpath("//div[contains(@class,'product-main-block')]"));
+
+	        // Check if there is at least one element matching the PDP identifier.
+	        if (pdpPagecheck.size() > 0) {
+	            // Log a message indicating that the PDP page is successfully loaded.
+	            logger.info("Pdp page is successfully loaded");
+	        }
+	    }
+
 	    //Checkout :- 
 		@FindBy(xpath="//a[contains(text(),'Checkout')]")
 		WebElement Checkout;	
@@ -87,182 +100,211 @@ WebDriver lDriver;
 		}
 			
 		
+	   //move to wishlist link on the view cart page save-for-later
+		public void saveForLater() throws InterruptedException {
+			
+			test.info("Validate the save later button click");
+			List<WebElement> saveForLaterLink = driver.findElements(By.xpath("//div[@class='total-cart-content']//div[contains(@class,'save-for-later')]"));
+			 // Get the total count of top-level menu elements.
+	        int count = saveForLaterLink.size();
+	        // Create a random number generator.
+	        Random random = new Random();
+	        // Generate a random index to select a top-level menu item.
+	        int randomeditlink = random.nextInt(count) + 1;
+	        logger.info(randomeditlink);
+	        WebElement movetoWishListLink = driver.findElement(By.xpath("(//div[@class='total-cart-content']//div[contains(@class,'save-for-later')])[" + randomeditlink + "]"));
+			Thread.sleep(2000);
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			
+			// Use JavascriptExecutor to click on the element with try-catch
+	        try {
+	            js.executeScript("arguments[0].click();", movetoWishListLink);
+	            Thread.sleep(4000);
+	        } catch (Exception e) {
+	            System.err.println("Exception while clicking the element: " + e.getMessage());
+	            movetoWishListLink.click();
+	            Thread.sleep(4000);
+	        }
+					
+			test.pass("Successfully the product is add to the save later");
+			
+			//validationpopupMessages.validatingProductisAddtoWishList(driver);
+		
+		}
+		
+		//adding save later to mini cart
 		   //move to wishlist link on the view cart page save-for-later
-			public void saveForLater() throws InterruptedException {
+			public void addtocartFromSaveLater() throws InterruptedException {
 				
-				test.info("Validate the save later button click");
-				List<WebElement> saveForLaterLink = driver.findElements(By.xpath("//div[@class='total-cart-content']//div[contains(@class,'save-for-later')]"));
+				test.info("Validate the move to cart button click");
+				List<WebElement> addingProductFromsaveForLaters = driver.findElements(By.xpath("//button[contains(@class, 'add-to-cart')]"));
 				 // Get the total count of top-level menu elements.
-		        int count = saveForLaterLink.size();
+		        int count = addingProductFromsaveForLaters.size();
 		        // Create a random number generator.
 		        Random random = new Random();
 		        // Generate a random index to select a top-level menu item.
 		        int randomeditlink = random.nextInt(count) + 1;
 		        logger.info(randomeditlink);
-		        WebElement movetoWishListLink = driver.findElement(By.xpath("(//div[@class='total-cart-content']//div[contains(@class,'save-for-later')])[" + randomeditlink + "]"));
+		        WebElement addingProductFromsaveForLater = driver.findElement(By.xpath("(//button[contains(@class, 'add-to-cart')])[" + randomeditlink + "]"));
 				Thread.sleep(2000);
 				JavascriptExecutor js = (JavascriptExecutor) driver;
 				
 				// Use JavascriptExecutor to click on the element with try-catch
 		        try {
-		            js.executeScript("arguments[0].click();", movetoWishListLink);
+		            js.executeScript("arguments[0].click();", addingProductFromsaveForLater);
 		            Thread.sleep(4000);
 		        } catch (Exception e) {
 		            System.err.println("Exception while clicking the element: " + e.getMessage());
-		            movetoWishListLink.click();
+		            addingProductFromsaveForLater.click();
 		            Thread.sleep(4000);
 		        }
 						
-				test.pass("Successfully the product is add to the save later");
+				test.pass("Successfully the product is add to the to cart");
 				
 				//validationpopupMessages.validatingProductisAddtoWishList(driver);
-				
-		        
+			
 			}
 			
-			//move to wishlist link on the view cart page
-			public void removeBtn() throws InterruptedException {
-				test.info("Validate the remove button click");
-				Thread.sleep(3000);
-				List<WebElement> removeBtns = driver.findElements(By.xpath("//div[contains(@class,'cart-delete')]"));
-				 // Get the total count of top-level menu elements.
-		        int count = removeBtns.size();
-		        // Create a random number generator.
-		        Random random = new Random();
-		        // Generate a random index to select a top-level menu item.
-		        int randomRemoveBtn = random.nextInt(count) + 1;
-		        logger.info(randomRemoveBtn);
-		        WebElement removeformviewcart = driver.findElement(By.xpath("(//div[contains(@class,'cart-delete')])[" + randomRemoveBtn + "]"));
-				Thread.sleep(2000);
-				JavascriptExecutor js = (JavascriptExecutor) driver; 
-				
-				try {
-		            js.executeScript("arguments[0].click();", removeformviewcart);
-		            Thread.sleep(4000);
-		        } catch (Exception e) {
-		            System.err.println("Exception while clicking the element: " + e.getMessage());
-		            removeformviewcart.click();
-		            Thread.sleep(4000);
-		        }	
-				
-				Thread.sleep(5000);
-				
-				String[] xpathsofViewcart = {
-					    "//a[contains(@class,'undolink')]",
-					    "//a[contains(@class,'save-for-later')]",
-					    "//button[contains(@class,'removecart')]"
-					};
-				
-				// Generate a random index to select an XPath expression
-				int randomIndex = random.nextInt(xpathsofViewcart.length);
+		//move to wishlist link on the view cart page
+		public void removeBtn() throws InterruptedException {
+			test.info("Validate the remove button click");
+			Thread.sleep(3000);
+			List<WebElement> removeBtns = driver.findElements(By.xpath("//div[contains(@class,'cart-delete')]"));
+			 // Get the total count of top-level menu elements.
+	        int count = removeBtns.size();
+	        // Create a random number generator.
+	        Random random = new Random();
+	        // Generate a random index to select a top-level menu item.
+	        int randomRemoveBtn = random.nextInt(count) + 1;
+	        logger.info(randomRemoveBtn);
+	        WebElement removeformviewcart = driver.findElement(By.xpath("(//div[contains(@class,'cart-delete')])[" + randomRemoveBtn + "]"));
+			Thread.sleep(2000);
+			JavascriptExecutor js = (JavascriptExecutor) driver; 
+			
+			try {
+	            js.executeScript("arguments[0].click();", removeformviewcart);
+	            Thread.sleep(4000);
+	        } catch (Exception e) {
+	            System.err.println("Exception while clicking the element: " + e.getMessage());
+	            removeformviewcart.click();
+	            Thread.sleep(4000);
+	        }	
+			
+			Thread.sleep(5000);
+			
+			String[] xpathsofViewcart = {
+				    "//a[contains(@class,'undolink')]",
+				    "//a[contains(@class,'save-for-later')]",
+				    "//button[contains(@class,'removecart')]"
+				};
+			
+			// Generate a random index to select an XPath expression
+			int randomIndex = random.nextInt(xpathsofViewcart.length);
 
-				// Access the randomly selected XPath expression
-				String randomXPath = xpathsofViewcart[randomIndex];
-				
-				//RandomElement
-				WebElement randomElement = driver.findElement(By.xpath(randomXPath));
-				
-				try {
-		            js.executeScript("arguments[0].click();", randomElement);
-		        } catch (Exception e) {
-		            System.err.println("Exception while clicking the element: " + e.getMessage());
-		            randomElement.click();
-		        }
-				
-				
-				if(randomIndex==0) {
-					validationpopupMessages.validatingProductisAddtoCart(lDriver);
-				}else if(randomIndex==1) {
-					// Success message is displayed
-			       	   test.pass("Product added to saveForLater");
-			           logger.info("Product is added to saveForLater");
-					//validationpopupMessages.validatingProductisSaveforLater(driver);
-				}else {
-					   test.pass("Product Removed from the cart");
-			           logger.info("Product Removed from the cart");
-					//validationpopupMessages.validatingProductisAddtoWishList(driver);
-				}
-				
+			// Access the randomly selected XPath expression
+			String randomXPath = xpathsofViewcart[randomIndex];
 			
-				//removeformviewcart.click();
-				//popup validations
-				//validationpopupMessages.removeproductformminicartValidation();
-		        
+			//RandomElement
+			WebElement randomElement = driver.findElement(By.xpath(randomXPath));
+			
+			try {
+	            js.executeScript("arguments[0].click();", randomElement);
+	        } catch (Exception e) {
+	            System.err.println("Exception while clicking the element: " + e.getMessage());
+	            randomElement.click();
+	        }
+			
+			
+			if(randomIndex==0) {
+				validationpopupMessages.validatingProductisAddtoCart(lDriver);
+			}else if(randomIndex==1) {
+				// Success message is displayed
+		       	   test.pass("Product added to saveForLater");
+		           logger.info("Product is added to saveForLater");
+				//validationpopupMessages.validatingProductisSaveforLater(driver);
+			}else {
+				   test.pass("Product Removed from the cart");
+		           logger.info("Product Removed from the cart");
+				//validationpopupMessages.validatingProductisAddtoWishList(driver);
 			}
 			
+		
+			//removeformviewcart.click();
+			//popup validations
+			//validationpopupMessages.removeproductformminicartValidation();
+	        
+		}
+		
 		
 	   //brain tree paypal button
 
-			public void braintreePayPalButton(WebDriver driver) {
-				
-			    // Find the element using its xpath
-			    WebElement payPalButton = driver.findElement(By.xpath("//div[contains(@class,'js_braintree_paypal_cart_button')]"));
-		
-			    // Perform the click action
-			    payPalButton.click();
-			}
+		public void braintreePayPalButton(WebDriver driver) {
+			
+		    // Find the element using its xpath
+		    WebElement payPalButton = driver.findElement(By.xpath("//div[contains(@class,'js_braintree_paypal_cart_button')]"));
+	
+		    // Perform the click action
+		    payPalButton.click();
+		}
 
 	
 
-			public void quantityInsertionInCartPage() throws InterruptedException {
-						
-				test.info("Verify quantity increase and assortable price discount  with  color");
-				//qunatity insertion in cart page
-				List<WebElement> quantityInput = driver.findElements(By.xpath("//div[@class='total-cart-content']//input[@name='quantity']"));
-		
-				if(quantityInput.size()>0) {	
+		public void quantityInsertionInCartPage() throws InterruptedException {
 					
-					WebElement quantityInputDisplay = driver.findElement(By.xpath("//input[@name='quantity']"));
-					if(quantityInputDisplay.isDisplayed()) {
-						int productQuantityCount = quantityInput.size();
-						// maximum quantity of products
-						int productCount = 150;
-						// Create a random number generator.
-					    Random random = new Random();
-				        // Generate a random index to insert the qunatity
-					    int randomquantityInput = random.nextInt(productQuantityCount) + 1;
-					    int inputQuantiy = random.nextInt(productCount)+1;
-					    logger.info("Product input quantity "+inputQuantiy);
-					    // Find the quantity input field associated with the clicked button and set the quantity.
-				        WebElement inctheQuantity = driver.findElement(By.xpath("(//input[@name='quantity'])[" + randomquantityInput + "]"));
-				        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", inctheQuantity);
-				        Thread.sleep(2000);
-				        inctheQuantity.clear(); // Clear the existing value
-				        Thread.sleep(2000);
-				        inctheQuantity.sendKeys(String.valueOf(inputQuantiy));
-				        Thread.sleep(1000);
-				    
-				       //update the qunatity
-				        List<WebElement> updateQuantityList = driver.findElements(By.xpath("//div[contains(text(),' Update')]"));		     
-				        if(updateQuantityList.size()>0) {
-					       WebElement updateQuantity = driver.findElement(By.xpath("(//div[contains(text(),' Update')])[" + randomquantityInput + "]"));
-					       if(updateQuantity.isDisplayed()) {
-					    	   updateQuantity.click();
-					    	   Thread.sleep(3000);
-					    	   
-			    	   
-					       }
-					       
-					       
-				       }else {
-				    	   logger.info("Updating the quantity in Pdp page ");
-				       }
-					} 
-				}else {
-					logger.info("Gc in cart no chance of quantity increase of GC");
-				}
+			test.info("Verify quantity increase and assortable price discount  with  color");
+			//qunatity insertion in cart page
+			List<WebElement> quantityInput = driver.findElements(By.xpath("//div[@class='total-cart-content']//input[@name='quantity']"));
+	
+			if(quantityInput.size()>0) {	
 				
-				//locate the quantity in elements
-				 WebElement miniCartQuantity = driver.findElement(By.xpath("//span[contains(@class,'minicart-quantity')]"));
-				 String countOfProducts= miniCartQuantity.getText();
-				 test.info("The total number of products in cart are " +countOfProducts);
-				 logger.info("The total number of products in cart are " +countOfProducts);
-//				 
-//				 // tier price and color
-//				 TierPrice tp= new TierPrice();
-//				 tp.tierPriceAndColor();
-				 
+				WebElement quantityInputDisplay = driver.findElement(By.xpath("//input[@name='quantity']"));
+				if(quantityInputDisplay.isDisplayed()) {
+					int productQuantityCount = quantityInput.size();
+					// maximum quantity of products
+					int productCount = 150;
+					// Create a random number generator.
+				    Random random = new Random();
+			        // Generate a random index to insert the qunatity
+				    int randomquantityInput = random.nextInt(productQuantityCount) + 1;
+				    int inputQuantiy = random.nextInt(productCount)+1;
+				    logger.info("Product input quantity "+inputQuantiy);
+				    // Find the quantity input field associated with the clicked button and set the quantity.
+			        WebElement inctheQuantity = driver.findElement(By.xpath("(//input[@name='quantity'])[" + randomquantityInput + "]"));
+			        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", inctheQuantity);
+			        Thread.sleep(2000);
+			        inctheQuantity.clear(); // Clear the existing value
+			        Thread.sleep(2000);
+			        inctheQuantity.sendKeys(String.valueOf(inputQuantiy));
+			        Thread.sleep(1000);
+			    
+			       //update the qunatity
+			        List<WebElement> updateQuantityList = driver.findElements(By.xpath("//div[contains(text(),' Update')]"));		     
+			        if(updateQuantityList.size()>0) {
+				       WebElement updateQuantity = driver.findElement(By.xpath("(//div[contains(text(),' Update')])[" + randomquantityInput + "]"));
+				       if(updateQuantity.isDisplayed()) {
+				    	   updateQuantity.click();
+				    	   Thread.sleep(3000);
+				    	   
+		    	   
+				       }
+				       
+				       
+			       }else {
+			    	   logger.info("Updating the quantity in Pdp page ");
+			       }
+				} 
+			}else {
+				logger.info("Gc in cart no chance of quantity increase of GC");
 			}
+			
+			//locate the quantity in elements
+			 WebElement miniCartQuantity = driver.findElement(By.xpath("//span[contains(@class,'minicart-quantity')]"));
+			 String countOfProducts= miniCartQuantity.getText();
+			 test.info("The total number of products in cart are " +countOfProducts);
+			 logger.info("The total number of products in cart are " +countOfProducts);
+
+			 
+		}
 			
 			public void noQuantityInsertionInCartPage() {
 				
@@ -271,6 +313,7 @@ WebDriver lDriver;
 		
 						// applying promo code
 						public void applyCouponInCartPage() throws InterruptedException {
+							if(RegressionTestCase) {
 							List<WebElement> clickOnPromo = driver.findElements(By.xpath("//label[contains(text(),'Have a Promo Code?')]"));
 							if(clickOnPromo.size()>0) {
 								WebElement clickOnPromolink = driver.findElement(By.xpath("//label[contains(text(),'Have a Promo Code?')]"));
@@ -286,8 +329,10 @@ WebDriver lDriver;
 								cancellationOfCoupon();
 								Thread.sleep(2000);
 							}
+						 }else {
+							 logger.info("This is smoke test");					
+							 }
 						}
-					
 						public void applyCoupon() throws InterruptedException {
 							boolean couponNotAppliedDisplay= false;
 							boolean couponAppliedDisplay=false;
@@ -351,7 +396,7 @@ WebDriver lDriver;
 										}
 						}
 						public void negativeValidationForCouponInCart() throws InterruptedException {
-							if(RegressionTestCase) {
+							
 						
 							test.info("Verifying the display of error message when coupon is not entered");
 								WebElement applyCouponCode = driver.findElement(By.cssSelector("button.promo-code-btn"));
@@ -415,9 +460,7 @@ WebDriver lDriver;
 									}
 								}
 							}
-								}
 
-			
 			
 			public static void countryDropDown() throws InterruptedException {
 				 // Locate the dropdown element by its ID
@@ -607,7 +650,8 @@ WebDriver lDriver;
 			}
 			 
 			//shipping calculation			
-			public void estimatedshippingCalculations() throws InterruptedException {	 
+			public void estimatedshippingCalculations() throws InterruptedException {	
+				if(RegressionTestCase) {
 				String shippingValueText =null;
 				float shippingValue=0;
 				 List<WebElement> giftCerificate = driver.findElements(By.xpath("//div[contains(@class, 'card product-info gift-certificate uuid-')]"));
@@ -700,5 +744,6 @@ WebDriver lDriver;
 							logger.info("The caluated pre-total tax is " + expectedPreTotalTaxGc + " is not equal to " + actualPreTotalTax);
 						}
 				 }
+			}
 			}
 }

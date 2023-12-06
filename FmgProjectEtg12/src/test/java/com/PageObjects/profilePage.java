@@ -26,18 +26,52 @@ WebDriver lDriver;
 	//Click my account 
 	@FindBy(xpath="//img[@alt='person-icon']")
 	WebElement myaccount;
+	// WebElement representing the 'My Account' link with the specified XPath.
+
 	public void clickAccount(WebDriver driver) throws InterruptedException {
-		test.info("Verify that my account link click");
-		myaccount.click();
-		test.pass("Successfully clicked on the MyAccount Link");
-//		Actions action=new Actions(driver);
-//    	action.moveToElement(myaccount).perform();
-    	Thread.sleep(5000);
+	    test.info("Verify that my account link click");
+	    // Logging a verification message about the attempt to click the 'My Account' link.
+	    myaccount.click();
+	    // Performing a click action on the 'My Account' link.
+	    test.pass("Successfully clicked on the MyAccount Link");
+	    // Logging a success message after successfully clicking the 'My Account' link.
+	    Thread.sleep(5000);
+	    // Introducing a delay of 5 seconds (not recommended, consider using explicit waits instead).
 	}
-	
-	
-	
-	
+
+	//Click my orders 
+	@FindBy(xpath="(//a[@href='https://utsf.firemountain.org/wishlist/'])[1]")
+	WebElement myOrders;
+	// WebElement representing the 'My Orders' link with the specified XPath.
+
+	public void clickMyOrders(WebDriver driver) throws InterruptedException {
+	    test.info("Verify that my Orders link click");
+	    // Logging a verification message about the attempt to click the 'My Orders' link.
+	    myOrders.click();
+	    // Performing a click action on the 'My Orders' link.
+	    test.pass("Successfully clicked on the myOrders Link");
+	    // Logging a success message after successfully clicking the 'My Orders' link.
+	    Thread.sleep(5000);
+	    // Introducing a delay of 5 seconds (not recommended, consider using explicit waits instead).
+	}
+
+	//Click my fav 
+	@FindBy(xpath="//img[@alt='person-icon']")
+	WebElement myFav;
+	// WebElement representing the 'My Favorites' link with the specified XPath.
+
+	public void clickMyFav(WebDriver driver) throws InterruptedException {
+	    test.info("Verify that my fav link click");
+	    // Logging a verification message about the attempt to click the 'My Favorites' link.
+	    myFav.click();
+	    // Performing a click action on the 'My Favorites' link.
+	    test.pass("Successfully clicked on the myFav Link");
+	    // Logging a success message after successfully clicking the 'My Favorites' link.
+	    Thread.sleep(5000);
+	    // Introducing a delay of 5 seconds (not recommended, consider using explicit waits instead).
+	}
+
+
 	
 	//EditButtonMyAccout
 	@FindBy(xpath="//a[@class = 'btn btn-primary pull-right' and @aria-label ='Edit Profile']")
@@ -396,6 +430,9 @@ WebDriver lDriver;
         test.pass("Sucessfully clicked on the Save button of save Credit card");
 	}
 	
+	
+	
+	//my orders
 	
 	
 }

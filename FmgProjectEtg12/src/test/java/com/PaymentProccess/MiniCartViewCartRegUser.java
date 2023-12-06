@@ -76,7 +76,7 @@ public class MiniCartViewCartRegUser extends baseClass {
                 //total product cost
                 vcp.totalProductsCost();
     	                
-                // Click the "Checkout" button in the view cart page
+//                // Click the "Checkout" button in the view cart page
                 Thread.sleep(5000);
                 vcp.clickCheckout(driver);
                 Thread.sleep(1000);

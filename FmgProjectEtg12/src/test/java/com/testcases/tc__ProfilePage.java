@@ -22,6 +22,7 @@ public class tc__ProfilePage extends baseClass {
 
             // Hover on "Create and Login Account" option
             lp.hoverOnCreateloginAcc(driver);
+            // Logging an informational message about hovering on the create and login account option.
             logger.info("Hover on create and login account");
 
             // Create an instance of the "profilePage" class
@@ -29,28 +30,53 @@ public class tc__ProfilePage extends baseClass {
 
             // Click on the "Account" link
             pp.clickAccount(driver);
+            // Performing a click action on the "Account" link.
             Thread.sleep(3000);
 
-            // Create an instance of the "myAccountpage" class
-            myAccountpage myAC = new myAccountpage();
+            if(RegressionTestCase) {
+                // Create an instance of the "myAccountpage" class
+                myAccountpage myAC = new myAccountpage();
 
-            // Update personal information on the My Account page
-            myAC.updatePersonalInfo();
-            Thread.sleep(5000);
+                // Update personal information on the My Account page
+                myAC.updatePersonalInfo();
+                // Performing an update of personal information on the My Account page.
+                Thread.sleep(5000);
 
-            // Change the password on the My Account page
-            myAC.changePassword();
-            Thread.sleep(5000);
+                // Change the password on the My Account page
+                myAC.changePassword();
+                // Performing a password change on the My Account page.
+                Thread.sleep(5000);
 
-            // Add a new address on the My Account page
-            myAC.addNewAddress();
-            Thread.sleep(5000);
+                // Add a new address on the My Account page
+                myAC.addNewAddress();
+                // Performing an address addition on the My Account page.
+                Thread.sleep(5000);
 
-            // Add credit card details on the My Account page
-            myAC.addCreditCardDetails();
+                // Add credit card details on the My Account page
+                myAC.addCreditCardDetails();
+                // Performing addition of credit card details on the My Account page.
 
-            // Additional actions can be added here as needed
+                // Additional actions can be added here as needed
+
+            } else {
+                // Hover on "Create and Login Account" option
+                lp.hoverOnCreateloginAcc(driver);
+                // Logging an informational message about hovering on the create and login account option.
+                logger.info("Hover on create and login account");
+                
+                pp.clickMyOrders(driver);
+                // Performing a click action on the "My Orders" link.
+                Thread.sleep(7000);
+
+                // Hover on "Create and Login Account" option
+                lp.hoverOnCreateloginAcc(driver);
+                // Logging an informational message about hovering on the create and login account option.
+                logger.info("Hover on create and login account");
+                
+                pp.clickMyFav(driver);
+                // Performing a click action on the "My Favorites" link.
+                Thread.sleep(5000);
+            }
         }
-
     }
 }

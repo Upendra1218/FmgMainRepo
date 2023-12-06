@@ -18,6 +18,7 @@ public class tc__GuestUserRandomProductFromPLP_InCheckoutPaypal extends baseClas
 	        
 			// Initialize NavigationProcess to perform navigation tasks
 	        NavigationProcess navProcess = new NavigationProcess(driver);
+	        
 	        // Select a random menu item
 	        navProcess.selectRandomMenu(driver);
 

@@ -3,51 +3,42 @@
 <suite name="Failed suite [FMG]">
   <test thread-count="5" name="Automation(failed)">
     <classes>
-      <class name="com.GuestUserWith_CreditCard.tc__HomePageBannerPLPInCC">
+      <class name="com.GuestUserWith_GiftCard.tc__GuestUserRandomProductFromPDP_InGc">
         <methods>
-          <include name="setUp"/>
           <include name="afterMethod"/>
+          <include name="setUp"/>
           <include name="setUpforReport"/>
           <include name="tearDown"/>
-          <include name="HomePageBannerPLP"/>
+          <include name="guestUserRandomProductFromPDP_InGc"/>
         </methods>
-      </class> <!-- com.GuestUserWith_CreditCard.tc__HomePageBannerPLPInCC -->
-      <class name="com.Launchingbrowser.launchBrowsering">
+      </class> <!-- com.GuestUserWith_GiftCard.tc__GuestUserRandomProductFromPDP_InGc -->
+      <class name="com.Logout.tc__LogOut">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="Logout"/>
+          <include name="setUpforReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.Logout.tc__LogOut -->
+      <class name="com.Login.tc__Login">
         <methods>
           <include name="afterMethod"/>
           <include name="setUp"/>
+          <include name="setUpforReport"/>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.Login.tc__Login -->
+      <class name="com.Launchingbrowser.launchBrowsering">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
           <include name="setUpforReport"/>
           <include name="tearDown"/>
           <include name="chromeBrowser"/>
         </methods>
       </class> <!-- com.Launchingbrowser.launchBrowsering -->
-      <class name="com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPDP_InCc">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="setUp"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-          <include name="ProductFromPDP"/>
-        </methods>
-      </class> <!-- com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPDP_InCc -->
-      <class name="com.GuestUserWith_CreditCard.tc__HomePageCLPInCC">
-        <methods>
-          <include name="HomePageCLPInCC"/>
-          <include name="afterMethod"/>
-          <include name="setUp"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.GuestUserWith_CreditCard.tc__HomePageCLPInCC -->
-      <class name="com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc">
-        <methods>
-          <include name="setUp"/>
-          <include name="afterMethod"/>
-          <include name="GuestUserRandomProductFromPLP_InCc"/>
-          <include name="setUpforReport"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc -->
     </classes>
   </test> <!-- Automation(failed) -->
 </suite> <!-- Failed suite [FMG] -->

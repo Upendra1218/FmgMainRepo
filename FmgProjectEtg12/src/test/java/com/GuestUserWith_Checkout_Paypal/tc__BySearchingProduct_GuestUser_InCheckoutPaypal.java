@@ -20,10 +20,9 @@ public class tc__BySearchingProduct_GuestUser_InCheckoutPaypal extends baseClass
     		// Search for a product
             SearchingProduct sp1 = new SearchingProduct();
             sp1.searchingProduct();
-            
 
             // Initialize MinicartViewCartProcess to perform the checkout process
-             MiniCartChekoutButton cartProcess = new MiniCartChekoutButton();
+            MinicartViewCartProcess cartProcess = new MinicartViewCartProcess();
             // Perform the checkout process
             cartProcess.checkoutprocess();
 

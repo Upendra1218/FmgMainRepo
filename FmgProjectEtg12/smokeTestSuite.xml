@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="FMG">
+
+  <!--  <listeners>
+		<listener class-name="com.providio.ExtentReports.ExtentReporterNG" />
+	</listeners> -->
+	
+  <test thread-count="5" name="Automation" preserve-order="true">
+  
+    <classes>  
+		
+	    <class name="com.Launchingbrowser.launchBrowsering" />  
+	    
+        <class name="com.GuestUserWith_Checkout_Paypal.tc__BySearchingProduct_GuestUser_InCheckoutPaypal"/>
+        
+    	<class name="com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc"/>
+    	
+    	<class name="com.GuestUserWith_GiftCard.tc__GuestUserRandomProductFromPDP_InGc"/>
+    	
+    	<class name="com.Login.tc__Login"/>
+    	
+    	<class name="com.testcases.tc__ProfilePage"/>
+    	
+    	<class name="com.Logout.tc__LogOut"/>
+    	
+    	<class name="com.testcases.TC__CreateAccounts"/>
+    	
+    	<class name="com.testcases.Footer"/>
+    	
+    
+    </classes>
+   
+   </test> 
+</suite> <!-- ProvidioTestcases -->
+

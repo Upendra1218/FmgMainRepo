@@ -21,6 +21,64 @@ public class productDescriptionPage extends baseClass{
         ldriver=rdriver;
         PageFactory.initElements(rdriver, this);
     }
+    
+    //after adding the product is added to the cart and update the quantity value
+    public void increasetheQuantiyinPDP() throws InterruptedException {
+    	test.info("Verify that the quantity increase and click on the update button");
+    	int intValueCount=0;
+		int productCount = 150;
+	    
+	    Random random = new Random();
+	    
+	    int inputQuantiy = random.nextInt(productCount)+1;
+	    logger.info("Product input quantity"+inputQuantiy);
+    	
+    	// Finding elements with a specific XPath for "Update Cart" button
+		List<WebElement> pdpPagupdateBtn = driver.findElements(By.xpath("//div[contains(@class,'product-main-block')]//a[contains(@class, 'update-cart')]"));
+		int displayedUpdateBtn = 0;
+
+		// Counting the displayed "Update Cart" buttons
+		for (WebElement item : pdpPagupdateBtn) {
+			if (item.isDisplayed()) {
+				displayedUpdateBtn++;
+			}
+		}
+
+		// Logging the count of displayed "Update Cart" buttons
+		logger.info(displayedUpdateBtn);
+
+		// Checking if there is at least one displayed "Update Cart" button
+		if (displayedUpdateBtn > 0) {
+			
+			// Find the quantity input field associated with the clicked button and set the quantity.
+	        WebElement inctheQuantity = driver.findElement(By.xpath("//input[@name='quantity']"));
+	        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", inctheQuantity);
+	        Thread.sleep(2000);
+	        inctheQuantity.clear(); // Clear the existing value
+	        Thread.sleep(2000);
+	        inctheQuantity.sendKeys(String.valueOf(inputQuantiy));
+	        Thread.sleep(1000);
+	        
+	        //prodcut is add to cart
+	        WebElement clickUpdateBtn = driver.findElement(By.xpath("//div[contains(@class,'product-main-block')]//a[contains(@class, 'update-cart')]"));
+	        // Scroll to the "Add to Cart" button and click it.
+	        JavascriptExecutor js = (JavascriptExecutor) driver;
+	        // Use JavaScript to scroll the element into the middle of the page view
+	        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", clickUpdateBtn);
+	        Thread.sleep(1000);
+	        js.executeScript("arguments[0].click();", clickUpdateBtn);
+	        Thread.sleep(1000);
+        
+	 	   String valuecount = inctheQuantity.getAttribute("value");
+	       logger.info(valuecount);
+	        
+	       // Convert the string to an integer
+	       intValueCount = Integer.parseInt(valuecount);
+	       logger.info(intValueCount);
+	       test.pass("Successfully increase the quantiy and click on the update button");
+
+		}
+    }
 
   //WishList
   		public void selecttheWishlist() throws InterruptedException{

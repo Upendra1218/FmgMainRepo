@@ -13,9 +13,6 @@ public class bulkOrdersPlacing extends baseClass{
 	@Test(invocationCount = 5)
     public void guestlogin() throws InterruptedException {
     	
-    	//launching the browser and passing the url into it
-		launchBrowsering lb = new launchBrowsering();
-		
 		
 		//selects a random catgory and product add to cart
 		NavigationProcess navProccess = new NavigationProcess(driver);

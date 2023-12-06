@@ -58,9 +58,11 @@ WebDriver lDriver;
     	test.info("validate the place order click");
     	JavascriptExecutor js = (JavascriptExecutor) driver;
     	if(placetheorderBtn.isDisplayed()) {
+    		
         try {
         	placetheorderBtn.click();
         	logger.info("normal click");
+        	Thread.sleep(5000);
 	        } catch (Exception e) {
 	            // Handle the exception (e.g., log the error, take a screenshot, etc.)
 	            System.err.println("Exception caught: " + e.getMessage());

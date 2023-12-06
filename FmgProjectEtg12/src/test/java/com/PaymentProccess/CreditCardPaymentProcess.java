@@ -12,7 +12,6 @@ import com.Logout.tc__LogOut;
 import com.PageObjects.TotalCalculation;
 import com.PageObjects.homePage;
 import com.PageObjects.reviewOrderPage;
-import com.PageObjects.taxCalculation;
 import com.Validations.Checkout_Validation;
 import com.Validations.negativeValidation;
 import com.Validations.preValidationCheck;

@@ -1,61 +1,394 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+<testng-results ignored="16" total="25" passed="6" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-29T19:15:58 IST" name="Default suite" finished-at="2023-11-29T19:20:17 IST" duration-ms="258802">
+  <suite started-at="2023-12-06T12:52:32 IST" name="FMG" finished-at="2023-12-06T13:02:48 IST" duration-ms="616461">
     <groups>
     </groups>
-    <test started-at="2023-11-29T19:15:58 IST" name="Default test" finished-at="2023-11-29T19:20:17 IST" duration-ms="258802">
-      <class name="com.GuestUserWith_CreditCard.tc__HomePageBannerPLPInCC">
-        <test-method is-config="true" signature="setUpforReport()[pri:0, instance:com.GuestUserWith_CreditCard.tc__HomePageBannerPLPInCC@4ed5a1b0]" started-at="2023-11-29T19:15:53 IST" name="setUpforReport" finished-at="2023-11-29T19:15:58 IST" duration-ms="5408" status="PASS">
+    <test started-at="2023-12-06T12:52:32 IST" name="Automation" finished-at="2023-12-06T13:02:48 IST" duration-ms="616461">
+      <class name="com.testcases.Footer">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testcases.Footer@78fe204a]" started-at="2023-12-06T13:02:37 IST" name="setUp" finished-at="2023-12-06T13:02:39 IST" duration-ms="2011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="footer()[pri:0, instance:com.testcases.Footer@78fe204a]" started-at="2023-12-06T13:02:39 IST" name="footer" finished-at="2023-12-06T13:02:48 IST" depends-on-methods="com.Launchingbrowser.launchBrowsering.chromeBrowser" duration-ms="9195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- footer -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testcases.Footer@78fe204a]" started-at="2023-12-06T13:02:48 IST" name="afterMethod" finished-at="2023-12-06T13:02:48 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=footer status=SUCCESS method=Footer.footer()[pri:0, instance:com.testcases.Footer@78fe204a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.testcases.Footer -->
+      <class name="com.testcases.tc__ProfilePage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testcases.tc__ProfilePage@4b432e53]" started-at="2023-12-06T13:02:07 IST" name="setUp" finished-at="2023-12-06T13:02:09 IST" duration-ms="2021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="profilePage()[pri:0, instance:com.testcases.tc__ProfilePage@4b432e53]" started-at="2023-12-06T13:02:09 IST" name="profilePage" finished-at="2023-12-06T13:02:09 IST" depends-on-methods="com.Login.tc__Login.loginTest" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profilePage -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testcases.tc__ProfilePage@4b432e53]" started-at="2023-12-06T13:02:09 IST" name="afterMethod" finished-at="2023-12-06T13:02:09 IST" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=profilePage status=SUCCESS method=tc__ProfilePage.profilePage()[pri:0, instance:com.testcases.tc__ProfilePage@4b432e53] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.testcases.tc__ProfilePage -->
+      <class name="com.Login.tc__Login">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Login.tc__Login@2d0b05]" started-at="2023-12-06T13:02:03 IST" name="setUp" finished-at="2023-12-06T13:02:05 IST" duration-ms="2013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest()[pri:0, instance:com.Login.tc__Login@2d0b05]" started-at="2023-12-06T13:02:05 IST" name="loginTest" finished-at="2023-12-06T13:02:07 IST" depends-on-methods="com.Launchingbrowser.launchBrowsering.chromeBrowser" duration-ms="2065" status="FAIL">
+          <exception class="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException">
+            <message>
+              <![CDATA[move target out of bounds
+  (Session info: chrome=119.0.6045.200)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [493873a2ab26fec3d05f26d575ab8688, actions {actions=[org.openqa.selenium.interactions.Sequence@16269ff4]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\UPENDR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64276/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 493873a2ab26fec3d05f26d575ab8688]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
+  (Session info: chrome=119.0.6045.200)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [493873a2ab26fec3d05f26d575ab8688, actions {actions=[org.openqa.selenium.interactions.Sequence@16269ff4]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\UPENDR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64276/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 493873a2ab26fec3d05f26d575ab8688
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:604)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:605)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:574)
+at com.PageObjects.loginPage.hoverOnCreateloginAcc(loginPage.java:31)
+at com.Login.tc__Login.loginTest(tc__Login.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.interactions.MoveTargetOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Login.tc__Login@2d0b05]" started-at="2023-12-06T13:02:07 IST" name="afterMethod" finished-at="2023-12-06T13:02:07 IST" duration-ms="732" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=FAILURE method=tc__Login.loginTest()[pri:0, instance:com.Login.tc__Login@2d0b05] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.Login.tc__Login -->
+      <class name="com.Logout.tc__LogOut">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Logout.tc__LogOut@2b916808]" started-at="2023-12-06T13:02:09 IST" name="setUp" finished-at="2023-12-06T13:02:11 IST" duration-ms="2014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Logout()[pri:0, instance:com.Logout.tc__LogOut@2b916808]" started-at="2023-12-06T13:02:11 IST" name="Logout" finished-at="2023-12-06T13:02:11 IST" depends-on-methods="com.Login.tc__Login.loginTest" duration-ms="7" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[User not logged in]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: User not logged in
+at org.testng.Assert.fail(Assert.java:110)
+at com.Logout.tc__LogOut.Logout(tc__LogOut.java:82)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Logout.tc__LogOut@2b916808]" started-at="2023-12-06T13:02:11 IST" name="afterMethod" finished-at="2023-12-06T13:02:12 IST" duration-ms="673" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Logout status=FAILURE method=tc__LogOut.Logout()[pri:0, instance:com.Logout.tc__LogOut@2b916808] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.Logout.tc__LogOut -->
+      <class name="com.testcases.TC__CreateAccounts">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testcases.TC__CreateAccounts@580fd26b]" started-at="2023-12-06T13:02:12 IST" name="setUp" finished-at="2023-12-06T13:02:14 IST" duration-ms="2013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createAccountWithValidCredientials()[pri:0, instance:com.testcases.TC__CreateAccounts@580fd26b]" started-at="2023-12-06T13:02:14 IST" name="createAccountWithValidCredientials" finished-at="2023-12-06T13:02:37 IST" depends-on-methods="com.Launchingbrowser.launchBrowsering.chromeBrowser" duration-ms="22666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccountWithValidCredientials -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testcases.TC__CreateAccounts@580fd26b]" started-at="2023-12-06T13:02:37 IST" name="afterMethod" finished-at="2023-12-06T13:02:37 IST" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createAccountWithValidCredientials status=SUCCESS method=TC__CreateAccounts.createAccountWithValidCredientials()[pri:0, instance:com.testcases.TC__CreateAccounts@580fd26b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.testcases.TC__CreateAccounts -->
+      <class name="com.GuestUserWith_GiftCard.tc__GuestUserRandomProductFromPDP_InGc">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.GuestUserWith_GiftCard.tc__GuestUserRandomProductFromPDP_InGc@2ed71727]" started-at="2023-12-06T13:01:21 IST" name="setUp" finished-at="2023-12-06T13:01:23 IST" duration-ms="2007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="guestUserRandomProductFromPDP_InGc()[pri:0, instance:com.GuestUserWith_GiftCard.tc__GuestUserRandomProductFromPDP_InGc@2ed71727]" started-at="2023-12-06T13:01:23 IST" name="guestUserRandomProductFromPDP_InGc" finished-at="2023-12-06T13:02:02 IST" depends-on-methods="com.Launchingbrowser.launchBrowsering.chromeBrowser" duration-ms="39272" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (604, -771)
+  (Session info: chrome=119.0.6045.200)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [493873a2ab26fec3d05f26d575ab8688, clickElement {id=BA33EE4BBF0C9FFDCBFE11DCB4224DF7_element_1883}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\UPENDR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64276/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (493873a2ab26fec3d05f26d575ab8688)] -> xpath: //button[@class = 'reset btn p-0']]
+Session ID: 493873a2ab26fec3d05f26d575ab8688]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (604, -771)
+  (Session info: chrome=119.0.6045.200)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [493873a2ab26fec3d05f26d575ab8688, clickElement {id=BA33EE4BBF0C9FFDCBFE11DCB4224DF7_element_1883}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\UPENDR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64276/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (493873a2ab26fec3d05f26d575ab8688)] -> xpath: //button[@class = 'reset btn p-0']]
+Session ID: 493873a2ab26fec3d05f26d575ab8688
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+at com.PageObjects.productListingPage.selecttheResetButton(productListingPage.java:340)
+at com.Scenarios.plpPage.addtocartplp(plpPage.java:38)
+at com.Scenarios.menuSelction.randommenu(menuSelction.java:72)
+at com.PageObjects.NavigationProcess.selectRandomMenu(NavigationProcess.java:26)
+at com.Scenarios.pdpPage.addtoCartPDP(pdpPage.java:104)
+at com.GuestUserWith_GiftCard.tc__GuestUserRandomProductFromPDP_InGc.guestUserRandomProductFromPDP_InGc(tc__GuestUserRandomProductFromPDP_InGc.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- guestUserRandomProductFromPDP_InGc -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.GuestUserWith_GiftCard.tc__GuestUserRandomProductFromPDP_InGc@2ed71727]" started-at="2023-12-06T13:02:02 IST" name="afterMethod" finished-at="2023-12-06T13:02:03 IST" duration-ms="487" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=guestUserRandomProductFromPDP_InGc status=FAILURE method=tc__GuestUserRandomProductFromPDP_InGc.guestUserRandomProductFromPDP_InGc()[pri:0, instance:com.GuestUserWith_GiftCard.tc__GuestUserRandomProductFromPDP_InGc@2ed71727] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.GuestUserWith_GiftCard.tc__GuestUserRandomProductFromPDP_InGc -->
+      <class name="com.GuestUserWith_Checkout_Paypal.tc__BySearchingProduct_GuestUser_InCheckoutPaypal">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.GuestUserWith_Checkout_Paypal.tc__BySearchingProduct_GuestUser_InCheckoutPaypal@6e31d989]" started-at="2023-12-06T12:52:47 IST" name="setUp" finished-at="2023-12-06T12:52:49 IST" duration-ms="2008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="bySearchingProduct_GuestUser_InCheckoutPaypal()[pri:0, instance:com.GuestUserWith_Checkout_Paypal.tc__BySearchingProduct_GuestUser_InCheckoutPaypal@6e31d989]" started-at="2023-12-06T12:52:49 IST" name="bySearchingProduct_GuestUser_InCheckoutPaypal" finished-at="2023-12-06T12:57:22 IST" depends-on-methods="com.Launchingbrowser.launchBrowsering.chromeBrowser" duration-ms="272949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bySearchingProduct_GuestUser_InCheckoutPaypal -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.GuestUserWith_Checkout_Paypal.tc__BySearchingProduct_GuestUser_InCheckoutPaypal@6e31d989]" started-at="2023-12-06T12:57:22 IST" name="afterMethod" finished-at="2023-12-06T12:57:22 IST" duration-ms="15" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=bySearchingProduct_GuestUser_InCheckoutPaypal status=SUCCESS method=tc__BySearchingProduct_GuestUser_InCheckoutPaypal.bySearchingProduct_GuestUser_InCheckoutPaypal()[pri:0, instance:com.GuestUserWith_Checkout_Paypal.tc__BySearchingProduct_GuestUser_InCheckoutPaypal@6e31d989] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.GuestUserWith_Checkout_Paypal.tc__BySearchingProduct_GuestUser_InCheckoutPaypal -->
+      <class name="com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc@1b01a0d]" started-at="2023-12-06T12:57:22 IST" name="setUp" finished-at="2023-12-06T12:57:24 IST" duration-ms="2016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="GuestUserRandomProductFromPLP_InCc()[pri:0, instance:com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc@1b01a0d]" started-at="2023-12-06T12:57:24 IST" name="GuestUserRandomProductFromPLP_InCc" finished-at="2023-12-06T13:01:21 IST" depends-on-methods="com.Launchingbrowser.launchBrowsering.chromeBrowser" duration-ms="236889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GuestUserRandomProductFromPLP_InCc -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc@1b01a0d]" started-at="2023-12-06T13:01:21 IST" name="afterMethod" finished-at="2023-12-06T13:01:21 IST" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=GuestUserRandomProductFromPLP_InCc status=SUCCESS method=tc__GuestUserRandomProductFromPLP_InCc.GuestUserRandomProductFromPLP_InCc()[pri:0, instance:com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc@1b01a0d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.GuestUserWith_CreditCard.tc__GuestUserRandomProductFromPLP_InCc -->
+      <class name="com.Launchingbrowser.launchBrowsering">
+        <test-method is-config="true" signature="setUpforReport()[pri:0, instance:com.Launchingbrowser.launchBrowsering@46e3559f]" started-at="2023-12-06T12:52:25 IST" name="setUpforReport" finished-at="2023-12-06T12:52:32 IST" duration-ms="6718" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpforReport -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.GuestUserWith_CreditCard.tc__HomePageBannerPLPInCC@4ed5a1b0]" started-at="2023-11-29T19:16:16 IST" name="setUp" finished-at="2023-11-29T19:16:18 IST" duration-ms="2009" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Launchingbrowser.launchBrowsering@46e3559f]" started-at="2023-12-06T12:52:32 IST" name="setUp" finished-at="2023-12-06T12:52:34 IST" duration-ms="2079" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="HomePageBannerPLP()[pri:0, instance:com.GuestUserWith_CreditCard.tc__HomePageBannerPLPInCC@4ed5a1b0]" started-at="2023-11-29T19:16:18 IST" name="HomePageBannerPLP" finished-at="2023-11-29T19:20:17 IST" depends-on-methods="com.Launchingbrowser.launchBrowsering.chromeBrowser" duration-ms="238947" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomePageBannerPLP -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.GuestUserWith_CreditCard.tc__HomePageBannerPLPInCC@4ed5a1b0]" started-at="2023-11-29T19:20:17 IST" name="afterMethod" finished-at="2023-11-29T19:20:17 IST" duration-ms="7" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=HomePageBannerPLP status=SUCCESS method=tc__HomePageBannerPLPInCC.HomePageBannerPLP()[pri:0, instance:com.GuestUserWith_CreditCard.tc__HomePageBannerPLPInCC@4ed5a1b0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.GuestUserWith_CreditCard.tc__HomePageBannerPLPInCC@4ed5a1b0]" started-at="2023-11-29T19:20:17 IST" name="tearDown" finished-at="2023-11-29T19:20:24 IST" duration-ms="7243" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.GuestUserWith_CreditCard.tc__HomePageBannerPLPInCC -->
-      <class name="com.Launchingbrowser.launchBrowsering">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Launchingbrowser.launchBrowsering@22bdb1d0]" started-at="2023-11-29T19:15:58 IST" name="setUp" finished-at="2023-11-29T19:16:00 IST" duration-ms="2069" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="chromeBrowser()[pri:0, instance:com.Launchingbrowser.launchBrowsering@22bdb1d0]" started-at="2023-11-29T19:16:00 IST" name="chromeBrowser" finished-at="2023-11-29T19:16:16 IST" duration-ms="15701" status="PASS">
+        <test-method signature="chromeBrowser()[pri:0, instance:com.Launchingbrowser.launchBrowsering@46e3559f]" started-at="2023-12-06T12:52:34 IST" name="chromeBrowser" finished-at="2023-12-06T12:52:47 IST" duration-ms="13150" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chromeBrowser -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Launchingbrowser.launchBrowsering@22bdb1d0]" started-at="2023-11-29T19:16:16 IST" name="afterMethod" finished-at="2023-11-29T19:16:16 IST" duration-ms="18" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.Launchingbrowser.launchBrowsering@46e3559f]" started-at="2023-12-06T12:52:47 IST" name="afterMethod" finished-at="2023-12-06T12:52:47 IST" duration-ms="22" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=chromeBrowser status=SUCCESS method=launchBrowsering.chromeBrowser()[pri:0, instance:com.Launchingbrowser.launchBrowsering@22bdb1d0] output={null}]]]>
+                <![CDATA[[TestResult name=chromeBrowser status=SUCCESS method=launchBrowsering.chromeBrowser()[pri:0, instance:com.Launchingbrowser.launchBrowsering@46e3559f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Launchingbrowser.launchBrowsering@46e3559f]" started-at="2023-12-06T13:02:48 IST" name="tearDown" finished-at="2023-12-06T13:02:57 IST" duration-ms="8905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.Launchingbrowser.launchBrowsering -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Automation -->
+  </suite> <!-- FMG -->
 </testng-results>

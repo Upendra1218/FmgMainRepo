@@ -215,19 +215,19 @@ WebDriver lDriver;
 		    	// Create a random number generator.
 			    Random random = new Random();
 			    // Generate a random number to determine how many products to add (up to the defined maximum)
-			    int howmanyProducts = 5;
+			    int howmanyProducts = 2;
 			  
 			    // Loop to add a random number of products to the cart
-			    //for (int i = 1; i < howmanyProducts; i++) {
+			    for (int i = 1; i < howmanyProducts; i++) {
 		        // Generate a random index to select an "Add to Cart" button.
 			    	int randomNumberAddtoCartBtn = random.nextInt(count) + 1;
-			       int i =1;
+			       
 //		        int randomNumberAddtoCartBtn = random.nextInt(count) + 1;
 		        logger.info("Randomly selected Add to Cart button index: " + i);
 		        // Check if a valid random number was generated.
 		        if (randomNumberAddtoCartBtn > 0) {
 		            // Find the WebElement based on the random index and click it.
-		            WebElement clickAddtoCartBtn = driver.findElement(By.xpath("(//a[contains(@class, 'add-to-cart')])[" + randomNumberAddtoCartBtn + "]"));
+		            WebElement clickAddtoCartBtn = driver.findElement(By.xpath("(//a[contains(@class, 'add-to-cart')])[" + i + "]"));
 		            // Scroll to the "Add to Cart" button and click it.
 		            JavascriptExecutor js = (JavascriptExecutor) driver;
 		            // Use JavaScript to scroll the element into the middle of the page view
@@ -237,31 +237,32 @@ WebDriver lDriver;
 		            //clickAddtoCartBtn.click();
 		            // Validate that the product is added to the cart
 		            
-		         // Create a FluentWait for dynamic element wait
-			    	Wait<WebDriver> wait = waitForTheElement.createFluentWait(driver);
-			        // Wait for the success alert to be visible
-			        WebElement addToCart = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[contains(text(),'Successfully added to your cart.')])[" + i + "]")));
-			        // Get the text of the alert
-			        String actualAddToCart = addToCart.getText();
-			        // Expected alert text
-			        String expectedAddToCart = "Successfully added to your cart.";
-			        
-			        // Check if the actual alert text matches the expected text
-			        if (actualAddToCart.equals(expectedAddToCart)) {
-			            // Success message is displayed
-			        	test.pass("Product added to cart");
-			            logger.info("Product is added to cart");
-			            // Perform actions or assertions here for the success case
-			        } else {
-			            // Success message is not as expected
-			        	test.fail("Product is not added to cart");
-			            logger.info("Product is not added to cart");
-			            // Perform actions or assertions here for the failure case
-			        }
+			         // Create a FluentWait for dynamic element wait
+				    	Wait<WebDriver> wait = waitForTheElement.createFluentWait(driver);
+				        // Wait for the success alert to be visible
+				        WebElement addToCart = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[contains(text(),'Successfully added to your cart.')])[" + i + "]")));
+				        // Get the text of the alert
+				        String actualAddToCart = addToCart.getText();
+				        // Expected alert text
+				        String expectedAddToCart = "Successfully added to your cart.";
+				        
+				        // Check if the actual alert text matches the expected text
+				        if (actualAddToCart.equals(expectedAddToCart)) {
+				            // Success message is displayed
+				        	test.pass("Product added to cart");
+				            logger.info("Product is added to cart");
+				            // Perform actions or assertions here for the success case
+				        } else {
+				            // Success message is not as expected
+				        	test.fail("Product is not added to cart");
+				            logger.info("Product is not added to cart");
+				            // Perform actions or assertions here for the failure case
+				        }
+		            
 			            //validationpopupMessages.validatingProductisAddtoCart(driver);
 			            Thread.sleep(4000);
 		        }
-			       // }
+			        }
 		    }else {
 	        	 logger.info("Randomly selected Add to Cart button index: " + count);
 	        	 NavigationProcess navProcess = new NavigationProcess(driver);
@@ -304,6 +305,7 @@ WebDriver lDriver;
 		@FindBy(xpath ="(//select[@name = 'sort-order'])[1]")
 		WebElement Filters;
 		public void selecttheFilters(int i, WebDriver driver) throws InterruptedException{		
+			test.info("Verify that Filter is select");
 			
 			// Get all the available options within the dropdown
 			List<WebElement> options = Filters.findElements(By.tagName("option"));
@@ -324,6 +326,7 @@ WebDriver lDriver;
 //	        JavascriptExecutor js = (JavascriptExecutor) driver; 
 //			js.executeScript("arguments[0].click();", Filters);
 	        
+			test.pass("Successfully selected the fileters");
 			//Filters.click();
 	    	Thread.sleep(3000);
 		}
@@ -333,12 +336,15 @@ WebDriver lDriver;
 		@FindBy(xpath ="//button[@class = 'reset btn p-0']")
 		WebElement ResetButton;
 		public void selecttheResetButton() throws InterruptedException{
+			test.info("Verify that ResetButton is select");
 			ResetButton.click();
 	    	Thread.sleep(3000);
+	    	test.pass("Successfully selected the ResetButton");
 		}
 		
 		//WishList
 		public void selecttheWishlist() throws InterruptedException{
+			test.info("Verify that wishlist is select");
 			//for(int i =2;i<= 2;i++) {
 			// Get all the available options within the dropdown
 			List<WebElement> wishListBtns = driver.findElements(By.xpath("//a[@title= 'Favorites']"));
@@ -349,6 +355,7 @@ WebDriver lDriver;
 				// Generate a random index within the range of available options
 				Random random = new Random();
 				int randomIndex = random.nextInt(numberOfOptions)+1;
+				logger.info(randomIndex);
 					
 				WebElement wishlistPlp = driver.findElement(By.xpath("(//a[@title= 'Favorites'])["+randomIndex+"]"));
 				Thread.sleep(4000);
@@ -357,7 +364,7 @@ WebDriver lDriver;
 				executor.executeScript("arguments[0].click();", wishlistPlp);
 			}
 
-			
+			test.pass("Successfully selected the wishlist");
 				
 				//wishlistPlp.click();
 			//}

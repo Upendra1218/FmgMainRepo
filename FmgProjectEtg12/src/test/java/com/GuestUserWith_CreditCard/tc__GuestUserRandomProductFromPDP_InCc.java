@@ -2,7 +2,6 @@ package com.GuestUserWith_CreditCard;
 
 import org.testng.annotations.Test;
 
-import com.Launchingbrowser.launchBrowsering;
 import com.PaymentProccess.CreditCardPaymentProcess;
 import com.PaymentProccess.MinicartViewCartProcess;
 import com.Scenarios.pdpPage;
@@ -14,7 +13,6 @@ public class tc__GuestUserRandomProductFromPDP_InCc extends baseClass {
     public void ProductFromPDP() throws InterruptedException {
         
        if(isBrowserLaunched){
-        
         
         // Execute the scenario to add a product to the cart from the PDP (Product Detail Page)
         pdpPage.addtoCartPDP();
@@ -29,6 +27,7 @@ public class tc__GuestUserRandomProductFromPDP_InCc extends baseClass {
         
         // Perform the payment using a credit card
         ccPaymentProcess.paymentByCreditCard();
+        
        }
     }
 }

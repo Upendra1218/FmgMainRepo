@@ -8,8 +8,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
-import com.PageObjects.TierPrice;
 // Import relevant page objects and validations
+import com.PageObjects.TierPrice;
 import com.PageObjects.checkOutPage;
 import com.PageObjects.miniCartPage;
 import com.PageObjects.viewCartPage;
@@ -25,7 +25,7 @@ public class MinicartViewCartProcess extends baseClass {
     public void checkoutprocess() throws InterruptedException {
         // Introduce a sleep to wait for 3 seconds
         Thread.sleep(3000);
-        
+
         // Initialize the JavascriptExecutor for scrolling
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
@@ -35,7 +35,7 @@ public class MinicartViewCartProcess extends baseClass {
 
         // Check if the minicart is displayed
         List<WebElement> minicartdisplayedcount = driver.findElements(By.xpath("//span[contains(@class,'minicart')]"));
-        
+
         // If minicart is displayed
         if (minicartdisplayedcount.size() > 0) {
 
@@ -53,95 +53,91 @@ public class MinicartViewCartProcess extends baseClass {
 
                 // Click on the cart button in the minicart
                 mc.hoverOnCartButton(driver);
-		        Thread.sleep(1000);
-	
-                
+                Thread.sleep(1000);
+
                 mc.clickviewCartButton(driver);
-                
-                //////////////////////////////////////////////////////////////////          
 
                 // Initialize the view cart page
                 viewCartPage vcp = new viewCartPage(driver);
                 
-                vcp.clickProductLink();
-                logger.info("Successfully navigate to the product detail page");
-                
-                Thread.sleep(2000);
-                
-                // Click on the cart button in the minicart
-                mc.hoverOnCartButton(driver);
-		        Thread.sleep(1000);
-	
-                
-                mc.clickviewCartButton(driver);
-                
-                ////////////////////////////////////////////
-                
-                List<WebElement> saveForLaterLink = driver.findElements(By.xpath("//div[@class='total-cart-content']//div[contains(@class,'save-for-later')]"));
-                // If more than 2 products in minicart, save one for later
-                if(saveForLaterLink.size() > 2) {
-                    vcp.saveForLater();                
-                }            
-                List<WebElement> removeBtns = driver.findElements(By.xpath("//div[contains(@class,'cart-delete')]"));
-                if(removeBtns.size()>2) {
-                	vcp.removeBtn();
+                // If executing a regression test case
+                if (RegressionTestCase) {
+                   
+                    // Click on a product link in the view cart page
+                    vcp.clickProductLink();
+                    logger.info("Successfully navigate to the product detail page");
+
+                    // Introduce a delay for 2 seconds
+                    Thread.sleep(2000);
+
+                    // Click on the cart button in the minicart
+                    mc.hoverOnCartButton(driver);
+                    Thread.sleep(1000);
+
+                    mc.clickviewCartButton(driver);
                 }
-   
-	            Random random = new Random();
-	            int randomNumber = random.nextInt(2); // Generates a random number between 0 (inclusive) and 2 (exclusive)
-	
-	            if (randomNumber == 0) {
-	               vcp.quantityInsertionInCartPage();
-	            } else {
-	               vcp.noQuantityInsertionInCartPage();
-	            }
-	            
-	          //product price
+
+               
+                //click on save later           
+                vcp.saveForLater();
+                
+                Thread.sleep(4000);
+                
+                //cick on the mini cart in the save later
+                vcp.addtocartFromSaveLater();
+                
+
+                // Find remove buttons in the cart
+                List<WebElement> removeBtns = driver.findElements(By.xpath("//div[contains(@class,'cart-delete')]"));
+
+                // If more than 2 products in minicart, remove one
+                if (removeBtns.size() > 2) {
+                    vcp.removeBtn();
+                }
+
+                // Increase the quantity of the product
+                vcp.quantityInsertionInCartPage();
+
+                // Calculate product prices in the cart
                 vcp.productsCalInCart();
-                
-	             // apply promo code
+
+                // Apply a promo code in the cart
                 vcp.applyCouponInCartPage();
-	            
-                //calcuates shipping charges
+
+                // Calculate estimated shipping charges
                 vcp.estimatedshippingCalculations();
-                	            
-                //total product cost
+
+                // Calculate total product cost
                 vcp.totalProductsCost();
+
                 // Click the "Checkout" button in the view cart page
-                
-                
                 Thread.sleep(5000);
                 vcp.clickCheckout(driver);
                 Thread.sleep(1000);
-                
+
                 // Initialize GuestCheckout and click continue as a guest
                 GuestCheckout gc = new GuestCheckout();
                 gc.clickContinueAsGuest();
-                
-                
+
                 // Click edit button randomly in the checkout process
                 editInAllCheckOutProcess.clickEditBtnRandomly();
-                
-                //check email edite
+
+                // Check email edit
                 checkOutPage cp = new checkOutPage(driver);
 
-                
                 // Validate negative shipping address
-                //negativeValidation.shippingDetails();
+                // negativeValidation.shippingDetails();
 
                 // Handle the shipping address
                 FullAddressDetails address = new FullAddressDetails();
                 address.address();
-                
-              
 
                 // Initialize checkOutPage and click continue to billing
-                
                 cp.clickcontinueToBillingButton(driver);
 
             } else {
                 logger.info("The cart value is empty");
-                //test.fail("The cart value is empty");
+                // test.fail("The cart value is empty");
             }
         }
     }

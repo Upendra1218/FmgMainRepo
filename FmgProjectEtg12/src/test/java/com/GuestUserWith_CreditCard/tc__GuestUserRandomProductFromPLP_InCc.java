@@ -25,7 +25,7 @@ public class tc__GuestUserRandomProductFromPLP_InCc extends baseClass {
         plpPage.addtocartplp();
 
         // Initialize MinicartViewCartProcess to perform the checkout process
-        MiniCartChekoutButton cartProcess = new MiniCartChekoutButton();
+        MinicartViewCartProcess cartProcess = new MinicartViewCartProcess();
         // Perform the checkout process
         cartProcess.checkoutprocess();
 

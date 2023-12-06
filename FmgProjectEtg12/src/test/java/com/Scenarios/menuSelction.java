@@ -80,6 +80,8 @@ public class menuSelction extends baseClass {
         	}
 
         }else if(randomNumbermenu==5){
+        	logger.info("random genrate is 5");
+        	randommenu();
         	
         }else if(randomNumbermenu==7) {
         	logger.info("random genrate is 7");
